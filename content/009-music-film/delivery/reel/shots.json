@@ -1,0 +1,138 @@
+[
+  {
+    "index": 0,
+    "eventIndex": 0,
+    "variant": 0,
+    "start": 0.0,
+    "end": 11.666666666666666,
+    "frames": 350
+  },
+  {
+    "index": 1,
+    "eventIndex": 1,
+    "variant": 0,
+    "start": 11.666666666666666,
+    "end": 15.666666666666666,
+    "frames": 120
+  },
+  {
+    "index": 2,
+    "eventIndex": 1,
+    "variant": 1,
+    "start": 15.666666666666666,
+    "end": 19.666666666666668,
+    "frames": 120
+  },
+  {
+    "index": 3,
+    "eventIndex": 1,
+    "variant": 2,
+    "start": 19.666666666666668,
+    "end": 23.966666666666665,
+    "frames": 129
+  },
+  {
+    "index": 4,
+    "eventIndex": 2,
+    "variant": 0,
+    "start": 23.966666666666665,
+    "end": 27.966666666666665,
+    "frames": 120
+  },
+  {
+    "index": 5,
+    "eventIndex": 2,
+    "variant": 1,
+    "start": 27.966666666666665,
+    "end": 31.933333333333334,
+    "frames": 119
+  },
+  {
+    "index": 6,
+    "eventIndex": 2,
+    "variant": 2,
+    "start": 31.933333333333334,
+    "end": 36.233333333333334,
+    "frames": 129
+  },
+  {
+    "index": 7,
+    "eventIndex": 3,
+    "variant": 0,
+    "start": 36.233333333333334,
+    "end": 40.333333333333336,
+    "frames": 123
+  },
+  {
+    "index": 8,
+    "eventIndex": 3,
+    "variant": 1,
+    "start": 40.333333333333336,
+    "end": 44.2,
+    "frames": 116
+  },
+  {
+    "index": 9,
+    "eventIndex": 3,
+    "variant": 2,
+    "start": 44.2,
+    "end": 48.53333333333333,
+    "frames": 130
+  },
+  {
+    "index": 10,
+    "eventIndex": 4,
+    "variant": 0,
+    "start": 48.53333333333333,
+    "end": 52.56666666666667,
+    "frames": 121
+  },
+  {
+    "index": 11,
+    "eventIndex": 4,
+    "variant": 1,
+    "start": 52.56666666666667,
+    "end": 56.56666666666667,
+    "frames": 120
+  },
+  {
+    "index": 12,
+    "eventIndex": 4,
+    "variant": 2,
+    "start": 56.56666666666667,
+    "end": 60.8,
+    "frames": 127
+  },
+  {
+    "index": 13,
+    "eventIndex": 5,
+    "variant": 0,
+    "start": 60.8,
+    "end": 64.76666666666667,
+    "frames": 119
+  },
+  {
+    "index": 14,
+    "eventIndex": 5,
+    "variant": 1,
+    "start": 64.76666666666667,
+    "end": 68.8,
+    "frames": 121
+  },
+  {
+    "index": 15,
+    "eventIndex": 5,
+    "variant": 2,
+    "start": 68.8,
+    "end": 73.06666666666666,
+    "frames": 128
+  },
+  {
+    "index": 16,
+    "eventIndex": 6,
+    "variant": 0,
+    "start": 73.06666666666666,
+    "end": 86.13333333333334,
+    "frames": 392
+  }
+]

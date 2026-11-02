@@ -5,21 +5,23 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## ACTIVE — 008 voice lab; STOP full video production pending listening feedback
+## ACTIVE — 009 production with APPROVED voice06/07; testing pause lifted
 
-User rejected BOTH 007 narrators as too AI-like and disliked the imperative opening.
-They explicitly asked to work FIRST on voices, delivery and words. Future opening
-should be a question or surprising idea, not “pick just one.” Do not rerender a
-full film, polish visuals, generate an entire script's speech, resume cloning or
-assume technical QA means subjective acceptance.
-Fresh conversational auditions (index3) selected female voice-06 and male voice-07.
-These are candidates selected in the audition UI, NOT approval of a finished
-performance or final voice lock. `content/008-voice-lab/` contains a ~24s dry dialogue
-and separate female pronunciation test. Wait for feedback on each speaker and exact
-awkward words. No music/effects masking, pitch manipulation or speed changes.
-Current speech tool exposes no per-word emotion/stress knob: do not claim one was tuned.
-007 assets remain historical; preserve all prior files. Voice06/07 supersede
-voice05/04 for the current TEST ONLY. All-synthetic/no-clone rule remains active.
+User listened to 008 and said «آره الان عااالی شد بزن بریم تدوین ویدیو ... تایم موزیک بیشتر بشه».
+Do not ask them to audition the same voices again. Female voice-06 and generic male
+voice-07, conversational fa, are approved in the dry sample. Keep their identities,
+natural short phrasing and original speed/pitch. New sentences/final montage still
+require final listening, not presumed approval. `content/009-music-film/` uses the
+EXACT approved 008 MP3 performances (hash-checked) plus six new turns with these
+voices. Never use human/clone/007 narration. No EQ/reverb or speed/pitch tricks.
+Question-led opening; first music ~12s. 5x30s songs YouTube, 5x12s Reel (>1min on
+purpose). Surreal 2D environments, energy-onset-guided camera cuts, actual FFT,
+light-wipe transitions, kinetic Persian captions, original covers and unchanged logo.
+No speech over music. Say/show رسانهٔ آهنگ‌بان and ahangban.ir; staged CTA between songs.
+008 sample manifest is historical generation-time status; user-review.json records
+subsequent explicit approval. Do not mistake its old pending flag for current state.
+No publication, subscription purchase, face/lip-sync work, personal clone, real
+speaker imitation, verified current-song-trend or rights/virality guarantee.
 
 ## Historical 007 production decision — audio quality subsequently rejected
 

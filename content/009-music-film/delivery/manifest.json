@@ -1,0 +1,51 @@
+{
+  "edition": "009 music-first cinematic film",
+  "voices": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "approved008SamplePerformancesReused": true,
+  "voicePitchOrSpeedChanged": false,
+  "allNarrationSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "finalUserListeningPending": true,
+  "outputs": {
+    "youtube": {
+      "video": "downloads/ahangban-music-film-youtube.mp4",
+      "sha256": "9979d2bd3f2b35f96494c690cdbbdf88f417f7d75fad7839fc24dc3edd9c6290",
+      "bytes": 41694635,
+      "duration": 242.41,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 25.0,
+      "cover": "downloads/ahangban-music-film-youtube-thumbnail.jpg",
+      "coverSha256": "bccc14793f872c22cfd13d6a8899bc7904c5168133c8073842c9e8d539c37be9",
+      "musicSecondsEach": 30,
+      "musicTotalSeconds": 150.0,
+      "musicCameraShots": 20
+    },
+    "reel": {
+      "video": "downloads/ahangban-music-film-reel.mp4",
+      "sha256": "cada7dce05cf6978e8364eda265c3ce76fa84b975816c6e2c630d4314a5ff4d0",
+      "bytes": 16328292,
+      "duration": 86.13,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 30.0,
+      "cover": "downloads/ahangban-music-film-reel-cover.jpg",
+      "coverSha256": "5fc74a3270bc83ad7b292626a2b71816b09a038ce7cca9f3724dea5207119974",
+      "musicSecondsEach": 12,
+      "musicTotalSeconds": 60.0,
+      "musicCameraShots": 15
+    }
+  }
+}

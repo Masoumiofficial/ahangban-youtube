@@ -1,0 +1,40 @@
+{
+  "edition": "009",
+  "approvedVoices": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "008UserApprovalRecorded": true,
+  "approvedSourcePerformancesHashLocked": true,
+  "youtubeComplete": true,
+  "reelComplete": true,
+  "musicSecondsEach": {
+    "youtube": 30,
+    "reel": 12
+  },
+  "musicShots": {
+    "youtube": 20,
+    "reel": 15
+  },
+  "nativeSizes": {
+    "youtube": [
+      1920,
+      1080
+    ],
+    "reel": [
+      1080,
+      1920
+    ]
+  },
+  "questionLedOpening": true,
+  "firstMusicStartSeconds": 11.68,
+  "voiceSpeedOrPitchChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "speechOrSpokenFXOverMusic": false,
+  "officialLogoChanged": false,
+  "copyrightCleared": false,
+  "subscriptionPurchased": false,
+  "published": false,
+  "finalUserListeningPending": true
+}

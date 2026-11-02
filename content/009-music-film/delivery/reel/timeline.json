@@ -1,0 +1,209 @@
+{
+  "kind": "reel",
+  "duration": 86.12,
+  "events": [
+    {
+      "start": 0.0,
+      "end": 11.4,
+      "duration": 11.4,
+      "sceneDuration": 11.68,
+      "type": "speech",
+      "id": "01",
+      "speaker": "female",
+      "scene": "opening",
+      "text": "چرا بعضی آهنگا رو هر چقدر می‌شنویم، باز دلمون می‌خواد از اول پخششون کنیم؟ مثلاً کجایی؛ تو با صداش ارتباط می‌گیری یا با حرفی که می‌زنه؟",
+      "voice": "voice-06",
+      "approvedExactReuse": true
+    },
+    {
+      "start": 11.68,
+      "end": 23.68,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "kojaei",
+      "title": "کجایی",
+      "artist": "محسن چاوشی و سینا سرلک",
+      "sourceFile": "Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "sourceStart": 47,
+      "cameraCutsLocal": [
+        0.0,
+        3.98,
+        7.98,
+        12.0
+      ]
+    },
+    {
+      "start": 23.96,
+      "end": 35.96,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "sange-saboor",
+      "title": "سنگ صبور",
+      "artist": "محسن چاوشی",
+      "sourceFile": "Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "sourceStart": 42,
+      "cameraCutsLocal": [
+        0.0,
+        4.0200000000000005,
+        7.96,
+        12.0
+      ]
+    },
+    {
+      "start": 36.24,
+      "end": 48.24,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "amir-bi-gazand",
+      "title": "امیر بی‌گزند",
+      "artist": "محسن چاوشی",
+      "sourceFile": "Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "sourceStart": 52,
+      "cameraCutsLocal": [
+        0.0,
+        4.08,
+        7.96,
+        12.0
+      ]
+    },
+    {
+      "start": 48.52,
+      "end": 60.52,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "beraghsa",
+      "title": "برقص آ",
+      "artist": "محسن چاوشی",
+      "sourceFile": "Mohsen Chavoshi - Beraghsa [128].mp3",
+      "sourceStart": 37,
+      "cameraCutsLocal": [
+        0.0,
+        4.04,
+        8.06,
+        12.0
+      ]
+    },
+    {
+      "start": 60.800000000000004,
+      "end": 72.80000000000001,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "bist-hezar-arezoo",
+      "title": "بیست هزار آرزو",
+      "artist": "محسن چاوشی",
+      "sourceFile": "Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "sourceStart": 42,
+      "cameraCutsLocal": [
+        0.0,
+        3.98,
+        8.0,
+        12.0
+      ]
+    },
+    {
+      "start": 73.08,
+      "end": 85.84,
+      "duration": 12.76,
+      "sceneDuration": 13.04,
+      "type": "speech",
+      "id": "08",
+      "speaker": "female",
+      "scene": "recap",
+      "text": "خب، انتخابت چیه؟ اسم آهنگ رو کامنت کن. برای پیشنهادهای بعدی، رسانهٔ آهنگ‌بان رو دنبال کن. اسم آهنگ‌ها هم توی سایته؛ آهنگ‌بان دات آی آر.",
+      "voice": "voice-06",
+      "approvedExactReuse": false
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.5020625,
+      "text": "چرا بعضی آهنگا رو"
+    },
+    {
+      "start": 1.5140625,
+      "end": 3.3723750000000003,
+      "text": "هر چقدر می‌شنویم، باز"
+    },
+    {
+      "start": 3.3843750000000004,
+      "end": 5.153625000000001,
+      "text": "دلمون می‌خواد از اول"
+    },
+    {
+      "start": 5.165625,
+      "end": 7.380187500000001,
+      "text": "پخششون کنیم؟ مثلاً کجایی؛"
+    },
+    {
+      "start": 7.3921875,
+      "end": 8.89425,
+      "text": "تو با صداش ارتباط"
+    },
+    {
+      "start": 8.90625,
+      "end": 10.497375,
+      "text": "می‌گیری یا با حرفی"
+    },
+    {
+      "start": 10.509375,
+      "end": 11.388,
+      "text": "که می‌زنه؟"
+    },
+    {
+      "start": 73.08,
+      "end": 75.02799999999999,
+      "text": "خب، انتخابت چیه؟ اسم"
+    },
+    {
+      "start": 75.03999999999999,
+      "end": 76.858,
+      "text": "آهنگ رو کامنت کن."
+    },
+    {
+      "start": 76.87,
+      "end": 79.49745736434109,
+      "text": "برای پیشنهادهای بعدی، رسانهٔ"
+    },
+    {
+      "start": 79.50945736434109,
+      "end": 81.57466666666666,
+      "text": "آهنگ‌بان رو دنبال کن."
+    },
+    {
+      "start": 81.58666666666666,
+      "end": 83.478,
+      "text": "اسم آهنگ‌ها هم توی"
+    },
+    {
+      "start": 83.49,
+      "end": 85.618,
+      "text": "سایته؛ آهنگ‌بان دات آی"
+    },
+    {
+      "start": 85.63,
+      "end": 85.828,
+      "text": "آر."
+    }
+  ],
+  "ctas": [
+    {
+      "start": 73.08,
+      "end": 85.84,
+      "text": "اسم آهنگ رو کامنت کن"
+    }
+  ],
+  "musicSecondsEach": 12,
+  "allNarrationSynthetic": true,
+  "humanRecordingUsed": false,
+  "approvedVoiceLabReusedExactly": true,
+  "voicePitchOrSpeedChanged": false,
+  "mixGain": 1,
+  "captionTiming": "Proportional short groups nudged toward nearby quiet gaps; NOT forced alignment",
+  "cameraTiming": "Positive RMS-energy onset guided, not certified tempo/beat detection"
+}

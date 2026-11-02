@@ -1,0 +1,95 @@
+{
+  "status": "technical_QA_passed_pending_final_user_listening",
+  "kind": "reel",
+  "video": "ahangban-music-film-reel.mp4",
+  "sha256": "cada7dce05cf6978e8364eda265c3ce76fa84b975816c6e2c630d4314a5ff4d0",
+  "bytes": 16328292,
+  "duration": 86.13,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "fullDecode": "PASS",
+  "sourceAndLogoHashes": "PASS",
+  "approved008PerformancesReusedExactly": "PASS",
+  "narrationVoices": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "voicePitchOrSpeedChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "musicSamples": 5,
+  "musicSecondsEach": 12,
+  "musicTotalSeconds": 60.0,
+  "musicCameraShots": 15,
+  "encodedCameraAndSpectrumMotion": "PASS",
+  "decodedAudioChecks": [
+    {
+      "type": "speech",
+      "id": "01",
+      "start": 0.0,
+      "duration": 11.4,
+      "sourceToDecodedOutputCorrelation": 0.9999910374799724,
+      "rms": 0.10106693228733497
+    },
+    {
+      "type": "music",
+      "id": "kojaei",
+      "start": 11.68,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.9992044021701646,
+      "rms": 0.0927160869357412
+    },
+    {
+      "type": "music",
+      "id": "sange-saboor",
+      "start": 23.96,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.998744827046035,
+      "rms": 0.08748040876075773
+    },
+    {
+      "type": "music",
+      "id": "amir-bi-gazand",
+      "start": 36.24,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.9994652087718875,
+      "rms": 0.08067034038253239
+    },
+    {
+      "type": "music",
+      "id": "beraghsa",
+      "start": 48.52,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.9987081143406343,
+      "rms": 0.09627258530953041
+    },
+    {
+      "type": "music",
+      "id": "bist-hezar-arezoo",
+      "start": 60.800000000000004,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.9993416393633252,
+      "rms": 0.09288574261130929
+    },
+    {
+      "type": "speech",
+      "id": "08",
+      "start": 73.08,
+      "duration": 12.76,
+      "sourceToDecodedOutputCorrelation": 0.9999720321266059,
+      "rms": 0.100046861768362
+    }
+  ],
+  "decodedPeakDbFS": -5.0,
+  "overallRmsDbFS": -20.8,
+  "captionTiming": "Proportional short groups nudged toward nearby quiet gaps; NOT forced alignment",
+  "cameraTiming": "Positive RMS-energy onset guided, not certified tempo/beat detection",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "limitations": "Approval covers the 008 samples, not an independent listening sign-off on every new sentence. AI still environments animated in 2D, not 3D footage. No current-song-trend, rights-clearance or virality claim."
+}

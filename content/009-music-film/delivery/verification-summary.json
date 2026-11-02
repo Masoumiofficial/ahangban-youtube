@@ -1,0 +1,35 @@
+{
+  "newTests": {
+    "count": 13,
+    "passed": 13
+  },
+  "historicalRegressionTests": {
+    "008": 4,
+    "007": 13,
+    "006": 11,
+    "005": 17,
+    "004": 10,
+    "003": 6,
+    "passed": 61
+  },
+  "totalUnitTestsPassed": 74,
+  "studioMasterValidator": "PASS",
+  "historicalHostsShot002Validator": "PASS",
+  "finalEncodedVisualReview": {
+    "youtube": [
+      "qa-frames/01.png",
+      "qa-frames/05.png",
+      "qa-frames/07.png"
+    ],
+    "reel": [
+      "qa-frames/06.png",
+      "qa-frames/08.png"
+    ],
+    "thumbnail": "downloads/ahangban-music-film-youtube-thumbnail.jpg",
+    "scope": "Sampled encoded frames inspected for Persian glyphs, caption bounds, artwork, logo and hierarchy. Not continuous aural review."
+  },
+  "finalUserListeningPending": true,
+  "original008SampleUserApproved": true,
+  "publicationPerformed": false,
+  "copyrightCleared": false
+}
