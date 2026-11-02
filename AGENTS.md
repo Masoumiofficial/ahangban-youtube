@@ -5,7 +5,23 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## ACTIVE production decision — 007 supersedes historical voice instructions
+## ACTIVE — 008 voice lab; STOP full video production pending listening feedback
+
+User rejected BOTH 007 narrators as too AI-like and disliked the imperative opening.
+They explicitly asked to work FIRST on voices, delivery and words. Future opening
+should be a question or surprising idea, not “pick just one.” Do not rerender a
+full film, polish visuals, generate an entire script's speech, resume cloning or
+assume technical QA means subjective acceptance.
+Fresh conversational auditions (index3) selected female voice-06 and male voice-07.
+These are candidates selected in the audition UI, NOT approval of a finished
+performance or final voice lock. `content/008-voice-lab/` contains a ~24s dry dialogue
+and separate female pronunciation test. Wait for feedback on each speaker and exact
+awkward words. No music/effects masking, pitch manipulation or speed changes.
+Current speech tool exposes no per-word emotion/stress knob: do not claim one was tuned.
+007 assets remain historical; preserve all prior files. Voice06/07 supersede
+voice05/04 for the current TEST ONLY. All-synthetic/no-clone rule remains active.
+
+## Historical 007 production decision — audio quality subsequently rejected
 
 The user explicitly abandoned Sajad's real recording and ALL personal cloning.
 Use ONLY fresh selected Persian synthetic female **voice-05** and generic male
