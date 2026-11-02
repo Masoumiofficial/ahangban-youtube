@@ -1,0 +1,160 @@
+{
+  "allSpeechSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "speech": [
+    {
+      "id": "01",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "پنج آهنگ از چاوشی، فقط یکی رو انتخاب کن. انتخابت رو تا آخر نگه دار!",
+      "sourceSha256": "903d1195f01c60e3567c3347e4df3e6496e1db3a993c7e27ffedbe1d11e386a0",
+      "normalizedSha256": "3577cad78ec2e576cbe7a22dc1bb99ac1764fb3ebd6bfb164d7c916d03462832",
+      "duration": 7.2910625
+    },
+    {
+      "id": "04",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "اول، کجایی؛ با صدای محسن چاوشی و سینا سرلک. موقع شنیدن، دنبال یه حس مشخص نباش. ببین صدا زودتر باهات ارتباط می‌گیره، یا کلام آهنگ.",
+      "sourceSha256": "ac76b72b0ed843b65ccd29b450f9aca4cd99e13866a28cc4fd7bd09bad21ecb9",
+      "normalizedSha256": "4a512629f81c7195aa6a1f5f791127d7d3453d4a14ac5bd4d70f934d60b3db37",
+      "duration": 14.036458333333334
+    },
+    {
+      "id": "05",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "انتخاب دوم، سنگ صبوره. این بار به قصه‌ای گوش کن که خواننده تعریف می‌کنه. لازم نیست تحلیلش کنی؛ فقط ببین کدوم جمله، یا کدوم مکث، توی ذهنت می‌مونه.",
+      "sourceSha256": "126058813af4d1769c3f160295456981563ed6b4671219593d30046ce35a6b34",
+      "normalizedSha256": "acffef9d3b67f1267487f9aa8001fcc485d5c62d4ac7ee727b159b343652989e",
+      "duration": 13.606895833333333
+    },
+    {
+      "id": "06",
+      "voice": "voice-04",
+      "speaker": "male",
+      "text": "تا اینجا انتخابت چیه؟ اگه این مدل معرفی موسیقی رو دوست داری، یه لایک بزن و کانال آهنگ‌بان رو سابسکرایب کن. حالا بریم سراغ انتخاب سوم.",
+      "sourceSha256": "9f9540fd97e373c6ff733ecba5d60cd3b78053ececee17a62772d3ba26fa93eb",
+      "normalizedSha256": "f0d772602cb33b33800ee5efcbc50b6eb55eb60f23f6e0b167825d93838d1e6a",
+      "duration": 11.28
+    },
+    {
+      "id": "07",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "امیر بی‌گزند. برای این یکی، حواست رو بده به خود اجرا؛ به تأکید روی کلمه‌ها و جایی که صدا مکث می‌کنه. شاید همین جزئیات، انتخابت رو عوض کنه.",
+      "sourceSha256": "58434115d92c70f4d9068246a8e0a5c5a260d4c4cd8f6d4be12fd44d4f7a7ff9",
+      "normalizedSha256": "e8bc5ad86c7f8dd0e83dde28b02db10760def867d30fe888d8a35ca941e2878e",
+      "duration": 13.374708333333333
+    },
+    {
+      "id": "08",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "برای انتخاب چهارم، بریم سراغ برقص آ. این بار کمتر دنبال معنی بگرد و بیشتر به حرکت موسیقی گوش بده. ببین ضرب‌آهنگ، حس متفاوتی برات می‌سازه یا نه.",
+      "sourceSha256": "8c2d2b707056f1126cb2768955ced2632a8eb7c7a202e1c05ce42d8f4a0fff2c",
+      "normalizedSha256": "d1295230688e43860165e65c63fb41f33369a516433b98e6bdda032e162dbe16",
+      "duration": 13.514020833333333
+    },
+    {
+      "id": "09",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "و آخرین انتخاب، بیست هزار آرزو. برای این یکی، سؤال تازه‌ای ندارم. فقط گوش کن؛ بعدش از بین این پنج تا، همونی رو انتخاب کن که دلت می‌خواد دوباره بشنوی.",
+      "sourceSha256": "0d9fbbdeba7b4cd5e05bd9e49ac9130437313255b53253286cf3221f5fa20302",
+      "normalizedSha256": "2f7b7e050a857106c534ba70a46273dfa0bdb7378eb14dbef5ae9c22b978032e",
+      "duration": 16.6255
+    },
+    {
+      "id": "10",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "انتخابت رو کامنت کن. برای شنیدن پیشنهادهای بعدی، رسانهٔ آهنگ‌بان رو دنبال کن. آهنگ‌بان دات آی آر.",
+      "sourceSha256": "1045fdcb80366683f78aee52278c691a3d04514fd97ce2da823629ae0f7f78aa",
+      "normalizedSha256": "032dfd43a66ab17abc04b277d102767abdac4979417b6378f05a24ab8cbdcfa7",
+      "duration": 9.764
+    }
+  ],
+  "assets": [
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "file": "Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "gitBlob": "bb1ce7d7109cdba52bde3a925acd33eab050b083",
+      "sha256": "2505da6b8728da033a2abe4aff651f529d75faac094a016b9946cfd71b1d37ab"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "file": "Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "gitBlob": "213cbec8d3f4ef5f99885012b54ecd8ffe038b17",
+      "sha256": "837736c7f5f9192878eac041760f39b205f0a8e525027ef1701108b309b32ef4"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "file": "Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "gitBlob": "ccf16ec27793cae573390e6068228bffcd847cb9",
+      "sha256": "37726ce6c3d67b037bbd45eb8c2d9835a8a95e9005c4a93280dba1a09ae2441a"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "file": "Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "gitBlob": "bca7d63d6af2817ddc28455349d41400c6e4f57a",
+      "sha256": "d2ea0931a663d67c03f955f2349c271ccd7d367ac4eebd68aaeeba8865e94233"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "file": "Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "gitBlob": "084f7b7d28c29e47a1a1734e1e055b6c8d9e989c",
+      "sha256": "86553316aaa7df881f473b218d7f6e82a73203b87d3bcd80d93085516dfb8e8e"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "file": "Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "gitBlob": "1044e96ef25f8b4c7d19ef9bc28ad97255716b72",
+      "sha256": "15d258ba8e88c67f5c7df88c809ddb69f021903ece2045dea46f4e88d70bd3f9"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Beraghsa [128].mp3",
+      "file": "Mohsen Chavoshi - Beraghsa [128].mp3",
+      "gitBlob": "0ed530071efe613f6f7229af15babaa47ecf871b",
+      "sha256": "bdbd52266ad104f91dc4240815b63c779b26b2faab62f88825aea7acdcaa920e"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Beraghsa.jpg",
+      "file": "Mohsen-Chavoshi-Beraghsa.jpg",
+      "gitBlob": "5be75812cd449feae62b5a28316381f33b1afdff",
+      "sha256": "58a725b860534ffd69270da9e8563f9f31b4bd6d38a0f8ed0f93b75913d7ca71"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "file": "Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "gitBlob": "11301ac5b91cd262520405c5d1e7de317173e36c",
+      "sha256": "e465bb9fb8275d14b557b30b1222f11a0c9c2962c3df0304b886c40a71565754"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "file": "Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "gitBlob": "ddf656b149aec363b649a6e089609068855d992d",
+      "sha256": "e2ad946436b1f01f1fcaa01afd31c949402a081fe32dfae2322c6db6dce544e0"
+    }
+  ],
+  "syntheticImages": [
+    {
+      "file": "piano.jpg",
+      "sha256": "bb1873a590c7f679b209c5dc871a7d3d5b317612a3a3710061de8a0de13d13c6",
+      "origin": "AI-generated surreal environment; not a real location or artist depiction"
+    },
+    {
+      "file": "portal.jpg",
+      "sha256": "ecfb248248d75f6e39807cff07a6eed21f7e80a1a23a891b69919767658a98fa",
+      "origin": "AI-generated surreal environment; not a real location or artist depiction"
+    },
+    {
+      "file": "waves.jpg",
+      "sha256": "4103df0a9bd6b2976f7aca7890157c9a5de0aca492e67ac34fa512d950ac5fb0",
+      "origin": "AI-generated surreal environment; not a real location or artist depiction"
+    }
+  ],
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "fontSha256": "7b80807bc831f141de0f7dcf6816412bf0c548968d548c5156ca388733390ea9"
+}

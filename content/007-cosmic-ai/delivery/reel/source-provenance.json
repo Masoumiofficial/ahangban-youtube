@@ -1,0 +1,106 @@
+{
+  "allSpeechSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "speech": [
+    {
+      "id": "01",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "پنج آهنگ از چاوشی، فقط یکی رو انتخاب کن. انتخابت رو تا آخر نگه دار!",
+      "sourceSha256": "903d1195f01c60e3567c3347e4df3e6496e1db3a993c7e27ffedbe1d11e386a0",
+      "normalizedSha256": "3577cad78ec2e576cbe7a22dc1bb99ac1764fb3ebd6bfb164d7c916d03462832",
+      "duration": 7.2910625
+    },
+    {
+      "id": "10",
+      "voice": "voice-05",
+      "speaker": "female",
+      "text": "انتخابت رو کامنت کن. برای شنیدن پیشنهادهای بعدی، رسانهٔ آهنگ‌بان رو دنبال کن. آهنگ‌بان دات آی آر.",
+      "sourceSha256": "1045fdcb80366683f78aee52278c691a3d04514fd97ce2da823629ae0f7f78aa",
+      "normalizedSha256": "032dfd43a66ab17abc04b277d102767abdac4979417b6378f05a24ab8cbdcfa7",
+      "duration": 9.764
+    }
+  ],
+  "assets": [
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "file": "Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "gitBlob": "bb1ce7d7109cdba52bde3a925acd33eab050b083",
+      "sha256": "2505da6b8728da033a2abe4aff651f529d75faac094a016b9946cfd71b1d37ab"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "file": "Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "gitBlob": "213cbec8d3f4ef5f99885012b54ecd8ffe038b17",
+      "sha256": "837736c7f5f9192878eac041760f39b205f0a8e525027ef1701108b309b32ef4"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "file": "Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "gitBlob": "ccf16ec27793cae573390e6068228bffcd847cb9",
+      "sha256": "37726ce6c3d67b037bbd45eb8c2d9835a8a95e9005c4a93280dba1a09ae2441a"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "file": "Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "gitBlob": "bca7d63d6af2817ddc28455349d41400c6e4f57a",
+      "sha256": "d2ea0931a663d67c03f955f2349c271ccd7d367ac4eebd68aaeeba8865e94233"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "file": "Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "gitBlob": "084f7b7d28c29e47a1a1734e1e055b6c8d9e989c",
+      "sha256": "86553316aaa7df881f473b218d7f6e82a73203b87d3bcd80d93085516dfb8e8e"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "file": "Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "gitBlob": "1044e96ef25f8b4c7d19ef9bc28ad97255716b72",
+      "sha256": "15d258ba8e88c67f5c7df88c809ddb69f021903ece2045dea46f4e88d70bd3f9"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Beraghsa [128].mp3",
+      "file": "Mohsen Chavoshi - Beraghsa [128].mp3",
+      "gitBlob": "0ed530071efe613f6f7229af15babaa47ecf871b",
+      "sha256": "bdbd52266ad104f91dc4240815b63c779b26b2faab62f88825aea7acdcaa920e"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Beraghsa.jpg",
+      "file": "Mohsen-Chavoshi-Beraghsa.jpg",
+      "gitBlob": "5be75812cd449feae62b5a28316381f33b1afdff",
+      "sha256": "58a725b860534ffd69270da9e8563f9f31b4bd6d38a0f8ed0f93b75913d7ca71"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "file": "Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "gitBlob": "11301ac5b91cd262520405c5d1e7de317173e36c",
+      "sha256": "e465bb9fb8275d14b557b30b1222f11a0c9c2962c3df0304b886c40a71565754"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "file": "Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "gitBlob": "ddf656b149aec363b649a6e089609068855d992d",
+      "sha256": "e2ad946436b1f01f1fcaa01afd31c949402a081fe32dfae2322c6db6dce544e0"
+    }
+  ],
+  "syntheticImages": [
+    {
+      "file": "piano.jpg",
+      "sha256": "bb1873a590c7f679b209c5dc871a7d3d5b317612a3a3710061de8a0de13d13c6",
+      "origin": "AI-generated surreal environment; not a real location or artist depiction"
+    },
+    {
+      "file": "portal.jpg",
+      "sha256": "ecfb248248d75f6e39807cff07a6eed21f7e80a1a23a891b69919767658a98fa",
+      "origin": "AI-generated surreal environment; not a real location or artist depiction"
+    },
+    {
+      "file": "waves.jpg",
+      "sha256": "4103df0a9bd6b2976f7aca7890157c9a5de0aca492e67ac34fa512d950ac5fb0",
+      "origin": "AI-generated surreal environment; not a real location or artist depiction"
+    }
+  ],
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "fontSha256": "7b80807bc831f141de0f7dcf6816412bf0c548968d548c5156ca388733390ea9"
+}

@@ -1,0 +1,90 @@
+{
+  "status": "technical_QA_passed_pending_user_listening_and_aesthetic_review",
+  "kind": "reel",
+  "video": "ahangban-cosmic-reel.mp4",
+  "sha256": "6e30f66438e0bc90a058c64749755ec792a4f023035d45b63b8c0d1471a777ad",
+  "bytes": 9931062,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "duration": 58.74,
+  "fullDecode": "PASS",
+  "sourceHashes": "PASS",
+  "selectedFreshSyntheticSpeech": "PASS",
+  "allSpeechSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "musicSamples": 5,
+  "musicSecondsEach": 8,
+  "actualDecodedAudioChecks": [
+    {
+      "type": "speech",
+      "id": "01",
+      "outputStart": 0.0,
+      "duration": 7.2910625,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9999884851530328,
+      "rms": 0.12410948600731576
+    },
+    {
+      "type": "music",
+      "id": "kojaei",
+      "outputStart": 7.5310625,
+      "duration": 8.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9993541938438245,
+      "rms": 0.09591755879093752
+    },
+    {
+      "type": "music",
+      "id": "sange-saboor",
+      "outputStart": 15.7710625,
+      "duration": 8.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9986916125796672,
+      "rms": 0.08589611919432187
+    },
+    {
+      "type": "music",
+      "id": "amir-bi-gazand",
+      "outputStart": 24.0110625,
+      "duration": 8.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9996118605887473,
+      "rms": 0.07437309888867706
+    },
+    {
+      "type": "music",
+      "id": "beraghsa",
+      "outputStart": 32.2510625,
+      "duration": 8.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9984843268346923,
+      "rms": 0.0940270693863359
+    },
+    {
+      "type": "music",
+      "id": "bist-hezar-arezoo",
+      "outputStart": 40.491062500000005,
+      "duration": 8.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9993153956758828,
+      "rms": 0.09363630798626728
+    },
+    {
+      "type": "speech",
+      "id": "10",
+      "outputStart": 48.73106250000001,
+      "duration": 9.764,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9999216251976725,
+      "rms": 0.10704090701818625
+    }
+  ],
+  "decodedPeakDbFS": -3.8,
+  "overallRmsDbFS": -20.43,
+  "cinematicBackgroundMotion": "PASS",
+  "actualAudioSpectrum": "PASS",
+  "captionTiming": "Proportional four-word groups, not forced aligned",
+  "openTypePersianShaping": "HarfBuzz + FreeType, original Unicode; no presentation-form tofu",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "limitations": "No independent aural/pronunciation sign-off, current-song-trend verification or virality guarantee. Synthetic imagery is animated 2D, not generated live-action footage."
+}

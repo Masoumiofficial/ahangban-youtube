@@ -1,0 +1,68 @@
+{
+  "edition": "007",
+  "supersedes": "006 only as active production direction; all historical artifacts preserved",
+  "userRejectedPresenterPilot": true,
+  "presenterLipSyncWorkStopped": true,
+  "userAbandonedHumanRecordingAndCloning": true,
+  "allNarrationSynthetic": true,
+  "selectedVoices": {
+    "female": "voice-05",
+    "male": "voice-04"
+  },
+  "femaleStyle": "User-auditioned warm, fluent, natural Persian. No celebrity imitation or claimed real-speaker nationality.",
+  "youtube": {
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 25,
+    "musicSecondsEach": 20,
+    "musicCount": 5,
+    "speechIds": [
+      "01",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  },
+  "reel": {
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "musicSecondsEach": 8,
+    "musicCount": 5,
+    "speechIds": [
+      "01",
+      "10"
+    ],
+    "nativeLayout": true,
+    "opening": "Choice question, first-frame Persian typography, logo delayed one second; not a claim of verified current trends"
+  },
+  "excludedSpeechIds": {
+    "02": "Remove long repeated channel introduction; website/media still spoken in clip10",
+    "03": "Remove duplicated instructions; let first music start ~21.8s, not ~47.6s"
+  },
+  "officialLogoModified": false,
+  "musicAndCovers": "Original supplied files pinned to Git objects; no fabricated cover detail",
+  "newEnvironments": "Three AI-generated stills animated in 2D with soft camera movement, particles and audio-derived halo/spectrum",
+  "speechOverMusic": false,
+  "proceduralFXOverMusic": false,
+  "stageCTAsWithoutMusicOverlap": true,
+  "captionTiming": "Four-word proportional groups; NOT forced alignment",
+  "subscriptionPurchased": false,
+  "personalCloneUsed": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "copyrightCleared": false,
+  "viralityGuaranteed": false,
+  "youtubeComplete": true,
+  "reelComplete": true,
+  "technicalQAPassed": true,
+  "userFinalListeningApproval": false
+}

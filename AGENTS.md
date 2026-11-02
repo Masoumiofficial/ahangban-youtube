@@ -4,6 +4,26 @@ Channel supplied by the user: https://www.youtube.com/@AhangBan
 Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
+
+## ACTIVE production decision — 007 supersedes historical voice instructions
+
+The user explicitly abandoned Sajad's real recording and ALL personal cloning.
+Use ONLY fresh selected Persian synthetic female **voice-05** and generic male
+**voice-04**. Female03/00 and older male voices are superseded. Never route new
+speech through the 004/006 episode audio; no human recording or clone fallback.
+Current source, scripts, fresh synthesized MP3s, imagery and QA live in
+`content/007-cosmic-ai/`. Read its README and `.claude/youtube/voice.md` first.
+The user rejected presenters/lip sync. Current design is faceless, cinematic and
+surreal, with original music/cover art, attractive Persian OpenType captions and
+an immediate Reel hook. 5x20s music in YouTube, 5x8s in native vertical Reel.
+Say/show رسانهٔ آهنگ‌بان and ahangban.ir. Stage like/comment/subscribe invitations
+without speech over music. Preserve official logo and all historical masters.
+The new surreal environments do NOT authorize redesigning approved studio assets.
+No subscription, new voice recording, face/Colab trial, publication, celebrity
+imitation, current-song-trend claim, copyright clearance or virality guarantee.
+All older own-voice/clone/voice00 directions below are HISTORICAL ONLY, not pending
+instructions. Do not restart them without a fresh explicit user request.
+
 ## Installed YouTube skills
 
 For relevant requests, read `.claude/skills/<name>/SKILL.md` and follow its workflow:
@@ -45,7 +65,7 @@ logo and all twelve original portrait files, their identities, order and positio
 Never generate substitute celebrity faces or redraw the logo. User requested one
 coherent master image and no alternative designs. A single 2D master is not a
 calibrated 3D scene; do not promise guaranteed geometric identity across new views.
-Main feminine voice stays voice-00; the user selected replacement masculine voice-02
+Historically, main feminine voice was voice-00; the user selected replacement masculine voice-02
 in this session. The historical five-track MP4 retains voice-01; the new studio edition in
 `downloads/ahangban-chavoshi-studio-review.mp4` uses the selected replacement
 voice-02 for all four male turns. Voice identifiers are session-specific.
@@ -72,7 +92,7 @@ and soft six-second logo-glow animation. The hosts are STATIC: no lip sync, faci
 animation or new camera angle has been produced. No YouTube publication.
 
 
-### Current next edition: user own voice / black suit
+### Historical 004 phase: user own voice / black suit — superseded by 007
 
 The user's latest request supersedes the previous synthetic male preference:
 Sajad should use the USER'S OWN VOICE. No user voice audio has been received yet.
@@ -240,7 +260,7 @@ head/body motion, new perspective, reusable voice clone or YouTube publication.
 Original full first episode, original Colab notebook and upstream source pin kept.
 
 
-### CURRENT DIRECTION: user REJECTED lip sync; faceless YouTube + Instagram Reel finished
+### Historical 006 delivery: rejected lip sync; faceless videos with old audio
 
 User: «نه اصلا خوب نیس ... کلا بدون چهره ...» then approved faceless editorial
 and requested a strong YouTube video plus Instagram Reel. Do NOT ask for approval
