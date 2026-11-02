@@ -193,3 +193,25 @@ format asserted; no actual detector/inference or aural boundary check performed.
 No lip-sync video exists. Model weights inaccessible through currently allowed
 network hosts and engine/compute not validated: current status is blocked before
 inference, not success. Do not claim future background work or a laptop benchmark.
+
+
+### User approved FREE Colab pilot (latest decision)
+
+After recommendation of free Colab vs laptop, user said «بزن بریم سراغش پس».
+Free user-started Google Colab processing is now authorized for the short two-host
+lip-sync pilot, NOT paid GPU/subscriptions/other cloud providers. Update from the
+previous local-only status: see local-route.json and colab/README.fa.md. The agent
+has NOT accessed a Google account, run a Colab GPU, downloaded weights or produced
+lip-sync video in Arena. User must open/run the prepared notebook themselves.
+Custom runner colab/run_pilot.py uses pinned MuseTalk V1.5 UNet + VAE + Whisper;
+manual boxes replace all pose/detector/face-parser dependencies. Bounded mouth matte
+preserves everything outside it, including Ava mic protection line. Model quality
+and CUDA installation UNTESTED; static geometry/compositing and syntax tested only.
+Only existing voices; 16k conditioning, original 48k playback cuts. Sources are
+fetched from the user's own public repository into Google (full 17MB episode and
+shot002; NOT raw sajad.m4a). Weights fetched on USER Colab from official public HF
+repos with recorded revisions/hashes, no tokens/mirrors/proxies. No Drive mount,
+public server or upload to other inference services. Download ZIP should contain
+only two composited pilot MP4s and provenance/results, NOT WAVs/faces/weights.
+No automatic full episode render; wait for actual clips + human review. Never
+present notebook preparation or fake model tests as successful lip sync.

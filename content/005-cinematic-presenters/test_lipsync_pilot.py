@@ -7,9 +7,12 @@ class LocalPilotTests(unittest.TestCase):
     def test_route_respects_no_subscription_decision(self):
         route=json.loads((pilot.HERE/'local-route.json').read_text())
         for key in ('subscriptionAllowed','paidServiceAuthorized','paidComputeAuthorized',
-                    'freeTrialOrPaymentCardAuthorized','thirdPartyFaceOrAudioUploadAuthorized',
+                    'freeTrialOrPaymentCardAuthorized',
                     'automaticNetworkDownload','modelInferenceExecuted','thirdPartyUploadExecuted'):
             self.assertIs(route[key],False,key)
+        self.assertTrue(route['thirdPartyFaceOrAudioUploadAuthorized'])
+        self.assertIn('Google Colab FREE',route['authorizedCloudEnvironment'])
+        self.assertFalse(route['cloudPilotActuallyExecuted'])
     def test_uses_existing_speech_windows_for_both_hosts(self):
         timeline=json.loads(pilot.TIMELINE.read_text())
         jobs=pilot.pilot_jobs(timeline)

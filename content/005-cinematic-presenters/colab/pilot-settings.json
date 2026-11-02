@@ -1,0 +1,24 @@
+{
+  "purpose": "Short lipsync experiment only; manual static-face boxes, no pose estimator or gallery-face detection",
+  "musetalkRevision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+  "fps": 25,
+  "batchSize": 2,
+  "seed": 42,
+  "minimumVramGiB": 6,
+  "hosts": {
+    "male": {
+      "faceBox": [100, 60, 270, 242],
+      "mouthEllipse": [130, 163, 239, 226],
+      "protectFromY": 244,
+      "camera": [0.405, 0.565, 3.1]
+    },
+    "female": {
+      "faceBox": [82, 59, 244, 204],
+      "mouthEllipse": [108, 153, 218, 201],
+      "protectFromY": 201,
+      "camera": [0.61, 0.565, 3.1]
+    }
+  },
+  "reviewRequired": true,
+  "notice": "Boxes are manually calibrated to source shot 002 only. Protect microphone pixels and all image pixels outside a small feathered mouth mask. Persian synchrony and identity remain untested until real inference. No head/body animation or new camera perspectives."
+}

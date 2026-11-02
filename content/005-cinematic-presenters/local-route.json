@@ -5,25 +5,30 @@
   "paidServiceAuthorized": false,
   "paidComputeAuthorized": false,
   "freeTrialOrPaymentCardAuthorized": false,
-  "thirdPartyFaceOrAudioUploadAuthorized": false,
-  "preferredExecution": "local/offline, existing episode audio, no voice regeneration",
+  "thirdPartyFaceOrAudioUploadAuthorized": true,
+  "preferredExecution": "User-started Google Colab free GPU; no paid compute, no voice regeneration",
   "candidateEngine": {
     "repository": "https://github.com/TMElyralab/MuseTalk",
     "revision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
-    "status": "candidate_only_not_installed_or_run",
-    "licenseReview": "Upstream permits commercial use of main code/model; dependency licenses still require review",
+    "status": "custom_static_face_colab_runner_prepared_NOT_executed",
+    "licenseReview": "Only MuseTalk main UNet + MIT VAE + MIT Whisper used; no MMPose, detector, face parser or unrelated test data. Upstream NOTICE retained.",
     "persianQualityTested": false,
     "userLaptopBenchmarked": false
   },
   "pilotInputStatus": "prepared_locally_under_ignored_rendered_directory",
   "pilotOutputStatus": "no_lip_sync_video_generated",
   "blockers": [
-    "Official model weights are not available locally; documented weight hosts are outside current network access",
-    "Inference engine/dependencies are not installed or tested; suitable compute has not been verified",
-    "Identity, occlusion, single-face detection and Persian lip sync require a short real inference test"
+    "Arena cannot download the model weights or run a Google account runtime; user must start the prepared notebook in their free Colab session",
+    "Free GPU allocation and dependency installation must succeed in Colab; not tested here",
+    "Actual Persian synchrony and identity require review of both pilot outputs"
   ],
   "automaticNetworkDownload": false,
   "modelInferenceExecuted": false,
   "thirdPartyUploadExecuted": false,
-  "policy": "Do not switch to a subscription, paid API, paid GPU, trial requiring a payment card, or upload faces/audio to a third party. Do not label prepared inputs or camera-only reframing as lip sync. No mouth warping driven only by audio amplitude as a substitute."
+  "policy": "Free user-started Google Colab pilot is explicitly authorized. No paid subscriptions/APIs/GPUs/card-requiring trials, no other cloud provider or public sharing. No inference has run in Arena. Prepared code/inputs are not a successful lip-sync result.",
+  "authorizedCloudEnvironment": "Google Colab FREE user-started short pilot ONLY; no other provider",
+  "cloudConsentText": "بزن بریم سراغش پس — accepted the preceding free Colab recommendation",
+  "userStartedColabDownloadsAuthorized": true,
+  "outboundUploadFromArenaExecuted": false,
+  "cloudPilotActuallyExecuted": false
 }
