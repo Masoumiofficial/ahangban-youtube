@@ -35,3 +35,16 @@ Persian hook scores, word-overlap checks, or filler detection as linguistically 
 Nothing here authorizes publishing, posting replies, or changing the channel.
 Do not invent analytics or claim channel access. Request exports/transcripts when
 needed. The optional web app in `src/` supports user-authorized read-only OAuth. It does not grant the Arena agent access to browser sessions. Never inspect session tokens or credentials; ask the user to export a dashboard report and share it for analysis. See `docs/youtube-connection.fa.md`.
+
+## AhangBan permanent studio
+
+Read `studio/ahangban-signature/MASTER-SPEC.fa.md` and `environment-lock.json`
+before modifying studio imagery. The single master is pending user approval.
+Do not generate other camera views before explicit approval. Preserve the supplied
+logo and all twelve original portrait files, their identities, order and positions.
+Never generate substitute celebrity faces or redraw the logo. User requested one
+coherent master image and no alternative designs. A single 2D master is not a
+calibrated 3D scene; do not promise guaranteed geometric identity across new views.
+Main feminine voice stays voice-00; the user selected replacement masculine voice-02
+in this session. The previously exported MP4 still uses the earlier voice until
+explicitly re-rendered. Voice identifiers are session-specific.
