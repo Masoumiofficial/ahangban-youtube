@@ -91,3 +91,10 @@ layer/manifest hold the wardrobe-only correction. Shot 001 is retained for the
 historical video. `compose_hosts.py` defaults to black/002; `--wardrobe brown`
 reproduces the historical 001 only. Validate new work with `validate_hosts.py --shot 002`.
 No new own-voice video, lip sync or YouTube publication has happened in this phase.
+
+The current recording script is revision 2 in `content/004-chavoshi-own-voice/dialogue.fa.json`
+and `script.fa.md`: all 11 turns have a shorter conversational rewrite. Only the
+latest four entries in `recording-lines.fa.json` should be recorded by the user.
+The earlier recording handoff is superseded. Ava retains voice-00 but all seven
+turns require new synthesis; never pair rewritten captions with the old speech.
+No new audio/video has been generated for this rewrite.

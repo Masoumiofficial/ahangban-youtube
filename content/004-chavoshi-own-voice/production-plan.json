@@ -33,9 +33,16 @@
   "youtubePublished": false,
   "privacy": "Do not commit raw user voice to Git, include it in public archives, upload to a third-party clone service or train a voice model without separate user authorization.",
   "nextActions": [
-    "Receive and inspect original recording",
-    "Split four takes and lightly clean / level without pitch or identity changes",
-    "Replace male turns and recalculate all timings / captions",
-    "Render new review with shot 002; leave previous video unchanged"
-  ]
+    "Receive the user recording of revised male lines 02, 10, 11, 06",
+    "Generate seven revised Ava turns using the unchanged selected voice",
+    "Rebuild audio, captions and timing from revised dialogue; do not reuse old Ava narration",
+    "Render review with black-suit shot 002; leave historical video unchanged"
+  ],
+  "scriptRevision": "2 — natural conversational rewrite for both hosts",
+  "dialogueFile": "content/004-chavoshi-own-voice/dialogue.fa.json",
+  "dialogueSha256": "dadc4a0fe4ed56a3a312d934eb8507dca9ad35ed4f83395ba801f17323d13ec4",
+  "recordingLinesSha256": "5223bc6c5ef92c90b07a29da1d283873d18ebf8cb52d27bed47fc2b01d62b33c",
+  "previousRecordingScriptSuperseded": true,
+  "femaleNarrationStatus": "Same selected voice-00, but all seven rewritten turns require fresh synthesis; old audio no longer matches script",
+  "ownVoiceStatus": "Record only the revised four male lines, not the earlier handoff"
 }
