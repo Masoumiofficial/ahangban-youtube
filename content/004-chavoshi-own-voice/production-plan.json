@@ -1,0 +1,41 @@
+{
+  "status": "blocked_awaiting_user_audio_or_voice_method_decision",
+  "previousReviewVideo": "downloads/ahangban-chavoshi-studio-review.mp4",
+  "previousReviewMaleVoice": "voice-02, synthetic; unchanged historical video",
+  "requestedMaleVoice": "user_own_voice",
+  "recommendedMethod": "direct_recording",
+  "currentWardrobe": "black suit / black shirt",
+  "presenterComposite": "studio/ahangban-signature/productions/HOSTS-VIEW-002.png",
+  "presenterCompositeSha256": "8840148a415fc5b5d0e322822ce8c0dbaac8671298d5f0a8522ab19bc8e46050",
+  "femaleVoice": "voice-00 unchanged",
+  "speechOrder": [
+    "02",
+    "10",
+    "11",
+    "06"
+  ],
+  "privateInputDirectory": "rendered/user-voice/sajad/",
+  "inputOptions": [
+    "One original continuous recording of all four lines with pauses",
+    "Four separate recordings named 02, 10, 11, 06"
+  ],
+  "acceptedFormats": [
+    "wav",
+    "m4a",
+    "mp3",
+    "flac"
+  ],
+  "ownVoiceReceived": false,
+  "ownVoiceCloned": false,
+  "ownVoiceIntegrated": false,
+  "nextVideoRendered": false,
+  "lipSync": false,
+  "youtubePublished": false,
+  "privacy": "Do not commit raw user voice to Git, include it in public archives, upload to a third-party clone service or train a voice model without separate user authorization.",
+  "nextActions": [
+    "Receive and inspect original recording",
+    "Split four takes and lightly clean / level without pitch or identity changes",
+    "Replace male turns and recalculate all timings / captions",
+    "Render new review with shot 002; leave previous video unchanged"
+  ]
+}

@@ -10,6 +10,8 @@
 تصویر مجریان ثابت است و لب‌خوانی ندارد. هیچ انتشار در یوتیوب انجام نشده است.
 [مشخصات تولید و بررسی فنی](content/003-chavoshi-studio/README.fa.md)
 
+مرحلهٔ بعد: **صدای واقعی سجاد و لباس مشکی** — [راهنمای ضبط چهار جمله](content/004-chavoshi-own-voice/README.fa.md) · [پیش‌نمایش لباس مشکی](studio/ahangban-signature/productions/HOSTS-VIEW-002-preview.jpg). ضبط کاربر هنوز دریافت نشده است.
+
 ## نصب انجام‌شده
 
 هر ۱۱ اسکیل [YouTube Agent](https://github.com/Jakeschincariol/youtube-agent-skill)

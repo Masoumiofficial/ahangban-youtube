@@ -1,11 +1,13 @@
 """Validate the host composite without treating automated checks as face QA."""
 from pathlib import Path
-import json,hashlib
+import argparse,json,hashlib
 from PIL import Image,ImageChops
 ROOT=Path(__file__).resolve().parents[1]
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
- info=json.loads((ROOT/'productions/shot-manifest.json').read_text())
+ parser=argparse.ArgumentParser();parser.add_argument('--shot',choices=['001','002'],default='001');args=parser.parse_args()
+ manifest='shot-manifest-002.json' if args.shot=='002' else 'shot-manifest.json'
+ info=json.loads((ROOT/'productions'/manifest).read_text())
  env=json.loads((ROOT/'environment-lock.json').read_text())
  assert env['approvalStatus']=='approved' and env['additionalCameraViewsGenerated']==0
  assert sha(ROOT/'Presenters/character-lock.json')==env['presenterIdentityLockSha256']
@@ -26,5 +28,12 @@ def main():
  assert not alpha.crop((0,0,3840,850)).getbbox(), 'No room/logo edits'
  assert not alpha.crop((0,1500,3840,2160)).getbbox(), 'Desk/floor remain original'
  assert alpha.crop((1200,850,1900,1500)).getbbox() and alpha.crop((1950,850,2650,1500)).getbbox()
+ if args.shot=='002':
+  assert sha(ROOT/info['wardrobeEditSource'])==info['wardrobeEditSourceSha256']
+  previous=Image.open(ROOT/'productions/HOSTS-VIEW-001.png').convert('RGB')
+  # Sajad's face and all of Ava must remain pixel-identical to the approved composition.
+  assert output.crop((1450,885,1710,1125)).tobytes()==previous.crop((1450,885,1710,1125)).tobytes(), 'Face changed'
+  assert output.crop((1950,850,2750,1490)).tobytes()==previous.crop((1950,850,2750,1490)).tobytes(), 'Ava changed'
+  assert output.tobytes()!=previous.tobytes(), 'Wardrobe edit missing'
  print('PASS: same approved empty master; separate two-host layer; exact compositing; set unchanged outside silhouettes; left Sajad / right Ava. Face approval remains manual.')
 if __name__=='__main__':main()

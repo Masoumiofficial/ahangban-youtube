@@ -31,3 +31,11 @@ architecture plate, not native 4K image generation. A 2D reference does not guar
 
 User-provided source artwork belongs to its respective rights holders. No licensing
 or real-person identity verification is implied by registering these references.
+
+## Latest presenter request
+
+Sajad now wears the explicitly requested black suit and black shirt in
+[shot 002](productions/HOSTS-VIEW-002-preview.jpg). The original face and Ava remain
+pixel-identical to shot 001. Shot 001 and the historical video remain unchanged.
+The user wants their own voice for Sajad; [recording instructions and four lines](../../content/004-chavoshi-own-voice/README.fa.md)
+are ready. No own-voice recording has been received or cloned; the next video is blocked on audio.

@@ -1,6 +1,6 @@
 {
-  "version": "1.1",
-  "status": "User accepted the two-host layout, requested subtle realism refinement, and authorized video production; no YouTube publication authorized",
+  "version": "1.2",
+  "status": "User requested black suit as current wardrobe and own voice for Sajad. Wardrobe prepared as shot 002; own audio not yet provided.",
   "sourceRevision": "c19912b34753fb31294fbf21a97f4fc122d29019",
   "seatAssignment": {
     "perspective": "viewer / camera",
@@ -44,10 +44,9 @@
       "displayNameEn": "Sajad",
       "role": "AhangBan manager and male radio presenter, as stated by user",
       "primaryReference": "Presenters/Sajad/Sajad.png",
-      "voiceIdThisSession": "voice-02",
       "appearanceNotes": [
         "Preserve supplied face, glasses, dark styled hair and beard across shots.",
-        "Two wardrobe variants are supplied: brown jacket and tie in primary sheet, black suit/shirt in cinematic sheet. Keep each chosen wardrobe consistent within its episode; do not silently merge or redesign them."
+        "Black suit is now explicitly selected by user. Use the cinematic board for black suit/shirt only, not its gold logos or room. Keep clothing consistent within an episode."
       ],
       "references": [
         {
@@ -61,7 +60,18 @@
           "bytes": 2308918
         }
       ],
-      "wardrobePolicy": "Primary Sajad.png (brown jacket, black shirt and gold-toned tie) is the default wardrobe reference. Cinematic black suit is an alternate supplied reference, not an automatic wardrobe change; use it only when explicitly requested."
+      "wardrobePolicy": "User explicitly requested black suit. Current default for new productions: black suit and black shirt matching supplied cinematic sheet. Preserve original brown-board face identity. Brown outfit stays historical only; do not switch wardrobe automatically.",
+      "previousSyntheticVoiceIdThisSession": "voice-02",
+      "voiceIdThisSession": null,
+      "voiceSourcePolicy": {
+        "requestedSource": "user_own_voice",
+        "recommendedMethod": "direct_recording",
+        "status": "awaiting_user_audio_or_method_choice",
+        "noAutomaticSyntheticFallback": true,
+        "thirdPartyCloneConsent": null,
+        "rawRecordingStorage": "Private ignored rendered/user-voice/sajad/; never commit raw user recordings by default"
+      },
+      "wardrobeReference": "Presenters/Sajad/Sajad_ Cinematic Radio Presenter Identity Board.png"
     }
   ],
   "rules": [

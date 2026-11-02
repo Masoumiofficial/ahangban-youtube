@@ -2,7 +2,7 @@
 Coordinates describe the 1365x768 generation plate. No empty-master overwrite.
 """
 from pathlib import Path
-import hashlib, json
+import argparse, hashlib, json
 from PIL import Image, ImageDraw, ImageFilter, ImageChops, ImageEnhance
 ROOT=Path(__file__).resolve().parents[1]
 SIZE=(3840,2160)
@@ -13,9 +13,23 @@ POLYGONS={
 OFFSETS={'Sajad':(7,0),'Ava':(-25,0)}
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--wardrobe',choices=['brown','black'],default='black')
+ args=parser.parse_args();black=args.wardrobe=='black';shot='002' if black else '001'
+ prefix=f'HOSTS-VIEW-{shot}'
  base=Image.open(ROOT/'master/MASTER-VIEW-001.png').convert('RGBA')
  source=Image.open(ROOT/'working/HOSTS-VIEW-001-generated.png').convert('RGBA')
  assert source.size==(1365,768)
+ editpath=ROOT/'working/HOSTS-VIEW-001-black-suit-edit.png'
+ wardrobe=None
+ if black:
+  wardrobe=Image.open(editpath).convert('RGB').resize(source.size,Image.Resampling.LANCZOS)
+  wardrobe=ImageEnhance.Brightness(wardrobe).enhance(.94)
+  wardrobe=ImageEnhance.Contrast(wardrobe).enhance(.97)
+  wardrobe=ImageEnhance.Color(wardrobe).enhance(.96).convert('RGBA')
+  region=Image.new('L',source.size);ImageDraw.Draw(region).rectangle((460,401,658,522),fill=255)
+  region=region.filter(ImageFilter.GaussianBlur(.55))
+  # Explicitly forbid edits to the face or anything above the collar.
+  ImageDraw.Draw(region).rectangle((0,0,1365,400),fill=0)
  hosts=Image.new('RGBA',source.size)
  for name,points in POLYGONS.items():
   mask=Image.new('L',source.size);ImageDraw.Draw(mask).polygon(points,fill=255)
@@ -25,6 +39,7 @@ def main():
   person=ImageEnhance.Brightness(source.convert('RGB')).enhance(.94)
   person=ImageEnhance.Contrast(person).enhance(.97)
   person=ImageEnhance.Color(person).enhance(.96).convert('RGBA')
+  if black and name=='Sajad':person=Image.composite(wardrobe,person,region)
   person.putalpha(mask)
   box=mask.getbbox();person=person.crop(box)
   person=person.resize((round(person.width*.95),round(person.height*.95)),Image.Resampling.LANCZOS)
@@ -48,22 +63,24 @@ def main():
  hosts.putalpha(ImageChops.subtract(hosts.getchannel('A'),foreground))
  hosts=hosts.resize(SIZE,Image.Resampling.LANCZOS)
  out=ROOT/'productions';out.mkdir(exist_ok=True)
- hosts.save(out/'HOSTS-VIEW-001-layer.png')
+ hosts.save(out/(prefix+'-layer.png'))
  result=Image.alpha_composite(base,hosts).convert('RGB')
- result.save(out/'HOSTS-VIEW-001.png')
- result.resize((1600,900),Image.Resampling.LANCZOS).save(out/'HOSTS-VIEW-001-preview.jpg',quality=94)
+ result.save(out/(prefix+'.png'))
+ result.resize((1600,900),Image.Resampling.LANCZOS).save(out/(prefix+'-preview.jpg'),quality=94)
  # Pixel-exact base preservation outside presenter alpha, not a visual claim.
  delta=ImageChops.difference(result,base.convert('RGB'))
  outside=hosts.getchannel('A').point(lambda a:255 if a==0 else 0)
  assert not ImageChops.multiply(delta,Image.merge('RGB',(outside,)*3)).getbbox()
- info={'version':'1.1','status':'user_requested_realism_revision_for_video','realismAdjustments':{'seatedScale':0.95,'exposureMultiplier':0.94,'contrastMultiplier':0.97,'saturationMultiplier':0.96,'contactShadowOpacity':0.12},'camera':'Same approved frontal master; no new camera angle',
+ info={'version':'1.2' if black else '1.1','status':'user_requested_realism_revision_for_video','realismAdjustments':{'seatedScale':0.95,'exposureMultiplier':0.94,'contrastMultiplier':0.97,'saturationMultiplier':0.96,'contactShadowOpacity':0.12},'camera':'Same approved frontal master; no new camera angle',
   'base':'master/MASTER-VIEW-001.png','baseSha256':sha(ROOT/'master/MASTER-VIEW-001.png'),
   'seatingFromCamera':{'left':'Sajad','right':'Ava'},
   'source':'working/HOSTS-VIEW-001-generated.png','sourceSha256':sha(ROOT/'working/HOSTS-VIEW-001-generated.png'),
-  'layer':'productions/HOSTS-VIEW-001-layer.png','layerSha256':sha(out/'HOSTS-VIEW-001-layer.png'),
-  'composite':'productions/HOSTS-VIEW-001.png','compositeSha256':sha(out/'HOSTS-VIEW-001.png'),
+  'layer':'productions/'+prefix+'-layer.png','layerSha256':sha(out/(prefix+'-layer.png')),
+  'composite':'productions/'+prefix+'.png','compositeSha256':sha(out/(prefix+'.png')),
   'checks':['Empty master unchanged','Pixels outside presenter alpha exactly match approved master','Original equipment foreground restored'],
   'limitations':['AI-generated presenter appearance requires user review; not an identity-exact 3D rig','Presenter source generated at 1365x768 and resampled to 4K; not native 4K human detail','Static image only; no voice, lip sync, neon animation or video integration']}
- (out/'shot-manifest.json').write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n')
+ if black:info.update(wardrobe='User-requested black suit and black shirt; no gold tie',wardrobeEditSource=str(editpath.relative_to(ROOT)),wardrobeEditSourceSha256=sha(editpath),wardrobeEditBoundsOnNativePlate=[460,401,659,523],voiceStatus='Awaiting user own recording; do not treat voice-02 as current preference')
+ manifest='shot-manifest-002.json' if black else 'shot-manifest.json'
+ (out/manifest).write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n')
  print('PASS: hosts composited; approved set preserved outside silhouettes; base untouched.')
 if __name__=='__main__':main()

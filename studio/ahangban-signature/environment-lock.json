@@ -388,9 +388,12 @@
   },
   "voiceSelection": {
     "mainFemale": "voice-00",
-    "replacementMale": "voice-02",
-    "replacedMale": "voice-01",
-    "scope": "Session-specific voice identifiers; not guaranteed portable to other services/sessions."
+    "lastRenderedMale": "voice-02",
+    "historicalReplacedMale": "voice-01",
+    "requestedMale": "user_own_voice",
+    "requestedMaleStatus": "awaiting_user_audio_or_method_choice",
+    "noAutomaticSyntheticFallback": true,
+    "scope": "Tool voice IDs are session-specific; own user voice has not been received, cloned or integrated."
   },
   "immutableAfterApproval": [
     "room geometry",
@@ -412,7 +415,7 @@
   "additionalCameraViewsGenerated": 0,
   "limitation": "This is a 2D AI architecture concept with exact-source artwork compositing, not an engineered acoustic design or a reconstructed 3D scene. A locked 3D scene is needed for guaranteed geometric identity across new camera angles.",
   "presenterIdentityLock": "Presenters/character-lock.json",
-  "presenterIdentityLockSha256": "ebf5525890d924479e354b1ce5a7e6030aca0d8f5d916f88763c5a207e18e77a",
+  "presenterIdentityLockSha256": "551557f9183820c62d903cba28b65375df7c039e28c6a7202677ac70702080ef",
   "approvedMasterRevision": "c4ffec6",
   "approvalNote": "User confirmed the revised master with «عالیه» (typed with Latin keyboard as uhgdi)."
 }

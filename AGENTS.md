@@ -70,3 +70,24 @@ The new studio edition is documented under `content/003-chavoshi-studio/`: origi
 female speech, replacement male voice-02, five song samples, captions, waveform
 and soft six-second logo-glow animation. The hosts are STATIC: no lip sync, facial
 animation or new camera angle has been produced. No YouTube publication.
+
+
+### Current next edition: user own voice / black suit
+
+The user's latest request supersedes the previous synthetic male preference:
+Sajad should use the USER'S OWN VOICE. No user voice audio has been received yet.
+Do not call voice-02 the user's real voice or silently substitute a synthetic male
+in the next edition. Recommend direct recording of four existing male turns;
+`content/004-chavoshi-own-voice/` contains the exact scripts and pending plan.
+Cloning is not provided by the current speech tool. Do not upload audio to a
+third-party clone service, train a model or commit raw personal recordings without
+separate user authorization. Store future raw recordings under ignored
+`rendered/user-voice/sajad/`. The previous MP4 remains historical, synthetic voice-02.
+
+The user explicitly requested BLACK SUIT as the current default, based on the
+supplied cinematic reference (black shirt, no gold tie). Keep the original face
+identity, glasses, hair and beard. `productions/HOSTS-VIEW-002.png` and its separate
+layer/manifest hold the wardrobe-only correction. Shot 001 is retained for the
+historical video. `compose_hosts.py` defaults to black/002; `--wardrobe brown`
+reproduces the historical 001 only. Validate new work with `validate_hosts.py --shot 002`.
+No new own-voice video, lip sync or YouTube publication has happened in this phase.
