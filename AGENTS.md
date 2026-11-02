@@ -5,6 +5,28 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
+## CURRENT PUBLICATION request — local tool prepared, NOT executed on user's computer
+
+User explicitly authorized publishing the latest 009 YouTube episode to @AhangBan
+and expects automation through their existing Windows project. This is permission
+for that video on YouTube, NOT Instagram, other videos or account changes.
+The existing dashboard stays READ-ONLY. New standalone local publisher:
+`tools/youtube-publisher.mjs`, exact asset job, `scripts/publish-youtube.ps1`, and
+`docs/youtube-publishing.fa.md`. It reuses LOCAL .env OAuth client configuration
+only when the USER runs it, asks fresh Google consent for youtube.upload, checks
+channel/asset hashes, uploads resumably, sets metadata/thumbnail and reads actual
+privacy/processing. Explicit visibility and not-made-for-kids confirmation required.
+Do NOT inspect .env, browser sessions, OAuth tokens/codes or upload-session URLs.
+Do NOT claim remote control of user's Windows or ability to run its installed files
+from Arena. Arena has neither a YouTube upload connector nor Google network access.
+Mocked Node tests passed; no live Google/Windows/PowerShell publishing executed.
+No video has been uploaded by this agent. Existing delivery manifests' unpublished
+flags remain truthful generation-time status; a future LOCAL receipt must supply
+real video ID/status before any publication claim. Unaudited API projects may force
+private status; never bypass restrictions or label a pending/private result public.
+Content ID Checks are not certified by this API. Tokens stay in process memory;
+non-secret receipt goes into ignored rendered/. No duplicate upload on reruns.
+
 ## ACTIVE — 009 production with APPROVED voice06/07; testing pause lifted
 
 User listened to 008 and said «آره الان عااالی شد بزن بریم تدوین ویدیو ... تایم موزیک بیشتر بشه».
