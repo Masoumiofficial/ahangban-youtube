@@ -5,7 +5,8 @@ param(
     [string]$ProjectPath = (Get-Location).Path,
     [switch]$Public,
     [switch]$Private,
-    [switch]$NotMadeForKids
+    [switch]$NotMadeForKids,
+    [switch]$ResumeOnly
 )
 $ErrorActionPreference = 'Stop'
 
@@ -32,7 +33,7 @@ $files = @(
     @{
         Remote = 'tools/youtube-publisher.mjs'
         Name = 'youtube-publisher.mjs'
-        Sha256 = '3818c31e6a1ea299c2637b08107f642016098b8ade5984e817ae03a06b5e7634'
+        Sha256 = '21c55224dcac409d8a13b8105e34709c996cd0429d3d2577abc35ca6108a227f'
     },
     @{
         Remote = 'tools/youtube-publish-job.json'
@@ -60,6 +61,8 @@ if ($Public.IsPresent) { $visibility = '--public' }
 Write-Host 'Close the old dashboard window with Ctrl+C if it is still running.'
 Write-Host 'A browser will ask for NEW Google upload permission. Choose the AhangBan owner account.'
 Write-Host 'Do not send passwords, OAuth codes, tokens, or .env in chat.'
-& $node "--env-file=$envFile" $publisher --job $job --project $ProjectPath $visibility --not-made-for-kids
+$extraArguments = @()
+if ($ResumeOnly.IsPresent) { $extraArguments += '--resume-only' }
+& $node "--env-file=$envFile" $publisher --job $job --project $ProjectPath $visibility --not-made-for-kids @extraArguments
 if ($LASTEXITCODE -eq 2) { throw 'Upload status needs attention. Read the actual visibility/processing/thumbnail result above; do not create a duplicate upload.' }
 if ($LASTEXITCODE -ne 0) { throw "Publisher stopped (exit $LASTEXITCODE). Share only its error code, not credentials." }

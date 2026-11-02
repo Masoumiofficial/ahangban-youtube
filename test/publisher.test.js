@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, readFile, writeFile, rm, access } from 'node:fs/promises';
+import { mkdtemp, readFile, writeFile, rm, access, rename } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { createServer } from 'node:http';
-import { validateJob, makeMetadata, chooseChannel, downloadAsset, validateSessionUrl, acknowledgedOffset, resumableUpload, readReceipt, writeReceipt, checkReceipt, authorize, publish, SCOPES } from '../tools/youtube-publisher.mjs';
+import { validateJob, makeMetadata, chooseChannel, downloadAsset, validateSessionUrl, acknowledgedOffset, resumableUpload, readReceipt, writeReceipt, checkReceipt, authorize, publish, SCOPES, googleRequest, formatError, PublishError } from '../tools/youtube-publisher.mjs';
 const realJob = JSON.parse(await readFile(new URL('../tools/youtube-publish-job.json', import.meta.url), 'utf8'));
 // These IDs and credentials are SYNTHETIC fixtures, never sent to Google.
 const channelId = 'UC' + 'x'.repeat(22), videoId = 'AbCDeFGhI12';
@@ -135,7 +135,7 @@ test('localhost OAuth checks state and PKCE; upload scope requires fresh consent
   assert.equal(accessToken, 'SYNTHETIC_ACCESS');
 });
 
-test('Windows launcher pins the actual publisher and job bytes', async () => {
+test('Windows launcher pins actual bytes and forwards the explicit resume-only guard', async () => {
   const launcher = await readFile(new URL('../scripts/publish-youtube.ps1', import.meta.url), 'utf8');
   for (const path of ['tools/youtube-publisher.mjs', 'tools/youtube-publish-job.json']) {
     const data = await readFile(new URL('../' + path, import.meta.url)); assert.ok(launcher.includes(hash(data)));
@@ -148,4 +148,79 @@ test('successful public processing is confirmed only from actual status readback
   const fetchImpl = async url => String(url).includes('/channels?') ? json({ items: [{ id: channelId, snippet: { customUrl: '@ahangban' } }] }) : json({ items: [{ id: videoId, snippet: { channelId, title: f.job.title }, status: { privacyStatus: 'public', uploadStatus: 'processed' }, processingDetails: { processingStatus: 'succeeded' } }] });
   const result = await publish({ job: f.job, videoFile: f.video, thumbnailFile: f.thumbnail, accessToken: 'FAKE', privacy: 'public', notMadeForKids: true, receiptPath: f.receipt, fetchImpl });
   assert.equal(result.publicConfirmed, true);
+});
+
+test('resume-only with no saved video ID makes ZERO Google calls or uploads', async t => {
+  const f = await fixture(t); let calls = 0;
+  await assert.rejects(publish({ job: f.job, videoFile: null, thumbnailFile: f.thumbnail, accessToken: 'FAKE', privacy: 'public', notMadeForKids: true, receiptPath: f.receipt, resumeOnly: true,
+    fetchImpl: async () => { calls++; throw new Error('Must not be called'); } }), /resume_receipt_missing_no_upload_started/);
+  assert.equal(calls, 0);
+});
+test('reported incident: upload succeeds, thumbnail403, status network fails; keep ID and resume without duplicate', async t => {
+  const f = await fixture(t); let inserts = 0, statusAttempts = 0, resumed = false;
+  const logs = []; t.mock.method(console, 'log', (...args) => logs.push(args.join(' ')));
+  const fetchImpl = async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('/channels?')) return json({ items: [{ id: channelId, snippet: { customUrl: '@ahangban' } }] });
+    if (u.includes('uploadType=resumable&part=')) { inserts++; return new Response(null, { headers: { location: sessionUrl } }); }
+    if (u === sessionUrl) return json({ id: videoId });
+    if (u.includes('/videos?') && u.includes('snippet')) return json({ items: [{ id: videoId, snippet: { channelId, title: f.job.title }, status: { privacyStatus: 'public', uploadStatus: resumed ? 'processed' : 'uploaded' }, processingDetails: { processingStatus: resumed ? 'succeeded' : 'processing' } }] });
+    if (u.includes('/thumbnails/set?')) return resumed ? json({ items: [] }) : json({ error: { errors: [{ reason: 'forbidden' }], message: 'DO_NOT_LOG_SECRET' } }, 403);
+    if (u.includes('/videos?')) { statusAttempts++; throw Object.assign(new TypeError('fetch failed SECRET_URL'), { cause: { code: 'ECONNRESET' } }); }
+    throw new Error('Unexpected fixture request');
+  };
+  const options = { job: f.job, videoFile: f.video, thumbnailFile: f.thumbnail, accessToken: 'DO_NOT_LOG_TOKEN', privacy: 'public', notMadeForKids: true, receiptPath: f.receipt, fetchImpl, sleep: async () => {} };
+  const first = await publish(options);
+  assert.equal(first.statusPending, true); assert.equal(first.publicConfirmed, false); assert.equal(first.videoId, videoId);
+  assert.equal(statusAttempts, 3); assert.equal(inserts, 1);
+  const receipt = await readReceipt(f.receipt);
+  assert.equal(receipt.videoId, videoId); assert.equal(receipt.thumbnailHttpStatus, 403);
+  assert.match(receipt.thumbnailError, /forbidden/); assert.match(receipt.lastStatusError, /ECONNRESET/);
+  assert.ok(logs.findIndex(s => s.startsWith('Video:')) < logs.findIndex(s => s.includes('Custom thumbnail pending')));
+  assert.doesNotMatch(logs.join('\n'), /DO_NOT_LOG|SECRET_URL/);
+  resumed = true;
+  const second = await publish({ ...options, videoFile: null, resumeOnly: true });
+  assert.equal(second.publicConfirmed, true); assert.equal(second.thumbnailSet, true); assert.equal(inserts, 1);
+  assert.equal((await readReceipt(f.receipt)).lastStatusError, undefined);
+});
+test('already processed identity response avoids unnecessary status request after thumbnail rejection', async t => {
+  const f = await fixture(t); await writeReceipt(f.receipt, { jobId: f.job.id, videoSha256: f.job.assets.video.sha256, channelId, videoId, requestedPrivacy: 'public', state: 'uploaded' });
+  let videoReads = 0;
+  const fetchImpl = async url => {
+    const u = String(url);
+    if (u.includes('/channels?')) return json({ items: [{ id: channelId, snippet: { customUrl: '@ahangban' } }] });
+    if (u.includes('/thumbnails/set?')) return json({ error: { errors: [{ reason: 'insufficientPermissions' }] } }, 403);
+    if (u.includes('/videos?')) { videoReads++; return json({ items: [{ id: videoId, snippet: { channelId, title: f.job.title }, status: { privacyStatus: 'public', uploadStatus: 'processed' } }] }); }
+    assert.fail('No upload allowed');
+  };
+  const result = await publish({ job: f.job, thumbnailFile: f.thumbnail, accessToken: 'FAKE', privacy: 'public', notMadeForKids: true, receiptPath: f.receipt, fetchImpl, resumeOnly: true });
+  assert.equal(result.publicConfirmed, true); assert.equal(result.thumbnailSet, false); assert.equal(videoReads, 1);
+});
+test('safe Google diagnostics never expose raw errors, messages, tokens or request URLs', async () => {
+  assert.equal(formatError(new Error('https://SECRET?access_token=SECRET')), 'local_or_network_error');
+  assert.equal(formatError(Object.assign(new Error('secret Windows path'), { code: 'EPERM' })), 'local_or_network_error (EPERM)');
+  let calls = 0;
+  await assert.rejects(googleRequest('https://www.googleapis.com/FAKE', {}, { stage: 'status_check', fetchImpl: async () => { calls++; throw Object.assign(new Error('SECRET_TOKEN'), { cause: { code: 'UND_ERR_CONNECT_TIMEOUT' } }); }, sleep: async () => {} }), e => {
+    assert.equal(formatError(e), 'status_check_network_error (UND_ERR_CONNECT_TIMEOUT)'); return true;
+  });
+  assert.equal(calls, 3);
+  await assert.rejects(googleRequest('https://www.googleapis.com/FAKE', {}, { stage: 'thumbnail_set_failed', fetchImpl: async () => json({ error: { errors: [{ reason: 'forbidden' }], message: 'SECRET_TOKEN' } }, 403) }), e => {
+    assert.equal(formatError(e), 'thumbnail_set_failed (HTTP 403, forbidden)'); assert.doesNotMatch(formatError(e), /SECRET/); return true;
+  });
+});
+test('Windows receipt replacement retries EPERM without deleting the saved video ID', async t => {
+  const f = await fixture(t); await writeReceipt(f.receipt, { videoId, state: 'uploaded' }); let attempts = 0;
+  await writeReceipt(f.receipt, { videoId, state: 'status_checked' }, { renameImpl: async (from, to) => {
+    attempts++; assert.equal((await readReceipt(f.receipt)).videoId, videoId);
+    if (attempts < 3) throw Object.assign(new Error('Windows scanner busy'), { code: 'EPERM' });
+    return rename(from, to);
+  }, sleep: async () => {} });
+  assert.equal(attempts, 3); assert.equal((await readReceipt(f.receipt)).state, 'status_checked');
+});
+test('permanent receipt replacement failure preserves old receipt and reports only safe code', async t => {
+  const f = await fixture(t); await writeReceipt(f.receipt, { videoId, state: 'uploaded' });
+  await assert.rejects(writeReceipt(f.receipt, { videoId, state: 'status_checked' }, { renameImpl: async () => { throw Object.assign(new Error('SECRET_PATH'), { code: 'EPERM' }); }, sleep: async () => {} }), e => {
+    assert.equal(formatError(e), 'receipt_write_failed (EPERM)'); return true;
+  });
+  assert.equal((await readReceipt(f.receipt)).videoId, videoId); assert.equal((await readReceipt(f.receipt)).state, 'uploaded');
 });

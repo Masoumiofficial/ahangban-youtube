@@ -5,27 +5,31 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## CURRENT PUBLICATION request — local tool prepared, NOT executed on user's computer
+## CURRENT PUBLICATION recovery — user uploaded video; public status UNKNOWN
 
-User explicitly authorized publishing the latest 009 YouTube episode to @AhangBan
-and expects automation through their existing Windows project. This is permission
-for that video on YouTube, NOT Instagram, other videos or account changes.
-The existing dashboard stays READ-ONLY. New standalone local publisher:
-`tools/youtube-publisher.mjs`, exact asset job, `scripts/publish-youtube.ps1`, and
-`docs/youtube-publishing.fa.md`. It reuses LOCAL .env OAuth client configuration
-only when the USER runs it, asks fresh Google consent for youtube.upload, checks
-channel/asset hashes, uploads resumably, sets metadata/thumbnail and reads actual
-privacy/processing. Explicit visibility and not-made-for-kids confirmation required.
-Do NOT inspect .env, browser sessions, OAuth tokens/codes or upload-session URLs.
-Do NOT claim remote control of user's Windows or ability to run its installed files
-from Arena. Arena has neither a YouTube upload connector nor Google network access.
-Mocked Node tests passed; no live Google/Windows/PowerShell publishing executed.
-No video has been uploaded by this agent. Existing delivery manifests' unpublished
-flags remain truthful generation-time status; a future LOCAL receipt must supply
-real video ID/status before any publication claim. Unaudited API projects may force
-private status; never bypass restrictions or label a pending/private result public.
-Content ID Checks are not certified by this API. Tokens stay in process memory;
-non-secret receipt goes into ignored rendered/. No duplicate upload on reruns.
+User ran the local tool successfully through @AhangBan channel verification and
+video upload. Then custom thumbnail was rejected and later work failed with the
+old generic local_or_network_error. The log proves upload completion, NOT public
+visibility or a specific network/Windows/thumbnail cause. No actual video ID is
+provided in chat yet. Do NOT claim publication or ask for credentials.
+Preserve the existing local receipt. Recovery command MUST use -ResumeOnly
+(--resume-only) in the SAME project folder. It refuses a missing saved video ID
+and never creates a new upload; it skips video download/resending. Updated tool
+prints saved/uploaded Video+Studio links early, retries status reads, provides
+allowlisted HTTP/Google/network/filesystem diagnostics, keeps status failures
+pending rather than claiming failure of the upload, and retries Windows receipt
+replacement without deleting the old receipt. Thumbnail failure remains separate.
+The exact root cause of the user's generic error is not established. New regression
+tests are mocked/local, not proof that the fix ran on user's Windows. 44 Node tests
+pass (21 publisher, 23 dashboard/UI). Wait for updated status/real video link.
+The dashboard remains read-only; local publisher explicitly uses fresh OAuth upload
+consent only on USER computer. Never read .env/tokens/cookies or request them in chat.
+YouTube publication is authorized for latest009 only; Instagram/account changes are
+not. No remote control of Windows or Google network/connector access exists in Arena.
+Old delivery manifests describe generation time; do not turn published flags true
+without real evidence. API may force private uploads; cannot bypass audit/restrictions.
+Content ID Checks are not certified. Tokens stay in process memory only; the
+non-secret receipt belongs in ignored rendered/, never in Git.
 
 ## ACTIVE — 009 production with APPROVED voice06/07; testing pause lifted
 

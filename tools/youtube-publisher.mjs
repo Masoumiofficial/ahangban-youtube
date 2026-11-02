@@ -18,7 +18,7 @@ const CHUNK = 8 * 1024 * 1024;
 const pause = ms => new Promise(r => setTimeout(r, ms));
 const equal = (a, b) => typeof a === 'string' && typeof b === 'string' && Buffer.byteLength(a) === Buffer.byteLength(b) && timingSafeEqual(Buffer.from(a), Buffer.from(b));
 export class PublishError extends Error {
-  constructor(code, status = null) { super(code); this.name = 'PublishError'; this.code = code; this.status = status; }
+  constructor(code, status = null, detail = null) { super(code); this.name = 'PublishError'; this.code = code; this.status = status; this.detail = detail; }
 }
 function check(condition, code) { if (!condition) throw new PublishError(code); }
 export function validateJob(job) {
@@ -48,9 +48,51 @@ export function chooseChannel(body, handle) {
   check(body.items?.length === 1 && channels.length === 1 && /^[A-Za-z0-9_-]{20,40}$/.test(channels[0].id), 'wrong_or_missing_ahangban_channel');
   return channels[0];
 }
+const SAFE_CODES = new Set(['EPERM', 'EACCES', 'EBUSY', 'ENOENT', 'ENOSPC', 'EIO', 'ECONNRESET', 'ECONNREFUSED', 'ENOTFOUND', 'EAI_AGAIN', 'ETIMEDOUT', 'ENETUNREACH', 'UND_ERR_CONNECT_TIMEOUT', 'UND_ERR_HEADERS_TIMEOUT', 'UND_ERR_BODY_TIMEOUT', 'ABORT_ERR', 'TIMEOUT']);
+const GOOGLE_REASONS = new Set(['forbidden', 'insufficientPermissions', 'quotaExceeded', 'dailyLimitExceeded', 'uploadLimitExceeded', 'invalidImage', 'invalidValue', 'authError', 'youtubeSignupRequired', 'channelNotFound', 'videoNotFound', 'rateLimitExceeded', 'backendError', 'accessNotConfigured', 'accountDelegationForbidden', 'badRequest', 'invalidParameter', 'thumbnailTooLarge']);
+function safeCode(error) {
+  const code = error?.cause?.code || error?.code;
+  if (SAFE_CODES.has(code)) return code;
+  if (error?.name === 'TimeoutError' || error?.name === 'AbortError') return 'TIMEOUT';
+  return null;
+}
+export function formatError(error) {
+  const code = error instanceof PublishError ? error.code : 'local_or_network_error';
+  const status = error instanceof PublishError && Number.isInteger(error.status) ? `HTTP ${error.status}` : null;
+  const candidate = error instanceof PublishError ? error.detail : safeCode(error);
+  const detail = SAFE_CODES.has(candidate) || GOOGLE_REASONS.has(candidate) ? candidate : null;
+  return code + ([status, detail].filter(Boolean).length ? ` (${[status, detail].filter(Boolean).join(', ')})` : '');
+}
+async function googleReason(response) {
+  try {
+    const body = await response.json(); const reason = body.error?.errors?.[0]?.reason;
+    return GOOGLE_REASONS.has(reason) ? reason : null;
+  } catch { return null; }
+}
 async function checkedJson(response, stage) {
-  if (!response.ok) throw new PublishError(stage, response.status);
+  if (!response.ok) throw new PublishError(stage, response.status, await googleReason(response));
   try { return await response.json(); } catch { throw new PublishError(`${stage}_invalid_response`); }
+}
+export async function googleRequest(url, options, { stage, fetchImpl = fetch, sleep = pause, attempts = 3 }) {
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    let response;
+    try { response = await fetchImpl(url, { ...options, redirect: 'error', signal: AbortSignal.timeout(30_000) }); }
+    catch (error) {
+      if (attempt === attempts) throw new PublishError(`${stage}_network_error`, null, safeCode(error));
+      await sleep(500 * 2 ** (attempt - 1)); continue;
+    }
+    if (response.ok) return response;
+    if ([408, 429, 500, 502, 503, 504].includes(response.status) && attempt < attempts) {
+      await response.body?.cancel(); await sleep(500 * 2 ** (attempt - 1)); continue;
+    }
+    throw new PublishError(stage, response.status, await googleReason(response));
+  }
+}
+function showVideoLinks(id) {
+  check(/^[A-Za-z0-9_-]{11}$/.test(id), 'invalid_video_id');
+  console.log(`Video: https://www.youtube.com/watch?v=${id}`);
+  console.log(`Studio: https://studio.youtube.com/video/${id}/edit`);
+  console.log('A saved video ID confirms an upload, NOT its current public visibility or copyright clearance.');
 }
 export async function downloadAsset(job, kind, directory, fetchImpl = fetch) {
   validateJob(job); await mkdir(directory, { recursive: true });
@@ -117,10 +159,20 @@ export async function resumableUpload({ file, bytes, sessionUrl, accessToken, fe
   } finally { await f.close(); }
 }
 export async function readReceipt(path) { try { return JSON.parse(await readFile(path, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return null; throw new PublishError('invalid_local_receipt'); } }
-export async function writeReceipt(path, receipt) {
-  // Allowlist only NON-SECRET fields. No token, OAuth code, auth/session URL or credential.
-  const safe = Object.fromEntries(['jobId', 'videoSha256', 'channelId', 'requestedPrivacy', 'videoId', 'state', 'thumbnailSet', 'actualPrivacy', 'processingStatus', 'updatedAt'].filter(k => receipt[k] !== undefined).map(k => [k, receipt[k]]));
-  await mkdir(resolve(path, '..'), { recursive: true }); await (await import('node:fs/promises')).writeFile(path + '.part', JSON.stringify(safe, null, 2) + '\n'); await rename(path + '.part', path);
+export async function writeReceipt(path, receipt, { renameImpl = rename, sleep = pause } = {}) {
+  // Allowlist only NON-SECRET fields. Never remove the old receipt if replacement fails.
+  const safe = Object.fromEntries(['jobId', 'videoSha256', 'channelId', 'requestedPrivacy', 'videoId', 'state', 'thumbnailSet', 'thumbnailHttpStatus', 'thumbnailError', 'lastStatusError', 'actualPrivacy', 'processingStatus', 'updatedAt'].filter(k => receipt[k] !== undefined).map(k => [k, receipt[k]]));
+  try {
+    await mkdir(resolve(path, '..'), { recursive: true });
+    await (await import('node:fs/promises')).writeFile(path + '.part', JSON.stringify(safe, null, 2) + '\n');
+    for (let i = 0; ; i++) {
+      try { await renameImpl(path + '.part', path); break; }
+      catch (error) {
+        if (!['EPERM', 'EACCES', 'EBUSY'].includes(error.code) || i >= 3) throw error;
+        await sleep(100 * (i + 1));
+      }
+    }
+  } catch (error) { throw new PublishError('receipt_write_failed', null, safeCode(error)); }
 }
 export function checkReceipt(receipt, job, channelId) {
   if (!receipt) return;
@@ -173,50 +225,75 @@ function openBrowserDefault(url) {
   const command = process.platform === 'win32' ? ['rundll32.exe', ['url.dll,FileProtocolHandler', url]] : process.platform === 'darwin' ? ['open', [url]] : ['xdg-open', [url]];
   return new Promise((resolveOpen, reject) => { const child = spawn(command[0], command[1], { stdio: 'ignore', windowsHide: true }); child.once('error', reject); child.once('spawn', () => { child.unref(); resolveOpen(); }); });
 }
-export async function publish({ job, videoFile, thumbnailFile, accessToken, privacy, notMadeForKids, receiptPath, fetchImpl = fetch, sleep = pause, processingTimeout = 180_000 }) {
+export async function publish({ job, videoFile, thumbnailFile, accessToken, privacy, notMadeForKids, receiptPath, fetchImpl = fetch, sleep = pause, processingTimeout = 180_000, resumeOnly = false }) {
   const metadata = makeMetadata(job, privacy, notMadeForKids);
+  let receipt = await readReceipt(receiptPath);
+  if (resumeOnly) check(receipt?.videoId, 'resume_receipt_missing_no_upload_started');
+  if (receipt?.videoId) {
+    checkReceipt(receipt, job, receipt.channelId);
+    console.log('Saved upload found. No new video upload will be started.'); showVideoLinks(receipt.videoId);
+  }
   const get = async (path, parameters) => {
     const u = new URL(path, API); u.search = new URLSearchParams(parameters);
-    return checkedJson(await fetchImpl(u, { headers: { Authorization: `Bearer ${accessToken}` }, signal: AbortSignal.timeout(30_000) }), 'youtube_read_failed');
+    const stage = path === 'channels' ? 'channel_lookup_failed' : parameters.part.includes('snippet') ? 'video_identity_lookup_failed' : 'video_status_lookup_failed';
+    const response = await googleRequest(u, { headers: { Authorization: `Bearer ${accessToken}` } }, { stage, fetchImpl, sleep });
+    return checkedJson(response, stage);
   };
   const channel = chooseChannel(await get('channels', { part: 'snippet', mine: 'true', maxResults: '50' }), job.expectedChannelHandle);
   console.log(`Verified channel: ${job.expectedChannelHandle}. Requested visibility: ${privacy}.`);
-  let receipt = await readReceipt(receiptPath); checkReceipt(receipt, job, channel.id);
+  checkReceipt(receipt, job, channel.id);
   if (receipt?.videoId) check(receipt.requestedPrivacy === privacy, 'existing_video_visibility_differs_no_duplicate_upload');
   if (!receipt?.videoId) {
+    check(!resumeOnly, 'resume_receipt_missing_no_upload_started');
     const init = await fetchImpl('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status&notifySubscribers=true', {
       method: 'POST', signal: AbortSignal.timeout(30_000), headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'application/json; charset=utf-8',
         'X-Upload-Content-Type': 'video/mp4', 'X-Upload-Content-Length': String(job.assets.video.bytes) }, body: JSON.stringify(metadata) });
-    check(init.ok, 'youtube_upload_initialization_failed'); const sessionUrl = validateSessionUrl(init.headers.get('location'));
+    if (!init.ok) throw new PublishError('youtube_upload_initialization_failed', init.status, await googleReason(init));
+    const sessionUrl = validateSessionUrl(init.headers.get('location'));
     receipt = { jobId: job.id, videoSha256: job.assets.video.sha256, channelId: channel.id, requestedPrivacy: privacy, state: 'upload_started', updatedAt: new Date().toISOString() };
     await writeReceipt(receiptPath, receipt); console.log('Uploading the hash-verified final video. Do not close this window.');
     const result = await resumableUpload({ file: videoFile, bytes: job.assets.video.bytes, sessionUrl, accessToken, fetchImpl, sleep });
-    receipt = { ...receipt, videoId: result.id, state: 'uploaded', updatedAt: new Date().toISOString() }; await writeReceipt(receiptPath, receipt);
-  } else { console.log('Existing upload found in local receipt; no duplicate video will be created.'); }
-  const id = receipt.videoId; check(/^[A-Za-z0-9_-]{11}$/.test(id), 'invalid_video_id');
-  const owned = (await get('videos', { part: 'snippet,status', id })).items?.[0];
+    receipt = { ...receipt, videoId: result.id, state: 'uploaded', updatedAt: new Date().toISOString() };
+    // Print the irreversible successful result BEFORE any later disk/status/thumbnail failure.
+    showVideoLinks(receipt.videoId); await writeReceipt(receiptPath, receipt);
+  } else { console.log('Continuing the existing upload; metadata and video bytes will not be resent.'); }
+  const id = receipt.videoId;
+  const pendingStatus = async error => {
+    receipt.state = 'uploaded_status_pending'; receipt.lastStatusError = formatError(error); receipt.updatedAt = new Date().toISOString();
+    console.log(`Existing upload retained; status check needs attention: ${formatError(error)}.`);
+    console.log('Public visibility is NOT confirmed. Open the Studio link above; do not upload another copy.');
+    await writeReceipt(receiptPath, receipt);
+    return { videoId: id, privacy: receipt.actualPrivacy, processing: receipt.processingStatus || 'unknown', publicConfirmed: false, thumbnailSet: !!receipt.thumbnailSet, statusPending: true };
+  };
+  let owned;
+  try { owned = (await get('videos', { part: 'snippet,status,processingDetails', id })).items?.[0]; }
+  catch (error) { return pendingStatus(error); }
   check(owned?.id === id && owned.snippet?.channelId === channel.id && owned.snippet?.title === job.title, 'uploaded_video_identity_mismatch');
   if (!receipt.thumbnailSet) {
-    let response;
-    try { response = await fetchImpl(`https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=${id}&uploadType=media`, {
-      method: 'POST', signal: AbortSignal.timeout(60_000), headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'image/jpeg' }, body: await readFile(thumbnailFile) }); }
-    catch { response = null; }
-    if (response?.ok) { receipt.thumbnailSet = true; await writeReceipt(receiptPath, receipt); }
-    else console.log('Video uploaded, but custom thumbnail was not accepted. Channel verification/permissions may be required; rerunning retries the thumbnail, not the video.');
+    try {
+      const response = await googleRequest(`https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=${id}&uploadType=media`, {
+        method: 'POST', headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'image/jpeg' }, body: await readFile(thumbnailFile) }, { stage: 'thumbnail_set_failed', fetchImpl, sleep });
+      if (response.ok) { receipt.thumbnailSet = true; delete receipt.thumbnailHttpStatus; delete receipt.thumbnailError; }
+    } catch (error) {
+      receipt.thumbnailSet = false; receipt.thumbnailHttpStatus = error instanceof PublishError ? error.status : null; receipt.thumbnailError = formatError(error);
+      console.log(`Custom thumbnail pending: ${formatError(error)}. Video upload is retained; status check continues.`);
+      if (error.status === 403) console.log('403 alone does not identify the cause. Check Studio channel feature eligibility/custom-thumbnail access and Google permissions; do not change/delete the video.');
+    }
+    await writeReceipt(receiptPath, receipt);
   }
-  const deadline = Date.now() + processingTimeout; let video;
-  do {
-    video = (await get('videos', { part: 'status,processingDetails', id })).items?.[0]; check(video?.id === id, 'uploaded_video_status_unavailable');
+  const deadline = Date.now() + processingTimeout; let video = owned;
+  while (true) {
     receipt.actualPrivacy = video.status?.privacyStatus; receipt.processingStatus = video.processingDetails?.processingStatus || video.status?.uploadStatus;
-    receipt.state = 'status_checked'; receipt.updatedAt = new Date().toISOString(); await writeReceipt(receiptPath, receipt);
+    receipt.state = 'status_checked'; delete receipt.lastStatusError; receipt.updatedAt = new Date().toISOString(); await writeReceipt(receiptPath, receipt);
     if (['failed', 'terminated'].includes(receipt.processingStatus) || ['failed', 'rejected', 'deleted'].includes(video.status?.uploadStatus)) throw new PublishError('youtube_processing_or_policy_rejection');
-    if (receipt.processingStatus === 'succeeded' || video.status?.uploadStatus === 'processed') break;
-    if (Date.now() >= deadline) break; await sleep(8000);
-  } while (true);
+    if (receipt.processingStatus === 'succeeded' || video.status?.uploadStatus === 'processed' || Date.now() >= deadline) break;
+    await sleep(8000);
+    try {
+      video = (await get('videos', { part: 'status,processingDetails', id })).items?.[0]; check(video?.id === id, 'uploaded_video_status_unavailable');
+    } catch (error) { return pendingStatus(error); }
+  }
   const processed = receipt.processingStatus === 'succeeded' || video.status?.uploadStatus === 'processed';
   const publicConfirmed = processed && receipt.actualPrivacy === 'public';
-  console.log(`Video: https://www.youtube.com/watch?v=${id}`);
-  console.log(`Studio: https://studio.youtube.com/video/${id}/edit`);
   if (publicConfirmed) console.log('PUBLIC status and successful processing confirmed by YouTube API.');
   else if (privacy === 'public' && receipt.actualPrivacy !== 'public') console.log('NOT confirmed public. YouTube reports a non-public status. An unaudited API project or account restriction may force private uploads; this tool cannot bypass it.');
   else console.log(`Actual visibility: ${receipt.actualPrivacy || 'unknown'}; processing: ${receipt.processingStatus || 'pending'}.`);
@@ -224,7 +301,7 @@ export async function publish({ job, videoFile, thumbnailFile, accessToken, priv
   return { videoId: id, privacy: receipt.actualPrivacy, processing: receipt.processingStatus, publicConfirmed, thumbnailSet: !!receipt.thumbnailSet };
 }
 async function main() {
-  const { values } = parseArgs({ options: { job: { type: 'string' }, project: { type: 'string' }, public: { type: 'boolean' }, private: { type: 'boolean' }, 'not-made-for-kids': { type: 'boolean' } } });
+  const { values } = parseArgs({ options: { job: { type: 'string' }, project: { type: 'string' }, public: { type: 'boolean' }, private: { type: 'boolean' }, 'not-made-for-kids': { type: 'boolean' }, 'resume-only': { type: 'boolean' } } });
   check(Boolean(values.public) !== Boolean(values.private), 'choose_public_or_private_explicitly');
   check(values['not-made-for-kids'], 'explicit_audience_confirmation_required');
   const project = resolve(values.project || process.cwd()), work = join(project, 'rendered', 'youtube-publisher'); await mkdir(work, { recursive: true });
@@ -233,19 +310,25 @@ async function main() {
   try { lock = await open(join(work, 'publisher.lock'), 'wx'); }
   catch { throw new PublishError('publisher_already_running_or_stale_lock'); }
   try {
-    console.log('AhangBan 009: title, description/chapters, original final video and thumbnail will be uploaded.');
+    if (values['resume-only']) {
+      const existing = await readReceipt(join(work, `${job.id}-receipt.json`));
+      check(existing?.videoId, 'resume_receipt_missing_no_upload_started');
+      checkReceipt(existing, job, existing.channelId); showVideoLinks(existing.videoId);
+      console.log('RESUME ONLY: creating a new upload is disabled.');
+    }
+    console.log('AhangBan 009: existing upload will be continued when a receipt is present.');
     console.log(`Requested: ${values.public ? 'PUBLIC' : 'PRIVATE'}; audience: NOT made for kids; synthetic-content disclosure: YES.`);
     console.log('No Content ID clearance is promised. Existing dashboard must be closed to free its OAuth port.');
-    const videoFile = await downloadAsset(job, 'video', work), thumbnailFile = await downloadAsset(job, 'thumbnail', work);
+    const videoFile = values['resume-only'] ? null : await downloadAsset(job, 'video', work), thumbnailFile = await downloadAsset(job, 'thumbnail', work);
     const accessToken = await authorize({ clientId: process.env.GOOGLE_CLIENT_ID, clientSecret: process.env.GOOGLE_CLIENT_SECRET, baseUrl: process.env.APP_BASE_URL });
-    const result = await publish({ job, videoFile, thumbnailFile, accessToken, privacy: values.public ? 'public' : 'private', notMadeForKids: true, receiptPath: join(work, `${job.id}-receipt.json`) });
+    const result = await publish({ job, videoFile, thumbnailFile, accessToken, privacy: values.public ? 'public' : 'private', notMadeForKids: true, receiptPath: join(work, `${job.id}-receipt.json`), resumeOnly: !!values['resume-only'] });
     if ((values.public && !result.publicConfirmed) || !result.thumbnailSet) process.exitCode = 2;
   } finally { await lock.close(); await rm(join(work, 'publisher.lock'), { force: true }); }
 }
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   main().catch(e => {
     // Never print raw fetch/Google exceptions: these can contain secret request URLs.
-    console.error(`Publisher stopped: ${e instanceof PublishError ? e.code : 'local_or_network_error'}${e instanceof PublishError && e.status ? ` (HTTP ${e.status})` : ''}`);
+    console.error(`Publisher stopped: ${formatError(e)}`);
     console.error('No public-release claim is made. Keep credentials private; share only this error code or the non-secret receipt.'); process.exitCode = 1;
   });
 }
