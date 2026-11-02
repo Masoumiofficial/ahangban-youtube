@@ -4,7 +4,9 @@
 
 One empty studio with **two host chairs** and **twelve portraits, read right-to-left
 within each of two rows**. The illuminated logo panel is intentionally **blank**.
-No new camera angle or in-studio presenter image has been generated.
+No new camera angle has been generated. The first same-camera Ava/Sajad composite
+is available in [productions](productions/README.fa.md), pending user visual review.
+The approved empty master remains untouched.
 
 ![Updated master: RTL gallery, blank logo panel, two chairs](master/MASTER-VIEW-001-preview.jpg)
 

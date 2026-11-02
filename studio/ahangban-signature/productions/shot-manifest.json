@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "status": "pending_user_review",
+  "camera": "Same approved frontal master; no new camera angle",
+  "base": "master/MASTER-VIEW-001.png",
+  "baseSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
+  "seatingFromCamera": {
+    "left": "Sajad",
+    "right": "Ava"
+  },
+  "source": "working/HOSTS-VIEW-001-generated.png",
+  "sourceSha256": "f234631d32297cc6cb87f240687a61986eeef5fbf2e994b8f418a98fb7785cae",
+  "layer": "productions/HOSTS-VIEW-001-layer.png",
+  "layerSha256": "899a239bfa8820bf697460cc5dafbe6994c84b1ccf6eb994e6a498ab4ae95fff",
+  "composite": "productions/HOSTS-VIEW-001.png",
+  "compositeSha256": "7f0618a3469de4a4d21634086f89bb367f4d268f9fcb3dee9b3748297ca0eee5",
+  "checks": [
+    "Empty master unchanged",
+    "Pixels outside presenter alpha exactly match approved master",
+    "Original equipment foreground restored"
+  ],
+  "limitations": [
+    "AI-generated presenter appearance requires user review; not an identity-exact 3D rig",
+    "Presenter source generated at 1365x768 and resampled to 4K; not native 4K human detail",
+    "Static image only; no voice, lip sync, neon animation or video integration"
+  ]
+}

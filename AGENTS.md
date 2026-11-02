@@ -39,7 +39,7 @@ needed. The optional web app in `src/` supports user-authorized read-only OAuth.
 ## AhangBan permanent studio
 
 Read `studio/ahangban-signature/MASTER-SPEC.fa.md` and `environment-lock.json`
-before modifying studio imagery. The single master is pending user approval.
+before modifying studio imagery. The single empty master v1.2 is approved; do not overwrite or redesign it.
 Do not generate other camera views before explicit approval. Preserve the supplied
 logo and all twelve original portrait files, their identities, order and positions.
 Never generate substitute celebrity faces or redraw the logo. User requested one
@@ -60,4 +60,7 @@ Ava and Sajad are the two permanent user-designated presenters. Read
 production. Preserve their supplied identities and selected voices; do not adopt
 fictional gold logos or room designs from their character boards. Sajad's manager
 role is supplied by the user. No real-person identification is inferred.
-The base remains empty; left/right seat assignment is not yet chosen.
+The base remains empty. User-approved seating from the camera: Sajad LEFT, Ava RIGHT.
+The first same-camera two-host composite is in `productions/HOSTS-VIEW-001.png`
+with a separate RGBA presenter layer and shot manifest; it awaits user visual review.
+No new camera angle, animated neon or talking-head video has been produced.
