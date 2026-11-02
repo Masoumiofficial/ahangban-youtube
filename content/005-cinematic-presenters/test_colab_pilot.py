@@ -1,4 +1,4 @@
-import importlib.util,json,unittest
+import ast,importlib.util,json,subprocess,unittest
 from pathlib import Path
 from PIL import Image,ImageChops
 
@@ -46,5 +46,19 @@ class ColabPilotTests(unittest.TestCase):
   first=next(c for c in nb['cells'] if c['cell_type']=='code')
   self.assertIn('FREE_RUNTIME_CONFIRMED = False',''.join(first['source']))
   self.assertIn('GOOGLE_PROCESSING_CONFIRMED = False',''.join(first['source']))
+  scope={}
+  with self.assertRaisesRegex(RuntimeError,'دو تیک'):
+   exec(compile(''.join(first['source']),'consent-guard','exec'),scope)
+  self.assertFalse(scope['PILOT_GPU_READY'])
+  # Every bootstrap file is present in the pinned Git revision, not a mutable branch.
+  bootstrap=next(c for c in nb['cells'] if c['cell_type']=='code' and 'CODE_REVISION =' in ''.join(c['source']))
+  values={}
+  for node in ast.parse(''.join(bootstrap['source'])).body:
+   if isinstance(node,ast.Assign) and isinstance(node.targets[0],ast.Name) and node.targets[0].id in ('CODE_REVISION','FILES'):
+    values[node.targets[0].id]=ast.literal_eval(node.value)
+  self.assertEqual(len(values['CODE_REVISION']),40)
+  for relative in values['FILES']:
+   subprocess.run(['git','cat-file','-e',values['CODE_REVISION']+':'+relative],cwd=pilot.REPO,check=True)
+
 
 if __name__=='__main__':unittest.main()
