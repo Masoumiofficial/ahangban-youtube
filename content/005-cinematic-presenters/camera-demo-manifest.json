@@ -1,0 +1,95 @@
+{
+  "status": "camera_only_rendered_lipsync_NOT_implemented",
+  "duration": 28.0,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 25,
+  "shots": [
+    [
+      0.0,
+      4.0,
+      "wide push-in",
+      [
+        0.5,
+        0.5,
+        1.0
+      ],
+      [
+        0.5,
+        0.51,
+        1.12
+      ]
+    ],
+    [
+      4.0,
+      10.5,
+      "Ava frontal close-up / push-in",
+      [
+        0.61,
+        0.565,
+        3.05
+      ],
+      [
+        0.605,
+        0.565,
+        3.22
+      ]
+    ],
+    [
+      10.5,
+      16.01,
+      "two-shot / pull-back",
+      [
+        0.5,
+        0.54,
+        1.55
+      ],
+      [
+        0.5,
+        0.52,
+        1.35
+      ]
+    ],
+    [
+      16.01,
+      22.543708333333335,
+      "Sajad frontal close-up / push-in",
+      [
+        0.405,
+        0.565,
+        3.05
+      ],
+      [
+        0.41,
+        0.565,
+        3.22
+      ]
+    ],
+    [
+      22.543708333333335,
+      28.0,
+      "Ava frontal close-up / pull-back",
+      [
+        0.605,
+        0.565,
+        3.22
+      ],
+      [
+        0.61,
+        0.565,
+        3.05
+      ]
+    ]
+  ],
+  "trueNewCameraAngles": false,
+  "facialAnimation": false,
+  "lipSync": false,
+  "voicesRegenerated": false,
+  "audio": "AAC stream copied from completed first episode; no voice or script changes",
+  "sourceImageSha256": "8840148a415fc5b5d0e322822ce8c0dbaac8671298d5f0a8522ab19bc8e46050",
+  "sourceEpisodeSha256": "2efd5ba3cb0731ff256e707a7ef5ba508da6c364eee3e364cf9f1c5f452ee0e5",
+  "videoSha256": "8c0755fb828402eacac2bd87e9a5390fd185c91542ad76e861726ab1f3cb3f13",
+  "youtubePublished": false
+}

@@ -156,3 +156,21 @@ No actual aural/ASR/phonetic confirmation or rights clearance is claimed. User f
 listening review remains important. Hosts are STATIC; no lip sync. No personalized
 clone, third-party upload of the recording or YouTube publication. Cloning remains
 optional future research; do not block or mislabel the finished real-recording edit.
+
+
+### Cinematic presenter development (latest request)
+
+User now requests camera angles, zoom in/out, cinematic movement and lip sync.
+`content/005-cinematic-presenters/` contains a rendered 28s CAMERA-ONLY proof:
+`downloads/ahangban-camera-demo-no-lipsync.mp4` (1280x720/25fps), five digital
+frontal reframes with smooth zoom and speaker cuts at actual speech boundaries.
+It is NOT a new perspective, facial animation or lip sync. Source 002 and both
+voices unchanged; AAC copied, decoded first-28s PCM matches the original episode.
+Full decode and 4 framing/timing tests passed, encoded close-ups visually reviewed.
+Original final episode retained. No publication, paid purchase, external upload,
+model download or lip-sync inference. Jobs JSON is a PLAN, not an executed engine.
+MuseTalk upstream README reviewed at 0a89dec45a0192b824e3cf4daf96c239440c5ed8;
+weights are outside current network access, dependencies need license review,
+Persian/identity quality untested. Do not promise lip sync is implemented or use
+amplitude-driven mouth deformation as a substitute. Cloud processing would need
+provider/privacy/cost approval before sending faces/audio or purchasing anything.

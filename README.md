@@ -12,6 +12,12 @@
 
 [نسخهٔ تاریخی قبلی با صدای مصنوعی سجاد](downloads/ahangban-chavoshi-studio-review.mp4) حفظ شده است. پژوهش [صدای شخصی بدون اشتراک](content/004-chavoshi-own-voice/VOICE-CLONING.fa.md) کار جداگانهٔ بعدی است؛ مانع تحویل ویدیوی اول نیست.
 
+## توسعهٔ تصویر مجریان — نمونهٔ دوربین، نه لب‌خوانی
+
+[▶ تست ۲۸ثانیه‌ای زوم و کات مجریان](downloads/ahangban-camera-demo-no-lipsync.mp4) · [وضعیت و برنامهٔ لب‌خوانی](content/005-cinematic-presenters/README.fa.md)
+
+نمای باز، کلوزآپ گوینده و زوم نرم با صدای اصلی حفظ‌شده. این نمونه برش دیجیتال از نمای روبه‌رو است؛ **زاویهٔ سه‌رخ یا انیمیشن چهره/لب‌خوانی هنوز ساخته نشده است**. نسخهٔ کامل قبلی دست‌نخورده باقی مانده است.
+
 ## نصب انجام‌شده
 
 هر ۱۱ اسکیل [YouTube Agent](https://github.com/Jakeschincariol/youtube-agent-skill)

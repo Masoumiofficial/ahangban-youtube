@@ -1,0 +1,124 @@
+{
+  "status": "plan_only_not_rendered",
+  "engine": null,
+  "lipSyncImplemented": false,
+  "thirdPartyUpload": false,
+  "voiceRegenerationAllowed": false,
+  "sourceAudioVideo": "downloads/ahangban-first-video-final.mp4",
+  "sourceImage": "studio/ahangban-signature/productions/HOSTS-VIEW-002.png",
+  "compositingOrder": [
+    "animate only active speaker from existing audio",
+    "masked composite into unchanged studio; preserve foreground microphone",
+    "apply camera framing",
+    "add screen-space subtitles and graphics"
+  ],
+  "jobs": [
+    {
+      "id": "01",
+      "speaker": "female",
+      "start": 0.0,
+      "end": 15.76,
+      "duration": 15.76,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "02",
+      "speaker": "male",
+      "start": 16.01,
+      "end": 22.293708333333335,
+      "duration": 6.283708333333333,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "03",
+      "speaker": "female",
+      "start": 22.543708333333335,
+      "end": 37.66370833333333,
+      "duration": 15.12,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "10",
+      "speaker": "male",
+      "start": 50.16370833333333,
+      "end": 59.176,
+      "duration": 9.012291666666666,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "04",
+      "speaker": "female",
+      "start": 59.426,
+      "end": 71.74600000000001,
+      "duration": 12.32,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "11",
+      "speaker": "male",
+      "start": 84.246,
+      "end": 91.42485416666666,
+      "duration": 7.1788541666666665,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "05",
+      "speaker": "female",
+      "start": 91.67485416666666,
+      "end": 107.71485416666667,
+      "duration": 16.04,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "06",
+      "speaker": "male",
+      "start": 120.21485416666667,
+      "end": 127.63935416666666,
+      "duration": 7.4245,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "07",
+      "speaker": "female",
+      "start": 127.88935416666666,
+      "end": 141.36935416666665,
+      "duration": 13.48,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "08",
+      "speaker": "female",
+      "start": 153.86935416666665,
+      "end": 173.18935416666665,
+      "duration": 19.32,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    },
+    {
+      "id": "09",
+      "speaker": "female",
+      "start": 185.68935416666667,
+      "end": 198.96935416666668,
+      "duration": 13.28,
+      "listenerAnimation": false,
+      "faceMaskStatus": "requires calibration and manual approval"
+    }
+  ],
+  "musicAnimation": false,
+  "acceptance": [
+    "user listening and lip-sync review on short samples of BOTH hosts",
+    "identity/beard/glasses preserved",
+    "no changes outside calibrated face mask",
+    "foreground microphone stays in front",
+    "original voice and timing preserved"
+  ]
+}
