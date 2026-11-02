@@ -141,6 +141,9 @@ test('Windows launcher pins actual bytes and forwards the explicit resume-only g
     const data = await readFile(new URL('../' + path, import.meta.url)); assert.ok(launcher.includes(hash(data)));
   }
   assert.match(launcher, /--env-file=/); assert.match(launcher, /Get-FileHash/);
+  assert.match(launcher, /\[switch\]\$ResumeOnly/);
+  assert.match(launcher, /if \(\$ResumeOnly\.IsPresent\) \{ \$extraArguments \+= '--resume-only' \}/);
+  assert.match(launcher, /@extraArguments/);
   assert.doesNotMatch(launcher, /Get-Content.*\.env|Stop-Process|taskkill/i);
 });
 test('successful public processing is confirmed only from actual status readback (mock)', async t => {
