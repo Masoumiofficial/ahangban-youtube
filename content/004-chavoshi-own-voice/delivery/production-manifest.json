@@ -1,0 +1,36 @@
+{
+  "status": "technical_QA_passed_pending_user_review",
+  "duration": 199.21935416666668,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "voices": {
+    "female": "voice-00 unchanged, seven newly synthesized rewritten turns",
+    "male": "Real user-supplied Sajad recording; not a clone or voice-02"
+  },
+  "speechTurns": 11,
+  "musicSamples": 5,
+  "studioMasterSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
+  "presenterCompositeSha256": "8840148a415fc5b5d0e322822ce8c0dbaac8671298d5f0a8522ab19bc8e46050",
+  "logoCoreSha256": "34936480af9e5663e9bd871ac3efbcc5cbb0c9b96cc1092f682775b78f52435c",
+  "logoGlowSha256": "ad9e31c46d9ae19e1d84c566ee50653d895c8648a8635e7d8f76ecb78680e63e",
+  "presenterMotion": "Static reference-based still; no lip sync or facial animation",
+  "visualMotion": "Audio-reactive waveform, isolated neon glow opacity cycle, timed music cutaways/countdown",
+  "captionTiming": "Estimated text/pauses; not forced alignment",
+  "youtubePublished": false,
+  "edition": "First episode completed with real Sajad recording and revised dialogue",
+  "presenterComposite": "studio/ahangban-signature/productions/HOSTS-VIEW-002.png",
+  "dialogueFile": "content/004-chavoshi-own-voice/dialogue.fa.json",
+  "dialogueSha256": "dadc4a0fe4ed56a3a312d934eb8507dca9ad35ed4f83395ba801f17323d13ec4",
+  "maleVoice": "Actual user recording, not synthetic, not cloned",
+  "femaleVoice": "voice-00 unchanged identity; seven newly generated turns",
+  "userRecordingSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+  "ownVoiceCloned": false,
+  "thirdPartyVoiceUpload": false,
+  "performerWardrobe": "Sajad black suit / black shirt, same approved frontal studio",
+  "captionAndTakeReview": "Timing from text/pauses. Male takes segmented from recorded speech islands; no ASR or aural phonetic confirmation.",
+  "video": "ahangban-first-video-final.mp4",
+  "videoSha256": "2efd5ba3cb0731ff256e707a7ef5ba508da6c364eee3e364cf9f1c5f452ee0e5"
+}

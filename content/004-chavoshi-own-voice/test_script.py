@@ -21,7 +21,9 @@ class ScriptTests(unittest.TestCase):
   for key,name in [('dialogueSha256','dialogue.fa.json'),('recordingLinesSha256','recording-lines.fa.json')]:
    self.assertEqual(plan[key],hashlib.sha256((ROOT/name).read_bytes()).hexdigest())
   self.assertTrue(plan['ownVoiceReceived'])
-  for key in ('ownVoiceCloned','ownVoiceIntegrated','nextVideoRendered','youtubePublished'):
+  self.assertTrue(plan['ownVoiceIntegrated'])
+  self.assertTrue(plan['nextVideoRendered'])
+  for key in ('ownVoiceCloned','youtubePublished'):
    self.assertFalse(plan[key])
   self.assertTrue(plan['previousRecordingScriptSuperseded'])
  def test_reference_and_consent_match_user_upload(self):

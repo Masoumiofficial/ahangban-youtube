@@ -1,5 +1,5 @@
 {
-  "status": "pending_local_model_access_and_short_cpu_trial",
+  "status": "first_video_completed_pending_user_review",
   "previousReviewVideo": "downloads/ahangban-chavoshi-studio-review.mp4",
   "previousReviewMaleVoice": "voice-02, synthetic; unchanged historical video",
   "requestedMaleVoice": "user_own_voice",
@@ -27,18 +27,15 @@
   ],
   "ownVoiceReceived": true,
   "ownVoiceCloned": false,
-  "ownVoiceIntegrated": false,
-  "nextVideoRendered": false,
+  "ownVoiceIntegrated": true,
+  "nextVideoRendered": true,
   "lipSync": false,
   "youtubePublished": false,
   "privacy": "Do not commit raw user voice to Git, include it in public archives, upload to a third-party clone service or train a voice model without separate user authorization.",
   "nextActions": [
-    "Clarify whether 60GB storage means free space and whether there is a discrete GPU; plan a short CPU-first trial for the reported i7-8550U / 8GB RAM, not realtime operation",
-    "Obtain official converter model assets in an environment with permitted access; confirm the Persian base TTS rights",
-    "Create a reusable private reference/profile and test new text not in the recording",
-    "Have user review identity similarity, Persian pronunciation and naturalness before freezing the voice",
-    "Generate revised male turns only after local trial passes; regenerate seven Ava turns with the unchanged selected voice",
-    "Render a new black-suit review without overwriting the historical video"
+    "User final listening review of take boundaries, Persian pronunciation and subtitle timing",
+    "Review third-party music/image rights before any YouTube publication",
+    "Keep the no-subscription personal-voice experiment as a separate future task; do not require another recording for this completed episode"
   ],
   "scriptRevision": "2 — natural conversational rewrite for both hosts",
   "dialogueFile": "content/004-chavoshi-own-voice/dialogue.fa.json",
@@ -74,5 +71,10 @@
     "OpenVoice V2",
     "ChatterboxVC (experimental comparison, not direct Persian TTS)"
   ],
-  "chatterboxAudit": "content/004-chavoshi-own-voice/research/chatterbox-audit.json"
+  "chatterboxAudit": "content/004-chavoshi-own-voice/research/chatterbox-audit.json",
+  "currentEpisodeMethod": "direct_user_recording; personalized synthetic voice deferred",
+  "firstVideo": "downloads/ahangban-first-video-final.mp4",
+  "firstVideoSha256": "2efd5ba3cb0731ff256e707a7ef5ba508da6c364eee3e364cf9f1c5f452ee0e5",
+  "currentEpisodeDurationSeconds": 199.22,
+  "personalCloneStatus": "not_created; optional future research, not a blocker for completed episode"
 }

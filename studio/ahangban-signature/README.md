@@ -41,3 +41,10 @@ The user wants their own voice for Sajad; [recording instructions and four lines
 are ready. The user recording has now been received and technically checked;
 the user prefers a reusable personal voice without subscription. No clone is built
 yet; see the [local-route assessment](../../content/004-chavoshi-own-voice/VOICE-CLONING.fa.md).
+
+## Completed first episode
+
+[Final video with real user-recorded Sajad and black suit](../../downloads/ahangban-first-video-final.mp4)
+is complete (3:19, 1080p/25fps), alongside new Ava narration in the same selected
+voice. [Delivery and QA](../../content/004-chavoshi-own-voice/FINAL-DELIVERY.fa.md).
+This does not mean a voice clone or lip sync was created. No YouTube publication.

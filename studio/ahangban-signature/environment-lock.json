@@ -388,12 +388,13 @@
   },
   "voiceSelection": {
     "mainFemale": "voice-00",
-    "lastRenderedMale": "voice-02",
+    "lastRenderedMale": "actual_user_recording",
     "historicalReplacedMale": "voice-01",
     "requestedMale": "user_own_reusable_synthetic_voice",
-    "requestedMaleStatus": "recording_received_pending_local_model_trial",
+    "requestedMaleStatus": "first_video_finished_with_recording; reusable clone remains future research",
     "noAutomaticSyntheticFallback": true,
-    "scope": "Historical synthetic voice IDs remain session-specific. User reference recording received; personal clone not yet created or integrated."
+    "scope": "Female voice-00 retained with newly synthesized text. Actual Sajad user recording integrated in completed first episode. No personalized synthetic clone created.",
+    "previousRenderedSyntheticMale": "voice-02"
   },
   "immutableAfterApproval": [
     "room geometry",
@@ -415,7 +416,7 @@
   "additionalCameraViewsGenerated": 0,
   "limitation": "This is a 2D AI architecture concept with exact-source artwork compositing, not an engineered acoustic design or a reconstructed 3D scene. A locked 3D scene is needed for guaranteed geometric identity across new camera angles.",
   "presenterIdentityLock": "Presenters/character-lock.json",
-  "presenterIdentityLockSha256": "bc07edf07d352c627bc43f8353ca1a862d00cad77cf3485fe3abefd06e58133a",
+  "presenterIdentityLockSha256": "99c2151c5f05938a42c4e9d3d028d22e73c78e2903b75dbdb2aeedcee058538c",
   "approvedMasterRevision": "c4ffec6",
   "approvalNote": "User confirmed the revised master with «عالیه» (typed with Latin keyboard as uhgdi)."
 }

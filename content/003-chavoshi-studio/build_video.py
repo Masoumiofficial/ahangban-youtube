@@ -97,9 +97,10 @@ def assemble(root,tracks,dialogue):
  (root/'timeline.json').write_text(json.dumps(timeline,ensure_ascii=False,indent=2)+'\n')
  return timeline
 
-def make_cards(root,tracks,timeline):
+def make_cards(root,tracks,timeline,presenter_image=None):
  cards=root/'cards';cards.mkdir(exist_ok=True)
- im=Image.open(STUDIO/'productions/HOSTS-VIEW-001.png').convert('RGBA').resize(SIZE,Image.Resampling.LANCZOS)
+ presenter_image=presenter_image or STUDIO/'productions/HOSTS-VIEW-001.png'
+ im=Image.open(presenter_image).convert('RGBA').resize(SIZE,Image.Resampling.LANCZOS)
  trackmap={t['id']:t for t in tracks}
  for i,event in enumerate(timeline['events']):
   scene=event['scene'];track=trackmap.get(scene)

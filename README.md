@@ -4,13 +4,13 @@
 
 ## تازه‌ترین خروجی ویدیو
 
-[▶ دریافت ویدیوی استودیویی پنج پیشنهاد چاوشی](downloads/ahangban-chavoshi-studio-review.mp4) · [پیش‌نمایش](downloads/ahangban-chavoshi-studio-preview.jpg)
+[▶ دریافت ویدیوی کامل اول با صدای واقعی سجاد](downloads/ahangban-first-video-final.mp4) · [پیش‌نمایش](downloads/ahangban-first-video-preview.jpg) · [تامبنیل](downloads/ahangban-first-video-thumbnail.jpg)
 
-نسخهٔ بازبینی با آوا و سجاد، صدای جدید سجاد، نمونه‌های آهنگ، زیرنویس فارسی و نور متحرک لوگو.
-تصویر مجریان ثابت است و لب‌خوانی ندارد. هیچ انتشار در یوتیوب انجام نشده است.
-[مشخصات تولید و بررسی فنی](content/003-chavoshi-studio/README.fa.md)
+**۳ دقیقه و ۱۹ ثانیه، 1080p/25fps**؛ آوا با همان صدای منتخب و متن تازه، سجاد با ضبط واقعی خودش و کت مشکی، پنج نمونهٔ آهنگ، زیرنویس فارسی و نور متحرک لوگو.
+تصویر مجریان ثابت است و لب‌خوانی ندارد. کلون شخصی ساخته نشده؛ چیزی در یوتیوب منتشر نشده است.
+[فایل‌های همراه و بررسی فنی](content/004-chavoshi-own-voice/FINAL-DELIVERY.fa.md)
 
-مرحلهٔ بعد: **صدای واقعی سجاد و لباس مشکی** — [راهنمای ضبط چهار جمله](content/004-chavoshi-own-voice/README.fa.md) · [پیش‌نمایش لباس مشکی](studio/ahangban-signature/productions/HOSTS-VIEW-002-preview.jpg). ضبط کاربر دریافت شده؛ مسیر صدای شخصی بدون اشتراک در [گزارش بررسی](content/004-chavoshi-own-voice/VOICE-CLONING.fa.md) ثبت شده است. کلون هنوز ساخته نشده است.
+[نسخهٔ تاریخی قبلی با صدای مصنوعی سجاد](downloads/ahangban-chavoshi-studio-review.mp4) حفظ شده است. پژوهش [صدای شخصی بدون اشتراک](content/004-chavoshi-own-voice/VOICE-CLONING.fa.md) کار جداگانهٔ بعدی است؛ مانع تحویل ویدیوی اول نیست.
 
 ## نصب انجام‌شده
 

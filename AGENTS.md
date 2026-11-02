@@ -138,3 +138,21 @@ It uses only the first ten seconds of the target reference; prepare a speech-ric
 excerpt rather than feeding the untrimmed recording blindly. Model files are on
 Hugging Face, outside this sandbox's outbound allowlist. No weights/inference or
 laptop benchmark have been run. See `content/004-chavoshi-own-voice/research/`.
+
+
+### First episode completed — latest user priority
+
+User asked to stop delaying on cloning and finish the first video. Completed
+`downloads/ahangban-first-video-final.mp4`: 199.22s, 1920x1080, 25fps, 17,209,035 bytes.
+Actual Sajad m4a was split into four padded takes (source windows in the new
+`content/004-chavoshi-own-voice/build_video.py`); all four were PCM-reextracted in QA.
+Seven new Ava clips were generated with the already selected voice-00 for the
+rewritten script. No old male synthetic voice or old Ava dialogue was substituted.
+Black-suit presenter shot 002, official neon glow, five 12s songs, 37 speech cues,
+thumbnail/title/description/chapters and technical QA are delivered. Full decode,
+source hashes and peak -1.5dBFS passed; representative frames were visually checked.
+See `content/004-chavoshi-own-voice/FINAL-DELIVERY.fa.md` and `delivery/`.
+No actual aural/ASR/phonetic confirmation or rights clearance is claimed. User final
+listening review remains important. Hosts are STATIC; no lip sync. No personalized
+clone, third-party upload of the recording or YouTube publication. Cloning remains
+optional future research; do not block or mislabel the finished real-recording edit.
