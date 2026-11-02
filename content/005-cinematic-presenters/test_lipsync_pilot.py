@@ -8,11 +8,13 @@ class LocalPilotTests(unittest.TestCase):
         route=json.loads((pilot.HERE/'local-route.json').read_text())
         for key in ('subscriptionAllowed','paidServiceAuthorized','paidComputeAuthorized',
                     'freeTrialOrPaymentCardAuthorized',
-                    'automaticNetworkDownload','modelInferenceExecuted','thirdPartyUploadExecuted'):
+                    'automaticNetworkDownload','agentExecutedModelInference','agentDownloadedModelWeights'):
             self.assertIs(route[key],False,key)
         self.assertTrue(route['thirdPartyFaceOrAudioUploadAuthorized'])
         self.assertIn('Google Colab FREE',route['authorizedCloudEnvironment'])
-        self.assertFalse(route['cloudPilotActuallyExecuted'])
+        self.assertTrue(route['cloudPilotActuallyExecuted'])
+        self.assertTrue(route['modelInferenceExecuted'])
+        self.assertFalse(route['fullEpisodeLipSyncRendered'])
     def test_uses_existing_speech_windows_for_both_hosts(self):
         timeline=json.loads(pilot.TIMELINE.read_text())
         jobs=pilot.pilot_jobs(timeline)

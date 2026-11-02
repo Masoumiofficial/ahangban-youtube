@@ -1,0 +1,90 @@
+{
+  "status": "returned_real_pilot_technically_verified_local_matte_refined_pending_user_review",
+  "sourceUrl": "https://github.com/Masoumiofficial/ahangban-youtube/blob/main/ahangban-lipsync-pilot.zip",
+  "sourceGitBlob": "06757ce5358114e1d0cf6db78cf6607bc19e28b4",
+  "sourceZipSha256": "f69ebac11586fa29b20eeaae2dc28916ceea1ca73aa0f1332978248e4e3f3f54",
+  "checks": [
+    {
+      "speaker": "male",
+      "bytes": 255110,
+      "sha256": "0687e7abeecc43be4e4a53b0b6a277692591d952c055cb427e56da4fd3633f7c",
+      "fullDecode": "PASS",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 25.0,
+      "reportedDuration": 6.283708333333333,
+      "containerDuration": 6.28,
+      "audioCheck": {
+        "zeroLagCorrelation": 0.9999476742562183,
+        "samplesCompared": 100539,
+        "review": "Audio content correspondence, NOT phonetic lip-sync approval"
+      }
+    },
+    {
+      "speaker": "female",
+      "bytes": 208586,
+      "sha256": "6111e9eb2927be66db1532d2f55fc215130dc9e4cde21684812cc5e62c46bb9d",
+      "fullDecode": "PASS",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 25.0,
+      "reportedDuration": 4.489999999999995,
+      "containerDuration": 4.49,
+      "audioCheck": {
+        "zeroLagCorrelation": 0.9955386584291118,
+        "samplesCompared": 71840,
+        "review": "Audio content correspondence, NOT phonetic lip-sync approval"
+      }
+    }
+  ],
+  "reportedGpu": "Tesla T4",
+  "reportedTorch": "2.0.1+cu118",
+  "musetalkRevision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+  "modelProvenance": "Received model-provenance.json; weight hashes recorded by user Colab, not re-downloaded/independently checked here",
+  "visualReview": "Sampled returned frames show mouth changes; Sajad lip/chin beard texture differs from original. Narrower local mouth matte restores original beard outside lips. Ava microphone appears unchanged in sampled frames.",
+  "refinement": {
+    "inputFrames": 157,
+    "refinedLipEllipseInInputContext": [
+      148,
+      174,
+      221,
+      207
+    ],
+    "screenSpaceMaskBoundingBox": [
+      633,
+      211,
+      719,
+      256
+    ],
+    "method": "Recomposite existing generated pixels only inside smaller feathered lip mask onto exact original reference",
+    "newModelInference": false,
+    "audio": "AAC copied from received male clip without re-encoding",
+    "limitation": "May constrain jaw opening; human review needed. Not claimed as a final approved lip-sync result."
+  },
+  "preview": "ahangban-lipsync-pilot-reviewed.mp4",
+  "previewSha256": "ef565306e7a4e206095439fc7b71ef6b882e2650bf5cf529ea87a161e801afa4",
+  "previewOrder": [
+    "Sajad, locally refined mouth matte",
+    "Ava, original returned clip"
+  ],
+  "lipSyncPhoneticOrAuralApproval": false,
+  "userApproval": false,
+  "fullEpisodeRenderedWithLipSync": false,
+  "headOrBodyAnimation": false,
+  "newCameraPerspective": false,
+  "agentExecutedModelInference": false,
+  "youtubePublished": false,
+  "previewMetadata": {
+    "resolution": [
+      1280,
+      720
+    ],
+    "fps": 25.0,
+    "duration": 10.79,
+    "fullDecode": "PASS"
+  }
+}

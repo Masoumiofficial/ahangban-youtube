@@ -10,25 +10,30 @@
   "candidateEngine": {
     "repository": "https://github.com/TMElyralab/MuseTalk",
     "revision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
-    "status": "custom_static_face_colab_runner_prepared_NOT_executed",
+    "status": "user_returned_MuseTalk_pilot_reported_T4_outputs_technically_verified_quality_pending",
     "licenseReview": "Only MuseTalk main UNet + MIT VAE + MIT Whisper used; no MMPose, detector, face parser or unrelated test data. Upstream NOTICE retained.",
     "persianQualityTested": false,
-    "userLaptopBenchmarked": false
+    "userLaptopBenchmarked": false,
+    "actualPilotRendered": true
   },
   "pilotInputStatus": "prepared_locally_under_ignored_rendered_directory",
-  "pilotOutputStatus": "no_lip_sync_video_generated",
+  "pilotOutputStatus": "received user Colab pilot, decoded/hash-verified; locally narrowed male mouth matte; pending user quality review",
   "blockers": [
-    "Arena cannot download the model weights or run a Google account runtime; user must start the prepared notebook in their free Colab session",
-    "Free GPU allocation and dependency installation must succeed in Colab; not tested here",
-    "Actual Persian synchrony and identity require review of both pilot outputs"
+    "Human audio/visual review of revised lip-sync pilot is pending",
+    "Full-episode lip-sync has not been processed; only two short clips exist",
+    "Agent sandbox still has no model weights/GPU inference setup; future model work remains user-started free Colab"
   ],
   "automaticNetworkDownload": false,
-  "modelInferenceExecuted": false,
-  "thirdPartyUploadExecuted": false,
-  "policy": "Free user-started Google Colab pilot is explicitly authorized. No paid subscriptions/APIs/GPUs/card-requiring trials, no other cloud provider or public sharing. No inference has run in Arena. Prepared code/inputs are not a successful lip-sync result.",
+  "modelInferenceExecuted": true,
+  "thirdPartyUploadExecuted": true,
+  "policy": "User-started FREE Google Colab short pilot was authorized and returned. No paid subscriptions/APIs/GPUs/card-requiring trials, no other cloud provider. Agent only verifies and recomposites received clips locally. Do not call technical decode or audio matching phonetic lip-sync approval. Keep original episode unchanged until pilot quality accepted.",
   "authorizedCloudEnvironment": "Google Colab FREE user-started short pilot ONLY; no other provider",
   "cloudConsentText": "بزن بریم سراغش پس — accepted the preceding free Colab recommendation",
   "userStartedColabDownloadsAuthorized": true,
   "outboundUploadFromArenaExecuted": false,
-  "cloudPilotActuallyExecuted": false
+  "cloudPilotActuallyExecuted": true,
+  "agentExecutedModelInference": false,
+  "agentDownloadedModelWeights": false,
+  "receivedPilotReport": "received-pilot/review-report.json",
+  "fullEpisodeLipSyncRendered": false
 }

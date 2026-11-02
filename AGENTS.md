@@ -215,3 +215,26 @@ public server or upload to other inference services. Download ZIP should contain
 only two composited pilot MP4s and provenance/results, NOT WAVs/faces/weights.
 No automatic full episode render; wait for actual clips + human review. Never
 present notebook preparation or fake model tests as successful lip sync.
+
+
+### Actual Colab pilot RETURNED by user (latest)
+
+User supplied main/ahangban-lipsync-pilot.zip. Retrieved exact Git blob
+06757ce5358114e1d0cf6db78cf6607bc19e28b4, ZIP SHA256
+f69ebac11586fa29b20eeaae2dc28916ceea1ca73aa0f1332978248e4e3f3f54.
+Two genuine output MP4s + reports returned: male 6.284s / female 4.49s, 1280x720/25.
+Reported execution: Tesla T4, Torch2.0.1+cu118, same pinned MuseTalk V1.5. Independent
+source hashes/clip hashes/full decode passed. Zero-lag audio correlations with
+original episode windows 0.9999477 male / 0.9955387 female. NOT phonetic lip approval.
+Source/model reports and independent review are in 005/received-pilot/. No need to
+say model execution never happened: USER ran it; AGENT still has no local weights.
+Visual sampled frames showed original broad male mouth mask alters beard/chin.
+Agent locally recomposited only a narrower lip ellipse [148,174,221,207] over the
+exact static reference, preserving outer beard/chin. No new inference or speech.
+`downloads/ahangban-lipsync-pilot-reviewed.mp4` combines refined Sajad then original
+returned Ava (~10.79s). Full decode passed and encoded frames visually inspected.
+`review_received_pilot.py` reproduces verification/refinement from the ZIP, no GPU.
+Wait for user quality review before full-episode generation. Do NOT call technical
+checks proof of natural Persian lip synchronization. No full-episode lip sync,
+head/body motion, new perspective, reusable voice clone or YouTube publication.
+Original full first episode, original Colab notebook and upstream source pin kept.
