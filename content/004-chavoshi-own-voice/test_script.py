@@ -33,6 +33,18 @@ class ScriptTests(unittest.TestCase):
   self.assertFalse(report['cloneCreated'])
   self.assertFalse(plan['providerUploadPerformed'])
   self.assertEqual(plan['executionPreference'],'no_subscription')
+ def test_chatterbox_assessment_does_not_claim_persian_or_runtime_success(self):
+  report=load('research/chatterbox-audit.json');plan=load('production-plan.json')
+  self.assertEqual(len(report['supportedLanguagesInCode']),23)
+  self.assertNotIn('fa',report['supportedLanguagesInCode'])
+  self.assertFalse(report['persianNativeTtsSupported'])
+  self.assertTrue(report['conversionNeedsGuideAudio'])
+  self.assertIn('audio',report['voiceConversionParameters'])
+  self.assertNotIn('text',report['voiceConversionParameters'])
+  self.assertEqual(report['userHardware']['ramGB'],8)
+  self.assertEqual(plan['reportedHardware']['cpu'],'Intel Core i7-8550U')
+  for key in ('modelWeightsDownloaded','inferenceExecuted','benchmarkOnUserLaptop'):
+   self.assertFalse(report[key])
  def test_review_document_contains_every_line_and_five_music_cues(self):
   document=(ROOT/'script.fa.md').read_text()
   for row in load('dialogue.fa.json'):self.assertIn(row['text'],document)

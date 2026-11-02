@@ -1,5 +1,5 @@
 {
-  "status": "pending_local_model_assets_hardware_and_quality_trial",
+  "status": "pending_local_model_access_and_short_cpu_trial",
   "previousReviewVideo": "downloads/ahangban-chavoshi-studio-review.mp4",
   "previousReviewMaleVoice": "voice-02, synthetic; unchanged historical video",
   "requestedMaleVoice": "user_own_voice",
@@ -33,7 +33,7 @@
   "youtubePublished": false,
   "privacy": "Do not commit raw user voice to Git, include it in public archives, upload to a third-party clone service or train a voice model without separate user authorization.",
   "nextActions": [
-    "Obtain OS, RAM and GPU details for local deployment",
+    "Clarify whether 60GB storage means free space and whether there is a discrete GPU; plan a short CPU-first trial for the reported i7-8550U / 8GB RAM, not realtime operation",
     "Obtain official converter model assets in an environment with permitted access; confirm the Persian base TTS rights",
     "Create a reusable private reference/profile and test new text not in the recording",
     "Have user review identity similarity, Persian pronunciation and naturalness before freezing the voice",
@@ -57,5 +57,22 @@
   "cloningStatus": "not_created",
   "providerUploadPerformed": false,
   "providerAccountRequired": false,
-  "cloudSubscriptionChosen": false
+  "cloudSubscriptionChosen": false,
+  "reportedHardware": {
+    "cpu": "Intel Core i7-8550U",
+    "reportedCpuGHz": [
+      1.8,
+      1.99
+    ],
+    "ramGB": 8,
+    "reportedStorageGB": 60,
+    "storageFreeVsTotal": "unknown",
+    "discreteGpu": "not reported",
+    "operatingSystem": "not reconfirmed; Windows mentioned earlier"
+  },
+  "voiceConversionCandidates": [
+    "OpenVoice V2",
+    "ChatterboxVC (experimental comparison, not direct Persian TTS)"
+  ],
+  "chatterboxAudit": "content/004-chavoshi-own-voice/research/chatterbox-audit.json"
 }

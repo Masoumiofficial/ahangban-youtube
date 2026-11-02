@@ -120,3 +120,21 @@ Persian model weights as a commercially cleared AhangBan pipeline.
 The user-uploaded m4a already resides in a public repo. Do not publicly commit more
 raw audio or derived speaker embeddings by default; do not rewrite/delete history
 without a separate user request. Prior 'recording not received' notes are historical.
+
+
+### Laptop details and Chatterbox review
+
+User reports Intel Core i7-8550U (displayed 1.80/1.99GHz), 8GB RAM and 60GB
+storage. Do not ask them to repeat the CPU/RAM details; whether 60GB is total or
+free disk and whether a discrete GPU exists remain unconfirmed. Prefer a short,
+single-process CPU-first experiment; do not promise realtime generation or an
+8GB memory fit without measurement.
+Chatterbox reviewed at 5de7a54aa4e5e2baadb0182dde554908b48b85c2 (default branch master).
+Pinned code lists 23 multilingual language IDs and NO fa. Turbo/Nano are documented
+as English. Do not recommend them as native Persian TTS or fake support by adding
+fa/selecting ar. ChatterboxVC takes guide AUDIO and a target-voice path, not text;
+it is a candidate comparison with OpenVoice, not a tested Persian cloning engine.
+It uses only the first ten seconds of the target reference; prepare a speech-rich
+excerpt rather than feeding the untrimmed recording blindly. Model files are on
+Hugging Face, outside this sandbox's outbound allowlist. No weights/inference or
+laptop benchmark have been run. See `content/004-chavoshi-own-voice/research/`.

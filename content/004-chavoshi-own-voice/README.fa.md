@@ -2,7 +2,7 @@
 
 **وضعیت جدید: ضبط واقعی سجاد دریافت و بررسی فنی شد. کاربر ساخت صدای شخصیِ قابل استفادهٔ مجدد و مسیر بدون اشتراک را خواسته است. هنوز کلون یا ویدیوی تازه ساخته نشده است.**
 
-[بررسی مسیر محلی، مجوزها و گام بعد](VOICE-CLONING.fa.md) · [گزارش فنی صوت](audio-reference-analysis.json) · [اجازه و محدودهٔ استفاده](voice-consent.json)
+[بررسی Chatterbox با سخت‌افزار کاربر](research/CHATTERBOX.fa.md) · [بررسی مسیر محلی، مجوزها و گام بعد](VOICE-CLONING.fa.md) · [گزارش فنی صوت](audio-reference-analysis.json) · [اجازه و محدودهٔ استفاده](voice-consent.json)
 ویدیوی جدید با صدای واقعی تولید نشده و فایل ویدیوی قبلی همچنان صدای مصنوعی دارد.
 
 - [پیش‌نمایش لباس مشکی](../../studio/ahangban-signature/productions/HOSTS-VIEW-002-preview.jpg)
