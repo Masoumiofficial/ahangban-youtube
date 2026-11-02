@@ -19,14 +19,12 @@
   "pilotInputStatus": "prepared_locally_under_ignored_rendered_directory",
   "pilotOutputStatus": "received user Colab pilot, decoded/hash-verified; locally narrowed male mouth matte; pending user quality review",
   "blockers": [
-    "Human audio/visual review of revised lip-sync pilot is pending",
-    "Full-episode lip-sync has not been processed; only two short clips exist",
-    "Agent sandbox still has no model weights/GPU inference setup; future model work remains user-started free Colab"
+    "Presenter/lip-sync route stopped by user choice, not waiting for another pilot approval. Continue faceless direction."
   ],
   "automaticNetworkDownload": false,
   "modelInferenceExecuted": true,
   "thirdPartyUploadExecuted": true,
-  "policy": "User-started FREE Google Colab short pilot was authorized and returned. No paid subscriptions/APIs/GPUs/card-requiring trials, no other cloud provider. Agent only verifies and recomposites received clips locally. Do not call technical decode or audio matching phonetic lip-sync approval. Keep original episode unchanged until pilot quality accepted.",
+  "policy": "HISTORICAL user-started free Colab pilot was authorized and returned, but USER REJECTED THE RESULT and chose faceless production. Do not initiate new face/model/cloud jobs unless user explicitly changes direction. Preserve historic sources and reports. Current deliverables are in content/006-faceless-music.",
   "authorizedCloudEnvironment": "Google Colab FREE user-started short pilot ONLY; no other provider",
   "cloudConsentText": "بزن بریم سراغش پس — accepted the preceding free Colab recommendation",
   "userStartedColabDownloadsAuthorized": true,
@@ -35,5 +33,9 @@
   "agentExecutedModelInference": false,
   "agentDownloadedModelWeights": false,
   "receivedPilotReport": "received-pilot/review-report.json",
-  "fullEpisodeLipSyncRendered": false
+  "fullEpisodeLipSyncRendered": false,
+  "userRejectedPilot": true,
+  "currentDirection": "Superseded by user-approved faceless music editorial in content/006-faceless-music",
+  "furtherFaceAnimationRequested": false,
+  "initiateFurtherFaceProcessing": false
 }

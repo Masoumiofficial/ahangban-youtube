@@ -1,0 +1,46 @@
+{
+  "edition": "Faceless music editorial: YouTube full episode + native Instagram Reel",
+  "voices": {
+    "male": "Real existing user-recorded Sajad, no clone",
+    "female": "Existing approved voice-00 Ava, no new generation"
+  },
+  "presenterImagesUsed": false,
+  "studioImagesUsed": false,
+  "newSpeechGenerated": false,
+  "thirdPartyUpload": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "copyrightCleared": false,
+  "outputs": {
+    "youtube": {
+      "video": "downloads/ahangban-faceless-youtube.mp4",
+      "sha256": "ffe397583de5d92325a0ea8743f2f7bbb42f3178f1946885f99016cdc4eff95a",
+      "bytes": 19501078,
+      "duration": 199.22,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 25.0,
+      "cover": "downloads/ahangban-faceless-youtube-thumbnail.jpg",
+      "coverSha256": "7eae9ac865409a531d07d895554907c618edcf496e4a25748fc1f14197b581ee",
+      "captionFile": "content/006-faceless-music/delivery/youtube/subtitles.fa.srt",
+      "status": "rendered_technical_QA_passed_pending_user_listening_review"
+    },
+    "reel": {
+      "video": "downloads/ahangban-faceless-reel.mp4",
+      "sha256": "354add8ae6c10d616aabc862a0e11682424a24b790e7e59522022545ae382fa3",
+      "bytes": 3514964,
+      "duration": 32.3,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 30.0,
+      "cover": "downloads/ahangban-faceless-reel-cover.jpg",
+      "coverSha256": "cc066ce713fa278fbf56dada6e89b0f2093e8c9cc4e9c740b04ff94c39e065ab",
+      "captionFile": "content/006-faceless-music/delivery/reel/subtitles.fa.srt",
+      "status": "rendered_technical_QA_passed_pending_user_listening_review"
+    }
+  }
+}

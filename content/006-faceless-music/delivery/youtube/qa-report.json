@@ -1,0 +1,35 @@
+{
+  "status": "technical_QA_passed_pending_user_listening_and_visual_review",
+  "kind": "youtube",
+  "video": "ahangban-faceless-youtube.mp4",
+  "sha256": "ffe397583de5d92325a0ea8743f2f7bbb42f3178f1946885f99016cdc4eff95a",
+  "bytes": 19501078,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "duration": 199.22,
+  "fullDecode": "PASS",
+  "sourceAndCoverHashes": "PASS",
+  "presenterImagesUsed": false,
+  "studioImagesUsed": false,
+  "voicesRegenerated": false,
+  "decodedStereoPeakDbFS": -1.5,
+  "overallRmsDbFS": -20.3,
+  "audioChecks": [
+    {
+      "copiedAACPayloadMatchesOriginal": true,
+      "payloadSha256": "f37cb1b8eb7112c7f7b4b0ad0b68488575b5cae063b36a5f3630ae31253442df"
+    }
+  ],
+  "artworkMotion": "PASS",
+  "realAudioSpectrumVariation": "PASS",
+  "speechCaptionCount": 37,
+  "musicSamples": 5,
+  "captionTiming": "Existing estimated cues; not forced aligned",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "manualReview": "Extracted encoded frames require visual inspection. Aural cut-boundary/pronunciation review remains with user."
+}

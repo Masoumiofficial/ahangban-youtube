@@ -238,3 +238,35 @@ Wait for user quality review before full-episode generation. Do NOT call technic
 checks proof of natural Persian lip synchronization. No full-episode lip sync,
 head/body motion, new perspective, reusable voice clone or YouTube publication.
 Original full first episode, original Colab notebook and upstream source pin kept.
+
+
+### CURRENT DIRECTION: user REJECTED lip sync; faceless YouTube + Instagram Reel finished
+
+User: «نه اصلا خوب نیس ... کلا بدون چهره ...» then approved faceless editorial
+and requested a strong YouTube video plus Instagram Reel. Do NOT ask for approval
+of the old face pilot or resume cloud/face research. 006 production-plan supersedes
+005 direction; historical reports/masters remain untouched for provenance.
+Completed `downloads/ahangban-faceless-youtube.mp4` 199.22s, 1920x1080/25fps,
+19,501,078B / SHA ffe397583de5d92325a0ea8743f2f7bbb42f3178f1946885f99016cdc4eff95a.
+Completed `downloads/ahangban-faceless-reel.mp4` 32.30s, 1080x1920/30fps,
+3,514,964B / SHA 354add8ae6c10d616aabc862a0e11682424a24b790e7e59522022545ae382fa3.
+YT thumbnail 1280x720 and Reel cover 1080x1920, captions/metadata and QA in 006/delivery.
+Editorial dark texture, ivory/amber type, original cover stacks/gentle motion,
+48-band audio-derived FFT visualizer, per-track progress/chapters and hardburned
+Persian speech cues. No presenter or studio IMAGE mapped; old episode input audio
+ONLY. Cover art can contain original artist/actor faces: do not claim zero faces
+anywhere. Official original logo colors/composition intact on ivory badge.
+YT entire AAC payload exactly matches completed own-recording episode (11 speech,
+5x12s songs, 37 captions), no new synthesis. Reel is a native portrait edit, NOT
+horizontal crop: ~4s real Sajad question, 5x5s existing songs, ~2s existing Ava CTA
++1.2s end-card hold. Each decoded segment compared to source and non-silent; seven
+audio correlations >.95, full decode/source blobs/motion/format PASS. Reels audio
+prep originally revealed all-silent output because afade happened before output
+seeking; fixed using atrim + asetpts BEFORE fades. QA now asserts non-silence and
+source correspondence for every actual rendered segment; never reuse that failed
+intermediate. Caption x/margins tightened to 88..920 safe region and Reel rerendered.
+Encoded sampled frames of both formats visually inspected; final aural cut review
+still user task, no forced-alignment or rights clearance claimed. Peak decoded
+stereo: YT -1.5 dBFS, Reel -2.5 dBFS. No publishing, subscription, external processing,
+new recording, new voice/clone or GPU required for this edition. Intermediate WAVs
+stay ignored rendered/, not public Git. Delivery README has exact rebuild commands.

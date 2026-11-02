@@ -1,5 +1,7 @@
 # تست کوتاه لب‌خوانی در Colab رایگان
 
+> **این مسیر متوقف شد:** کاربر نتیجهٔ لب‌خوانی را رد کرد و تولید بدون مجری تصویری را انتخاب کرد. [خروجی جدید یوتیوب و ریلز](../../006-faceless-music/README.fa.md). بخش‌های پایین سابقهٔ آزمایش‌اند، نه درخواست برای تکرار Colab یا تأیید دوبارهٔ چهره.
+
 [▶ بازکردن نوت‌بوک در Colab](https://colab.research.google.com/github/Masoumiofficial/ahangban-youtube/blob/arena/d4ba4e0b-ahangban-youtube/content/005-cinematic-presenters/colab/AhangBan-LipSync-Pilot.ipynb)
 
 **به‌روزرسانی:** کاربر نتیجهٔ اجرای Colab را برگردانده است؛ [تست واقعی و نسخهٔ بازبینی‌شده](../received-pilot/README.fa.md) دریافت و از نظر فنی بررسی شد. کیفیت لب‌خوانی هنوز منتظر تأیید شنیداری/تصویری کاربر است.
