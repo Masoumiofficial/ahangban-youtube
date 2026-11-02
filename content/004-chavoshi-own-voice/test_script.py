@@ -20,9 +20,19 @@ class ScriptTests(unittest.TestCase):
   plan=load('production-plan.json')
   for key,name in [('dialogueSha256','dialogue.fa.json'),('recordingLinesSha256','recording-lines.fa.json')]:
    self.assertEqual(plan[key],hashlib.sha256((ROOT/name).read_bytes()).hexdigest())
-  for key in ('ownVoiceReceived','ownVoiceCloned','ownVoiceIntegrated','nextVideoRendered','youtubePublished'):
+  self.assertTrue(plan['ownVoiceReceived'])
+  for key in ('ownVoiceCloned','ownVoiceIntegrated','nextVideoRendered','youtubePublished'):
    self.assertFalse(plan[key])
   self.assertTrue(plan['previousRecordingScriptSuperseded'])
+ def test_reference_and_consent_match_user_upload(self):
+  plan=load('production-plan.json');report=load('audio-reference-analysis.json');consent=load('voice-consent.json')
+  source=ROOT.parents[1]/report['source']
+  self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),report['sourceSha256'])
+  self.assertEqual(plan['referenceRecordingSha256'],report['sourceSha256'])
+  self.assertEqual(consent['recordingSha256'],report['sourceSha256'])
+  self.assertFalse(report['cloneCreated'])
+  self.assertFalse(plan['providerUploadPerformed'])
+  self.assertEqual(plan['executionPreference'],'no_subscription')
  def test_review_document_contains_every_line_and_five_music_cues(self):
   document=(ROOT/'script.fa.md').read_text()
   for row in load('dialogue.fa.json'):self.assertIn(row['text'],document)

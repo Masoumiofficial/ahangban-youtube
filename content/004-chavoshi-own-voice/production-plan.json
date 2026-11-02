@@ -1,9 +1,9 @@
 {
-  "status": "blocked_awaiting_user_audio_or_voice_method_decision",
+  "status": "pending_local_model_assets_hardware_and_quality_trial",
   "previousReviewVideo": "downloads/ahangban-chavoshi-studio-review.mp4",
   "previousReviewMaleVoice": "voice-02, synthetic; unchanged historical video",
   "requestedMaleVoice": "user_own_voice",
-  "recommendedMethod": "direct_recording",
+  "recommendedMethod": "local_voice_conversion_prototype",
   "currentWardrobe": "black suit / black shirt",
   "presenterComposite": "studio/ahangban-signature/productions/HOSTS-VIEW-002.png",
   "presenterCompositeSha256": "8840148a415fc5b5d0e322822ce8c0dbaac8671298d5f0a8522ab19bc8e46050",
@@ -25,7 +25,7 @@
     "mp3",
     "flac"
   ],
-  "ownVoiceReceived": false,
+  "ownVoiceReceived": true,
   "ownVoiceCloned": false,
   "ownVoiceIntegrated": false,
   "nextVideoRendered": false,
@@ -33,10 +33,12 @@
   "youtubePublished": false,
   "privacy": "Do not commit raw user voice to Git, include it in public archives, upload to a third-party clone service or train a voice model without separate user authorization.",
   "nextActions": [
-    "Receive the user recording of revised male lines 02, 10, 11, 06",
-    "Generate seven revised Ava turns using the unchanged selected voice",
-    "Rebuild audio, captions and timing from revised dialogue; do not reuse old Ava narration",
-    "Render review with black-suit shot 002; leave historical video unchanged"
+    "Obtain OS, RAM and GPU details for local deployment",
+    "Obtain official converter model assets in an environment with permitted access; confirm the Persian base TTS rights",
+    "Create a reusable private reference/profile and test new text not in the recording",
+    "Have user review identity similarity, Persian pronunciation and naturalness before freezing the voice",
+    "Generate revised male turns only after local trial passes; regenerate seven Ava turns with the unchanged selected voice",
+    "Render a new black-suit review without overwriting the historical video"
   ],
   "scriptRevision": "2 — natural conversational rewrite for both hosts",
   "dialogueFile": "content/004-chavoshi-own-voice/dialogue.fa.json",
@@ -44,5 +46,16 @@
   "recordingLinesSha256": "5223bc6c5ef92c90b07a29da1d283873d18ebf8cb52d27bed47fc2b01d62b33c",
   "previousRecordingScriptSuperseded": true,
   "femaleNarrationStatus": "Same selected voice-00, but all seven rewritten turns require fresh synthesis; old audio no longer matches script",
-  "ownVoiceStatus": "Record only the revised four male lines, not the earlier handoff"
+  "ownVoiceStatus": "Original user recording received from GitHub revision ee2851d; technical checks performed, no aural transcript confirmation",
+  "requestedMethod": "reusable_personal_synthetic_voice",
+  "executionPreference": "no_subscription",
+  "candidateConverter": "OpenVoice V2, not yet run",
+  "persianBaseTts": "Must be selected with explicit Persian support and suitable usage rights; converter alone is not native Persian TTS",
+  "referenceRecording": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+  "referenceRecordingSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+  "referenceDurationSeconds": 49.10933333333333,
+  "cloningStatus": "not_created",
+  "providerUploadPerformed": false,
+  "providerAccountRequired": false,
+  "cloudSubscriptionChosen": false
 }

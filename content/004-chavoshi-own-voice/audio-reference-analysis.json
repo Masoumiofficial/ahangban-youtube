@@ -1,0 +1,56 @@
+{
+  "source": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+  "sourceGitRevision": "ee2851d",
+  "sourceSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+  "sourceBytes": 1188622,
+  "durationSeconds": 49.10933333333333,
+  "codec": "AAC LC",
+  "sampleRate": 48000,
+  "channels": 2,
+  "decodedMeanVolumeDbFS": -18.8,
+  "decodedFloatPeakDbFS": 0.06817117207946018,
+  "decodedSamplesAbsAtLeast1": 8,
+  "silenceThresholdDb": -38,
+  "minimumDetectedSilenceSeconds": 0.7,
+  "detectedSilenceSeconds": 19.472521999999998,
+  "estimatedNonSilenceSeconds": 29.636811333333334,
+  "silenceIntervals": [
+    {
+      "start": 0.0,
+      "end": 0.863938
+    },
+    {
+      "start": 2.401396,
+      "end": 4.90775
+    },
+    {
+      "start": 10.741458,
+      "end": 14.817292
+    },
+    {
+      "start": 23.379583,
+      "end": 28.190167
+    },
+    {
+      "start": 34.919021,
+      "end": 40.511458
+    },
+    {
+      "start": 47.485958,
+      "end": 49.109333
+    }
+  ],
+  "privateReference": "rendered/user-voice/sajad/sajad-clone-reference.wav",
+  "referenceSha256": "9d6bd5deb9923c11f6e588dc08fd330a4beb342f129bf10592f9ae98b4213fd4",
+  "referenceProcessing": "Decode to 48kHz mono PCM16, -3dB gain, strip metadata; preserve all pauses. No denoising, pitch change, or claim of clipping repair.",
+  "qualityCaution": "A few decoded AAC samples exceed full scale; this can be AAC overshoot, not proof of audible clipping. Gain reduction does not repair existing distortion.",
+  "reviewLimitations": [
+    "No aural/phonetic review",
+    "No transcript verification",
+    "No speaker-count or identity verification",
+    "Noise/echo quality not established by silence statistics"
+  ],
+  "cloneCreated": false,
+  "providerUploadPerformed": false,
+  "nextVideoRendered": false
+}

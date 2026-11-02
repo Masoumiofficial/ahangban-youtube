@@ -38,4 +38,6 @@ Sajad now wears the explicitly requested black suit and black shirt in
 [shot 002](productions/HOSTS-VIEW-002-preview.jpg). The original face and Ava remain
 pixel-identical to shot 001. Shot 001 and the historical video remain unchanged.
 The user wants their own voice for Sajad; [recording instructions and four lines](../../content/004-chavoshi-own-voice/README.fa.md)
-are ready. No own-voice recording has been received or cloned; the next video is blocked on audio.
+are ready. The user recording has now been received and technically checked;
+the user prefers a reusable personal voice without subscription. No clone is built
+yet; see the [local-route assessment](../../content/004-chavoshi-own-voice/VOICE-CLONING.fa.md).

@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "status": "User requested black suit as current wardrobe and own voice for Sajad. Wardrobe prepared as shot 002; own audio not yet provided.",
+  "status": "User recording received. User authorizes own-voice cloning and prefers no subscription/local execution. Black suit remains current. No voice clone or new video created.",
   "sourceRevision": "c19912b34753fb31294fbf21a97f4fc122d29019",
   "seatAssignment": {
     "perspective": "viewer / camera",
@@ -64,12 +64,16 @@
       "previousSyntheticVoiceIdThisSession": "voice-02",
       "voiceIdThisSession": null,
       "voiceSourcePolicy": {
-        "requestedSource": "user_own_voice",
-        "recommendedMethod": "direct_recording",
-        "status": "awaiting_user_audio_or_method_choice",
+        "requestedSource": "user_own_reusable_synthetic_voice",
+        "recommendedMethod": "local_converter_quality_trial",
+        "status": "recording_received_pending_local_model_trial",
         "noAutomaticSyntheticFallback": true,
-        "thirdPartyCloneConsent": null,
-        "rawRecordingStorage": "Private ignored rendered/user-voice/sajad/; never commit raw user recordings by default"
+        "thirdPartyCloneConsent": "Explicitly authorized by user; no third-party upload performed",
+        "rawRecordingStorage": "Private ignored rendered/user-voice/sajad/; never commit raw user recordings by default",
+        "referenceRecording": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+        "referenceRecordingSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+        "executionPreference": "no_subscription_local",
+        "cloneCreated": false
       },
       "wardrobeReference": "Presenters/Sajad/Sajad_ Cinematic Radio Presenter Identity Board.png"
     }

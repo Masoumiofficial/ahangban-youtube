@@ -98,3 +98,25 @@ latest four entries in `recording-lines.fa.json` should be recorded by the user.
 The earlier recording handoff is superseded. Ava retains voice-00 but all seven
 turns require new synthesis; never pair rewritten captions with the old speech.
 No new audio/video has been generated for this rewrite.
+
+
+### Voice recording received; latest preference is no subscription
+
+User uploaded `Presenters/Sajad/sajad.m4a` in ee2851d and explicitly authorized own
+personal voice cloning, including third-party processing. They then selected
+NO SUBSCRIPTION / LOCAL execution. Do not ask for API keys or account passwords.
+The recording is 49.11s, approximately 29.64s non-silence at the documented threshold.
+Only technical audio checks have occurred; no aural transcript, clone quality or
+identity similarity has been verified. See `content/004-chavoshi-own-voice/VOICE-CLONING.fa.md`,
+`audio-reference-analysis.json` and `voice-consent.json`.
+A private mono reference with -3dB gain is under ignored `rendered/user-voice/sajad/`.
+No provider upload, clone, billable call or new video render has happened.
+Local OpenVoice V2 tone-color conversion with a suitable Persian base TTS is a
+PROPOSED experiment, not a working Persian clone. Its native TTS language list
+excludes Persian. Model assets are not available in this sandbox and their official
+S3 host is outside the outbound allowlist. Hardware/installation and model access
+must be resolved before claiming an actual trial. Do not substitute NC-licensed
+Persian model weights as a commercially cleared AhangBan pipeline.
+The user-uploaded m4a already resides in a public repo. Do not publicly commit more
+raw audio or derived speaker embeddings by default; do not rewrite/delete history
+without a separate user request. Prior 'recording not received' notes are historical.
