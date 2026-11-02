@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "approvalStatus": "pending_user_approval",
+  "approvalStatus": "approved",
   "master": "master/MASTER-VIEW-001.png",
   "masterSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
   "dimensions": [
@@ -412,5 +412,7 @@
   "additionalCameraViewsGenerated": 0,
   "limitation": "This is a 2D AI architecture concept with exact-source artwork compositing, not an engineered acoustic design or a reconstructed 3D scene. A locked 3D scene is needed for guaranteed geometric identity across new camera angles.",
   "presenterIdentityLock": "Presenters/character-lock.json",
-  "presenterIdentityLockSha256": "1beae33986ea2cf21e6567d4beb14b25341873bd2a8495e9195e9297e0d24f2e"
+  "presenterIdentityLockSha256": "1beae33986ea2cf21e6567d4beb14b25341873bd2a8495e9195e9297e0d24f2e",
+  "approvedMasterRevision": "c4ffec6",
+  "approvalNote": "User confirmed the revised master with «عالیه» (typed with Latin keyboard as uhgdi)."
 }

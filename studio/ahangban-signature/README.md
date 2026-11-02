@@ -1,6 +1,6 @@
 # AHANGBAN SIGNATURE RADIO STUDIO
 
-**Master View 001 — version 1.2 — pending approval of the latest corrections.**
+**Master View 001 — version 1.2 — approved by the user.**
 
 One empty studio with **two host chairs** and **twelve portraits, read right-to-left
 within each of two rows**. The illuminated logo panel is intentionally **blank**.
