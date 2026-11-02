@@ -174,3 +174,22 @@ weights are outside current network access, dependencies need license review,
 Persian/identity quality untested. Do not promise lip sync is implemented or use
 amplitude-driven mouth deformation as a substitute. Cloud processing would need
 provider/privacy/cost approval before sending faces/audio or purchasing anything.
+
+
+### User decision: lip sync without subscription ONLY
+
+User explicitly selected ONLY the no-subscription route. See
+`content/005-cinematic-presenters/local-route.json`. Do not ask again or switch to
+paid APIs/subscriptions/paid GPUs/card-requiring trials. No third-party face/audio
+upload approved for this step. Local MuseTalk remains an UNEXECUTED candidate.
+Prepared private pilot inputs using `prepare_lipsync_pilot.py`: male 02 full 6.284s
+and female 05 first sentence 4.49s extracted from the existing MP4 as 16kHz mono
+PCM, no voice synthesis. Separate draft face contexts suppress gallery portraits
+so a detector cannot pick a wall portrait. These are NOT approved paste-back masks;
+Ava foreground microphone still needs protection. Inputs remain under ignored
+rendered/, with a fail-closed output-path guard; do not commit standalone voice
+exports or processed face inputs. Crops were visually checked and WAV duration/
+format asserted; no actual detector/inference or aural boundary check performed.
+No lip-sync video exists. Model weights inaccessible through currently allowed
+network hosts and engine/compute not validated: current status is blocked before
+inference, not success. Do not claim future background work or a laptop benchmark.

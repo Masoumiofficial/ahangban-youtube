@@ -1,0 +1,29 @@
+{
+  "decisionDate": "2026-11-02",
+  "userDecision": "فقط مسیر بدون اشتراک را می‌خواهم",
+  "subscriptionAllowed": false,
+  "paidServiceAuthorized": false,
+  "paidComputeAuthorized": false,
+  "freeTrialOrPaymentCardAuthorized": false,
+  "thirdPartyFaceOrAudioUploadAuthorized": false,
+  "preferredExecution": "local/offline, existing episode audio, no voice regeneration",
+  "candidateEngine": {
+    "repository": "https://github.com/TMElyralab/MuseTalk",
+    "revision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+    "status": "candidate_only_not_installed_or_run",
+    "licenseReview": "Upstream permits commercial use of main code/model; dependency licenses still require review",
+    "persianQualityTested": false,
+    "userLaptopBenchmarked": false
+  },
+  "pilotInputStatus": "prepared_locally_under_ignored_rendered_directory",
+  "pilotOutputStatus": "no_lip_sync_video_generated",
+  "blockers": [
+    "Official model weights are not available locally; documented weight hosts are outside current network access",
+    "Inference engine/dependencies are not installed or tested; suitable compute has not been verified",
+    "Identity, occlusion, single-face detection and Persian lip sync require a short real inference test"
+  ],
+  "automaticNetworkDownload": false,
+  "modelInferenceExecuted": false,
+  "thirdPartyUploadExecuted": false,
+  "policy": "Do not switch to a subscription, paid API, paid GPU, trial requiring a payment card, or upload faces/audio to a third party. Do not label prepared inputs or camera-only reframing as lip sync. No mouth warping driven only by audio amplitude as a substitute."
+}

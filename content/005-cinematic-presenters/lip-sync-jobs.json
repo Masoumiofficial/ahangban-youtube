@@ -120,5 +120,8 @@
     "no changes outside calibrated face mask",
     "foreground microphone stays in front",
     "original voice and timing preserved"
-  ]
+  ],
+  "executionPolicy": "local-route.json",
+  "subscriptionAllowed": false,
+  "paidServiceAuthorized": false
 }
