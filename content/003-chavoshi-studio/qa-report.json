@@ -1,0 +1,37 @@
+{
+  "status": "technical_QA_passed_pending_user_review",
+  "video": "ahangban-chavoshi-studio-review.mp4",
+  "videoSha256": "1530ea5d6cd31f81660def3fc1fdaa6da7bb616d432fb626e6a3e8bb54048f1c",
+  "bytes": 23636778,
+  "duration": 280.32,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "speechTurns": 11,
+  "femaleVoice": "voice-00 unchanged",
+  "maleVoice": "voice-02 replaces voice-01",
+  "musicSamples": 5,
+  "musicSampleDuration": 12,
+  "captionCues": 59,
+  "decodedPeakDbFS": -1.5,
+  "fullDecode": "passed",
+  "exactPinnedSourceBlobs": "passed",
+  "selectedSpeechHashes": "passed",
+  "nonOverlappingTimeline": "passed",
+  "neonFrameMeanDifferenceRGB": [
+    4.270462962962963,
+    3.720740740740741,
+    2.8753086419753084
+  ],
+  "captionTiming": "estimated; needs user review",
+  "notVerified": [
+    "Pronunciation and phonetic accuracy",
+    "Word-level caption alignment",
+    "Third-party music/image rights",
+    "User visual approval of realism revision"
+  ],
+  "presenterMotion": "Static image, no lip sync",
+  "youtubePublished": false
+}

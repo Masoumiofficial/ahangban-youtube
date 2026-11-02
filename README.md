@@ -2,6 +2,14 @@
 
 کانال: https://www.youtube.com/@AhangBan
 
+## تازه‌ترین خروجی ویدیو
+
+[▶ دریافت ویدیوی استودیویی پنج پیشنهاد چاوشی](downloads/ahangban-chavoshi-studio-review.mp4) · [پیش‌نمایش](downloads/ahangban-chavoshi-studio-preview.jpg)
+
+نسخهٔ بازبینی با آوا و سجاد، صدای جدید سجاد، نمونه‌های آهنگ، زیرنویس فارسی و نور متحرک لوگو.
+تصویر مجریان ثابت است و لب‌خوانی ندارد. هیچ انتشار در یوتیوب انجام نشده است.
+[مشخصات تولید و بررسی فنی](content/003-chavoshi-studio/README.fa.md)
+
 ## نصب انجام‌شده
 
 هر ۱۱ اسکیل [YouTube Agent](https://github.com/Jakeschincariol/youtube-agent-skill)

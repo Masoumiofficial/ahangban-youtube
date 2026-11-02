@@ -3,7 +3,7 @@ Coordinates describe the 1365x768 generation plate. No empty-master overwrite.
 """
 from pathlib import Path
 import hashlib, json
-from PIL import Image, ImageDraw, ImageFilter, ImageChops
+from PIL import Image, ImageDraw, ImageFilter, ImageChops, ImageEnhance
 ROOT=Path(__file__).resolve().parents[1]
 SIZE=(3840,2160)
 POLYGONS={
@@ -20,8 +20,21 @@ def main():
  for name,points in POLYGONS.items():
   mask=Image.new('L',source.size);ImageDraw.Draw(mask).polygon(points,fill=255)
   mask=mask.filter(ImageFilter.GaussianBlur(.55))
-  person=source.copy();person.putalpha(mask)
-  hosts.alpha_composite(person,OFFSETS[name])
+  # Slightly smaller seated scale, anchored at the same desk line. Keep the
+  # supplied face geometry; harmonize only exposure, color and edge softness.
+  person=ImageEnhance.Brightness(source.convert('RGB')).enhance(.94)
+  person=ImageEnhance.Contrast(person).enhance(.97)
+  person=ImageEnhance.Color(person).enhance(.96).convert('RGBA')
+  person.putalpha(mask)
+  box=mask.getbbox();person=person.crop(box)
+  person=person.resize((round(person.width*.95),round(person.height*.95)),Image.Resampling.LANCZOS)
+  dx,dy=OFFSETS[name]
+  position=(round((box[0]+box[2]-person.width)/2)+dx,box[3]-person.height+dy)
+  # Restrained contact shadow against the existing chair/back wall.
+  shadow=Image.new('RGBA',person.size,(0,0,0,0))
+  shadow.putalpha(person.getchannel('A').filter(ImageFilter.GaussianBlur(2.5)).point(lambda a:round(a*.12)))
+  hosts.alpha_composite(shadow,(position[0]+2,position[1]+2))
+  hosts.alpha_composite(person,position)
  # Original desk and foreground equipment must occlude the presenters.
  foreground=Image.new('L',source.size);d=ImageDraw.Draw(foreground)
  d.rectangle((0,522,1365,768),fill=255)
@@ -43,7 +56,7 @@ def main():
  delta=ImageChops.difference(result,base.convert('RGB'))
  outside=hosts.getchannel('A').point(lambda a:255 if a==0 else 0)
  assert not ImageChops.multiply(delta,Image.merge('RGB',(outside,)*3)).getbbox()
- info={'version':'1.0','status':'pending_user_review','camera':'Same approved frontal master; no new camera angle',
+ info={'version':'1.1','status':'user_requested_realism_revision_for_video','realismAdjustments':{'seatedScale':0.95,'exposureMultiplier':0.94,'contrastMultiplier':0.97,'saturationMultiplier':0.96,'contactShadowOpacity':0.12},'camera':'Same approved frontal master; no new camera angle',
   'base':'master/MASTER-VIEW-001.png','baseSha256':sha(ROOT/'master/MASTER-VIEW-001.png'),
   'seatingFromCamera':{'left':'Sajad','right':'Ava'},
   'source':'working/HOSTS-VIEW-001-generated.png','sourceSha256':sha(ROOT/'working/HOSTS-VIEW-001-generated.png'),

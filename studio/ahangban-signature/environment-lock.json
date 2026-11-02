@@ -412,7 +412,7 @@
   "additionalCameraViewsGenerated": 0,
   "limitation": "This is a 2D AI architecture concept with exact-source artwork compositing, not an engineered acoustic design or a reconstructed 3D scene. A locked 3D scene is needed for guaranteed geometric identity across new camera angles.",
   "presenterIdentityLock": "Presenters/character-lock.json",
-  "presenterIdentityLockSha256": "c9ee25d6d2990c5f8fa81c1a2f30a53b6cf5a57147d68b8767687e2d7475dad7",
+  "presenterIdentityLockSha256": "ebf5525890d924479e354b1ce5a7e6030aca0d8f5d916f88763c5a207e18e77a",
   "approvedMasterRevision": "c4ffec6",
   "approvalNote": "User confirmed the revised master with «عالیه» (typed with Latin keyboard as uhgdi)."
 }

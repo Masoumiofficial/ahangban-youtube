@@ -46,8 +46,9 @@ Never generate substitute celebrity faces or redraw the logo. User requested one
 coherent master image and no alternative designs. A single 2D master is not a
 calibrated 3D scene; do not promise guaranteed geometric identity across new views.
 Main feminine voice stays voice-00; the user selected replacement masculine voice-02
-in this session. The previously exported MP4 still uses the earlier voice until
-explicitly re-rendered. Voice identifiers are session-specific.
+in this session. The historical five-track MP4 retains voice-01; the new studio edition in
+`downloads/ahangban-chavoshi-studio-review.mp4` uses the selected replacement
+voice-02 for all four male turns. Voice identifiers are session-specific.
 
 ### Latest studio and presenter decision
 
@@ -62,5 +63,10 @@ fictional gold logos or room designs from their character boards. Sajad's manage
 role is supplied by the user. No real-person identification is inferred.
 The base remains empty. User-approved seating from the camera: Sajad LEFT, Ava RIGHT.
 The first same-camera two-host composite is in `productions/HOSTS-VIEW-001.png`
-with a separate RGBA presenter layer and shot manifest; it awaits user visual review.
-No new camera angle, animated neon or talking-head video has been produced.
+with a separate RGBA presenter layer and shot manifest. The user accepted seating
+and authorized a subtle realism refinement plus video production. Presenter v1.1
+uses 95% seated scale, exposure harmonization and restrained contact shadows.
+The new studio edition is documented under `content/003-chavoshi-studio/`: original
+female speech, replacement male voice-02, five song samples, captions, waveform
+and soft six-second logo-glow animation. The hosts are STATIC: no lip sync, facial
+animation or new camera angle has been produced. No YouTube publication.

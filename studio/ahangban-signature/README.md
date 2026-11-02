@@ -5,7 +5,9 @@
 One empty studio with **two host chairs** and **twelve portraits, read right-to-left
 within each of two rows**. The illuminated logo panel is intentionally **blank**.
 No new camera angle has been generated. The first same-camera Ava/Sajad composite
-is available in [productions](productions/README.fa.md), pending user visual review.
+is available in [productions](productions/README.fa.md). The user accepted the layout
+and requested subtle realism refinements and video production. The 1.1 presenter
+composite has matching exposure, slightly smaller seated scale and contact shadows.
 The approved empty master remains untouched.
 
 ![Updated master: RTL gallery, blank logo panel, two chairs](master/MASTER-VIEW-001-preview.jpg)
@@ -18,7 +20,8 @@ The approved empty master remains untouched.
 - [Persian master specification](MASTER-SPEC.fa.md)
 - [Environment lock](environment-lock.json)
 
-The overlays are static layers, not an already animated neon video. Original logo
+The overlays themselves are static layers. A soft glow-opacity animation is used in
+the [studio review video](../../content/003-chavoshi-studio/README.fa.md); hosts remain static, with no lip sync. Original logo
 lettering/colors are preserved. Marks/backgrounds on the presenter reference sheets
 are not replacements for the official logo or this studio.
 
