@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "status": "User-designated permanent character references; no new presenter image generated in this revision",
+  "sourceRevision": "c19912b34753fb31294fbf21a97f4fc122d29019",
+  "seatAssignment": "Not yet assigned; do not infer from empty chairs",
+  "characters": [
+    {
+      "id": "AHANGBAN-AVA-001",
+      "displayNameFa": "آوا",
+      "displayNameEn": "Ava",
+      "role": "Main female radio presenter",
+      "primaryReference": "Presenters/Ava/Ava Ahangban Studio Portrait Board.png",
+      "voiceIdThisSession": "voice-00",
+      "appearanceNotes": [
+        "Use supplied multi-angle and expression sheets for the same face.",
+        "Preserve hairstyle, black scarf, outfit embroidery, jewelry and facial proportions from supplied references; do not invent redesigns."
+      ],
+      "references": [
+        {
+          "path": "Presenters/Ava/AVA’s Eight Expressions.png",
+          "sha256": "003826efe14394269923e30c488a0011e776b54e68730b61a6545284b3d9b566",
+          "bytes": 2313527
+        },
+        {
+          "path": "Presenters/Ava/Ava Ahangban Studio Portrait Board.png",
+          "sha256": "94790ae3f434142716b704a5c9186cdecba1b081e699b1c7cc74e92baa366f0c",
+          "bytes": 2127785
+        },
+        {
+          "path": "Presenters/Ava/Ava_ Glamorous Radio Host Portfolio.png",
+          "sha256": "8ce8508da169ad02d33fa1ebd86215f3b691ab8dc5203f68c54db5d844def58a",
+          "bytes": 2284282
+        }
+      ]
+    },
+    {
+      "id": "AHANGBAN-SAJAD-001",
+      "displayNameFa": "سجاد",
+      "displayNameEn": "Sajad",
+      "role": "AhangBan manager and male radio presenter, as stated by user",
+      "primaryReference": "Presenters/Sajad/Sajad.png",
+      "voiceIdThisSession": "voice-02",
+      "appearanceNotes": [
+        "Preserve supplied face, glasses, dark styled hair and beard across shots.",
+        "Two wardrobe variants are supplied: brown jacket and tie in primary sheet, black suit/shirt in cinematic sheet. Keep each chosen wardrobe consistent within its episode; do not silently merge or redesign them."
+      ],
+      "references": [
+        {
+          "path": "Presenters/Sajad/Sajad.png",
+          "sha256": "d222cd419eb144e0e32dd33d7d611b72ca4790ca3fab504a04e5cef38fd72bf1",
+          "bytes": 2097055
+        },
+        {
+          "path": "Presenters/Sajad/Sajad_ Cinematic Radio Presenter Identity Board.png",
+          "sha256": "b7f8af8530a73556af35d768c243e530b151f3bbe9155aae608101e6c010e7de",
+          "bytes": 2308918
+        }
+      ],
+      "wardrobePolicy": "Primary Sajad.png (brown jacket, black shirt and gold-toned tie) is the default wardrobe reference. Cinematic black suit is an alternate supplied reference, not an automatic wardrobe change; use it only when explicitly requested."
+    }
+  ],
+  "rules": [
+    "Use only these two named presenter identities unless user explicitly changes them.",
+    "User-supplied character names and roles are authoritative; this is not face recognition or real-person verification.",
+    "Only the original blue-and-dark official logo is brand-authoritative. Gold musical-note marks, fictional logos, lettering, backdrops and rooms inside character boards are NOT studio/logo references.",
+    "Keep master studio empty; composite hosts as separate requested production layers.",
+    "Do not silently change facial geometry, glasses, hair, beard, scarf, makeup or established accessories. Expressions may follow supplied expression references.",
+    "Treat age/height/biography labels on generated boards as design notes, not verified facts about a real person.",
+    "Voice IDs are session-specific references, not permanent portable voice models.",
+    "Identity and spatial consistency must be reviewed on each generated shot; a reference lock is not a technical guarantee of zero generation drift."
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "approvalStatus": "pending_user_approval",
   "master": "master/MASTER-VIEW-001.png",
-  "masterSha256": "9c5e3dba84b67b4438d06ac4d57f837bc1b53318933277bdb20492498be4ef06",
+  "masterSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
   "dimensions": [
     3840,
     2160
@@ -24,6 +24,7 @@
   "camera": "Centered frontal hero-wide, approximately 26mm visual intent; not a calibrated 3D camera.",
   "seatingCount": 2,
   "seatingPurpose": "Two empty side-by-side host chairs; no characters yet.",
+  "galleryReadingDirection": "right-to-left within each row",
   "portraitCount": 12,
   "rows": 2,
   "columns": 6,
@@ -40,140 +41,11 @@
     {
       "position": 1,
       "row": 1,
-      "column": 1,
+      "column": 6,
       "identitySuppliedByUser": "Mohammad Reza Shajarian",
       "file": "1-mohammadreza-shajariyan.jfif",
       "sha256": "d65c586802d8aec824e6408fd9ef52f0848aeff55eedce9d8898d5de9a9f1de0",
-      "frameBounds": [
-        640,
-        562,
-        900,
-        814
-      ],
-      "imageBounds": [
-        684,
-        603,
-        857,
-        776
-      ],
-      "matteOpening": [
-        682,
-        595,
-        859,
-        784
-      ]
-    },
-    {
-      "position": 2,
-      "row": 1,
-      "column": 2,
-      "identitySuppliedByUser": "Ebi",
-      "file": "2-ebi.jfif",
-      "sha256": "ce8ef8234ac7ddd1d3761c631144fde0f03d8a305b8f5294dc9c6841dc241734",
-      "frameBounds": [
-        1100,
-        562,
-        1360,
-        814
-      ],
-      "imageBounds": [
-        1144,
-        603,
-        1317,
-        776
-      ],
-      "matteOpening": [
-        1142,
-        595,
-        1319,
-        784
-      ]
-    },
-    {
-      "position": 3,
-      "row": 1,
-      "column": 3,
-      "identitySuppliedByUser": "Dariush",
-      "file": "3-dariyoush.jfif",
-      "sha256": "80d9cc3562558fe48c6e28c2da89893f1dbffcb94e3996cbf6e4428515449db3",
-      "frameBounds": [
-        1560,
-        562,
-        1820,
-        814
-      ],
-      "imageBounds": [
-        1604,
-        603,
-        1777,
-        776
-      ],
-      "matteOpening": [
-        1602,
-        595,
-        1779,
-        784
-      ]
-    },
-    {
-      "position": 4,
-      "row": 1,
-      "column": 4,
-      "identitySuppliedByUser": "Googoosh",
-      "file": "4-googoosh.jfif",
-      "sha256": "8aaaeb2d40c6a1b3795f004996746daaee80c43ebba387e518f11abcad046039",
-      "frameBounds": [
-        2020,
-        562,
-        2280,
-        814
-      ],
-      "imageBounds": [
-        2064,
-        625,
-        2237,
-        754
-      ],
-      "matteOpening": [
-        2062,
-        595,
-        2239,
-        784
-      ]
-    },
-    {
-      "position": 5,
-      "row": 1,
-      "column": 5,
-      "identitySuppliedByUser": "Hayedeh",
-      "file": "5-haydeh.jfif",
-      "sha256": "a56a09b72bfd03d0e35035f5fd2f25996db6b6bf7a1cb49db614be44591ac460",
-      "frameBounds": [
-        2480,
-        562,
-        2740,
-        814
-      ],
-      "imageBounds": [
-        2536,
-        597,
-        2684,
-        782
-      ],
-      "matteOpening": [
-        2522,
-        595,
-        2699,
-        784
-      ]
-    },
-    {
-      "position": 6,
-      "row": 1,
-      "column": 6,
-      "identitySuppliedByUser": "Mahasti",
-      "file": "6-mahasti.jfif",
-      "sha256": "16a42867f90a0ddeafa24bb47ac126498d3ad197928c5cf5909efa67b07fa9a5",
+      "columnFromRight": 1,
       "frameBounds": [
         2940,
         562,
@@ -194,116 +66,175 @@
       ]
     },
     {
-      "position": 7,
-      "row": 2,
+      "position": 2,
+      "row": 1,
+      "column": 5,
+      "identitySuppliedByUser": "Ebi",
+      "file": "2-ebi.jfif",
+      "sha256": "ce8ef8234ac7ddd1d3761c631144fde0f03d8a305b8f5294dc9c6841dc241734",
+      "columnFromRight": 2,
+      "frameBounds": [
+        2480,
+        562,
+        2740,
+        814
+      ],
+      "imageBounds": [
+        2524,
+        603,
+        2697,
+        776
+      ],
+      "matteOpening": [
+        2522,
+        595,
+        2699,
+        784
+      ]
+    },
+    {
+      "position": 3,
+      "row": 1,
+      "column": 4,
+      "identitySuppliedByUser": "Dariush",
+      "file": "3-dariyoush.jfif",
+      "sha256": "80d9cc3562558fe48c6e28c2da89893f1dbffcb94e3996cbf6e4428515449db3",
+      "columnFromRight": 3,
+      "frameBounds": [
+        2020,
+        562,
+        2280,
+        814
+      ],
+      "imageBounds": [
+        2064,
+        603,
+        2237,
+        776
+      ],
+      "matteOpening": [
+        2062,
+        595,
+        2239,
+        784
+      ]
+    },
+    {
+      "position": 4,
+      "row": 1,
+      "column": 3,
+      "identitySuppliedByUser": "Googoosh",
+      "file": "4-googoosh.jfif",
+      "sha256": "8aaaeb2d40c6a1b3795f004996746daaee80c43ebba387e518f11abcad046039",
+      "columnFromRight": 4,
+      "frameBounds": [
+        1560,
+        562,
+        1820,
+        814
+      ],
+      "imageBounds": [
+        1604,
+        625,
+        1777,
+        754
+      ],
+      "matteOpening": [
+        1602,
+        595,
+        1779,
+        784
+      ]
+    },
+    {
+      "position": 5,
+      "row": 1,
+      "column": 2,
+      "identitySuppliedByUser": "Hayedeh",
+      "file": "5-haydeh.jfif",
+      "sha256": "a56a09b72bfd03d0e35035f5fd2f25996db6b6bf7a1cb49db614be44591ac460",
+      "columnFromRight": 5,
+      "frameBounds": [
+        1100,
+        562,
+        1360,
+        814
+      ],
+      "imageBounds": [
+        1156,
+        597,
+        1304,
+        782
+      ],
+      "matteOpening": [
+        1142,
+        595,
+        1319,
+        784
+      ]
+    },
+    {
+      "position": 6,
+      "row": 1,
       "column": 1,
-      "identitySuppliedByUser": "Farhad Mehrad",
-      "file": "7-farhad-mehrdad.jfif",
-      "sha256": "85e5deaf56ef5ce9466d5c1caed1ccf1265881dcbb3095a4277aee6a015d79f0",
+      "identitySuppliedByUser": "Mahasti",
+      "file": "6-mahasti.jfif",
+      "sha256": "16a42867f90a0ddeafa24bb47ac126498d3ad197928c5cf5909efa67b07fa9a5",
+      "columnFromRight": 6,
       "frameBounds": [
         640,
-        844,
+        562,
         900,
-        1096
+        814
       ],
       "imageBounds": [
         684,
-        885,
+        603,
         857,
-        1058
+        776
       ],
       "matteOpening": [
         682,
-        877,
+        595,
         859,
+        784
+      ]
+    },
+    {
+      "position": 7,
+      "row": 2,
+      "column": 6,
+      "identitySuppliedByUser": "Farhad Mehrad",
+      "file": "7-farhad-mehrdad.jfif",
+      "sha256": "85e5deaf56ef5ce9466d5c1caed1ccf1265881dcbb3095a4277aee6a015d79f0",
+      "columnFromRight": 1,
+      "frameBounds": [
+        2940,
+        844,
+        3200,
+        1096
+      ],
+      "imageBounds": [
+        2984,
+        885,
+        3157,
+        1058
+      ],
+      "matteOpening": [
+        2982,
+        877,
+        3159,
         1066
       ]
     },
     {
       "position": 8,
       "row": 2,
-      "column": 2,
+      "column": 5,
       "identitySuppliedByUser": "Viguen",
       "file": "8-vigen.jfif",
       "sha256": "503770902ab8856208971e90cef9bd5a2df9111e56aae10d8c212464a813e1b5",
-      "frameBounds": [
-        1100,
-        844,
-        1360,
-        1096
-      ],
-      "imageBounds": [
-        1144,
-        885,
-        1317,
-        1058
-      ],
-      "matteOpening": [
-        1142,
-        877,
-        1319,
-        1066
-      ]
-    },
-    {
-      "position": 9,
-      "row": 2,
-      "column": 3,
-      "identitySuppliedByUser": "Faramarz Aslani",
-      "file": "9-faramarz-aslani.jfif",
-      "sha256": "44c9ea0456ea8130d048041413cc00df4b0e25a11f870c5498eaa03b1ab44d40",
-      "frameBounds": [
-        1560,
-        844,
-        1820,
-        1096
-      ],
-      "imageBounds": [
-        1604,
-        885,
-        1777,
-        1058
-      ],
-      "matteOpening": [
-        1602,
-        877,
-        1779,
-        1066
-      ]
-    },
-    {
-      "position": 10,
-      "row": 2,
-      "column": 4,
-      "identitySuppliedByUser": "Aref",
-      "file": "10-aref.jfif",
-      "sha256": "469eb7c3f319c2c7ea6f5c8b2be06098d63e9e21ffc2469e440004bd590cb29a",
-      "frameBounds": [
-        2020,
-        844,
-        2280,
-        1096
-      ],
-      "imageBounds": [
-        2064,
-        885,
-        2237,
-        1058
-      ],
-      "matteOpening": [
-        2062,
-        877,
-        2239,
-        1066
-      ]
-    },
-    {
-      "position": 11,
-      "row": 2,
-      "column": 5,
-      "identitySuppliedByUser": "Leila Forouhar",
-      "file": "11-Leila-Forouhar.jfif",
-      "sha256": "0ec9939937c86ceabb9e7edb754fdf4f734b852b05690700833de726de059b2d",
+      "columnFromRight": 2,
       "frameBounds": [
         2480,
         844,
@@ -324,28 +255,110 @@
       ]
     },
     {
-      "position": 12,
+      "position": 9,
       "row": 2,
-      "column": 6,
-      "identitySuppliedByUser": "Siavash Ghomayshi",
-      "file": "12-siavash-ghomayshi.jfif",
-      "sha256": "9c285660f074ace47a2c58f252e9db056e05b507f4fd3fe9570c6c5e49620131",
+      "column": 4,
+      "identitySuppliedByUser": "Faramarz Aslani",
+      "file": "9-faramarz-aslani.jfif",
+      "sha256": "44c9ea0456ea8130d048041413cc00df4b0e25a11f870c5498eaa03b1ab44d40",
+      "columnFromRight": 3,
       "frameBounds": [
-        2940,
+        2020,
         844,
-        3200,
+        2280,
         1096
       ],
       "imageBounds": [
-        2984,
+        2064,
         885,
-        3157,
+        2237,
         1058
       ],
       "matteOpening": [
-        2982,
+        2062,
         877,
-        3159,
+        2239,
+        1066
+      ]
+    },
+    {
+      "position": 10,
+      "row": 2,
+      "column": 3,
+      "identitySuppliedByUser": "Aref",
+      "file": "10-aref.jfif",
+      "sha256": "469eb7c3f319c2c7ea6f5c8b2be06098d63e9e21ffc2469e440004bd590cb29a",
+      "columnFromRight": 4,
+      "frameBounds": [
+        1560,
+        844,
+        1820,
+        1096
+      ],
+      "imageBounds": [
+        1604,
+        885,
+        1777,
+        1058
+      ],
+      "matteOpening": [
+        1602,
+        877,
+        1779,
+        1066
+      ]
+    },
+    {
+      "position": 11,
+      "row": 2,
+      "column": 2,
+      "identitySuppliedByUser": "Leila Forouhar",
+      "file": "11-Leila-Forouhar.jfif",
+      "sha256": "0ec9939937c86ceabb9e7edb754fdf4f734b852b05690700833de726de059b2d",
+      "columnFromRight": 5,
+      "frameBounds": [
+        1100,
+        844,
+        1360,
+        1096
+      ],
+      "imageBounds": [
+        1144,
+        885,
+        1317,
+        1058
+      ],
+      "matteOpening": [
+        1142,
+        877,
+        1319,
+        1066
+      ]
+    },
+    {
+      "position": 12,
+      "row": 2,
+      "column": 1,
+      "identitySuppliedByUser": "Siavash Ghomayshi",
+      "file": "12-siavash-ghomayshi.jfif",
+      "sha256": "9c285660f074ace47a2c58f252e9db056e05b507f4fd3fe9570c6c5e49620131",
+      "columnFromRight": 6,
+      "frameBounds": [
+        640,
+        844,
+        900,
+        1096
+      ],
+      "imageBounds": [
+        684,
+        885,
+        857,
+        1058
+      ],
+      "matteOpening": [
+        682,
+        877,
+        859,
         1066
       ]
     }
@@ -365,7 +378,13 @@
       2334,
       500
     ],
-    "alteration": "uniform resampling only; no recoloring/redrawing"
+    "alteration": "uniform resampling only; no recoloring/redrawing",
+    "baseVisibility": "blank; no logo baked into master",
+    "coreOverlay": "overlays/AHANGBAN-LOGO-CORE.png",
+    "coreOverlaySha256": "34936480af9e5663e9bd871ac3efbcc5cbb0c9b96cc1092f682775b78f52435c",
+    "glowOverlay": "overlays/AHANGBAN-LOGO-GLOW.png",
+    "glowOverlaySha256": "ad9e31c46d9ae19e1d84c566ee50653d895c8648a8635e7d8f76ecb78680e63e",
+    "glowStatus": "Static light layer, ready for opacity animation in video; not yet an animated video"
   },
   "voiceSelection": {
     "mainFemale": "voice-00",
@@ -381,7 +400,7 @@
     "acoustic panels",
     "material palette",
     "lighting positions",
-    "logo",
+    "blank logo slot and original logo overlay",
     "gallery order and positions",
     "desk",
     "one microphone and arm",
@@ -391,5 +410,7 @@
     "two host chairs"
   ],
   "additionalCameraViewsGenerated": 0,
-  "limitation": "This is a 2D AI architecture concept with exact-source artwork compositing, not an engineered acoustic design or a reconstructed 3D scene. A locked 3D scene is needed for guaranteed geometric identity across new camera angles."
+  "limitation": "This is a 2D AI architecture concept with exact-source artwork compositing, not an engineered acoustic design or a reconstructed 3D scene. A locked 3D scene is needed for guaranteed geometric identity across new camera angles.",
+  "presenterIdentityLock": "Presenters/character-lock.json",
+  "presenterIdentityLockSha256": "1beae33986ea2cf21e6567d4beb14b25341873bd2a8495e9195e9297e0d24f2e"
 }

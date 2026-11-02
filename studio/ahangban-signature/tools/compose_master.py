@@ -27,7 +27,7 @@ def main():
     placements=[];rows=[562,844];centers=[770,1230,1690,2150,2610,3070]
     for i,portrait in enumerate(data['portraits']):
         src=refs/portrait['file'];assert sha(src)==portrait['sha256']
-        row=i//6;col=i%6;x=centers[col]-130;y=rows[row]
+        row=portrait['row']-1;col=portrait['column']-1;x=centers[col]-130;y=rows[row]
         shadow=Image.new('RGBA',(W,H),(0,0,0,0));d=ImageDraw.Draw(shadow)
         d.rectangle((x+7,y+10,x+263,y+257),fill=(0,0,0,125))
         canvas=Image.alpha_composite(canvas,shadow.filter(ImageFilter.GaussianBlur(7)))
@@ -58,25 +58,39 @@ def main():
     slot=[round((513-16)*scale),round((125-6)*scale),round((862-16)*scale),round((181-6)*scale)]
     fitted=ImageOps.contain(trimmed,(slot[2]-slot[0],slot[3]-slot[1]),Image.Resampling.LANCZOS)
     lx=slot[0]+(slot[2]-slot[0]-fitted.width)//2;ly=slot[1]+(slot[3]-slot[1]-fitted.height)//2
-    canvas.alpha_composite(fitted,(lx,ly))
+    # Keep the physical logo panel EMPTY in the permanent architecture master.
+    # Core lettering and an optional blue light halo are independent compositing layers.
+    overlaydir=ROOT/'overlays';overlaydir.mkdir(exist_ok=True)
+    core=Image.new('RGBA',(W,H),(0,0,0,0));core.alpha_composite(fitted,(lx,ly))
+    corepath=overlaydir/'AHANGBAN-LOGO-CORE.png';core.save(corepath,optimize=True)
+    glow=Image.new('RGBA',(W,H),(0,0,0,0));alpha=core.getchannel('A')
+    # Glow is added behind the unchanged original logo; it never replaces/recolors its glyphs.
+    for radius,strength in [(28,.20),(12,.30),(4,.40)]:
+        spread=alpha.filter(ImageFilter.GaussianBlur(radius)).point(lambda value:round(value*strength))
+        halo=Image.new('RGBA',(W,H),(21,86,216,0));halo.putalpha(spread)
+        glow=Image.alpha_composite(glow,halo)
+    glowpath=overlaydir/'AHANGBAN-LOGO-GLOW.png';glow.save(glowpath,optimize=True)
     master=out/'MASTER-VIEW-001.png';canvas.convert('RGB').save(master,optimize=True)
     lock={
-      'version':'1.1','approvalStatus':'pending_user_approval','master':str(master.relative_to(ROOT)),
+      'version':'1.2','approvalStatus':'pending_user_approval','master':str(master.relative_to(ROOT)),
       'masterSha256':sha(master),'dimensions':[W,H],'aspectRatio':'16:9',
       'architectureNativeDimensions':list(plate.size),'architectureCrop':[16,6,1360,762],
       'architectureIsUpscaledIn4KComposite':True,
       'architectureSource':'working/architecture-clean.png','architectureSourceSha256':sha(work/'architecture-clean.png'),
       'camera':'Centered frontal hero-wide, approximately 26mm visual intent; not a calibrated 3D camera.',
       'seatingCount':2,'seatingPurpose':'Two empty side-by-side host chairs; no characters yet.',
+      'galleryReadingDirection':'right-to-left within each row',
       'portraitCount':12,'rows':2,'columns':6,'frameDimensions':[260,252],
       'horizontalFrameGap':200,'rowTopCoordinates':rows,'portraits':placements,
-      'logo':{'source':str(logo_src.relative_to(ROOT)),'sourceSha256':sha(logo_src),'transparentPaddingCrop':list(bbox),'bounds':[lx,ly,lx+fitted.width,ly+fitted.height],'alteration':'uniform resampling only; no recoloring/redrawing'},
+      'logo':{'source':str(logo_src.relative_to(ROOT)),'sourceSha256':sha(logo_src),'transparentPaddingCrop':list(bbox),'bounds':[lx,ly,lx+fitted.width,ly+fitted.height],'alteration':'uniform resampling only; no recoloring/redrawing','baseVisibility':'blank; no logo baked into master','coreOverlay':str(corepath.relative_to(ROOT)),'coreOverlaySha256':sha(corepath),'glowOverlay':str(glowpath.relative_to(ROOT)),'glowOverlaySha256':sha(glowpath),'glowStatus':'Static light layer, ready for opacity animation in video; not yet an animated video'},
       'voiceSelection':{'mainFemale':'voice-00','replacementMale':'voice-02','replacedMale':'voice-01','scope':'Session-specific voice identifiers; not guaranteed portable to other services/sessions.'},
-      'immutableAfterApproval':['room geometry','ceiling','doors','walnut slats','acoustic panels','material palette','lighting positions','logo','gallery order and positions','desk','one microphone and arm','two speakers','mixing console','headphones','two host chairs'],
+      'immutableAfterApproval':['room geometry','ceiling','doors','walnut slats','acoustic panels','material palette','lighting positions','blank logo slot and original logo overlay','gallery order and positions','desk','one microphone and arm','two speakers','mixing console','headphones','two host chairs'],
+      'presenterIdentityLock':'Presenters/character-lock.json',
+      'presenterIdentityLockSha256':sha(ROOT/'Presenters/character-lock.json'),
       'additionalCameraViewsGenerated':0,
       'limitation':'This is a 2D AI architecture concept with exact-source artwork compositing, not an engineered acoustic design or a reconstructed 3D scene. A locked 3D scene is needed for guaranteed geometric identity across new camera angles.'
     }
     (ROOT/'environment-lock.json').write_text(json.dumps(lock,ensure_ascii=False,indent=2))
-    print('MASTER:',master,'4K composited PNG, twelve exact-source photos and unchanged supplied logo.')
+    print('MASTER:',master,'4K blank-logo master; twelve exact-source photos in RTL reading order; separate original-logo and glow layers.')
 
 if __name__=='__main__':main()

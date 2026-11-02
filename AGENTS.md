@@ -48,3 +48,16 @@ calibrated 3D scene; do not promise guaranteed geometric identity across new vie
 Main feminine voice stays voice-00; the user selected replacement masculine voice-02
 in this session. The previously exported MP4 still uses the earlier voice until
 explicitly re-rendered. Voice identifiers are session-specific.
+
+### Latest studio and presenter decision
+
+Master v1.2: artists follow the user's numbered list RIGHT-TO-LEFT within each row;
+never mirror the source photographs themselves. The master has an EMPTY logo panel.
+Use the official original logo and optional glow as independent video overlays;
+do not bake the wordmark back into the base without user instruction.
+Ava and Sajad are the two permanent user-designated presenters. Read
+`studio/ahangban-signature/Presenters/character-lock.json` before any presenter
+production. Preserve their supplied identities and selected voices; do not adopt
+fictional gold logos or room designs from their character boards. Sajad's manager
+role is supplied by the user. No real-person identification is inferred.
+The base remains empty; left/right seat assignment is not yet chosen.
