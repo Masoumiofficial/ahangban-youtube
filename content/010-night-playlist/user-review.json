@@ -11,7 +11,7 @@
     "professional realistic dimensional vertical Reel cover"
   ],
   "revision": "revision-02",
-  "latestRevisionStatus": "male_voice_reselection_pending",
+  "latestRevisionStatus": "paused_before_more_auditions_need_voice_character",
   "fullEpisodeRebuildPending": true,
   "publicationAuthorized": false,
   "latestFeedback": [
@@ -22,5 +22,10 @@
   "youtubeThumbnailApproved": true,
   "reelCoverApproved": true,
   "maleVoice07Rejected": true,
-  "finalizationPausedForMaleVoice": true
+  "finalizationPausedForMaleVoice": true,
+  "maleAudition08BothRejected": true,
+  "maleAudition09BothRejected": true,
+  "voice08Approved": false,
+  "voice09Approved": false,
+  "lastFeedback": "هیچ کدوم اصلا جنس صدا خیلی شخمی شده"
 }

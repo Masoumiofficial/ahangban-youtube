@@ -5,6 +5,15 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
+## Latest decision — STOP random male auditions; 08 and 09 BOTH rejected
+
+User explicitly rejected both candidates from battle08 and battle09 despite tool
+selection results returning voice08/09. Latest: «هیچ کدوم اصلا جنس صدا خیلی شخمی شده».
+Do NOT synthesize with voice07, voice08 or voice09 or run another unsolicited random
+pair. Ask one focused question about desired voice character / optional female-only
+route. Male casting and final render remain paused. Female06 and approved revision02
+video style and thumbnail/cover remain unchanged. No publication authorized.
+
 ## CURRENT — finalization PAUSED: male voice-07/delivery explicitly REJECTED
 
 User approved revision-02 VIDEO LOOK and both COVERS and asked final production,
