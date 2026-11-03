@@ -6,7 +6,8 @@ from pathlib import Path
 PIN='7e89489ca51c0d008fc1963ec6c03fc5bd0b9397'
 UPSTREAM='https://github.com/antgroup/echomimic_v3.git'
 HERE=Path(__file__).resolve().parent;WORK=Path('/content/ava-motion-pilot')
-sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+from model_assets import BASE_REPO,base_files,validate_base,file_sha256
+sha=file_sha256
 from process_tools import run_logged
 STAGE='startup';COMMAND_NUMBER=0;RUN_ID=uuid.uuid4().hex
 def stage(name):
@@ -40,12 +41,16 @@ def inputs():
 def download_models():
  from huggingface_hub import HfApi,snapshot_download
  api=HfApi(token=False);audit=[];models=WORK/'models'
- def hf(repo,folder,patterns):
+ def hf(repo,folder,patterns=None):
   pin=api.model_info(repo).sha
+  if patterns is None:
+   patterns=base_files(api.list_repo_files(repo_id=repo,revision=pin,token=False))
+  print('Downloading official model:',repo,'revision:',pin,flush=True)
   result=Path(snapshot_download(repo_id=repo,revision=pin,local_dir=models/folder,allow_patterns=patterns,token=False))
-  audit.append(dict(provider='HuggingFace',repository=repo,revision=pin,files=[dict(path=str(p.relative_to(result)),sha256=sha(p),bytes=p.stat().st_size) for p in result.rglob('*') if p.is_file() and '.cache' not in p.parts]))
+  if repo==BASE_REPO:validate_base(result,patterns)
+  audit.append(dict(provider='HuggingFace',repository=repo,revision=pin,requestedFiles=patterns,files=[dict(path=str(p.relative_to(result)),sha256=sha(p),bytes=p.stat().st_size) for p in ([result/name for name in patterns] if repo==BASE_REPO else result.rglob('*')) if p.is_file() and '.cache' not in p.parts]))
   return result
- base=hf('alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP','base',['transformer/*','vae/*','text_encoder/*','tokenizer/*','image_encoder/*','scheduler/*','model_index.json','*LICENSE*','README.md'])
+ base=hf(BASE_REPO,'base')
  flash=hf('BadToBest/EchoMimicV3','flash',['echomimicv3-flash-pro/diffusion_pytorch_model.safetensors','echomimicv3-flash-pro/transformer/*','echomimicv3-flash-pro/chinese-wav2vec2-base/*','*LICENSE*','README.md'])
  weights=list(flash.glob('echomimicv3-flash-pro/**/diffusion_pytorch_model.safetensors'))
  if len(weights)!=1:raise RuntimeError('Official Flash checkpoint layout differs from reviewed source. Stop; no unofficial fallback.')
@@ -57,8 +62,7 @@ def download_models():
   from modelscope import snapshot_download as ms_download
   encoder=Path(ms_download('TencentGameMate/chinese-wav2vec2-base',revision='master',cache_dir=str(models/'modelscope')))
   audit.append(dict(provider='ModelScope',repository='TencentGameMate/chinese-wav2vec2-base',requestedRevision='master',immutableRevisionNotResolved=True,files=[dict(path=str(p.relative_to(encoder)),sha256=sha(p),bytes=p.stat().st_size) for p in encoder.rglob('*') if p.is_file()]))
- for p in (base/'transformer',base/'text_encoder',base/'vae',encoder):
-  if not p.is_dir():raise RuntimeError('Missing official model component: '+str(p))
+ if not encoder.is_dir():raise RuntimeError('Missing official audio encoder: '+str(encoder))
  (WORK/'model-provenance.json').write_text(json.dumps(audit,indent=2)+'\n')
  return base,weights[0],encoder
 
@@ -96,9 +100,12 @@ def validate_video(file,job):
  return dict(file=str(file.relative_to(WORK)),sha256=sha(file),frames=count,fps=meta['fps'],nativeSize=[w,h],maxFaceRegionDifference=variation,technicalTemporalVariationOnly=True,identityAndPersianPhonemeSyncHumanReviewPending=True,listeningClosedMouthHumanReviewPending=True)
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--confirm-free-or-local',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--confirm-free-or-local',action='store_true');parser.add_argument('--prepare-models-only',action='store_true',help='Download/validate official weights only. No engine, GPU model, or video inference.');args=parser.parse_args()
  if not args.confirm_free_or_local:raise RuntimeError('Explicit free/local-runtime confirmation required; no metered compute.')
  os.environ.update(HF_HUB_DISABLE_TELEMETRY='1',HF_HUB_DISABLE_XET='1',TOKENIZERS_PARALLELISM='false')
+ if args.prepare_models_only:
+  stage('model_downloads');base,weights,encoder=download_models()
+  print('MODEL_FILES_READY_NO_INFERENCE',flush=True);return
  stage('preflight');report=preflight()
  stage('input_validation');source,m=inputs();out=WORK/'outputs'
  stage('stale_output_guard')
@@ -132,7 +139,7 @@ def cli():
  except Exception as exc:
   print('AVA_FAILURE_STAGE:',STAGE,file=sys.stderr,flush=True)
   traceback.print_exc()
-  data=dict(stage=STAGE,exceptionType=type(exc).__name__,message=str(exc),python=sys.version.split()[0],pipelineCompleted=False,logFile=str(getattr(exc,'log_path','')),originalUserErrorNotDiagnosed=True)
+  data=dict(stage=STAGE,exceptionType=type(exc).__name__,message=str(exc),python=sys.version.split()[0],pipelineCompleted=False,logFile=str(getattr(exc,'log_path','')),reportedMissingBaseTransformerCause='incorrect directory-based download filter and guard; official pinned config uses flat files')
   try:
    WORK.mkdir(parents=True,exist_ok=True)
    (WORK/'failure-summary.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')

@@ -15,7 +15,7 @@ def package_versions():
 
 def collect(root=ROOT,work=Path('/content/ava-motion-pilot'),probe_gpu=True):
  root=Path(root);work=Path(work);py=sys.version_info[:2];zip_path=root/'downloads/ahangban-ava-motion-pilot-inputs.zip';bundle=root/'content/011-ava-split-screen/motion/bundle.json'
- result=dict(status='DIAGNOSTICS_ONLY_NOT_MODEL_RESULT',python=sys.version.split()[0],executable=sys.executable,pythonInUpstreamTestedRange=py in ((3,10),(3,11)),pythonCompatibilityNote='Upstream lists Python3.10/3.11; other versions are untested, NOT proof of the original root cause.',packageVersions=package_versions(),inputZipPresent=zip_path.is_file(),outputsAlreadyExist=(work/'outputs').exists(),previousErrorRootCauseKnown=False,modelExecutedByDiagnostics=False,downloadsTriggered=False,filesDeleted=False)
+ result=dict(status='DIAGNOSTICS_ONLY_NOT_MODEL_RESULT',python=sys.version.split()[0],executable=sys.executable,pythonInUpstreamTestedRange=py in ((3,10),(3,11)),pythonCompatibilityNote='Upstream lists Python3.10/3.11; other versions are untested, NOT proof of the original root cause.',packageVersions=package_versions(),inputZipPresent=zip_path.is_file(),outputsAlreadyExist=(work/'outputs').exists(),reportedBaseLayoutBugKnown=True,currentRuntimeErrorProvenByThisCheck=False,modelExecutedByDiagnostics=False,downloadsTriggered=False,filesDeleted=False)
  if zip_path.is_file() and bundle.is_file():
   try:result['inputZipHashMatches']=hashlib.sha256(zip_path.read_bytes()).hexdigest()==json.loads(bundle.read_text())['sha256']
   except (ValueError,KeyError,OSError) as e:result['inputZipCheckError']=type(e).__name__

@@ -45,7 +45,7 @@ class DiagnosticsTests(unittest.TestCase):
    with patch.object(diagnostic.subprocess,'run') as run:
     result=diagnostic.collect(root,work,probe_gpu=False)
    run.assert_not_called();self.assertEqual(set(Path(d).rglob('*')),before);self.assertEqual(video.read_bytes(),b'KEEP VIDEO')
-   self.assertTrue(result['outputsAlreadyExist']);self.assertFalse(result['modelExecutedByDiagnostics']);self.assertFalse(result['downloadsTriggered']);self.assertFalse(result['previousErrorRootCauseKnown'])
+   self.assertTrue(result['outputsAlreadyExist']);self.assertFalse(result['modelExecutedByDiagnostics']);self.assertFalse(result['downloadsTriggered']);self.assertFalse(result['currentRuntimeErrorProvenByThisCheck'])
  def test_missing_torch_gpu_probe_reports_child_error(self):
   with tempfile.TemporaryDirectory() as d,patch.object(diagnostic.subprocess,'run',return_value=subprocess.CompletedProcess([],1,'','ModuleNotFoundError: torch')):
    result=diagnostic.collect(d,d)
@@ -57,7 +57,7 @@ class DiagnosticsTests(unittest.TestCase):
  def test_313_warns_without_claiming_known_cause(self):
   with tempfile.TemporaryDirectory() as d,patch.object(diagnostic.sys,'version_info',(3,13)):
    r=diagnostic.collect(d,d,False)
-   self.assertFalse(r['pythonInUpstreamTestedRange']);self.assertFalse(r['previousErrorRootCauseKnown'])
+   self.assertFalse(r['pythonInUpstreamTestedRange']);self.assertFalse(r['currentRuntimeErrorProvenByThisCheck'])
  def test_failure_summary_contains_stage_and_real_error(self):
   with tempfile.TemporaryDirectory() as d,patch.object(runner,'WORK',Path(d)),patch.object(runner,'STAGE','test-stage'),patch.object(runner,'main',side_effect=ValueError('actual-error')),contextlib.redirect_stderr(io.StringIO()) as err:
    self.assertEqual(runner.cli(),1)
