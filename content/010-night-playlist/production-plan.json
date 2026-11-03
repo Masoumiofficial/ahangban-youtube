@@ -5,15 +5,15 @@
   "productionAuthorized": true,
   "publishAuthorized": false,
   "published": false,
-  "status": "preproduction_waiting_for_music_sources",
-  "youtubeComplete": false,
-  "verticalComplete": false,
+  "status": "technical_QA_passed_pending_final_user_listening",
+  "youtubeComplete": true,
+  "verticalComplete": true,
   "approvedVoiceIdentities": {
     "female": "voice-06",
     "male": "voice-07"
   },
   "voiceIdentitiesAreHistoricalSessionReferences": true,
-  "newVoiceAudioGenerated": false,
+  "newVoiceAudioGenerated": true,
   "musicSecondsEach": {
     "youtube": 35,
     "vertical": 12
@@ -36,7 +36,7 @@
     50,
     65
   ],
-  "timingsAreEstimates": true,
+  "timingsAreEstimates": false,
   "questionLedOpening": true,
   "faceless": true,
   "speechOverMusic": false,
@@ -44,5 +44,16 @@
   "officialLogoChanged": false,
   "subscriptionPurchased": false,
   "copyrightCleared": false,
-  "finalUserReviewPending": true
+  "finalUserReviewPending": true,
+  "actualDurationsSeconds": {
+    "youtube": 163.0,
+    "vertical": 52.21
+  },
+  "firstMusicStartSeconds": {
+    "youtube": 13.12,
+    "vertical": 6.48
+  },
+  "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
+  "sourceManifest": "source-manifest.json",
+  "freshSpeechClips": 8
 }

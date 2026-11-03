@@ -1,5 +1,14 @@
 # AhangBan — ابزارهای یوتیوب
 
+## قسمت جدید 010 — پلی‌لیست شبانه، آمادهٔ بازبینی
+
+**«سه آهنگ برای وقتی که شب تموم نمی‌شه»**: تو بارون که رفتی / سیاوش قمیشی، دستای تو / داریوش، اگه یه روز / فرامرز اصلانی. نسخهٔ یوتیوب ۲:۴۳، نسخهٔ عمودی ۵۲٫۲۱ ثانیه؛ بررسی فنی پاس شده، تأیید شنیداری نهایی و مجوز انتشار هنوز داده نشده‌اند.
+
+- [دانلود یوتیوب](https://github.com/Masoumiofficial/ahangban-youtube/raw/refs/heads/arena/d4ba4e0b-ahangban-youtube/downloads/ahangban-night-playlist-youtube.mp4)
+- [دانلود عمودی](https://github.com/Masoumiofficial/ahangban-youtube/raw/refs/heads/arena/d4ba4e0b-ahangban-youtube/downloads/ahangban-night-playlist-reel.mp4)
+- [منابع، مشخصات و محدودیت‌های بررسی](content/010-night-playlist/README.fa.md)
+
+
 کانال: https://www.youtube.com/@AhangBan
 
 ## انتشار محلی از همان کامپیوتر

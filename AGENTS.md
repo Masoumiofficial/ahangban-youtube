@@ -5,25 +5,30 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## ACTIVE — 010 night playlist, production authorized; awaiting three music sources
+## ACTIVE — 010 COMPLETE, awaiting final user listening; NOT published
 
-User approved the next topic «سه آهنگ برای وقتی که شب تموم نمی‌شه» and said
-«بزن بریم سراغش». This authorizes production, NOT publication of 010. New folder
-`content/010-night-playlist/` contains draft horizontal/vertical scripts, transparent
-pending production/source manifests, generated rainy-night background and a native
-1920x1080 opening CONCEPT still, not a rendered video. Three proposed selections:
-Baroon / Siavash Ghomayshi, Dastaye To / Dariush, Age Ye Rooz / Faramarz Aslani.
-GitHub main tree at 802481583c520aeddc298043904d99c58e02c7b0 contains only five
-Chavoshi music MP3s; none of the proposed audio/covers are available. Ask only for
-these three originals or accessible source links; do not claim listening, excerpt
-selection, new speech generation, rights clearance or a finished video. No audio
-paths/offsets/hashes have been fabricated. Retain approved historical voice-06/07
-identities; session IDs in JSON are references, not guaranteed current-tool access.
-Do not silently substitute rejected voices, human recording, clones or stock music.
-Targets: 3x35s music horizontal and 3x12s vertical; durations are estimates until real
-sources and speech. No speech over music; official logo unmodified on contrast card.
-Five standard-library preproduction tests pass, plus opening still size check. These
-are NOT video/audio QA. Preserve 009 upload receipt and unresolved public status.
+User supplied Artist/2-video-2 on main plus three ahangban.ir URLs. Source commit
+pinned at d4cf777d859a0826c7dd4ccde9b7fccea4a8a503; 3 MP3 + 3 cover blobs verified.
+First song is «تو بارون که رفتی», NOT the draft generic «بارون». All new speech,
+track metadata and titles corrected. Other songs: Dastaye To / Dariush, Age Ye Rooz /
+Faramarz Aslani. No website pages fetched; exact user URLs included in descriptions.
+`content/010-night-playlist/` contains source manifest, pinned-blob fetcher, builder,
+validator, packaging, 8 fresh MP3s with historical approved voice-06 female/07 male
+(the tools accepted both IDs), three generated night plates, scripts and deliveries.
+Final files: downloads/ahangban-night-playlist-{youtube,reel}.mp4 plus thumbnail/cover.
+YouTube 163.0s native 1920x1080/25, 3x35s music; vertical 52.21s native 1080x1920/30,
+3x12s music and independently generated short speech. Logo original/unmodified;
+no voice pitch/speed changes, human recordings, clones, presenters or lip sync.
+Both full exported videos independently decode/QA PASS, every decoded section audio
+correlates >.97 with source, peaks -2.0/-1.9 dBFS, encoded camera/FFT motion checked.
+17 episode Python tests +44 Node tests PASS. Final visual frame review done; NOT
+final user listening, copyright clearance or publication. Excerpts are signal/RMS
+selected, NOT chorus recognition/lyrical edits or actual human listening. Captions
+are proportional + silence-nudged, not word-level alignment. Original opening-concept
+still is historical, not final output. Ignored rendered/ holds intermediate sources.
+User authorized creation ONLY for 010; no subscription/publishing/account changes.
+Existing local publisher job remains 009 — do not reuse to publish 010. Preserve the
+009 upload receipt and UNKNOWN public status; don't create duplicate uploads.
 
 ## CURRENT PUBLICATION recovery — user uploaded video; public status UNKNOWN
 
@@ -51,7 +56,7 @@ without real evidence. API may force private uploads; cannot bypass audit/restri
 Content ID Checks are not certified. Tokens stay in process memory only; the
 non-secret receipt belongs in ignored rendered/, never in Git.
 
-## ACTIVE — 009 production with APPROVED voice06/07; testing pause lifted
+## COMPLETED — 009 production with APPROVED voice06/07; testing pause lifted
 
 User listened to 008 and said «آره الان عااالی شد بزن بریم تدوین ویدیو ... تایم موزیک بیشتر بشه».
 Do not ask them to audition the same voices again. Female voice-06 and generic male

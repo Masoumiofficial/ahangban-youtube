@@ -1,0 +1,111 @@
+{
+  "status": "technical_QA_passed_pending_final_user_listening",
+  "kind": "youtube",
+  "video": "ahangban-night-playlist-youtube.mp4",
+  "sha256": "c01039479d17d3e6427cb37be84efc6566f9a252e3e56547a021ce08aa76e4b1",
+  "bytes": 25353439,
+  "duration": 163.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "fullDecode": "PASS",
+  "sourceAndLogoHashes": "PASS",
+  "freshSpeechSourceHashes": "PASS",
+  "narrationVoices": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "voicePitchOrSpeedChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "musicSamples": 3,
+  "musicSecondsEach": 35,
+  "musicTotalSeconds": 105.0,
+  "musicCameraShots": 12,
+  "encodedCameraAndSpectrumMotion": "PASS",
+  "decodedAudioChecks": [
+    {
+      "type": "speech",
+      "id": "01",
+      "start": 0.0,
+      "duration": 12.84,
+      "sourceToDecodedOutputCorrelation": 0.9999594727054305,
+      "rms": 0.10000908201165742
+    },
+    {
+      "type": "music",
+      "id": "to-baroon-keh-rafty",
+      "start": 13.12,
+      "duration": 35.0,
+      "sourceToDecodedOutputCorrelation": 0.999144250040681,
+      "rms": 0.09174354180896561
+    },
+    {
+      "type": "speech",
+      "id": "02",
+      "start": 48.4,
+      "duration": 10.402541666666666,
+      "sourceToDecodedOutputCorrelation": 0.9997716632880292,
+      "rms": 0.09751573048722882
+    },
+    {
+      "type": "music",
+      "id": "dastaye-to",
+      "start": 59.082541666666664,
+      "duration": 35.0,
+      "sourceToDecodedOutputCorrelation": 0.9958328474866831,
+      "rms": 0.09522732777600071
+    },
+    {
+      "type": "speech",
+      "id": "03",
+      "start": 94.36254166666666,
+      "duration": 11.28,
+      "sourceToDecodedOutputCorrelation": 0.9907335379529846,
+      "rms": 0.09872786265539063
+    },
+    {
+      "type": "speech",
+      "id": "04",
+      "start": 105.92254166666666,
+      "duration": 6.4319375,
+      "sourceToDecodedOutputCorrelation": 0.9744442656113225,
+      "rms": 0.09798491449778704
+    },
+    {
+      "type": "music",
+      "id": "age-ye-rooz",
+      "start": 112.63447916666667,
+      "duration": 35.0,
+      "sourceToDecodedOutputCorrelation": 0.9941276204708192,
+      "rms": 0.0901080729245817
+    },
+    {
+      "type": "speech",
+      "id": "05",
+      "start": 147.91447916666667,
+      "duration": 8.12,
+      "sourceToDecodedOutputCorrelation": 0.9873477522118164,
+      "rms": 0.09882832140028755
+    },
+    {
+      "type": "speech",
+      "id": "06",
+      "start": 156.31447916666667,
+      "duration": 6.397104166666667,
+      "sourceToDecodedOutputCorrelation": 0.9745080135983494,
+      "rms": 0.1000398018184333
+    }
+  ],
+  "decodedPeakDbFS": -2.0,
+  "overallRmsDbFS": -20.61,
+  "captionTiming": "Proportional short groups nudged toward nearby quiet gaps; NOT forced alignment",
+  "cameraTiming": "Positive RMS-energy onset guided, not certified tempo/beat detection",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "limitations": "Voice identity approval covers the 008 samples, not a new listening sign-off on 010. Music windows are signal-selected, not certified chorus or semantic edits. AI still environments animated in 2D, not 3D footage. No current-song-trend, rights-clearance or virality claim."
+}
