@@ -1,0 +1,31 @@
+{
+  "status": "WEB_UPLOAD_INPUTS_ONLY_NO_INFERENCE",
+  "demo": "https://modelscope.cn/studios/BadToBest/EchoMimicV3",
+  "demoAvailabilityVerified": false,
+  "freeExecutionVerified": false,
+  "deployedVersionVerified": false,
+  "agentUploadedToDemo": false,
+  "agentInvokedModel": false,
+  "userInitiatedUploadRequired": true,
+  "processingNotice": "User upload would send the synthetic Ava image/voice to third-party ModelScope demo, not previous Google Colab. No account access or auto-upload.",
+  "paidAccessAuthorized": false,
+  "publishAuthorized": false,
+  "modelImageSha256": "68854d222a57969ff89567530f8b4c8202d4f8b8855acac96a23e7628e861adf",
+  "conditioningAudioSha256": "8a8c69429f00f6d0072ff7a760101a3b80ad7e746d0b62fe323cfc0b75f7e1bd",
+  "sourceImageApproved": true,
+  "voice": "voice-06",
+  "newImageOrSpeechGenerated": false,
+  "completeSpeechSeconds": 4.48,
+  "fileDurationSeconds": 4.84,
+  "sourcePilotBundleSha256": "2049356ee5f3f7e462923ce189b6d286e823515aebcf5f6683d663a98ddd2243",
+  "files": {
+    "downloads/ahangban-ava-web-image.png": {
+      "sha256": "68854d222a57969ff89567530f8b4c8202d4f8b8855acac96a23e7628e861adf",
+      "bytes": 1665050
+    },
+    "downloads/ahangban-ava-web-speech.wav": {
+      "sha256": "8a8c69429f00f6d0072ff7a760101a3b80ad7e746d0b62fe323cfc0b75f7e1bd",
+      "bytes": 154958
+    }
+  }
+}

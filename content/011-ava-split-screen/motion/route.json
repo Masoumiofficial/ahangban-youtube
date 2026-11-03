@@ -1,5 +1,5 @@
 {
-  "status": "INPUTS_AND_EXPERIMENTAL_NOTEBOOK_PREPARED_NOT_INFERRED",
+  "status": "USER_REPORTED_COLAB_ERROR_REQUESTED_DIFFERENT_ROUTE",
   "engine": "EchoMimicV3 Flash",
   "repository": "https://github.com/antgroup/echomimic_v3",
   "revision": "7e89489ca51c0d008fc1963ec6c03fc5bd0b9397",
@@ -33,5 +33,12 @@
     "claiming temporal pixel changes certify Persian phoneme sync"
   ],
   "returnArtifact": "ava-motion-pilot-results.zip",
-  "nextRequiredHumanAction": "User starts a FREE Colab GPU and executes notebook; return results ZIP, or exact error. Do not pay if unavailable or out of memory."
+  "nextRequiredHumanAction": "User starts a FREE Colab GPU and executes notebook; return results ZIP, or exact error. Do not pay if unavailable or out of memory.",
+  "userAttemptReported": true,
+  "successfulInferenceReturned": false,
+  "exactErrorSupplied": false,
+  "failureStageKnown": false,
+  "errorFixedClaimed": false,
+  "colabRetryRequestedByUser": false,
+  "currentAlternative": "content/011-ava-split-screen/web-demo/README.fa.md"
 }

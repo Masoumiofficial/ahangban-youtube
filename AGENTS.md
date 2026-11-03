@@ -5,7 +5,32 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## CURRENT — 011 Ava approved; mic revised; user chose FREE COLAB motion pilot
+## LATEST — user requests different route after Colab error; no successful animation yet
+
+User supplied only the call line, not traceback, then «نمیشه یه راه دیگخ بزن».
+Root cause UNKNOWN; do not claim fixed/install/OOM diagnosis or request the same
+traceback again as the only next step. No successful model video returned.
+New simpler alternative prepared: official author-linked public WEB demo at
+https://modelscope.cn/studios/BadToBest/EchoMimicV3 (verified link in upstream
+README, NOT actual live service availability/free queue/auth/deployed version).
+content/011-ava-split-screen/web-demo/ has offline packager, 7 passing stdlib tests,
+manifest + guide. downloads/ahangban-ava-web-image.png = exact approved actor;
+web-speech.wav = exact preserved talk-conditioning WAV (4.48s full voice06 +.36tail).
+web-upload.zip = those two +prompt/guide/provenance; no installer or new voice/face.
+Begin with talk-only5s trial, not full episode; listening comes after actual result.
+
+Agent has NOT uploaded/invoked ModelScope or any new service. Previous Google
+consent is NOT blanket automatic upload consent elsewhere. Disclose user-initiated
+web upload processes synthetic Ava/audio at third-party demo. No account/token/card
+requested or stored. No subscriptions/payment authorized; stop if demo requests paid
+access. Can't guarantee available/free/quality; never claim web demo tested or video
+rendered. If user returns actual MP4, QA identity/Persian lips/head then composite
+with protected corrected mic; never replace motion by still zoom or cached states.
+Approved face/mic outputs and previous Colab inputs/code preserved below as history.
+Working copy was rehydrated sparsely from remote current branch; absent unselected
+paths aren't deletions. Check git sparse-checkout/index before assuming files lost.
+
+## PRECEDING — 011 Ava approved; mic revised; FREE COLAB attempt (now bypassed)
 
 User approved face/layout: «آره خوبه فقط میکروفون رو یکم طبیعی تر بکنبعد بزن بریم
 سراغ حرکت لب و دهان و سر و گوش دادن آوا». Keep exact approved actor PNG SHA256
