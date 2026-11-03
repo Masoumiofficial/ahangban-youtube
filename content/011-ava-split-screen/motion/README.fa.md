@@ -128,3 +128,31 @@ python3 -u content/011-ava-split-screen/motion/run_colab_pilot.py \
 ```
 
 پیام ترمیم: `INPUT_BUNDLE_RESTORED_HASH_VERIFIED`. بعد از آن، همان فرمان **اجرای واقعی دو تست کوتاه مدل** را ادامه می‌دهد، نه فقط بررسی فایل‌ها. اگر Git یا خروجی قدیمی مانع شد، reset/حذف نکنید؛ همان خطا را برگردانید. این اصلاح با۷آزمون جدید بازیابی/حفظ فایل/هش/خطای Git/رقابت، همراه۲۸آزمون قبلی =۳۵آزمون CPU پاس شده؛ بازیابی در Colab و خود رندر هنوز تأیید نشده‌اند.
+
+
+## وضعیت فعلی: توقف رندر بعد از SIGKILL هنگام بارگذاری مدل
+
+کاربر تأیید کرد ZIP با هش درست برگشت و مراحل ورودی/کش/وزن‌ها پاس شد. سپس فرایند `inference:talk` **هنگام بارگذاری** با `returncode=-9` قطع شد؛ هیچ کلیپ موفقی گزارش نشده است. ادامهٔ فرمان‌های رندرِ بخش‌های قبلی فعلاً توصیه نمی‌شود. پوشهٔ `outputs/talk` اکنون ممکن است موجود/ناقص باشد؛ حذفش نکنید تا محافظ خروجی را دور نزنیم.
+
+دو مشاهدهٔ جدا:
+
+1. ناسازگاری API **قطعی**: کد upstream در loader ترنسفورمر و T5 از `diffusers.models.modeling_utils` تابع `load_model_dict_into_meta` را می‌خواهد، اما در [منبع رسمی Diffusers0.35.1](https://github.com/huggingface/diffusers/blob/v0.35.1/src/diffusers/models/model_loading_utils.py) این تابع در **`models.model_loading_utils`** است. fallback به ساخت مدلِ پرمصرف در لاگ دیده می‌شود. اصلاح کامل هنوز انجام/تأیید نشده؛ صرف alias کردن تابع، حل meta tensorهای صوتیِ غایب در وزن پایه یا کفایت RAM را تضمین نمی‌کند.
+2. `-9` یعنی **SIGKILL**؛ کمبود **RAM سیستم** در این مرحله محتمل است، اما بدون شواهد منابع/کرنل، علت سیگنال اثبات نشده. پیام TensorFlow دربارهٔ CUDA به‌تنهایی نقص GPU در PyTorch را ثابت نمی‌کند. کلیدهای غایب۲۲۰تایی متعلق به بارگذاری پایه بودند؛ بارگذاری بعدی Flash طبق لاگ missing0/unexpected0 داشته است.
+
+فعلاً فقط این سلول استاندارد و خواندنی در **همان runtime** اجرا شود؛ بدون تغییر بسته/نصب/دانلود وزن/رندر/حذف/Restart:
+
+```python
+from pathlib import Path
+for line in Path('/proc/meminfo').read_text().splitlines():
+    if line.startswith(('MemTotal:', 'MemAvailable:', 'SwapTotal:', 'SwapFree:')):
+        print(line)
+for name in ('memory.max', 'memory.current', 'memory.events',
+             'memory/memory.limit_in_bytes', 'memory/memory.failcnt'):
+    p = Path('/sys/fs/cgroup') / name
+    if p.is_file():
+        print(name, p.read_text().strip())
+```
+
+این اطلاعات دربارهٔ **RAM میزبان/حد کانتینر** است، نه VRAM14.56GiB قبلاً گزارش‌شده. شمارنده‌های cgroup تجمعی‌اند؛ حتی `oom_kill>0` به‌تنهایی اثبات نمی‌کند همین فرایند اخیر کشته شده است. بعد از دریافت شواهد RAM، باید بارگذار کم‌حافظه و سقف منابع با هم بررسی شوند، نه اینکه دوباره کورکورانه کل پایلوت اجرا شود.
+
+`runtime_health.py` همین اطلاعات را ساخت‌یافته می‌خواند و در صورت اجرای فایل، در فرایند جدا با timeout و HF offline فقط وجود/امضای تابع loader را بررسی می‌کند؛ هیچ `from_pretrained` یا وزن/مدلی بارگذاری نمی‌شود.۵تست جدید خواندنی و mock +۳۵تست قبلی =۴۰تست CPU پاس؛ این به معنی حل ناسازگاری/حافظه یا اجرای موفق مدل نیست.

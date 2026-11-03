@@ -5,7 +5,29 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## NEWEST — missing input ZIP, NOT Python or base weights; Git recovery patched
+## CURRENT — PAUSE rendering after talk child SIGKILL; RAM evidence needed
+
+User confirmed input ZIP restored/hash verified, guards/engine/model downloads PASS,
+then inference:talk began MODEL LOADING and child died -9 (SIGKILL). No successful clip.
+Confirmed compatibility error: pinned diffusers0.35.1 no longer exports
+load_model_dict_into_meta from models.modeling_utils. Official v0.35.1 source VERIFIED
+via gh API: actual function in models.model_loading_utils, with dtype keyword etc.
+Upstream WanTransformer + WanT5 imports use OLD path, catch Exception, fall back to
+full-memory model construction. User log shows this fallback twice (last at T5).
+Host RAM exhaustion is LIKELY but NOT PROVEN by -9. No kernel/cgroup-before-after proof.
+Do NOT equate TensorFlow cudart warning with lost PyTorch GPU; PyTorch preflight PASS.
+220 missing keys in BASE transformer were followed by FULL Flash missing0/unexpected0;
+not evidence of failed Flash download. RAM (host) != T4 VRAM14.56GiB.
+NEXT: SAME runtime READ-ONLY /proc/meminfo +cgroup memory limit/current/events. No
+model rerun, package reinstall/downgrade, output deletion or restart. outputs/talk now
+exists or may contain partial artifacts; never bypass stale guard by deleting it.
+New motion/runtime_health.py reads RAM/cgroup and optional timeout-bound offline
+loader API probe ONLY (no weights/models/GPU).5new tests +35prior =40PASS CPU/stdlib.
+NO loader compatibility/memory fix claimed yet; need RAM evidence and proper handling
+of meta parameters/missing base audio keys before trying patched model. Don't simply
+alias API and promise success; don't lower resolution for a load-time RAM problem.
+
+## PREVIOUS — missing input ZIP, NOT Python or base weights; Git recovery patched
 
 After successful model preparation, actual pilot stopped in input_validation BEFORE
 engine/inference: FileNotFoundError /content/ahangban-youtube/downloads/ahangban-ava-motion-pilot-inputs.zip.

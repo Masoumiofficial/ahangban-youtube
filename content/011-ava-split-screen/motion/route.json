@@ -1,5 +1,5 @@
 {
-  "status": "INPUT_BUNDLE_MISSING_AFTER_CODE_UPDATE_GIT_RECOVERY_PATCHED",
+  "status": "PAUSED_AFTER_TALK_LOADER_SIGKILL_NO_BLIND_RETRY",
   "engine": "EchoMimicV3 Flash",
   "repository": "https://github.com/antgroup/echomimic_v3",
   "revision": "7e89489ca51c0d008fc1963ec6c03fc5bd0b9397",
@@ -33,7 +33,7 @@
     "claiming temporal pixel changes certify Persian phoneme sync"
   ],
   "returnArtifact": "ava-motion-pilot-results.zip",
-  "nextRequiredHumanAction": "Same FREE Colab runtime: ff-only update SAME branch, then runner --confirm-free-or-local. Missing input ZIP now recovered from Git HEAD only after pinned hash verification. No reinstall/reset/cache deletion. This attempts real inference after input repair.",
+  "nextRequiredHumanAction": "Read-only HOST RAM/cgroup evidence in SAME runtime. Do not rerun model, reinstall/downgrade packages, remove outputs, reset runtime or buy compute. Loader compatibility/memory plan pending evidence.",
   "userAttemptReported": true,
   "successfulInferenceReturned": false,
   "exactErrorSupplied": true,
@@ -60,7 +60,7 @@
   "python313IsProvenCause": false,
   "diagnosticTool": "diagnose_runtime.py",
   "loggingFixOnly": false,
-  "failureStage": "input_validation/input_bundle_missing",
+  "failureStage": "inference:talk/model_loading",
   "reportedChildException": "RuntimeError: Missing official model component: /content/ava-motion-pilot/models/base/transformer",
   "reportedCauseKnown": true,
   "reportedCause": "Incorrect directory-based allow_patterns and directory guards. Pinned engine config uses root transformer config/checkpoint, named .pth files and google/umt5-xxl tokenizer.",
@@ -104,16 +104,27 @@
     "modelInferenceExecutedByPreparation": false
   },
   "latestFailure": {
-    "exception": "FileNotFoundError",
-    "path": "/content/ahangban-youtube/downloads/ahangban-ava-motion-pilot-inputs.zip",
-    "stage": "input_validation",
-    "renderStarted": false,
-    "pythonWarningCausedFailure": false,
-    "missingFileCauseProven": false,
-    "suspectedMechanism": "out-of-cone input ZIP removed by sparse-checkout update",
-    "recoveryPatch": "Restore only absent input ZIP via git show HEAD, verify bundle SHA256, atomic exclusive creation. Existing different input file is never overwritten.",
-    "colabRecoveryVerified": false
+    "exception": "LoggedProcessError",
+    "childReturncode": -9,
+    "signal": "SIGKILL",
+    "stage": "inference:talk",
+    "lastKnownOperation": "T5 low-memory loader import failed; upstream announced full-memory fallback",
+    "confirmedCompatibilityError": "cannot import name 'load_model_dict_into_meta' from diffusers.models.modeling_utils",
+    "correctApiModuleInPinnedDiffusers": "diffusers.models.model_loading_utils",
+    "apiRelocationSource": "https://github.com/huggingface/diffusers/blob/v0.35.1/src/diffusers/models/model_loading_utils.py",
+    "sigkillCauseProven": false,
+    "suspectedCause": "Host RAM pressure during model loading after low_cpu_mem_usage fallback; requires resource evidence.",
+    "gpuDriverFailureProven": false,
+    "tensorflowCudaWarningNotProofPyTorchLostGPU": true,
+    "flashCheckpointReportedMissingKeys": 0,
+    "flashCheckpointReportedUnexpectedKeys": 0,
+    "generatedClipReturned": false,
+    "outputsMayAlreadyExist": true,
+    "safeAction": "Preserve all outputs/logs/caches, read host RAM and cgroup counters only."
   },
   "inputBundleExpectedSha256": "2049356ee5f3f7e462923ce189b6d286e823515aebcf5f6683d663a98ddd2243",
-  "inputBundleBytes": 2953567
+  "inputBundleBytes": 2953567,
+  "modelInferenceAttemptedByUser": true,
+  "inputBundleRecoveryVerifiedByUser": true,
+  "loaderCompatibilityFixed": false
 }
