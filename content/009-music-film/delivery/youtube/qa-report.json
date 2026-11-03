@@ -1,0 +1,143 @@
+{
+  "status": "technical_QA_passed_pending_final_user_listening",
+  "kind": "youtube",
+  "video": "ahangban-music-film-youtube.mp4",
+  "sha256": "9979d2bd3f2b35f96494c690cdbbdf88f417f7d75fad7839fc24dc3edd9c6290",
+  "bytes": 41694635,
+  "duration": 242.41,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "fullDecode": "PASS",
+  "sourceAndLogoHashes": "PASS",
+  "approved008PerformancesReusedExactly": "PASS",
+  "narrationVoices": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "voicePitchOrSpeedChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "musicSamples": 5,
+  "musicSecondsEach": 30,
+  "musicTotalSeconds": 150.0,
+  "musicCameraShots": 20,
+  "encodedCameraAndSpectrumMotion": "PASS",
+  "decodedAudioChecks": [
+    {
+      "type": "speech",
+      "id": "01",
+      "start": 0.0,
+      "duration": 11.4,
+      "sourceToDecodedOutputCorrelation": 0.9999937723913062,
+      "rms": 0.09625654840428322
+    },
+    {
+      "type": "music",
+      "id": "kojaei",
+      "start": 11.68,
+      "duration": 30.0,
+      "sourceToDecodedOutputCorrelation": 0.9993052166529475,
+      "rms": 0.08674856535840303
+    },
+    {
+      "type": "speech",
+      "id": "02",
+      "start": 41.96,
+      "duration": 12.2253125,
+      "sourceToDecodedOutputCorrelation": 0.9996496358228972,
+      "rms": 0.09573249439331055
+    },
+    {
+      "type": "speech",
+      "id": "03",
+      "start": 54.465312499999996,
+      "duration": 10.52,
+      "sourceToDecodedOutputCorrelation": 0.9999955321046984,
+      "rms": 0.08907938204832985
+    },
+    {
+      "type": "music",
+      "id": "sange-saboor",
+      "start": 65.2653125,
+      "duration": 30.0,
+      "sourceToDecodedOutputCorrelation": 0.9985943192421411,
+      "rms": 0.08223972729066556
+    },
+    {
+      "type": "speech",
+      "id": "04",
+      "start": 95.5453125,
+      "duration": 8.138604166666667,
+      "sourceToDecodedOutputCorrelation": 0.9996290087335198,
+      "rms": 0.0966507699639955
+    },
+    {
+      "type": "speech",
+      "id": "05",
+      "start": 103.96391666666666,
+      "duration": 13.96,
+      "sourceToDecodedOutputCorrelation": 0.9917124665666511,
+      "rms": 0.09416275717200344
+    },
+    {
+      "type": "music",
+      "id": "amir-bi-gazand",
+      "start": 118.20391666666666,
+      "duration": 30.0,
+      "sourceToDecodedOutputCorrelation": 0.9875927077970335,
+      "rms": 0.08059598547687805
+    },
+    {
+      "type": "speech",
+      "id": "06",
+      "start": 148.48391666666666,
+      "duration": 9.206729166666667,
+      "sourceToDecodedOutputCorrelation": 0.9830129503735524,
+      "rms": 0.09384974295628207
+    },
+    {
+      "type": "music",
+      "id": "beraghsa",
+      "start": 157.97064583333332,
+      "duration": 30.0,
+      "sourceToDecodedOutputCorrelation": 0.9929020605606832,
+      "rms": 0.0921180064894193
+    },
+    {
+      "type": "speech",
+      "id": "07",
+      "start": 188.25064583333332,
+      "duration": 10.56,
+      "sourceToDecodedOutputCorrelation": 0.9927589184881402,
+      "rms": 0.09453425579002231
+    },
+    {
+      "type": "music",
+      "id": "bist-hezar-arezoo",
+      "start": 199.09064583333333,
+      "duration": 30.0,
+      "sourceToDecodedOutputCorrelation": 0.9927718161693868,
+      "rms": 0.09122386844114388
+    },
+    {
+      "type": "speech",
+      "id": "08",
+      "start": 229.37064583333333,
+      "duration": 12.76,
+      "sourceToDecodedOutputCorrelation": 0.988785517939074,
+      "rms": 0.09528351751970059
+    }
+  ],
+  "decodedPeakDbFS": -1.9,
+  "overallRmsDbFS": -21.09,
+  "captionTiming": "Proportional short groups nudged toward nearby quiet gaps; NOT forced alignment",
+  "cameraTiming": "Positive RMS-energy onset guided, not certified tempo/beat detection",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "limitations": "Approval covers the 008 samples, not an independent listening sign-off on every new sentence. AI still environments animated in 2D, not 3D footage. No current-song-trend, rights-clearance or virality claim."
+}

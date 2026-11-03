@@ -1,0 +1,221 @@
+{
+  "repository": "Masoumiofficial/ahangban-youtube",
+  "revision": "d318f9f7095ab6c966a743ad3461e8f6fab0db34",
+  "voiceSelection": {
+    "female": "voice-00 unchanged, seven newly synthesized rewritten turns",
+    "male": "Real user-supplied Sajad recording; not a clone or voice-02"
+  },
+  "music": [
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "gitBlob": "bb1ce7d7109cdba52bde3a925acd33eab050b083",
+      "file": "source-media/Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "sha256": "2505da6b8728da033a2abe4aff651f529d75faac094a016b9946cfd71b1d37ab",
+      "bytes": 3787181
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "gitBlob": "213cbec8d3f4ef5f99885012b54ecd8ffe038b17",
+      "file": "source-media/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "sha256": "837736c7f5f9192878eac041760f39b205f0a8e525027ef1701108b309b32ef4",
+      "bytes": 154589
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "gitBlob": "ccf16ec27793cae573390e6068228bffcd847cb9",
+      "file": "source-media/Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "sha256": "37726ce6c3d67b037bbd45eb8c2d9835a8a95e9005c4a93280dba1a09ae2441a",
+      "bytes": 3571231
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "gitBlob": "bca7d63d6af2817ddc28455349d41400c6e4f57a",
+      "file": "source-media/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "sha256": "d2ea0931a663d67c03f955f2349c271ccd7d367ac4eebd68aaeeba8865e94233",
+      "bytes": 20821
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "gitBlob": "084f7b7d28c29e47a1a1734e1e055b6c8d9e989c",
+      "file": "source-media/Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "sha256": "86553316aaa7df881f473b218d7f6e82a73203b87d3bcd80d93085516dfb8e8e",
+      "bytes": 4012604
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "gitBlob": "1044e96ef25f8b4c7d19ef9bc28ad97255716b72",
+      "file": "source-media/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "sha256": "15d258ba8e88c67f5c7df88c809ddb69f021903ece2045dea46f4e88d70bd3f9",
+      "bytes": 195626
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Beraghsa [128].mp3",
+      "gitBlob": "0ed530071efe613f6f7229af15babaa47ecf871b",
+      "file": "source-media/Mohsen Chavoshi - Beraghsa [128].mp3",
+      "sha256": "bdbd52266ad104f91dc4240815b63c779b26b2faab62f88825aea7acdcaa920e",
+      "bytes": 2509526
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Beraghsa.jpg",
+      "gitBlob": "5be75812cd449feae62b5a28316381f33b1afdff",
+      "file": "source-media/Mohsen-Chavoshi-Beraghsa.jpg",
+      "sha256": "58a725b860534ffd69270da9e8563f9f31b4bd6d38a0f8ed0f93b75913d7ca71",
+      "bytes": 92575
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "gitBlob": "11301ac5b91cd262520405c5d1e7de317173e36c",
+      "file": "source-media/Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "sha256": "e465bb9fb8275d14b557b30b1222f11a0c9c2962c3df0304b886c40a71565754",
+      "bytes": 3172518
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "gitBlob": "ddf656b149aec363b649a6e089609068855d992d",
+      "file": "source-media/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "sha256": "e2ad946436b1f01f1fcaa01afd31c949402a081fe32dfae2322c6db6dce544e0",
+      "bytes": 186640
+    }
+  ],
+  "speech": [
+    {
+      "id": "01",
+      "speaker": "female",
+      "file": "audio/01.mp3",
+      "sha256": "382f72b07c01592b68bd70d441063c36a656299d9f78f63b45fc3ddb98731744",
+      "source": "rendered/video-004-own-voice/audio/01.mp3",
+      "sourceSha256": "382f72b07c01592b68bd70d441063c36a656299d9f78f63b45fc3ddb98731744",
+      "voice": "voice-00",
+      "generation": "New speech generated for revised script in this session"
+    },
+    {
+      "id": "02",
+      "speaker": "male",
+      "file": "audio/02.wav",
+      "sha256": "e9908358c6d394082fcb1e566274545f03383b1328d7a867102332145a270d5d",
+      "source": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+      "sourceSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+      "voice": "user_recording",
+      "sourceStart": 4.70775,
+      "sourceEnd": 10.991458,
+      "processing": "60Hz high-pass, -3dB headroom, 12/35ms edge fades; no pitch/time change"
+    },
+    {
+      "id": "03",
+      "speaker": "female",
+      "file": "audio/03.mp3",
+      "sha256": "614657e3695f49597fa3f040dfe42b6b4fc578db2ec82b58a2a3041f3082af1d",
+      "source": "rendered/video-004-own-voice/audio/03.mp3",
+      "sourceSha256": "614657e3695f49597fa3f040dfe42b6b4fc578db2ec82b58a2a3041f3082af1d",
+      "voice": "voice-00",
+      "generation": "New speech generated for revised script in this session"
+    },
+    {
+      "id": "10",
+      "speaker": "male",
+      "file": "audio/10.wav",
+      "sha256": "c24a2b8425bef5e6dd3ab871f50eae09f6606dbfe3c6b1d957bf1b0b36753ae1",
+      "source": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+      "sourceSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+      "voice": "user_recording",
+      "sourceStart": 14.617292,
+      "sourceEnd": 23.629583,
+      "processing": "60Hz high-pass, -3dB headroom, 12/35ms edge fades; no pitch/time change"
+    },
+    {
+      "id": "04",
+      "speaker": "female",
+      "file": "audio/04.mp3",
+      "sha256": "37c1ca804f409cf280003357d426d70ea1bc7431c4b156a1e2bffde7980f33f1",
+      "source": "rendered/video-004-own-voice/audio/04.mp3",
+      "sourceSha256": "37c1ca804f409cf280003357d426d70ea1bc7431c4b156a1e2bffde7980f33f1",
+      "voice": "voice-00",
+      "generation": "New speech generated for revised script in this session"
+    },
+    {
+      "id": "11",
+      "speaker": "male",
+      "file": "audio/11.wav",
+      "sha256": "9b4c7653009c899aaf4f0b0075e977b014756f44a84d7b5b724185e71d90d866",
+      "source": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+      "sourceSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+      "voice": "user_recording",
+      "sourceStart": 27.990167,
+      "sourceEnd": 35.169021,
+      "processing": "60Hz high-pass, -3dB headroom, 12/35ms edge fades; no pitch/time change"
+    },
+    {
+      "id": "05",
+      "speaker": "female",
+      "file": "audio/05.mp3",
+      "sha256": "b04982bbce9316295c760de73911dc857b7ffe989ae04905513b47c7e1791b53",
+      "source": "rendered/video-004-own-voice/audio/05.mp3",
+      "sourceSha256": "b04982bbce9316295c760de73911dc857b7ffe989ae04905513b47c7e1791b53",
+      "voice": "voice-00",
+      "generation": "New speech generated for revised script in this session"
+    },
+    {
+      "id": "06",
+      "speaker": "male",
+      "file": "audio/06.wav",
+      "sha256": "c0f8dcde07db0a605932ead887363ca423a2a883d49db25c725975dbf3548c3f",
+      "source": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+      "sourceSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+      "voice": "user_recording",
+      "sourceStart": 40.311458,
+      "sourceEnd": 47.735958,
+      "processing": "60Hz high-pass, -3dB headroom, 12/35ms edge fades; no pitch/time change"
+    },
+    {
+      "id": "07",
+      "speaker": "female",
+      "file": "audio/07.mp3",
+      "sha256": "6a9636b79e70afdfc548e6055401e602fec59918936769c31554131b1edb28fe",
+      "source": "rendered/video-004-own-voice/audio/07.mp3",
+      "sourceSha256": "6a9636b79e70afdfc548e6055401e602fec59918936769c31554131b1edb28fe",
+      "voice": "voice-00",
+      "generation": "New speech generated for revised script in this session"
+    },
+    {
+      "id": "08",
+      "speaker": "female",
+      "file": "audio/08.mp3",
+      "sha256": "35e8efb26b0b9b98ff3f32b3e4a81132ea75048f50d05fb5be68a642d28de1ce",
+      "source": "rendered/video-004-own-voice/audio/08.mp3",
+      "sourceSha256": "35e8efb26b0b9b98ff3f32b3e4a81132ea75048f50d05fb5be68a642d28de1ce",
+      "voice": "voice-00",
+      "generation": "New speech generated for revised script in this session"
+    },
+    {
+      "id": "09",
+      "speaker": "female",
+      "file": "audio/09.mp3",
+      "sha256": "1735c2085816a8489c1c76c87f82c60e6ec8de86cc589cde83b2a1179bd49d2e",
+      "source": "rendered/video-004-own-voice/audio/09.mp3",
+      "sourceSha256": "1735c2085816a8489c1c76c87f82c60e6ec8de86cc589cde83b2a1179bd49d2e",
+      "voice": "voice-00",
+      "generation": "New speech generated for revised script in this session"
+    }
+  ],
+  "recordingSource": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+  "recordingSourceSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+  "recordingCuts": {
+    "02": [
+      4.70775,
+      10.991458
+    ],
+    "10": [
+      14.617292,
+      23.629583
+    ],
+    "11": [
+      27.990167,
+      35.169021
+    ],
+    "06": [
+      40.311458,
+      47.735958
+    ]
+  },
+  "cutReview": "Speech islands with padding; needs user aural confirmation, not forced alignment"
+}

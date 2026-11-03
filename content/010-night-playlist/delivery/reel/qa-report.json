@@ -1,0 +1,79 @@
+{
+  "status": "technical_QA_passed_pending_final_user_listening",
+  "kind": "reel",
+  "video": "ahangban-night-playlist-reel.mp4",
+  "sha256": "19e1c3ccd67f93a2f0da93967be4a055afa435d8404579f84f609087a5c8cad3",
+  "bytes": 9699972,
+  "duration": 52.21,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "fullDecode": "PASS",
+  "sourceAndLogoHashes": "PASS",
+  "freshSpeechSourceHashes": "PASS",
+  "narrationVoices": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "voicePitchOrSpeedChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "musicSamples": 3,
+  "musicSecondsEach": 12,
+  "musicTotalSeconds": 36.0,
+  "musicCameraShots": 9,
+  "encodedCameraAndSpectrumMotion": "PASS",
+  "decodedAudioChecks": [
+    {
+      "type": "speech",
+      "id": "v01",
+      "start": 0.0,
+      "duration": 6.2,
+      "sourceToDecodedOutputCorrelation": 0.9999674078953837,
+      "rms": 0.10463307520621576
+    },
+    {
+      "type": "music",
+      "id": "to-baroon-keh-rafty",
+      "start": 6.48,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.9990081508145584,
+      "rms": 0.09714013329299462
+    },
+    {
+      "type": "music",
+      "id": "dastaye-to",
+      "start": 18.759999999999998,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.9998726228665415,
+      "rms": 0.08450814294433767
+    },
+    {
+      "type": "music",
+      "id": "age-ye-rooz",
+      "start": 31.04,
+      "duration": 12.0,
+      "sourceToDecodedOutputCorrelation": 0.9995456854442971,
+      "rms": 0.0905118321450891
+    },
+    {
+      "type": "speech",
+      "id": "v02",
+      "start": 43.32,
+      "duration": 8.614604166666666,
+      "sourceToDecodedOutputCorrelation": 0.9996348167528177,
+      "rms": 0.09869207571104262
+    }
+  ],
+  "decodedPeakDbFS": -1.9,
+  "overallRmsDbFS": -20.85,
+  "captionTiming": "Proportional short groups nudged toward nearby quiet gaps; NOT forced alignment",
+  "cameraTiming": "Positive RMS-energy onset guided, not certified tempo/beat detection",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "limitations": "Voice identity approval covers the 008 samples, not a new listening sign-off on 010. Music windows are signal-selected, not certified chorus or semantic edits. AI still environments animated in 2D, not 3D footage. No current-song-trend, rights-clearance or virality claim."
+}

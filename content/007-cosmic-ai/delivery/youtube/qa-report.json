@@ -1,0 +1,138 @@
+{
+  "status": "technical_QA_passed_pending_user_listening_and_aesthetic_review",
+  "kind": "youtube",
+  "video": "ahangban-cosmic-youtube.mp4",
+  "sha256": "26e586b82c290025246fc4c78704b4a293e8dbfb256397f6e7ee15f3e549a4ad",
+  "bytes": 33866141,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "duration": 202.61,
+  "fullDecode": "PASS",
+  "sourceHashes": "PASS",
+  "selectedFreshSyntheticSpeech": "PASS",
+  "allSpeechSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "musicSamples": 5,
+  "musicSecondsEach": 20,
+  "actualDecodedAudioChecks": [
+    {
+      "type": "speech",
+      "id": "01",
+      "outputStart": 0.0,
+      "duration": 7.2910625,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9999884851530328,
+      "rms": 0.12410948600731576
+    },
+    {
+      "type": "speech",
+      "id": "04",
+      "outputStart": 7.5310625,
+      "duration": 14.036458333333334,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9999851544938538,
+      "rms": 0.11033358217012602
+    },
+    {
+      "type": "music",
+      "id": "kojaei",
+      "outputStart": 21.807520833333335,
+      "duration": 20.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9895588828204649,
+      "rms": 0.09249901660629847
+    },
+    {
+      "type": "speech",
+      "id": "05",
+      "outputStart": 42.04752083333334,
+      "duration": 13.606895833333333,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9953908242093835,
+      "rms": 0.11620596348916297
+    },
+    {
+      "type": "music",
+      "id": "sange-saboor",
+      "outputStart": 55.89441666666667,
+      "duration": 20.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9827549758737345,
+      "rms": 0.08308970244597144
+    },
+    {
+      "type": "speech",
+      "id": "06",
+      "outputStart": 76.13441666666667,
+      "duration": 11.28,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9805270747633937,
+      "rms": 0.10540805960448528
+    },
+    {
+      "type": "speech",
+      "id": "07",
+      "outputStart": 87.65441666666666,
+      "duration": 13.374708333333333,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9951715456756168,
+      "rms": 0.10492601939249123
+    },
+    {
+      "type": "music",
+      "id": "amir-bi-gazand",
+      "outputStart": 101.269125,
+      "duration": 20.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9994503327702421,
+      "rms": 0.08189102540508834
+    },
+    {
+      "type": "speech",
+      "id": "08",
+      "outputStart": 121.509125,
+      "duration": 13.514020833333333,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9999835755139674,
+      "rms": 0.11254774298717875
+    },
+    {
+      "type": "music",
+      "id": "beraghsa",
+      "outputStart": 135.26314583333334,
+      "duration": 20.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9919110646288899,
+      "rms": 0.09579439514783318
+    },
+    {
+      "type": "speech",
+      "id": "09",
+      "outputStart": 155.50314583333335,
+      "duration": 16.6255,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9956264348223371,
+      "rms": 0.10128483716642415
+    },
+    {
+      "type": "music",
+      "id": "bist-hezar-arezoo",
+      "outputStart": 172.36864583333335,
+      "duration": 20.0,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9920092105241588,
+      "rms": 0.09312799462385625
+    },
+    {
+      "type": "speech",
+      "id": "10",
+      "outputStart": 192.60864583333336,
+      "duration": 9.764,
+      "decodedOutputToFreshPreparedAudioCorrelation": 0.9956442536194913,
+      "rms": 0.10703128740268628
+    }
+  ],
+  "decodedPeakDbFS": -2.0,
+  "overallRmsDbFS": -20.15,
+  "cinematicBackgroundMotion": "PASS",
+  "actualAudioSpectrum": "PASS",
+  "captionTiming": "Proportional four-word groups, not forced aligned",
+  "openTypePersianShaping": "HarfBuzz + FreeType, original Unicode; no presentation-form tofu",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "limitations": "No independent aural/pronunciation sign-off, current-song-trend verification or virality guarantee. Synthetic imagery is animated 2D, not generated live-action footage."
+}

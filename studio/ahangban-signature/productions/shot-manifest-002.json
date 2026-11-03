@@ -1,0 +1,44 @@
+{
+  "version": "1.2",
+  "status": "user_requested_realism_revision_for_video",
+  "realismAdjustments": {
+    "seatedScale": 0.95,
+    "exposureMultiplier": 0.94,
+    "contrastMultiplier": 0.97,
+    "saturationMultiplier": 0.96,
+    "contactShadowOpacity": 0.12
+  },
+  "camera": "Same approved frontal master; no new camera angle",
+  "base": "master/MASTER-VIEW-001.png",
+  "baseSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
+  "seatingFromCamera": {
+    "left": "Sajad",
+    "right": "Ava"
+  },
+  "source": "working/HOSTS-VIEW-001-generated.png",
+  "sourceSha256": "f234631d32297cc6cb87f240687a61986eeef5fbf2e994b8f418a98fb7785cae",
+  "layer": "productions/HOSTS-VIEW-002-layer.png",
+  "layerSha256": "47835778ee46363080913087c1764e84053725ddef6f1574c5b107b3c42bf722",
+  "composite": "productions/HOSTS-VIEW-002.png",
+  "compositeSha256": "8840148a415fc5b5d0e322822ce8c0dbaac8671298d5f0a8522ab19bc8e46050",
+  "checks": [
+    "Empty master unchanged",
+    "Pixels outside presenter alpha exactly match approved master",
+    "Original equipment foreground restored"
+  ],
+  "limitations": [
+    "AI-generated presenter appearance requires user review; not an identity-exact 3D rig",
+    "Presenter source generated at 1365x768 and resampled to 4K; not native 4K human detail",
+    "Static image only; no voice, lip sync, neon animation or video integration"
+  ],
+  "wardrobe": "User-requested black suit and black shirt; no gold tie",
+  "wardrobeEditSource": "working/HOSTS-VIEW-001-black-suit-edit.png",
+  "wardrobeEditSourceSha256": "7f3f6090197ea50adf38ebb72a20e9f7636eb69b83f7315d600510cf31795517",
+  "wardrobeEditBoundsOnNativePlate": [
+    460,
+    401,
+    659,
+    523
+  ],
+  "voiceStatus": "Awaiting user own recording; do not treat voice-02 as current preference"
+}

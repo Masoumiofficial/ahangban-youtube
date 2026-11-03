@@ -1,0 +1,57 @@
+{
+  "status": "technical_preview_QA_passed_NOT_human_voice_approval",
+  "duration": 39.56,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "fullDecode": "PASS",
+  "decodedPeakDbFS": -1.9,
+  "audioChecks": [
+    {
+      "id": "female-hook",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9999802005792433
+    },
+    {
+      "id": "male-reply",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9997908959277696
+    },
+    {
+      "id": "to-baroon-keh-rafty",
+      "type": "music",
+      "sourceToDecodedOutputCorrelation": 0.999292241110677
+    },
+    {
+      "id": "female-transition",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9999910965306408
+    },
+    {
+      "id": "dastaye-to",
+      "type": "music",
+      "sourceToDecodedOutputCorrelation": 0.9999274671577617
+    },
+    {
+      "id": "age-ye-rooz",
+      "type": "music",
+      "sourceToDecodedOutputCorrelation": 0.9996886594491445
+    }
+  ],
+  "cameraAndAudioSpectrumMotion": "PASS",
+  "drySpeechDecoded": true,
+  "drySpeechHasMusic": false,
+  "drySpeechEffects": false,
+  "threeFreshClipsNotReusedFromRejected010": true,
+  "logoAndCoverOutputHashes": "PASS",
+  "coverSizes": "PASS",
+  "speechSpeedOrPitchChanged": false,
+  "humanRecordingUsed": false,
+  "preciseEmotionOrWordStressControl": false,
+  "fullEpisodeRebuilt": false,
+  "newVoicePerformanceApproved": false,
+  "published": false,
+  "copyrightCleared": false
+}

@@ -1,0 +1,26 @@
+{
+  "speaker": "Sajad, user states this is their own voice",
+  "recording": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+  "recordingSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+  "consentDate": "2026-11-02",
+  "authorization": "User explicitly permits personal synthetic voice creation and third-party processing of their supplied own voice for this project.",
+  "latestExecutionPreference": "No subscription; local option selected in clarification",
+  "allowedScope": [
+    "Prepare supplied recording for voice cloning",
+    "Evaluate reusable personal voice synthesis for Sajad in AhangBan videos",
+    "Third-party processing authorized in principle; current local preference takes precedence"
+  ],
+  "notPerformed": [
+    "No third-party audio upload",
+    "No trained or cloned voice created",
+    "No billable provider request",
+    "No new own-voice video render"
+  ],
+  "stillRequiresUserActionOrSpecificApproval": [
+    "Hardware details / local execution setup",
+    "Any paid purchase with a stated price",
+    "Any provider-required speaker verification by the user",
+    "Public sharing of the voice profile or YouTube publication"
+  ],
+  "privacy": "Derived audio and speaker embeddings must remain outside public Git by default. Original m4a was uploaded publicly by user; do not rewrite history or delete it without a separate request."
+}

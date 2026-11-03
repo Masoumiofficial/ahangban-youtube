@@ -1,0 +1,52 @@
+{
+  "status": "rendered_pilot_pending_user_lipsync_and_identity_review",
+  "engine": "MuseTalk V1.5 custom static-face pilot",
+  "musetalkRevision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+  "gpu": "Tesla T4",
+  "torch": "2.0.1+cu118",
+  "seed": 42,
+  "sourceEpisodeSha256": "2efd5ba3cb0731ff256e707a7ef5ba508da6c364eee3e364cf9f1c5f452ee0e5",
+  "sourceImageSha256": "8840148a415fc5b5d0e322822ce8c0dbaac8671298d5f0a8522ab19bc8e46050",
+  "results": [
+    {
+      "speaker": "male",
+      "file": "male-studio-pilot.mp4",
+      "duration": 6.283708333333333,
+      "frames": 158,
+      "sha256": "0687e7abeecc43be4e4a53b0b6a277692591d952c055cb427e56da4fd3633f7c",
+      "mouthRegionChanged": true,
+      "temporalMouthChange": true,
+      "fullDecode": "PASS",
+      "mouthMaskBoundingBox": [
+        125,
+        158,
+        245,
+        232
+      ],
+      "lipSyncQuality": "UNVERIFIED: human listening and visual review required"
+    },
+    {
+      "speaker": "female",
+      "file": "female-studio-pilot.mp4",
+      "duration": 4.489999999999995,
+      "frames": 113,
+      "sha256": "6111e9eb2927be66db1532d2f55fc215130dc9e4cde21684812cc5e62c46bb9d",
+      "mouthRegionChanged": true,
+      "temporalMouthChange": true,
+      "fullDecode": "PASS",
+      "mouthMaskBoundingBox": [
+        103,
+        148,
+        224,
+        201
+      ],
+      "lipSyncQuality": "UNVERIFIED: human listening and visual review required"
+    }
+  ],
+  "paidServiceUsed": false,
+  "voiceRegenerated": false,
+  "headOrBodyAnimation": false,
+  "newCameraPerspective": false,
+  "youtubePublished": false,
+  "note": "Small experimental mouth patches only. Not full-episode production or automatic quality approval."
+}

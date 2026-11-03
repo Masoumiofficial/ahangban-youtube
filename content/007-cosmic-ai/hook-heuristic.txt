@@ -1,0 +1,11 @@
+
+  پنج آهنگ از چاوشی، فقط یکی رو انتخاب کن. انتخابت رو تا آخر نگه دار!
+  -------------------------------------------------------------------
+    SPECIFICITY   34  ######
+    ADDRESS       26  #####
+    STAKES        22  ####
+    CURIOSITY     24  ####
+    BREVITY       30  ######
+    VERDICT       25  WEAK
+    formula      Unclassified  (no formula matched - that is usually a summary, not a hook)
+    weakest      STAKES - name what it costs them to keep doing it the current way

@@ -1,0 +1,18 @@
+{
+  "ava": {
+    "voice": "voice-05",
+    "language": "fa",
+    "auditionIndex": 2,
+    "status": "user selected fresh female voice after rejecting previous female style"
+  },
+  "male": {
+    "voice": "voice-04",
+    "language": "fa",
+    "status": "previous audition selected generic male AI narrator; not Sajad, no personal imitation"
+  },
+  "allSpeechSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloning": "stopped by explicit user instruction",
+  "previousFemaleVoice03": "superseded",
+  "actualModelSpeakerNationality": "not asserted; Persian delivery is auditioned, not a real-speaker nationality claim"
+}

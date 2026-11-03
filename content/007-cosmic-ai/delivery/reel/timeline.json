@@ -1,0 +1,158 @@
+{
+  "kind": "reel",
+  "duration": 58.7350625,
+  "events": [
+    {
+      "start": 0.0,
+      "end": 7.2910625,
+      "duration": 7.2910625,
+      "sceneDuration": 7.5310625,
+      "type": "speech",
+      "id": "01",
+      "speaker": "female",
+      "scene": "opening",
+      "text": "پنج آهنگ از چاوشی، فقط یکی رو انتخاب کن. انتخابت رو تا آخر نگه دار!",
+      "voice": "voice-05",
+      "visualScene": "opening"
+    },
+    {
+      "start": 7.5310625,
+      "end": 15.5310625,
+      "duration": 8.0,
+      "sceneDuration": 8.24,
+      "type": "music",
+      "scene": "kojaei",
+      "visualScene": "kojaei",
+      "title": "کجایی",
+      "artist": "محسن چاوشی و سینا سرلک",
+      "sourceStart": 47,
+      "sourceFile": "Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3"
+    },
+    {
+      "start": 15.7710625,
+      "end": 23.7710625,
+      "duration": 8.0,
+      "sceneDuration": 8.24,
+      "type": "music",
+      "scene": "sange-saboor",
+      "visualScene": "sange-saboor",
+      "title": "سنگ صبور",
+      "artist": "محسن چاوشی",
+      "sourceStart": 42,
+      "sourceFile": "Mohsen Chavoshi - Sange Saboor [128].mp3"
+    },
+    {
+      "start": 24.0110625,
+      "end": 32.0110625,
+      "duration": 8.0,
+      "sceneDuration": 8.24,
+      "type": "music",
+      "scene": "amir-bi-gazand",
+      "visualScene": "amir-bi-gazand",
+      "title": "امیر بی‌گزند",
+      "artist": "محسن چاوشی",
+      "sourceStart": 52,
+      "sourceFile": "Mohsen Chavoshi - Amire Bi Gazand [128].mp3"
+    },
+    {
+      "start": 32.2510625,
+      "end": 40.2510625,
+      "duration": 8.0,
+      "sceneDuration": 8.24,
+      "type": "music",
+      "scene": "beraghsa",
+      "visualScene": "beraghsa",
+      "title": "برقص آ",
+      "artist": "محسن چاوشی",
+      "sourceStart": 37,
+      "sourceFile": "Mohsen Chavoshi - Beraghsa [128].mp3"
+    },
+    {
+      "start": 40.491062500000005,
+      "end": 48.491062500000005,
+      "duration": 8.0,
+      "sceneDuration": 8.24,
+      "type": "music",
+      "scene": "bist-hezar-arezoo",
+      "visualScene": "bist-hezar-arezoo",
+      "title": "بیست هزار آرزو",
+      "artist": "محسن چاوشی",
+      "sourceStart": 42,
+      "sourceFile": "Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3"
+    },
+    {
+      "start": 48.73106250000001,
+      "end": 58.4950625,
+      "duration": 9.764,
+      "sceneDuration": 10.004,
+      "type": "speech",
+      "id": "10",
+      "speaker": "female",
+      "scene": "recap",
+      "text": "انتخابت رو کامنت کن. برای شنیدن پیشنهادهای بعدی، رسانهٔ آهنگ‌بان رو دنبال کن. آهنگ‌بان دات آی آر.",
+      "voice": "voice-05",
+      "visualScene": "recap"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.035611328125,
+      "text": "پنج آهنگ از چاوشی،"
+    },
+    {
+      "start": 2.050611328125,
+      "end": 3.9722998046874998,
+      "text": "فقط یکی رو انتخاب"
+    },
+    {
+      "start": 3.9872998046875,
+      "end": 5.90898828125,
+      "text": "کن. انتخابت رو تا"
+    },
+    {
+      "start": 5.92398828125,
+      "end": 7.2760625,
+      "text": "آخر نگه دار!"
+    },
+    {
+      "start": 48.73106250000001,
+      "end": 50.81584744623657,
+      "text": "انتخابت رو کامنت کن."
+    },
+    {
+      "start": 50.83084744623657,
+      "end": 53.65055712365592,
+      "text": "برای شنیدن پیشنهادهای بعدی،"
+    },
+    {
+      "start": 53.66555712365592,
+      "end": 56.17029905913979,
+      "text": "رسانهٔ آهنگ‌بان رو دنبال"
+    },
+    {
+      "start": 56.185299059139794,
+      "end": 58.16509475806453,
+      "text": "کن. آهنگ‌بان دات آی"
+    },
+    {
+      "start": 58.18009475806453,
+      "end": 58.4800625,
+      "text": "آر."
+    }
+  ],
+  "ctas": [
+    {
+      "start": 48.73106250000001,
+      "end": 58.4950625,
+      "text": "لایک + کامنت | انتخاب خودت"
+    }
+  ],
+  "musicSampleCount": 5,
+  "musicSecondsEach": 8,
+  "allSpeechSynthetic": true,
+  "humanRecordingUsed": false,
+  "captionTiming": "Four-word typographic groups proportionally timed; not forced phoneme alignment",
+  "mixGain": 1,
+  "proceduralTransitionFX": true
+}

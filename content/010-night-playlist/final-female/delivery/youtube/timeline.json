@@ -1,0 +1,294 @@
+{
+  "kind": "youtube",
+  "status": "full_female_only_final_for_user_listening",
+  "duration": 145.76000000000002,
+  "events": [
+    {
+      "id": "hook",
+      "scene": "opening",
+      "text": "شده آخر شب، یه آهنگ رو هی از اول بذاری؟",
+      "ttsText": "شده آخر شب، یه آهنگ رو هی از اول بذاری؟",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "hook.mp3",
+      "sha256": "87548f0636deaf4b5776ad24625b504dbe13679c134e5ed704ff3d645901a995",
+      "exactReviewedPerformanceReuse": true,
+      "reviewedSource": "content/010-night-playlist/revision-02/audio/female-hook.mp3",
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 0.0,
+      "end": 4.48,
+      "duration": 4.48,
+      "sceneDuration": 4.760000000000001
+    },
+    {
+      "id": "intro",
+      "scene": "opening",
+      "text": "این سه تا رو با هم بشنویم. اولی، تو بارون که رفتی، از سیاوش قمیشی.",
+      "ttsText": "این سه تا رو با هم بشنویم. اولی، تو بارون که رفتی، از سیاوَش قُمیشی.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "intro.mp3",
+      "sha256": "cb34f750cb3aa349d89d92a6be3fea0a83eb8c0dc5446b1404ff7f8fb3db7deb",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 4.760000000000001,
+      "end": 11.88,
+      "duration": 7.12,
+      "sceneDuration": 7.4
+    },
+    {
+      "type": "music",
+      "id": "to-baroon-keh-rafty",
+      "scene": "to-baroon-keh-rafty",
+      "title": "تو بارون که رفتی",
+      "artist": "سیاوش قمیشی",
+      "sourceFile": "Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "sourceStart": 42,
+      "cameraCutsLocal": [
+        0.0,
+        8.68,
+        17.46,
+        26.22,
+        35.0
+      ],
+      "start": 12.16,
+      "end": 47.16,
+      "duration": 35.0,
+      "sceneDuration": 35.28
+    },
+    {
+      "id": "transition",
+      "scene": "dastaye-to",
+      "text": "این یکی تو رو یاد چی انداخت؟ حالا دستای تو رو بشنو، از داریوش.",
+      "ttsText": "این یکی تو رو یاد چی انداخت؟ حالا دستای تو رو بشنو، از داریوش.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "transition.mp3",
+      "sha256": "04563ed8d9df2ce41f14a4f33d93a68731d6f7424831554442308c0f86f8ae24",
+      "exactReviewedPerformanceReuse": true,
+      "reviewedSource": "content/010-night-playlist/revision-02/audio/female-transition.mp3",
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 47.44,
+      "end": 53.72,
+      "duration": 6.28,
+      "sceneDuration": 6.5600000000000005
+    },
+    {
+      "type": "music",
+      "id": "dastaye-to",
+      "scene": "dastaye-to",
+      "title": "دستای تو",
+      "artist": "داریوش",
+      "sourceFile": "Dariush - Dastaye To [320].mp3",
+      "sourceStart": 101,
+      "cameraCutsLocal": [
+        0.0,
+        8.6,
+        17.16,
+        26.3,
+        35.0
+      ],
+      "start": 54.0,
+      "end": 89.0,
+      "duration": 35.0,
+      "sceneDuration": 35.28
+    },
+    {
+      "id": "third",
+      "scene": "age-ye-rooz",
+      "text": "برای آخرش هم اگه یه روز رو گذاشتیم، از فرامرز اصلانی.",
+      "ttsText": "برای آخرش هم اگه یه روز رو گذاشتیم، از فرامرز اصلانی.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "third.mp3",
+      "sha256": "d780bf17cb38ea6120c43f13e05633478dce8f7ec6dcba8ed192053679e3ba9f",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 89.28,
+      "end": 94.72,
+      "duration": 5.44,
+      "sceneDuration": 5.720000000000001
+    },
+    {
+      "type": "music",
+      "id": "age-ye-rooz",
+      "scene": "age-ye-rooz",
+      "title": "اگه یه روز",
+      "artist": "فرامرز اصلانی",
+      "sourceFile": "Faramarz Aslani - Age Yerooz [320].mp3",
+      "sourceStart": 61,
+      "cameraCutsLocal": [
+        0.0,
+        8.76,
+        17.48,
+        26.26,
+        35.0
+      ],
+      "start": 95.0,
+      "end": 130.0,
+      "duration": 35.0,
+      "sceneDuration": 35.28
+    },
+    {
+      "id": "closing",
+      "scene": "recap",
+      "text": "تو برای آخر شب کدوم رو می‌ذاری؟ اسمشو برامون کامنت کن. اگه آهنگ دیگه‌ای هم تو ذهنته، بنویس.",
+      "ttsText": "تو برای آخر شب کدوم رو می‌ذاری؟ اسمشو برامون کامنت کن. اگه آهنگ دیگه‌ای هم تو ذهنته، بنویس.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "closing.mp3",
+      "sha256": "8e74dc2f107204f7e481427cdaaeb9a366ca49b86bab45d6d753c6773d2766bd",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 130.28,
+      "end": 139.08,
+      "duration": 8.8,
+      "sceneDuration": 9.08
+    },
+    {
+      "id": "brand",
+      "scene": "recap",
+      "text": "این هم پلی‌لیست امشب رسانهٔ آهنگ‌بان. آهنگ‌بان دات آی آر.",
+      "ttsText": "این هم پلی‌لیست امشب رسانهٔ آهنگ‌بان. آهنگ‌بان دات آی آر.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "brand.mp3",
+      "sha256": "b798fbe03ba17d5ef99591adbf71967703cdda67326577a2796231a20992ec43",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 139.36,
+      "end": 145.48000000000002,
+      "duration": 6.12,
+      "sceneDuration": 6.4
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.608,
+      "text": "شده آخر شب، یه"
+    },
+    {
+      "start": 1.62,
+      "end": 3.2571891891891895,
+      "text": "آهنگ رو هی از"
+    },
+    {
+      "start": 3.2691891891891895,
+      "end": 4.468000000000001,
+      "text": "اول بذاری؟"
+    },
+    {
+      "start": 4.760000000000001,
+      "end": 6.104190476190477,
+      "text": "این سه تا رو"
+    },
+    {
+      "start": 6.116190476190477,
+      "end": 8.118,
+      "text": "با هم بشنویم. اولی،"
+    },
+    {
+      "start": 8.13,
+      "end": 10.172761904761906,
+      "text": "تو بارون که رفتی،"
+    },
+    {
+      "start": 10.184761904761906,
+      "end": 11.868,
+      "text": "از سیاوش قمیشی."
+    },
+    {
+      "start": 47.44,
+      "end": 48.81172881355932,
+      "text": "این یکی تو رو"
+    },
+    {
+      "start": 48.82372881355932,
+      "end": 50.83410169491525,
+      "text": "یاد چی انداخت؟ حالا"
+    },
+    {
+      "start": 50.84610169491525,
+      "end": 52.64359322033898,
+      "text": "دستای تو رو بشنو،"
+    },
+    {
+      "start": 52.65559322033898,
+      "end": 53.708,
+      "text": "از داریوش."
+    },
+    {
+      "start": 89.28,
+      "end": 90.97466666666666,
+      "text": "برای آخرش هم اگه"
+    },
+    {
+      "start": 90.98666666666666,
+      "end": 92.798,
+      "text": "یه روز رو گذاشتیم،"
+    },
+    {
+      "start": 92.81,
+      "end": 94.708,
+      "text": "از فرامرز اصلانی."
+    },
+    {
+      "start": 130.28,
+      "end": 131.684091954023,
+      "text": "تو برای آخر شب"
+    },
+    {
+      "start": 131.696091954023,
+      "end": 133.90937931034483,
+      "text": "کدوم رو می‌ذاری؟ اسمشو"
+    },
+    {
+      "start": 133.92137931034483,
+      "end": 135.93236781609195,
+      "text": "برامون کامنت کن. اگه"
+    },
+    {
+      "start": 135.94436781609195,
+      "end": 137.75305747126436,
+      "text": "آهنگ دیگه‌ای هم تو"
+    },
+    {
+      "start": 137.76505747126436,
+      "end": 139.068,
+      "text": "ذهنته، بنویس."
+    },
+    {
+      "start": 139.36,
+      "end": 141.57345454545455,
+      "text": "این هم پلی‌لیست امشب"
+    },
+    {
+      "start": 141.58545454545455,
+      "end": 144.80036363636364,
+      "text": "رسانهٔ آهنگ‌بان. آهنگ‌بان دات"
+    },
+    {
+      "start": 144.81236363636364,
+      "end": 145.46800000000002,
+      "text": "آی آر."
+    }
+  ],
+  "ctas": [],
+  "narrationGender": "female_only",
+  "narrationVoice": "voice-06",
+  "maleNarrationUsed": false,
+  "musicSecondsEach": 35,
+  "captionTiming": "Proportional groups silence-nudged, not word-level forced alignment",
+  "cameraTiming": "Positive RMS onsets, not certified tempo/beat detection"
+}

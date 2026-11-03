@@ -1,0 +1,120 @@
+{
+  "speech": [
+    {
+      "id": "01",
+      "speaker": "female",
+      "scene": "opening",
+      "text": "چرا بعضی آهنگا رو هر چقدر می‌شنویم، باز دلمون می‌خواد از اول پخششون کنیم؟ مثلاً کجایی؛ تو با صداش ارتباط می‌گیری یا با حرفی که می‌زنه؟",
+      "voice": "voice-06",
+      "approvedExactReuse": true,
+      "sourceSha256": "3996acbb22381ab2cd7eb59c3800d620f3bf49b51568a2f9b41a1d2898355de9",
+      "constantGain": 1.345876961178584,
+      "duration": 11.4
+    },
+    {
+      "id": "08",
+      "speaker": "female",
+      "scene": "recap",
+      "text": "خب، انتخابت چیه؟ اسم آهنگ رو کامنت کن. برای پیشنهادهای بعدی، رسانهٔ آهنگ‌بان رو دنبال کن. اسم آهنگ‌ها هم توی سایته؛ آهنگ‌بان دات آی آر.",
+      "voice": "voice-06",
+      "approvedExactReuse": false,
+      "sourceSha256": "a62f1b70b96f9e2f5e71547395018e086c14ff5a1f1531dbee59d97853f146ab",
+      "constantGain": 1.3130554178051255,
+      "duration": 12.76
+    }
+  ],
+  "assets": [
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "file": "Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "gitBlob": "bb1ce7d7109cdba52bde3a925acd33eab050b083",
+      "sha256": "2505da6b8728da033a2abe4aff651f529d75faac094a016b9946cfd71b1d37ab"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "file": "Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "gitBlob": "213cbec8d3f4ef5f99885012b54ecd8ffe038b17",
+      "sha256": "837736c7f5f9192878eac041760f39b205f0a8e525027ef1701108b309b32ef4"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "file": "Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "gitBlob": "ccf16ec27793cae573390e6068228bffcd847cb9",
+      "sha256": "37726ce6c3d67b037bbd45eb8c2d9835a8a95e9005c4a93280dba1a09ae2441a"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "file": "Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "gitBlob": "bca7d63d6af2817ddc28455349d41400c6e4f57a",
+      "sha256": "d2ea0931a663d67c03f955f2349c271ccd7d367ac4eebd68aaeeba8865e94233"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "file": "Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "gitBlob": "084f7b7d28c29e47a1a1734e1e055b6c8d9e989c",
+      "sha256": "86553316aaa7df881f473b218d7f6e82a73203b87d3bcd80d93085516dfb8e8e"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "file": "Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "gitBlob": "1044e96ef25f8b4c7d19ef9bc28ad97255716b72",
+      "sha256": "15d258ba8e88c67f5c7df88c809ddb69f021903ece2045dea46f4e88d70bd3f9"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Beraghsa [128].mp3",
+      "file": "Mohsen Chavoshi - Beraghsa [128].mp3",
+      "gitBlob": "0ed530071efe613f6f7229af15babaa47ecf871b",
+      "sha256": "bdbd52266ad104f91dc4240815b63c779b26b2faab62f88825aea7acdcaa920e"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Beraghsa.jpg",
+      "file": "Mohsen-Chavoshi-Beraghsa.jpg",
+      "gitBlob": "5be75812cd449feae62b5a28316381f33b1afdff",
+      "sha256": "58a725b860534ffd69270da9e8563f9f31b4bd6d38a0f8ed0f93b75913d7ca71"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "file": "Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "gitBlob": "11301ac5b91cd262520405c5d1e7de317173e36c",
+      "sha256": "e465bb9fb8275d14b557b30b1222f11a0c9c2962c3df0304b886c40a71565754"
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "file": "Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "gitBlob": "ddf656b149aec363b649a6e089609068855d992d",
+      "sha256": "e2ad946436b1f01f1fcaa01afd31c949402a081fe32dfae2322c6db6dce544e0"
+    }
+  ],
+  "approvedSourceLabSha256": "c8eafa534e0d8d47212f1bcb850670d407522a733cfb46d5585bdaa41e04de64",
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "environmentPlates": [
+    {
+      "path": "content/007-cosmic-ai/assets/portal.jpg",
+      "sha256": "ecfb248248d75f6e39807cff07a6eed21f7e80a1a23a891b69919767658a98fa",
+      "origin": "AI-generated still, animated as 2D environment"
+    },
+    {
+      "path": "content/007-cosmic-ai/assets/piano.jpg",
+      "sha256": "bb1873a590c7f679b209c5dc871a7d3d5b317612a3a3710061de8a0de13d13c6",
+      "origin": "AI-generated still, animated as 2D environment"
+    },
+    {
+      "path": "content/009-music-film/assets/strings.jpg",
+      "sha256": "ca2c3561c317868c44e5b69a05f3765a9d42c9940440ac2709aea70b0cf6a1d2",
+      "origin": "AI-generated still, animated as 2D environment"
+    },
+    {
+      "path": "content/007-cosmic-ai/assets/waves.jpg",
+      "sha256": "4103df0a9bd6b2976f7aca7890157c9a5de0aca492e67ac34fa512d950ac5fb0",
+      "origin": "AI-generated still, animated as 2D environment"
+    },
+    {
+      "path": "content/009-music-film/assets/aurora.jpg",
+      "sha256": "4613e2f0b6c91610488fb26f0e5b92ded9f03b3bb5709b7faaaa63f770841638",
+      "origin": "AI-generated still, animated as 2D environment"
+    }
+  ],
+  "allNarrationSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false
+}

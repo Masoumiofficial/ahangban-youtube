@@ -1,0 +1,22 @@
+{
+  "repository": "Masoumiofficial/ahangban-youtube",
+  "date": "2026-11-03",
+  "method": "GitHub recursive tree inspection; no credentials or local .env accessed",
+  "availableMusic": "Three user-supplied audio files and three covers in Artist/2-video-2; downloaded and Git-blob verified.",
+  "proposedTrackAudioFound": true,
+  "proposedTrackCoversFound": true,
+  "proposedTracksListenedTo": false,
+  "excerptOffsetsChosen": true,
+  "needed": null,
+  "background": {
+    "path": "assets/rainy-night.jpg",
+    "type": "AI-generated cinematic background, not a real location",
+    "sha256": "30a5e5f7dd29788b5cd8616a196ee20f2bc152cdd6895530f790f7f05bc68673"
+  },
+  "logo": "studio/ahangban-signature/references/ahangban-logo-horizontal-color.png",
+  "currentSourceManifest": "source-manifest.json",
+  "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
+  "excerptSelectionMethod": "automated technical RMS selection, pending user listening",
+  "firstTitleCorrection": "User provided To Baroon Keh Rafty, not generic Baroon; all current metadata and new speech updated.",
+  "historicalPreproductionMainCommit": "802481583c520aeddc298043904d99c58e02c7b0"
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-03",
+  "feedback": "صداها خیلی باز غیر طبیعی شد یکم رو کلمات و لحن کار بکن و افکت های خفن تر و جذابتری به ویدیو بده و تامبنیل یوتیوب و کاور ریل اینستاگرام حرفه ای تر و حالت 3 بعدی و واقعی بینانه تر",
+  "firstFullDeliveryVoicePerformanceApproved": false,
+  "firstFullDeliveryVoicePerformanceRejected": true,
+  "voiceIdentitiesReplaced": false,
+  "requested": [
+    "natural Persian words and delivery",
+    "more attractive video effects",
+    "professional realistic dimensional YouTube thumbnail",
+    "professional realistic dimensional vertical Reel cover"
+  ],
+  "revision": "revision-02",
+  "latestRevisionStatus": "full_female_only_files_complete_pending_final_listening",
+  "fullEpisodeRebuildPending": false,
+  "publicationAuthorized": false,
+  "latestFeedback": [
+    "سیاوش قُمیشی نه ساوش قَمیشی؟ الان هم کاور هم ویدیو خوب شد یکم کلمات و لحن رو اصلاح کن و بزن بریم سراغ نهایی",
+    "صدای و نحوه گویندگی مرد خیلی بد شده"
+  ],
+  "visualStyleApproved": true,
+  "youtubeThumbnailApproved": true,
+  "reelCoverApproved": true,
+  "maleVoice07Rejected": true,
+  "finalizationPausedForMaleVoice": false,
+  "maleAudition08BothRejected": true,
+  "maleAudition09BothRejected": true,
+  "voice08Approved": false,
+  "voice09Approved": false,
+  "lastFeedback": "هیچ کدوم اصلا جنس صدا خیلی شخمی شده",
+  "userSelectedRoute": "female_only",
+  "finalNarrationVoice": "voice-06",
+  "maleNarrationRemoved": true,
+  "latestRevision": "final-female"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "technical_QA_passed_pending_user_review",
+  "video": "ahangban-first-video-final.mp4",
+  "videoSha256": "2efd5ba3cb0731ff256e707a7ef5ba508da6c364eee3e364cf9f1c5f452ee0e5",
+  "bytes": 17209035,
+  "duration": 199.22,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "speechTurns": 11,
+  "femaleVoice": "voice-00 unchanged, new rewritten narration",
+  "maleVoice": "Actual user-recorded Sajad, four re-extracted PCM checks passed",
+  "musicSamples": 5,
+  "musicSampleDuration": 12,
+  "captionCues": 37,
+  "decodedPeakDbFS": -1.5,
+  "fullDecode": "passed",
+  "exactPinnedSourceBlobs": "passed",
+  "selectedSpeechHashes": "passed",
+  "nonOverlappingTimeline": "passed",
+  "neonFrameMeanDifferenceRGB": [
+    4.416913580246914,
+    3.7934259259259258,
+    3.1552777777777776
+  ],
+  "captionTiming": "estimated; needs user review",
+  "notVerified": [
+    "Pronunciation and phonetic accuracy",
+    "Word-level caption alignment",
+    "Third-party music/image rights",
+    "Aural take boundaries and spoken wording versus script",
+    "User final visual/audio approval"
+  ],
+  "presenterMotion": "Static image, no lip sync",
+  "ownVoiceCloned": false,
+  "thirdPartyVoiceUpload": false,
+  "youtubePublished": false
+}

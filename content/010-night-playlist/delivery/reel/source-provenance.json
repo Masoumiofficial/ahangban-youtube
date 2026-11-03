@@ -1,0 +1,98 @@
+{
+  "speech": [
+    {
+      "id": "v01",
+      "speaker": "female",
+      "voice": "voice-06",
+      "text": "وقتی خواب نمیاد، کدوم آهنگ رو دوباره پخش می‌کنی؟ این سه تا رو بشنو.",
+      "audioGenerated": true,
+      "audioSha256": "b46e6f73ee6c1b27dd9ec4ba66b0b04d7217e8fe380faf6738b4f02aa27ccd3d",
+      "sourceSha256": "b46e6f73ee6c1b27dd9ec4ba66b0b04d7217e8fe380faf6738b4f02aa27ccd3d",
+      "constantGain": 1.2915678399745185,
+      "duration": 6.2
+    },
+    {
+      "id": "v02",
+      "speaker": "male",
+      "voice": "voice-07",
+      "text": "انتخاب امشبت کدومه؟ اسم آهنگ رو کامنت کن. رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات آی آر.",
+      "audioGenerated": true,
+      "audioSha256": "cafcb17142222a64cbeab5c0432a05edfbd6e5c617748c03a6f576a3feca334b",
+      "sourceSha256": "cafcb17142222a64cbeab5c0432a05edfbd6e5c617748c03a6f576a3feca334b",
+      "constantGain": 1.4157662619150742,
+      "duration": 8.614604166666666
+    }
+  ],
+  "assets": [
+    {
+      "path": "Artist/2-video-2/Dariush - Dastaye To [320].mp3",
+      "file": "Dariush - Dastaye To [320].mp3",
+      "gitBlob": "e6ab632ed68ea671cf5414db1fea9312079c3ae2",
+      "sha256": "c9472e51e648b9b77c087bea2b475fa894482ba88354ffedb112a69aabf49a0f",
+      "bytes": 5161620
+    },
+    {
+      "path": "Artist/2-video-2/Dariush-Dastaye-To.jpg",
+      "file": "Dariush-Dastaye-To.jpg",
+      "gitBlob": "ddd410f10e4d31abf6302ee46493ecf52a15a406",
+      "sha256": "17a9694f9e3f2e2cb2c8cc238085b90b83fbc8adc8bcb8a9b7ca48a4e830bf4b",
+      "bytes": 58512
+    },
+    {
+      "path": "Artist/2-video-2/Faramarz Aslani - Age Yerooz [320].mp3",
+      "file": "Faramarz Aslani - Age Yerooz [320].mp3",
+      "gitBlob": "35e31b561994354096437e1c5fd65b1ac4a77dee",
+      "sha256": "1a15444722e12c4679abc86a464b70f8176e5e6b085d683cd4daa622dacb6243",
+      "bytes": 4270299
+    },
+    {
+      "path": "Artist/2-video-2/Faramarz Aslani_ Age Yerooz.png",
+      "file": "Faramarz Aslani_ Age Yerooz.png",
+      "gitBlob": "a6ba8daee7641043d47ba83c5bdc1019c0e8d6ad",
+      "sha256": "bd9e6d8944d615d64897ea2fdde63f59851e464795f45b74f0eaf3653449742d",
+      "bytes": 2526661
+    },
+    {
+      "path": "Artist/2-video-2/Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "file": "Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "gitBlob": "6f260582eed814dc9fa4ed4542698483c17abd18",
+      "sha256": "2279059d4426ff042abcb053e633b5536c566bf11f27a3acd8ab85748f3db385",
+      "bytes": 9558006
+    },
+    {
+      "path": "Artist/2-video-2/Siavash-Ghomayshi-To-Baroon-Keh-Rafty.jpg",
+      "file": "Siavash-Ghomayshi-To-Baroon-Keh-Rafty.jpg",
+      "gitBlob": "b4fcf0a23dc7ecd1e3deaffcb3d55ba373863b53",
+      "sha256": "4ac7f527795786b5ace855eba90a2fd2faa78852e16993e9b2d9822254086d59",
+      "bytes": 88982
+    }
+  ],
+  "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "environmentPlates": [
+    {
+      "path": "content/010-night-playlist/assets/rainy-night.jpg",
+      "sha256": "30a5e5f7dd29788b5cd8616a196ee20f2bc152cdd6895530f790f7f05bc68673",
+      "origin": "AI-generated still, animated as 2D environment"
+    },
+    {
+      "path": "content/010-night-playlist/assets/empty-street.jpg",
+      "sha256": "876eb5bfd83dc703eafee59359de72d95f8bf01a1e3d6d2f21aa81df5e2ac975",
+      "origin": "AI-generated still, animated as 2D environment"
+    },
+    {
+      "path": "content/010-night-playlist/assets/dawn-window.jpg",
+      "sha256": "6cb02fb58ac85a84b81559c5dbbef78af8362aa99e96ec573756d89406c40944",
+      "origin": "AI-generated still, animated as 2D environment"
+    }
+  ],
+  "allNarrationSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "excerptSelection": "Signal-only RMS window selection between 35 and 105 seconds, with a mild preference for 60 seconds. Vertical chooses a louder 12-second window within selected horizontal excerpt. NOT human listening, lyric recognition or certified chorus detection.",
+  "userSuppliedWebLinks": [
+    "https://ahangban.ir/siavash-ghomayshi-to-baroon-keh-rafty/",
+    "https://ahangban.ir/dariush-dastaye-to/",
+    "https://ahangban.ir/faramarz-aslani-age-yerooz/"
+  ]
+}

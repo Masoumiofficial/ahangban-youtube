@@ -1,0 +1,35 @@
+{
+  "status": "notebook_prepared_static_tests_passed_NOT_GPU_executed",
+  "date": "2026-11-02",
+  "notebookSha256": "2393cd39b17aa874fd56294947b5e6795d98d9efcfdee84d16fa6987c85f0085",
+  "bootstrapSourceRevision": "6876b49bfc2935bb3b16329883c4c13119a1a51d",
+  "musetalkSourceRevision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+  "codeCellsCompiled": 6,
+  "notebookContainsOutputs": false,
+  "tests": {
+    "cinematicAndColab": 13,
+    "ownVoiceEpisodeRegression": 10,
+    "historicalRendererRegression": 6,
+    "totalPassed": 29
+  },
+  "checks": [
+    "all notebook Python code cells compile",
+    "default consent flags fail closed before cloud downloads",
+    "every requested bootstrap file exists at exact Git revision",
+    "approved source episode, shot002 and logo SHA256 match",
+    "mouth matte does not affect eyes or pixels below microphone protection line",
+    "composite changes only bounded active-face patch",
+    "no stale executable notebook outputs or claimed GPU result"
+  ],
+  "notTested": [
+    "Google Colab GPU allocation",
+    "CUDA and package installation on Colab",
+    "official model weights download",
+    "model inference",
+    "Persian lip synchrony, dental artifacts or identity quality"
+  ],
+  "agentAccessedGoogleAccount": false,
+  "agentDownloadedModelWeights": false,
+  "agentGeneratedLipSyncVideo": false,
+  "nextAction": "User opens notebook in free GPU Colab, confirms two checkboxes, runs all, returns output ZIP or error. No paid fallback."
+}

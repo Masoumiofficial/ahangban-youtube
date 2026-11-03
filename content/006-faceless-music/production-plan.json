@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-02",
+  "userRejectedPresenterPilot": true,
+  "userQuote": "نه اصلا خوب نیس حالا اگه کلا بدون چهره بخواییم بسازیم نظرت چیه؟",
+  "currentRequest": "بزن بریم حالا که تصویر رو حذف کردم میخوام یه چیز خفن بزنی برای یوتیوبا و یه ریلز هم برای ایسنتاگرام",
+  "direction": "Faceless music editorial; no on-screen hosts or studio footage",
+  "retainVoices": {
+    "male": "Existing real Sajad recording",
+    "female": "Existing approved Ava voice-00"
+  },
+  "newVoiceOrCloneCreated": false,
+  "presenterLipSyncWorkStopped": true,
+  "subscriptionOrPaidServiceUsed": false,
+  "cloudProcessingUsedForThisEdition": false,
+  "youtubeComplete": true,
+  "reelComplete": true,
+  "published": false,
+  "humanListeningReview": "pending user",
+  "coversNote": "Original supplied covers retained intact; cover images may themselves depict artists/actors",
+  "copyrightClearance": "not independently established"
+}

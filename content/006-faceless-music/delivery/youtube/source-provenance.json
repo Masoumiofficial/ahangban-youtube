@@ -1,0 +1,57 @@
+{
+  "sourceEpisode": "downloads/ahangban-first-video-final.mp4",
+  "sourceEpisodeSha256": "2efd5ba3cb0731ff256e707a7ef5ba508da6c364eee3e364cf9f1c5f452ee0e5",
+  "logo": "studio/ahangban-signature/references/ahangban-logo-horizontal-color.png",
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "assets": [
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "gitBlob": "213cbec8d3f4ef5f99885012b54ecd8ffe038b17",
+      "sha256": "837736c7f5f9192878eac041760f39b205f0a8e525027ef1701108b309b32ef4",
+      "size": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "gitBlob": "bca7d63d6af2817ddc28455349d41400c6e4f57a",
+      "sha256": "d2ea0931a663d67c03f955f2349c271ccd7d367ac4eebd68aaeeba8865e94233",
+      "size": [
+        200,
+        200
+      ]
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "gitBlob": "1044e96ef25f8b4c7d19ef9bc28ad97255716b72",
+      "sha256": "15d258ba8e88c67f5c7df88c809ddb69f021903ece2045dea46f4e88d70bd3f9",
+      "size": [
+        1000,
+        1000
+      ]
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Beraghsa.jpg",
+      "gitBlob": "5be75812cd449feae62b5a28316381f33b1afdff",
+      "sha256": "58a725b860534ffd69270da9e8563f9f31b4bd6d38a0f8ed0f93b75913d7ca71",
+      "size": [
+        480,
+        480
+      ]
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "gitBlob": "ddf656b149aec363b649a6e089609068855d992d",
+      "sha256": "e2ad946436b1f01f1fcaa01afd31c949402a081fe32dfae2322c6db6dce544e0",
+      "size": [
+        1000,
+        1000
+      ]
+    }
+  ],
+  "voicesRegenerated": false,
+  "presenterImagesUsed": false,
+  "studioImagesUsed": false,
+  "note": "Original covers can contain artist/actor faces; no synthetic presenter or face animation is used."
+}

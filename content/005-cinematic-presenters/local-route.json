@@ -1,0 +1,41 @@
+{
+  "decisionDate": "2026-11-02",
+  "userDecision": "فقط مسیر بدون اشتراک را می‌خواهم",
+  "subscriptionAllowed": false,
+  "paidServiceAuthorized": false,
+  "paidComputeAuthorized": false,
+  "freeTrialOrPaymentCardAuthorized": false,
+  "thirdPartyFaceOrAudioUploadAuthorized": true,
+  "preferredExecution": "User-started Google Colab free GPU; no paid compute, no voice regeneration",
+  "candidateEngine": {
+    "repository": "https://github.com/TMElyralab/MuseTalk",
+    "revision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+    "status": "user_returned_MuseTalk_pilot_reported_T4_outputs_technically_verified_quality_pending",
+    "licenseReview": "Only MuseTalk main UNet + MIT VAE + MIT Whisper used; no MMPose, detector, face parser or unrelated test data. Upstream NOTICE retained.",
+    "persianQualityTested": false,
+    "userLaptopBenchmarked": false,
+    "actualPilotRendered": true
+  },
+  "pilotInputStatus": "prepared_locally_under_ignored_rendered_directory",
+  "pilotOutputStatus": "received user Colab pilot, decoded/hash-verified; locally narrowed male mouth matte; pending user quality review",
+  "blockers": [
+    "Presenter/lip-sync route stopped by user choice, not waiting for another pilot approval. Continue faceless direction."
+  ],
+  "automaticNetworkDownload": false,
+  "modelInferenceExecuted": true,
+  "thirdPartyUploadExecuted": true,
+  "policy": "HISTORICAL user-started free Colab pilot was authorized and returned, but USER REJECTED THE RESULT and chose faceless production. Do not initiate new face/model/cloud jobs unless user explicitly changes direction. Preserve historic sources and reports. Current deliverables are in content/006-faceless-music.",
+  "authorizedCloudEnvironment": "Google Colab FREE user-started short pilot ONLY; no other provider",
+  "cloudConsentText": "بزن بریم سراغش پس — accepted the preceding free Colab recommendation",
+  "userStartedColabDownloadsAuthorized": true,
+  "outboundUploadFromArenaExecuted": false,
+  "cloudPilotActuallyExecuted": true,
+  "agentExecutedModelInference": false,
+  "agentDownloadedModelWeights": false,
+  "receivedPilotReport": "received-pilot/review-report.json",
+  "fullEpisodeLipSyncRendered": false,
+  "userRejectedPilot": true,
+  "currentDirection": "Superseded by user-approved faceless music editorial in content/006-faceless-music",
+  "furtherFaceAnimationRequested": false,
+  "initiateFurtherFaceProcessing": false
+}

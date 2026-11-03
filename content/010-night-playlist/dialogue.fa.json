@@ -1,0 +1,56 @@
+[
+  {
+    "id": "01",
+    "speaker": "female",
+    "scene": "opening",
+    "text": "تا حالا شده یه آهنگ، بیشتر از یه نفر حالتو بفهمه؟ امشب سه انتخاب برای وقتایی که خواب نمیاد. اولی، تو بارون که رفتی؛ از سیاوش قمیشی.",
+    "voice": "voice-06",
+    "audioGenerated": true,
+    "audioSha256": "d6708bfb5579d485b64e08832cc494860612e73c2d13a22a73db4f9d4202f6f5"
+  },
+  {
+    "id": "02",
+    "speaker": "male",
+    "scene": "after-first",
+    "text": "این یکی تو رو یاد کسی می‌اندازه، یا بیشتر یه حال‌وهواست؟ جوابش برای همه یکی نیست. انتخاب بعدی، دستای تو؛ از داریوش.",
+    "voice": "voice-07",
+    "audioGenerated": true,
+    "audioSha256": "ed2da04e22255491ea28c37d166280215e2a49543a5fbda986c88fd8b53271ec"
+  },
+  {
+    "id": "03",
+    "speaker": "female",
+    "scene": "after-second",
+    "text": "گاهی اسم یه آهنگ کافیه تا یه خاطره برگرده. لازم نیست خاطره‌ت رو تعریف کنی؛ فقط ببین این بار کدوم حس پررنگ‌تره.",
+    "voice": "voice-06",
+    "audioGenerated": true,
+    "audioSha256": "e4f93c2b74e8d17b4561994b610678e5b2089b427dd7509c68982ee6b6b8e0c4"
+  },
+  {
+    "id": "04",
+    "speaker": "male",
+    "scene": "before-third",
+    "text": "برای آخر شب، اگه یه روز؛ از فرامرز اصلانی. این یکی رو هم بشنو، بعد بین این سه تا انتخاب کن.",
+    "voice": "voice-07",
+    "audioGenerated": true,
+    "audioSha256": "b43f17433205e0ae2dc8fa94249713bab2e1da6bf4076bed6f4ac020fcf8d305"
+  },
+  {
+    "id": "05",
+    "speaker": "female",
+    "scene": "closing",
+    "text": "کدوم آهنگ بیشتر به حال امشبت می‌خوره؟ اسمش رو کامنت کن؛ اگه انتخابت بیرون این فهرسته، اون رو هم بنویس.",
+    "voice": "voice-06",
+    "audioGenerated": true,
+    "audioSha256": "aa52824dc8d7ab27ea5c2b8a419804b38d55c92a27fba8c26711b31ea6c257a9"
+  },
+  {
+    "id": "06",
+    "speaker": "male",
+    "scene": "brand",
+    "text": "این هم پلی‌لیست امشب رسانهٔ آهنگ‌بان. برای پیشنهادهای بعدی، آهنگ‌بان دات آی آر رو ببین.",
+    "voice": "voice-07",
+    "audioGenerated": true,
+    "audioSha256": "f52a374d41a9e8b59c6d26a2c74419e9dc0c94df828abc02732f175529a29dfb"
+  }
+]

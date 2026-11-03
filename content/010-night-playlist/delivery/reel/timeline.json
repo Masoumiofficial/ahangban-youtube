@@ -1,0 +1,139 @@
+{
+  "kind": "reel",
+  "duration": 52.21460416666667,
+  "events": [
+    {
+      "start": 0.0,
+      "end": 6.2,
+      "duration": 6.2,
+      "sceneDuration": 6.48,
+      "type": "speech",
+      "id": "v01",
+      "speaker": "female",
+      "voice": "voice-06",
+      "text": "وقتی خواب نمیاد، کدوم آهنگ رو دوباره پخش می‌کنی؟ این سه تا رو بشنو.",
+      "audioGenerated": true,
+      "audioSha256": "b46e6f73ee6c1b27dd9ec4ba66b0b04d7217e8fe380faf6738b4f02aa27ccd3d",
+      "scene": "opening"
+    },
+    {
+      "start": 6.48,
+      "end": 18.48,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "to-baroon-keh-rafty",
+      "title": "تو بارون که رفتی",
+      "artist": "سیاوش قمیشی",
+      "sourceFile": "Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "sourceStart": 65,
+      "cameraCutsLocal": [
+        0.0,
+        3.98,
+        8.06,
+        12.0
+      ]
+    },
+    {
+      "start": 18.759999999999998,
+      "end": 30.759999999999998,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "dastaye-to",
+      "title": "دستای تو",
+      "artist": "داریوش",
+      "sourceFile": "Dariush - Dastaye To [320].mp3",
+      "sourceStart": 120,
+      "cameraCutsLocal": [
+        0.0,
+        4.0200000000000005,
+        7.9,
+        12.0
+      ]
+    },
+    {
+      "start": 31.04,
+      "end": 43.04,
+      "duration": 12.0,
+      "sceneDuration": 12.28,
+      "type": "music",
+      "scene": "age-ye-rooz",
+      "title": "اگه یه روز",
+      "artist": "فرامرز اصلانی",
+      "sourceFile": "Faramarz Aslani - Age Yerooz [320].mp3",
+      "sourceStart": 68,
+      "cameraCutsLocal": [
+        0.0,
+        4.0,
+        8.26,
+        12.0
+      ]
+    },
+    {
+      "start": 43.32,
+      "end": 51.93460416666667,
+      "duration": 8.614604166666666,
+      "sceneDuration": 8.894604166666666,
+      "type": "speech",
+      "id": "v02",
+      "speaker": "male",
+      "voice": "voice-07",
+      "text": "انتخاب امشبت کدومه؟ اسم آهنگ رو کامنت کن. رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات آی آر.",
+      "audioGenerated": true,
+      "audioSha256": "cafcb17142222a64cbeab5c0432a05edfbd6e5c617748c03a6f576a3feca334b",
+      "scene": "recap"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.848,
+      "text": "وقتی خواب نمیاد، کدوم"
+    },
+    {
+      "start": 1.86,
+      "end": 3.766125,
+      "text": "آهنگ رو دوباره پخش"
+    },
+    {
+      "start": 3.778125,
+      "end": 5.413000000000001,
+      "text": "می‌کنی؟ این سه تا"
+    },
+    {
+      "start": 5.425000000000001,
+      "end": 6.188000000000001,
+      "text": "رو بشنو."
+    },
+    {
+      "start": 43.32,
+      "end": 45.94981194444444,
+      "text": "انتخاب امشبت کدومه؟ اسم"
+    },
+    {
+      "start": 45.96181194444444,
+      "end": 47.902455555555555,
+      "text": "آهنگ رو کامنت کن."
+    },
+    {
+      "start": 47.914455555555556,
+      "end": 51.188,
+      "text": "رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات"
+    },
+    {
+      "start": 51.2,
+      "end": 51.922604166666666,
+      "text": "آی آر."
+    }
+  ],
+  "ctas": [],
+  "musicSecondsEach": 12,
+  "allNarrationSynthetic": true,
+  "humanRecordingUsed": false,
+  "approvedVoiceIdentitiesUsed": true,
+  "voicePitchOrSpeedChanged": false,
+  "mixGain": 0.9877334702338515,
+  "captionTiming": "Proportional short groups nudged toward nearby quiet gaps; NOT forced alignment",
+  "cameraTiming": "Positive RMS-energy onset guided, not certified tempo/beat detection"
+}

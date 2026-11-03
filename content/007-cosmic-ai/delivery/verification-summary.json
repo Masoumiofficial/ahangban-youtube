@@ -1,0 +1,34 @@
+{
+  "newUnitTests": {
+    "count": 13,
+    "passed": 13
+  },
+  "historicalRegressionTests": {
+    "003": 6,
+    "004": 10,
+    "005": 17,
+    "006": 11,
+    "totalPassed": 44
+  },
+  "studioMasterValidator": "PASS",
+  "historicalHostsShot002Validator": "PASS",
+  "finalEncodedFrameReview": {
+    "reel": [
+      "qa-frames/01.jpg",
+      "qa-frames/06.jpg",
+      "qa-frames/08.jpg"
+    ],
+    "youtube": [
+      "qa-frames/02.jpg",
+      "qa-frames/05.jpg"
+    ],
+    "thumbnail": "downloads/ahangban-cosmic-youtube-thumbnail.jpg",
+    "scope": "Sampled encoded frames inspected for Persian shaping, composition, legibility, footer collision and unchanged logo. Not continuous playback or aural approval."
+  },
+  "knownCorrection": "Initial Lalezar presentation-form tofu was detected in still QA; fixed using HarfBuzz + FreeType on original Unicode before final renders. Footer/progress overlap corrected in YouTube before final render.",
+  "allFinalAudioSegmentsDecodedAndCompared": true,
+  "userAuralApprovalPending": true,
+  "forcedAlignmentPerformed": false,
+  "copyrightClearance": false,
+  "published": false
+}

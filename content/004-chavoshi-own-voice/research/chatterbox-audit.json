@@ -1,0 +1,63 @@
+{
+  "repository": "resemble-ai/chatterbox",
+  "revision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+  "inspectedDate": "2026-11-02",
+  "supportedLanguagesInCode": {
+    "ar": "Arabic",
+    "da": "Danish",
+    "de": "German",
+    "el": "Greek",
+    "en": "English",
+    "es": "Spanish",
+    "fi": "Finnish",
+    "fr": "French",
+    "he": "Hebrew",
+    "hi": "Hindi",
+    "it": "Italian",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "ms": "Malay",
+    "nl": "Dutch",
+    "no": "Norwegian",
+    "pl": "Polish",
+    "pt": "Portuguese",
+    "ru": "Russian",
+    "sv": "Swedish",
+    "sw": "Swahili",
+    "tr": "Turkish",
+    "zh": "Chinese"
+  },
+  "persianNativeTtsSupported": false,
+  "turboLanguage": "English according to official README",
+  "nanoLanguage": "English according to official README",
+  "multilingualReadmeModelSize": "500M parameters, not a runtime RAM measurement",
+  "voiceConversionClass": "ChatterboxVC",
+  "voiceConversionParameters": [
+    "self",
+    "audio",
+    "target_voice_path"
+  ],
+  "conversionNeedsGuideAudio": true,
+  "conversionIsNotDirectPersianTextToSpeech": true,
+  "cpuCodePathPresent": true,
+  "licenseInRepository": "MIT",
+  "conversionQualityOnPersian": "not tested",
+  "modelWeightsDownloaded": false,
+  "inferenceExecuted": false,
+  "benchmarkOnUserLaptop": false,
+  "referenceConditioningLimitSeconds": 10,
+  "referenceCaution": "set_target_voice reads only the first ten seconds; the original user recording has leading/long silences, so prepare and audition a speech-rich excerpt before an actual trial.",
+  "userHardware": {
+    "cpu": "Intel Core i7-8550U",
+    "reportedCpuGHz": [
+      1.8,
+      1.99
+    ],
+    "ramGB": 8,
+    "reportedStorageGB": 60,
+    "storageFreeVsTotal": "unknown",
+    "discreteGpu": "not reported",
+    "operatingSystem": "not reconfirmed; Windows mentioned earlier"
+  },
+  "conclusion": "Not selected as direct Persian TTS. VC is a candidate for a short local comparison with OpenVoice, subject to model access, suitable Persian guide speech, memory/speed and user listening review."
+}

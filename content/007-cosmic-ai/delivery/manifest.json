@@ -1,0 +1,63 @@
+{
+  "edition": "007 cosmic faceless / freshly selected synthetic narration",
+  "voices": {
+    "female": "voice-05",
+    "male": "voice-04"
+  },
+  "allNarrationSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "environmentVisuals": "AI-generated 2D environment plates, animated locally; not a real location or a 3D performance",
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "outputs": {
+    "youtube": {
+      "video": "downloads/ahangban-cosmic-youtube.mp4",
+      "sha256": "26e586b82c290025246fc4c78704b4a293e8dbfb256397f6e7ee15f3e549a4ad",
+      "bytes": 33866141,
+      "duration": 202.61,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 25.0,
+      "cover": "downloads/ahangban-cosmic-youtube-thumbnail.jpg",
+      "coverSha256": "eb98f59128582d28eac36cf6d0a0352e275c72b7f63b1e8bb4176f0faffac2da",
+      "musicSamples": 5,
+      "musicSecondsEach": 20,
+      "speechSourceIds": [
+        "01",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "status": "technical_QA_passed_pending_user_listening"
+    },
+    "reel": {
+      "video": "downloads/ahangban-cosmic-reel.mp4",
+      "sha256": "6e30f66438e0bc90a058c64749755ec792a4f023035d45b63b8c0d1471a777ad",
+      "bytes": 9931062,
+      "duration": 58.74,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 30.0,
+      "cover": "downloads/ahangban-cosmic-reel-cover.jpg",
+      "coverSha256": "7bb494efef8456dc1182cbb598f5cfc34358daa57d58c6673b47ff57c272dfc2",
+      "musicSamples": 5,
+      "musicSecondsEach": 8,
+      "speechSourceIds": [
+        "01",
+        "10"
+      ],
+      "status": "technical_QA_passed_pending_user_listening"
+    }
+  }
+}

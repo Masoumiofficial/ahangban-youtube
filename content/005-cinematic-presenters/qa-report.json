@@ -1,0 +1,18 @@
+{
+  "status": "technical_checks_passed_pending_user_visual_review",
+  "fullDecode": "PASS",
+  "decodedAudioPCMMatchesFirst28SecondsOfOriginalEpisode": true,
+  "audioPcmSha256": "d2295823e980c0622227d7bbcb0ca05e4cb158c94ee114e2d7fad9c5f026425d",
+  "videoSha256": "8c0755fb828402eacac2bd87e9a5390fd185c91542ad76e861726ab1f3cb3f13",
+  "decodedResolution": [
+    1280,
+    720
+  ],
+  "decodedFps": 25.0,
+  "containerDuration": 28.01,
+  "newCameraAngles": false,
+  "lipSync": false,
+  "facialAnimation": false,
+  "audioRegenerated": false,
+  "note": "Digital crop/zoom sample only; no lip-sync quality claim. Original first video is preserved."
+}

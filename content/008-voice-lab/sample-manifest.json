@@ -1,0 +1,57 @@
+{
+  "status": "voice_only_sample_pending_user_listening",
+  "auditionSelections": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "selectionIsNotFullPerformanceApproval": true,
+  "previous007SpeechAndHookRejected": true,
+  "videoProductionPaused": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "musicUsed": false,
+  "effectsUsed": false,
+  "processing": "Constant per-speaker gain only; 280ms between speakers. Original pauses, speed and pitch preserved.",
+  "dialogueDuration": 23.9053125,
+  "timeline": [
+    {
+      "file": "female-question.mp3",
+      "speaker": "female",
+      "voice": "voice-06",
+      "text": "چرا بعضی آهنگا رو هر چقدر می‌شنویم، باز دلمون می‌خواد از اول پخششون کنیم؟ مثلاً کجایی؛ تو با صداش ارتباط می‌گیری یا با حرفی که می‌زنه؟",
+      "start": 0.0,
+      "end": 11.4,
+      "sourceSha256": "3996acbb22381ab2cd7eb59c3800d620f3bf49b51568a2f9b41a1d2898355de9",
+      "constantGain": 1.3458768854210585
+    },
+    {
+      "file": "male-response.mp3",
+      "speaker": "male",
+      "voice": "voice-07",
+      "text": "شاید هم یه خاطره رو یادت میاره. هم صدا مهمه، هم اون چیزی که آهنگ یادت می‌اندازه. ولی جوابش برای همه یکی نیست. تو کجایی رو که می‌شنوی، اول چی میاد توی ذهنت؟",
+      "start": 11.68,
+      "end": 23.9053125,
+      "sourceSha256": "86720b8921e082f82968889a391794ae4840ebe63d8b03d2270a3843557a7909",
+      "constantGain": 1.4127507281458984
+    }
+  ],
+  "pronunciationScript": {
+    "file": "female-pronunciation.mp3",
+    "speaker": "female",
+    "voice": "voice-06",
+    "text": "کجایی. سنگ صبور. امیر بی‌گزند. برقص آ. بیست هزار آرزو. رسانهٔ آهنگ‌بان. آهنگ‌بان دات آی آر."
+  },
+  "outputs": [
+    {
+      "file": "downloads/ahangban-voice-lab-dialogue.mp3",
+      "sha256": "ddfe962cc4f2a5e9c8e348c40f3f34061a6a414189cbfbf3434414323ed94f82",
+      "bytes": 575468
+    },
+    {
+      "file": "downloads/ahangban-voice-lab-pronunciation.mp3",
+      "sha256": "e3c58ce240da8aa6a433b953f320e073cf1522e1e5e3180fbff77be1651458e1",
+      "bytes": 62349
+    }
+  ],
+  "technicalChecks": "Both MP3s decode, non-silent, no decoded clipping. Not aural or pronunciation approval."
+}

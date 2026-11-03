@@ -1,0 +1,146 @@
+[
+  {
+    "index": 0,
+    "eventIndex": 0,
+    "variant": 0,
+    "start": 0.0,
+    "end": 4.76,
+    "frames": 119
+  },
+  {
+    "index": 1,
+    "eventIndex": 1,
+    "variant": 0,
+    "start": 4.76,
+    "end": 12.16,
+    "frames": 185
+  },
+  {
+    "index": 2,
+    "eventIndex": 2,
+    "variant": 0,
+    "start": 12.16,
+    "end": 20.84,
+    "frames": 217
+  },
+  {
+    "index": 3,
+    "eventIndex": 2,
+    "variant": 1,
+    "start": 20.84,
+    "end": 29.6,
+    "frames": 219
+  },
+  {
+    "index": 4,
+    "eventIndex": 2,
+    "variant": 2,
+    "start": 29.6,
+    "end": 38.36,
+    "frames": 219
+  },
+  {
+    "index": 5,
+    "eventIndex": 2,
+    "variant": 3,
+    "start": 38.36,
+    "end": 47.44,
+    "frames": 227
+  },
+  {
+    "index": 6,
+    "eventIndex": 3,
+    "variant": 0,
+    "start": 47.44,
+    "end": 54.0,
+    "frames": 164
+  },
+  {
+    "index": 7,
+    "eventIndex": 4,
+    "variant": 0,
+    "start": 54.0,
+    "end": 62.6,
+    "frames": 215
+  },
+  {
+    "index": 8,
+    "eventIndex": 4,
+    "variant": 1,
+    "start": 62.6,
+    "end": 71.16,
+    "frames": 214
+  },
+  {
+    "index": 9,
+    "eventIndex": 4,
+    "variant": 2,
+    "start": 71.16,
+    "end": 80.32,
+    "frames": 229
+  },
+  {
+    "index": 10,
+    "eventIndex": 4,
+    "variant": 3,
+    "start": 80.32,
+    "end": 89.28,
+    "frames": 224
+  },
+  {
+    "index": 11,
+    "eventIndex": 5,
+    "variant": 0,
+    "start": 89.28,
+    "end": 95.0,
+    "frames": 143
+  },
+  {
+    "index": 12,
+    "eventIndex": 6,
+    "variant": 0,
+    "start": 95.0,
+    "end": 103.76,
+    "frames": 219
+  },
+  {
+    "index": 13,
+    "eventIndex": 6,
+    "variant": 1,
+    "start": 103.76,
+    "end": 112.48,
+    "frames": 218
+  },
+  {
+    "index": 14,
+    "eventIndex": 6,
+    "variant": 2,
+    "start": 112.48,
+    "end": 121.28,
+    "frames": 220
+  },
+  {
+    "index": 15,
+    "eventIndex": 6,
+    "variant": 3,
+    "start": 121.28,
+    "end": 130.28,
+    "frames": 225
+  },
+  {
+    "index": 16,
+    "eventIndex": 7,
+    "variant": 0,
+    "start": 130.28,
+    "end": 139.36,
+    "frames": 227
+  },
+  {
+    "index": 17,
+    "eventIndex": 8,
+    "variant": 0,
+    "start": 139.36,
+    "end": 145.76,
+    "frames": 160
+  }
+]

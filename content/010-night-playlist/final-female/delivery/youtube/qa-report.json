@@ -1,0 +1,92 @@
+{
+  "status": "technical_final_QA_passed_pending_final_user_listening",
+  "kind": "youtube",
+  "video": "ahangban-night-final-youtube.mp4",
+  "sha256": "34a5a405cd57c05525d871270b677dd2a0f754773bd5e3066a1846707e712e20",
+  "bytes": 30232189,
+  "duration": 145.76,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "fullDecode": "PASS",
+  "narration": "female_only",
+  "narrationVoice": "voice-06",
+  "maleNarrationUsed": false,
+  "exactReviewedFemalePerformancesReused": 2,
+  "reviewedCoverBytesPreserved": "PASS",
+  "sourceLogoAndPlateHashes": "PASS",
+  "musicSamples": 3,
+  "musicSecondsEach": 35,
+  "musicTotalSeconds": 105.0,
+  "decodedPeakDbFS": -2.5,
+  "audioChecks": [
+    {
+      "id": "hook",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9999802005792433,
+      "rms": 0.1042766496642163
+    },
+    {
+      "id": "intro",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.999964264803528,
+      "rms": 0.10207233905226457
+    },
+    {
+      "id": "to-baroon-keh-rafty",
+      "type": "music",
+      "sourceToDecodedOutputCorrelation": 0.9990801769902269,
+      "rms": 0.09316925044914605
+    },
+    {
+      "id": "transition",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9999962061845986,
+      "rms": 0.09991482387984596
+    },
+    {
+      "id": "dastaye-to",
+      "type": "music",
+      "sourceToDecodedOutputCorrelation": 0.9998923227900862,
+      "rms": 0.09678634239823926
+    },
+    {
+      "id": "third",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9999721451266297,
+      "rms": 0.10241195399923546
+    },
+    {
+      "id": "age-ye-rooz",
+      "type": "music",
+      "sourceToDecodedOutputCorrelation": 0.9995348541256441,
+      "rms": 0.09162406942809
+    },
+    {
+      "id": "closing",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9999881134920917,
+      "rms": 0.10291700971121892
+    },
+    {
+      "id": "brand",
+      "type": "speech",
+      "sourceToDecodedOutputCorrelation": 0.9999802489986482,
+      "rms": 0.10130085771801643
+    }
+  ],
+  "encodedCameraAndRealFFTMovement": "PASS",
+  "voicePitchOrSpeedChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "pronunciationScriptCorrected": true,
+  "pronunciationAurallyVerifiedByAgent": false,
+  "captionTiming": "Proportional groups silence-nudged, not word-level forced alignment",
+  "cameraTiming": "Positive RMS onsets, not certified tempo/beat detection",
+  "finalUserListeningPending": true,
+  "copyrightCleared": false,
+  "publishAuthorized": false,
+  "published": false
+}

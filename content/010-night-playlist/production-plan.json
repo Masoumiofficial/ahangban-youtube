@@ -1,0 +1,66 @@
+{
+  "edition": "010",
+  "title": "سه آهنگ برای وقتی که شب تموم نمی‌شه",
+  "topicApproved": true,
+  "productionAuthorized": true,
+  "publishAuthorized": false,
+  "published": false,
+  "status": "full_female_only_final_files_complete_pending_user_listening",
+  "youtubeComplete": true,
+  "verticalComplete": true,
+  "approvedVoiceIdentities": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "voiceIdentitiesAreHistoricalSessionReferences": true,
+  "newVoiceAudioGenerated": true,
+  "musicSecondsEach": {
+    "youtube": 35,
+    "vertical": 12
+  },
+  "nativeSizes": {
+    "youtube": [
+      1920,
+      1080
+    ],
+    "vertical": [
+      1080,
+      1920
+    ]
+  },
+  "youtubeTargetSeconds": [
+    155,
+    185
+  ],
+  "verticalTargetSeconds": [
+    50,
+    65
+  ],
+  "timingsAreEstimates": false,
+  "questionLedOpening": true,
+  "faceless": true,
+  "speechOverMusic": false,
+  "speechSpeedOrPitchChanges": false,
+  "officialLogoChanged": false,
+  "subscriptionPurchased": false,
+  "copyrightCleared": false,
+  "finalUserReviewPending": true,
+  "actualDurationsSeconds": {
+    "youtube": 145.76,
+    "vertical": 47.53
+  },
+  "firstMusicStartSeconds": {
+    "youtube": 12.16,
+    "vertical": 3.92
+  },
+  "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
+  "sourceManifest": "source-manifest.json",
+  "freshSpeechClips": 8,
+  "previous010VoicePerformanceRejected": true,
+  "latestRevision": "final-female",
+  "fullEpisodeRebuildPending": false,
+  "currentDelivery": "final-female/delivery/manifest.json",
+  "currentNarration": "female_only",
+  "narrationVoice": "voice-06",
+  "maleNarrationUsed": false
+}

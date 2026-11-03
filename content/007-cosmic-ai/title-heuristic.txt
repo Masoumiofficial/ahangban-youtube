@@ -1,0 +1,7 @@
+
+  "پنج آهنگ محسن چاوشی؛ انتخاب تو کدام است؟"
+  40 chars   score 80/100
+    x  no-number    no number, date or name - the most reliable single fix
+    x  front-load   the first three words are all filler - move the subject forward
+    ok              40 characters, inside the 60-character desktop cut
+    ok              thumbnail and title carry different words

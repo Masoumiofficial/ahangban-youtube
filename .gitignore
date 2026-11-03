@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+node_modules/
+.env
+.env.*
+!.env.example
+coverage/
+*.log
+
+# Generated video/audio outputs; keep large media out of Git.
+rendered/

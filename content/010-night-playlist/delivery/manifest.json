@@ -1,0 +1,53 @@
+{
+  "edition": "010 night playlist",
+  "title": "سه آهنگ برای وقتی که شب تموم نمی‌شه",
+  "voices": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "freshSpeechClips": 8,
+  "voicePitchOrSpeedChanged": false,
+  "allNarrationSynthetic": true,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "presenterImagesUsed": false,
+  "copyrightCleared": false,
+  "publishAuthorized": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "finalUserListeningPending": true,
+  "outputs": {
+    "youtube": {
+      "video": "downloads/ahangban-night-playlist-youtube.mp4",
+      "sha256": "c01039479d17d3e6427cb37be84efc6566f9a252e3e56547a021ce08aa76e4b1",
+      "bytes": 25353439,
+      "duration": 163.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 25.0,
+      "cover": "downloads/ahangban-night-playlist-youtube-thumbnail.jpg",
+      "coverSha256": "457206ee600dc64e8a2eac1c0bbed8721adb621fb02b68ee6e5b0b6a9a35542c",
+      "musicSecondsEach": 35,
+      "musicTotalSeconds": 105.0,
+      "musicCameraShots": 12
+    },
+    "reel": {
+      "video": "downloads/ahangban-night-playlist-reel.mp4",
+      "sha256": "19e1c3ccd67f93a2f0da93967be4a055afa435d8404579f84f609087a5c8cad3",
+      "bytes": 9699972,
+      "duration": 52.21,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 30.0,
+      "cover": "downloads/ahangban-night-playlist-reel-cover.jpg",
+      "coverSha256": "603b75b57b37d634fddb17e4ede9eed935e8722d2ec5e65bf8414eb02825c07c",
+      "musicSecondsEach": 12,
+      "musicTotalSeconds": 36.0,
+      "musicCameraShots": 9
+    }
+  }
+}

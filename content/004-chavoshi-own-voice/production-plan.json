@@ -1,0 +1,80 @@
+{
+  "status": "first_video_completed_pending_user_review",
+  "previousReviewVideo": "downloads/ahangban-chavoshi-studio-review.mp4",
+  "previousReviewMaleVoice": "voice-02, synthetic; unchanged historical video",
+  "requestedMaleVoice": "user_own_voice",
+  "recommendedMethod": "local_voice_conversion_prototype",
+  "currentWardrobe": "black suit / black shirt",
+  "presenterComposite": "studio/ahangban-signature/productions/HOSTS-VIEW-002.png",
+  "presenterCompositeSha256": "8840148a415fc5b5d0e322822ce8c0dbaac8671298d5f0a8522ab19bc8e46050",
+  "femaleVoice": "voice-00 unchanged",
+  "speechOrder": [
+    "02",
+    "10",
+    "11",
+    "06"
+  ],
+  "privateInputDirectory": "rendered/user-voice/sajad/",
+  "inputOptions": [
+    "One original continuous recording of all four lines with pauses",
+    "Four separate recordings named 02, 10, 11, 06"
+  ],
+  "acceptedFormats": [
+    "wav",
+    "m4a",
+    "mp3",
+    "flac"
+  ],
+  "ownVoiceReceived": true,
+  "ownVoiceCloned": false,
+  "ownVoiceIntegrated": true,
+  "nextVideoRendered": true,
+  "lipSync": false,
+  "youtubePublished": false,
+  "privacy": "Do not commit raw user voice to Git, include it in public archives, upload to a third-party clone service or train a voice model without separate user authorization.",
+  "nextActions": [
+    "User final listening review of take boundaries, Persian pronunciation and subtitle timing",
+    "Review third-party music/image rights before any YouTube publication",
+    "Keep the no-subscription personal-voice experiment as a separate future task; do not require another recording for this completed episode"
+  ],
+  "scriptRevision": "2 — natural conversational rewrite for both hosts",
+  "dialogueFile": "content/004-chavoshi-own-voice/dialogue.fa.json",
+  "dialogueSha256": "dadc4a0fe4ed56a3a312d934eb8507dca9ad35ed4f83395ba801f17323d13ec4",
+  "recordingLinesSha256": "5223bc6c5ef92c90b07a29da1d283873d18ebf8cb52d27bed47fc2b01d62b33c",
+  "previousRecordingScriptSuperseded": true,
+  "femaleNarrationStatus": "Same selected voice-00, but all seven rewritten turns require fresh synthesis; old audio no longer matches script",
+  "ownVoiceStatus": "Original user recording received from GitHub revision ee2851d; technical checks performed, no aural transcript confirmation",
+  "requestedMethod": "reusable_personal_synthetic_voice",
+  "executionPreference": "no_subscription",
+  "candidateConverter": "OpenVoice V2, not yet run",
+  "persianBaseTts": "Must be selected with explicit Persian support and suitable usage rights; converter alone is not native Persian TTS",
+  "referenceRecording": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+  "referenceRecordingSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+  "referenceDurationSeconds": 49.10933333333333,
+  "cloningStatus": "not_created",
+  "providerUploadPerformed": false,
+  "providerAccountRequired": false,
+  "cloudSubscriptionChosen": false,
+  "reportedHardware": {
+    "cpu": "Intel Core i7-8550U",
+    "reportedCpuGHz": [
+      1.8,
+      1.99
+    ],
+    "ramGB": 8,
+    "reportedStorageGB": 60,
+    "storageFreeVsTotal": "unknown",
+    "discreteGpu": "not reported",
+    "operatingSystem": "not reconfirmed; Windows mentioned earlier"
+  },
+  "voiceConversionCandidates": [
+    "OpenVoice V2",
+    "ChatterboxVC (experimental comparison, not direct Persian TTS)"
+  ],
+  "chatterboxAudit": "content/004-chavoshi-own-voice/research/chatterbox-audit.json",
+  "currentEpisodeMethod": "direct_user_recording; personalized synthetic voice deferred",
+  "firstVideo": "downloads/ahangban-first-video-final.mp4",
+  "firstVideoSha256": "2efd5ba3cb0731ff256e707a7ef5ba508da6c364eee3e364cf9f1c5f452ee0e5",
+  "currentEpisodeDurationSeconds": 199.22,
+  "personalCloneStatus": "not_created; optional future research, not a blocker for completed episode"
+}

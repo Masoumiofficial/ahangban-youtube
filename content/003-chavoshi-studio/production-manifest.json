@@ -1,0 +1,25 @@
+{
+  "status": "technical_QA_passed_pending_user_review",
+  "duration": 280.30395833333336,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "voices": {
+    "female": "voice-00",
+    "male": "voice-02",
+    "scope": "Selected session voices, not portable voice models"
+  },
+  "speechTurns": 11,
+  "musicSamples": 5,
+  "studioMasterSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
+  "presenterCompositeSha256": "4eaf464e00e5a87ddf2f069eba8610c84c6a29c93bf5737ccf380c95291a6b58",
+  "logoCoreSha256": "34936480af9e5663e9bd871ac3efbcc5cbb0c9b96cc1092f682775b78f52435c",
+  "logoGlowSha256": "ad9e31c46d9ae19e1d84c566ee50653d895c8648a8635e7d8f76ecb78680e63e",
+  "presenterMotion": "Static reference-based still; no lip sync or facial animation",
+  "visualMotion": "Audio-reactive waveform, isolated neon glow opacity cycle, timed music cutaways/countdown",
+  "captionTiming": "Estimated text/pauses; not forced alignment",
+  "youtubePublished": false,
+  "videoSha256": "1530ea5d6cd31f81660def3fc1fdaa6da7bb616d432fb626e6a3e8bb54048f1c"
+}

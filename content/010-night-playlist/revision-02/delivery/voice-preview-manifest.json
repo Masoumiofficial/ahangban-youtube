@@ -1,0 +1,69 @@
+{
+  "status": "new_performances_pending_user_listening",
+  "previous010PerformanceRejected": true,
+  "previous008VoiceIdentitiesRetained": true,
+  "previousAudioSha256": [
+    "d6708bfb5579d485b64e08832cc494860612e73c2d13a22a73db4f9d4202f6f5",
+    "ed2da04e22255491ea28c37d166280215e2a49543a5fbda986c88fd8b53271ec",
+    "e4f93c2b74e8d17b4561994b610678e5b2089b427dd7509c68982ee6b6b8e0c4",
+    "b43f17433205e0ae2dc8fa94249713bab2e1da6bf4076bed6f4ac020fcf8d305",
+    "aa52824dc8d7ab27ea5c2b8a419804b38d55c92a27fba8c26711b31ea6c257a9",
+    "f52a374d41a9e8b59c6d26a2c74419e9dc0c94df828abc02732f175529a29dfb"
+  ],
+  "newSpeechSourceHashes": [
+    "87548f0636deaf4b5776ad24625b504dbe13679c134e5ed704ff3d645901a995",
+    "52b913158585570c4dd2bebadeac188bfdb64c7064814e9816eee45b4e6e9e0b",
+    "04563ed8d9df2ce41f14a4f33d93a68731d6f7424831554442308c0f86f8ae24"
+  ],
+  "timeline": [
+    {
+      "id": "female-hook",
+      "speaker": "female",
+      "voice": "voice-06",
+      "scene": "opening",
+      "text": "شده آخر شب، یه آهنگ رو هی از اول بذاری؟",
+      "start": 0.0,
+      "end": 4.48,
+      "duration": 4.48,
+      "constantGain": 1.3228359630999198,
+      "sourceSha256": "87548f0636deaf4b5776ad24625b504dbe13679c134e5ed704ff3d645901a995"
+    },
+    {
+      "id": "male-reply",
+      "speaker": "male",
+      "voice": "voice-07",
+      "scene": "opening",
+      "text": "یه جورایی آدمو می‌بره تو خاطره‌ها. مثلاً این یکی، از سیاوش قمیشی.",
+      "start": 4.760000000000001,
+      "end": 9.88,
+      "duration": 5.12,
+      "constantGain": 1.3983996585938334,
+      "sourceSha256": "52b913158585570c4dd2bebadeac188bfdb64c7064814e9816eee45b4e6e9e0b"
+    },
+    {
+      "id": "female-transition",
+      "speaker": "female",
+      "voice": "voice-06",
+      "scene": "dastaye-to",
+      "text": "این یکی تو رو یاد چی انداخت؟ حالا دستای تو رو بشنو، از داریوش.",
+      "start": 10.16,
+      "end": 16.44,
+      "duration": 6.28,
+      "constantGain": 1.3049905308315308,
+      "sourceSha256": "04563ed8d9df2ce41f14a4f33d93a68731d6f7424831554442308c0f86f8ae24"
+    }
+  ],
+  "duration": 16.44,
+  "output": "downloads/ahangban-night-v2-voice-preview.mp3",
+  "sha256": "92808c7c3170d4c54aeddb1066553d307d872e87672ff187b586dc2db2fceec6",
+  "musicUsed": false,
+  "soundEffectsUsed": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "voicePitchChanged": false,
+  "voiceSpeedChanged": false,
+  "internalPausesEdited": false,
+  "preciseEngineEmotionOrWordStressControlAvailable": false,
+  "processing": "Constant per-clip gain only, 280ms between complete utterances. No EQ/reverb/compression, time stretching or pitch shifting.",
+  "changes": "Shorter conversational questions and replies; removed abstract phrases and list-like introduction. Naturalness, pronunciation and emphasis are pending human review, not technically certified."
+}

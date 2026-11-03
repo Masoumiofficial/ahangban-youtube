@@ -1,0 +1,171 @@
+{
+  "repository": "Masoumiofficial/ahangban-youtube",
+  "revision": "d318f9f7095ab6c966a743ad3461e8f6fab0db34",
+  "music": [
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "gitBlob": "bb1ce7d7109cdba52bde3a925acd33eab050b083",
+      "file": "source-media/Mohsen Chavoshi , Sina Sarlak - Kojaei [128].mp3",
+      "sha256": "2505da6b8728da033a2abe4aff651f529d75faac094a016b9946cfd71b1d37ab",
+      "bytes": 3787181
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "gitBlob": "213cbec8d3f4ef5f99885012b54ecd8ffe038b17",
+      "file": "source-media/Mohsen-Chavoshi-Sina-Sarlak-Kojaei.jpg",
+      "sha256": "837736c7f5f9192878eac041760f39b205f0a8e525027ef1701108b309b32ef4",
+      "bytes": 154589
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "gitBlob": "ccf16ec27793cae573390e6068228bffcd847cb9",
+      "file": "source-media/Mohsen Chavoshi - Sange Saboor [128].mp3",
+      "sha256": "37726ce6c3d67b037bbd45eb8c2d9835a8a95e9005c4a93280dba1a09ae2441a",
+      "bytes": 3571231
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "gitBlob": "bca7d63d6af2817ddc28455349d41400c6e4f57a",
+      "file": "source-media/Mohsen-Chavoshi-Sange-Saboor.jpeg",
+      "sha256": "d2ea0931a663d67c03f955f2349c271ccd7d367ac4eebd68aaeeba8865e94233",
+      "bytes": 20821
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "gitBlob": "084f7b7d28c29e47a1a1734e1e055b6c8d9e989c",
+      "file": "source-media/Mohsen Chavoshi - Amire Bi Gazand [128].mp3",
+      "sha256": "86553316aaa7df881f473b218d7f6e82a73203b87d3bcd80d93085516dfb8e8e",
+      "bytes": 4012604
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "gitBlob": "1044e96ef25f8b4c7d19ef9bc28ad97255716b72",
+      "file": "source-media/Mohsen-Chavoshi-Amire-Bi-Gazand.jpg",
+      "sha256": "15d258ba8e88c67f5c7df88c809ddb69f021903ece2045dea46f4e88d70bd3f9",
+      "bytes": 195626
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Beraghsa [128].mp3",
+      "gitBlob": "0ed530071efe613f6f7229af15babaa47ecf871b",
+      "file": "source-media/Mohsen Chavoshi - Beraghsa [128].mp3",
+      "sha256": "bdbd52266ad104f91dc4240815b63c779b26b2faab62f88825aea7acdcaa920e",
+      "bytes": 2509526
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Beraghsa.jpg",
+      "gitBlob": "5be75812cd449feae62b5a28316381f33b1afdff",
+      "file": "source-media/Mohsen-Chavoshi-Beraghsa.jpg",
+      "sha256": "58a725b860534ffd69270da9e8563f9f31b4bd6d38a0f8ed0f93b75913d7ca71",
+      "bytes": 92575
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "gitBlob": "11301ac5b91cd262520405c5d1e7de317173e36c",
+      "file": "source-media/Mohsen Chavoshi - Bist Hezar Arezoo [128].mp3",
+      "sha256": "e465bb9fb8275d14b557b30b1222f11a0c9c2962c3df0304b886c40a71565754",
+      "bytes": 3172518
+    },
+    {
+      "path": "Artist/1-Mohsen-Chavoshi/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "gitBlob": "ddf656b149aec363b649a6e089609068855d992d",
+      "file": "source-media/Mohsen-Chavoshi-Bist-Hezar-Arezoo.jpg",
+      "sha256": "e2ad946436b1f01f1fcaa01afd31c949402a081fe32dfae2322c6db6dce544e0",
+      "bytes": 186640
+    }
+  ],
+  "speech": [
+    {
+      "id": "01",
+      "speaker": "female",
+      "voice": "voice-00",
+      "file": "audio/01.mp3",
+      "sha256": "fa01f542387d0f291450b365c841cdf53e8984d92da48bccbf6df3a08c4ba4b5",
+      "source": "rendered/video-002/audio/01.mp3"
+    },
+    {
+      "id": "02",
+      "speaker": "male",
+      "voice": "voice-02",
+      "file": "audio/02.wav",
+      "sha256": "ddf6463bd987ade723f273268a334a64ea2b80807699abf7c2f2ea141b3a86d4",
+      "source": "rendered/studio-voice-revision/02.wav"
+    },
+    {
+      "id": "03",
+      "speaker": "female",
+      "voice": "voice-00",
+      "file": "audio/03.mp3",
+      "sha256": "625c6a21068e3276adee0660b8a8ae23f1c64cbb68154cfc122a5ee9e34068d6",
+      "source": "rendered/video-002/audio/03.mp3"
+    },
+    {
+      "id": "10",
+      "speaker": "male",
+      "voice": "voice-02",
+      "file": "audio/10.wav",
+      "sha256": "955f1a4f497f76afd1d784d3dc081f97fc75d7d24a75672ae9643137f98faf66",
+      "source": "rendered/studio-voice-revision/10.wav"
+    },
+    {
+      "id": "04",
+      "speaker": "female",
+      "voice": "voice-00",
+      "file": "audio/04.mp3",
+      "sha256": "1e3f9aa2a6cb8f2258523d3cfc935a84a10e1164ba4726d207189ba372fbf164",
+      "source": "rendered/video-002/audio/04.mp3"
+    },
+    {
+      "id": "11",
+      "speaker": "male",
+      "voice": "voice-02",
+      "file": "audio/11.wav",
+      "sha256": "91c169170d6ae1b0c57e68dafe44aa82291e8138c560052ce2118619002d21fb",
+      "source": "rendered/studio-voice-revision/11.wav"
+    },
+    {
+      "id": "05",
+      "speaker": "female",
+      "voice": "voice-00",
+      "file": "audio/05.mp3",
+      "sha256": "492a3d17b3c89cd2140810a967d2ff35a6df0f302dd7ad6c8966cc3869a0c4fb",
+      "source": "rendered/video-002/audio/05.mp3"
+    },
+    {
+      "id": "06",
+      "speaker": "male",
+      "voice": "voice-02",
+      "file": "audio/06.wav",
+      "sha256": "592fad4ee5bc39a1b541b168a26d47748372cdb997dab43a2127146442a7139c",
+      "source": "rendered/studio-voice-revision/06.wav"
+    },
+    {
+      "id": "07",
+      "speaker": "female",
+      "voice": "voice-00",
+      "file": "audio/07.mp3",
+      "sha256": "2da66f990e23c6cdddf47c9161584c51df86a891f603bc920260aeac3e8afc2a",
+      "source": "rendered/video-002/audio/07.mp3"
+    },
+    {
+      "id": "08",
+      "speaker": "female",
+      "voice": "voice-00",
+      "file": "audio/08.mp3",
+      "sha256": "d7316f8de86088d5618c20938635f41da141237b3680c3556b3d7ecc47cb58ec",
+      "source": "rendered/video-002/audio/08.mp3"
+    },
+    {
+      "id": "09",
+      "speaker": "female",
+      "voice": "voice-00",
+      "file": "audio/09.mp3",
+      "sha256": "bdf9156c5bc447252a7d2259ec9e8dc221bacf099b072172d277deaa6bfc7954",
+      "source": "rendered/video-002/audio/09.mp3"
+    }
+  ],
+  "voiceSelection": {
+    "female": "voice-00",
+    "male": "voice-02",
+    "scope": "Selected session voices, not portable voice models"
+  }
+}

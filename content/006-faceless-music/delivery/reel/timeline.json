@@ -1,0 +1,114 @@
+{
+  "kind": "reel",
+  "duration": 32.285864062499996,
+  "events": [
+    {
+      "start": 0,
+      "end": 4.025864062499998,
+      "duration": 4.025864062499998,
+      "sceneDuration": 4.025864062499998,
+      "type": "speech",
+      "speaker": "male",
+      "scene": "opening",
+      "visualScene": "opening",
+      "sourceStart": 18.267844270833336,
+      "text": "برای کسی که تازه می‌خواد چاوشی گوش بده، چی می‌ذاری؟"
+    },
+    {
+      "start": 4.025864062499998,
+      "end": 9.025864062499998,
+      "duration": 5.0,
+      "sceneDuration": 5.0,
+      "type": "music",
+      "scene": "kojaei",
+      "visualScene": "kojaei",
+      "sourceStart": 38.91370833333333,
+      "title": "کجایی",
+      "artist": "محسن چاوشی و سینا سرلک"
+    },
+    {
+      "start": 9.025864062499998,
+      "end": 14.025864062499998,
+      "duration": 5.0,
+      "sceneDuration": 5.0,
+      "type": "music",
+      "scene": "sange-saboor",
+      "visualScene": "sange-saboor",
+      "sourceStart": 72.996,
+      "title": "سنگ صبور",
+      "artist": "محسن چاوشی"
+    },
+    {
+      "start": 14.025864062499998,
+      "end": 19.0258640625,
+      "duration": 5.0,
+      "sceneDuration": 5.0,
+      "type": "music",
+      "scene": "amir-bi-gazand",
+      "visualScene": "amir-bi-gazand",
+      "sourceStart": 108.96485416666667,
+      "title": "امیر بی‌گزند",
+      "artist": "محسن چاوشی"
+    },
+    {
+      "start": 19.0258640625,
+      "end": 24.0258640625,
+      "duration": 5.0,
+      "sceneDuration": 5.0,
+      "type": "music",
+      "scene": "beraghsa",
+      "visualScene": "beraghsa",
+      "sourceStart": 142.61935416666665,
+      "title": "برقص آ",
+      "artist": "محسن چاوشی"
+    },
+    {
+      "start": 24.0258640625,
+      "end": 29.0258640625,
+      "duration": 5.0,
+      "sceneDuration": 5.0,
+      "type": "music",
+      "scene": "bist-hezar-arezoo",
+      "visualScene": "bist-hezar-arezoo",
+      "sourceStart": 174.43935416666667,
+      "title": "بیست هزار آرزو",
+      "artist": "محسن چاوشی"
+    },
+    {
+      "start": 29.0258640625,
+      "end": 31.085864062499997,
+      "duration": 2.06,
+      "sceneDuration": 2.06,
+      "type": "speech",
+      "speaker": "female",
+      "scene": "recap",
+      "visualScene": "recap",
+      "sourceStart": 196.90935416666667,
+      "text": "همون رو توی کامنت بنویس."
+    },
+    {
+      "start": 31.085864062499997,
+      "end": 32.285864062499996,
+      "duration": 1.2,
+      "sceneDuration": 1.2,
+      "type": "hold",
+      "scene": "recap",
+      "visualScene": "recap",
+      "sourceStart": null
+    }
+  ],
+  "captions": [
+    {
+      "start": 0,
+      "end": 4.005864062499999,
+      "text": "برای کسی که تازه می‌خواد چاوشی گوش بده، چی می‌ذاری؟"
+    },
+    {
+      "start": 29.0258640625,
+      "end": 31.065864062499998,
+      "text": "همون رو توی کامنت بنویس."
+    }
+  ],
+  "musicSampleCount": 5,
+  "captionTiming": "Re-edited existing pause-estimated speech windows, not word-level alignment"
+}

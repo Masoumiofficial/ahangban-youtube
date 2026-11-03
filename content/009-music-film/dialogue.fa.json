@@ -1,0 +1,66 @@
+[
+  {
+    "id": "01",
+    "speaker": "female",
+    "scene": "opening",
+    "text": "چرا بعضی آهنگا رو هر چقدر می‌شنویم، باز دلمون می‌خواد از اول پخششون کنیم؟ مثلاً کجایی؛ تو با صداش ارتباط می‌گیری یا با حرفی که می‌زنه؟",
+    "voice": "voice-06",
+    "approvedExactReuse": true
+  },
+  {
+    "id": "02",
+    "speaker": "male",
+    "scene": "interlude",
+    "text": "شاید هم یه خاطره رو یادت میاره. هم صدا مهمه، هم اون چیزی که آهنگ یادت می‌اندازه. ولی جوابش برای همه یکی نیست. تو کجایی رو که می‌شنوی، اول چی میاد توی ذهنت؟",
+    "voice": "voice-07",
+    "approvedExactReuse": true
+  },
+  {
+    "id": "03",
+    "speaker": "female",
+    "scene": "sange-saboor",
+    "text": "حالا سنگ صبور. این یکی رو با یه سؤال گوش کن؛ اگه شعرش رو نمی‌دونستی، باز همین حس رو ازش می‌گرفتی؟",
+    "voice": "voice-06",
+    "approvedExactReuse": false
+  },
+  {
+    "id": "04",
+    "speaker": "male",
+    "scene": "interlude",
+    "text": "تا اینجا کدومش بیشتر به دلت نشست؟ اگه این مدل با هم آهنگ شنیدن رو دوست داری، یه لایک بزن و کانال آهنگ‌بان رو سابسکرایب کن.",
+    "voice": "voice-07",
+    "approvedExactReuse": false
+  },
+  {
+    "id": "05",
+    "speaker": "female",
+    "scene": "amir-bi-gazand",
+    "text": "بریم سراغ امیر بی‌گزند. این بار به مکث‌ها و تأکید روی کلمه‌ها گوش کن. ببین کدوم قسمت اجرا بیشتر توی ذهنت می‌مونه.",
+    "voice": "voice-06",
+    "approvedExactReuse": false
+  },
+  {
+    "id": "06",
+    "speaker": "male",
+    "scene": "beraghsa",
+    "text": "حالا یه تغییر حال‌وهوا؛ برقص آ. این بار بذار ضرب‌آهنگ جلو بره. ببین بدون اینکه دنبال معنی بگردی، موسیقی باهات چه کار می‌کنه.",
+    "voice": "voice-07",
+    "approvedExactReuse": false
+  },
+  {
+    "id": "07",
+    "speaker": "female",
+    "scene": "bist-hezar-arezoo",
+    "text": "آخرش هم بیست هزار آرزو. بعد از این یکی، بگو کدوم آهنگ رو دلت می‌خواد دوباره بشنوی. همون انتخاب، برای ما جالبه.",
+    "voice": "voice-06",
+    "approvedExactReuse": false
+  },
+  {
+    "id": "08",
+    "speaker": "female",
+    "scene": "recap",
+    "text": "خب، انتخابت چیه؟ اسم آهنگ رو کامنت کن. برای پیشنهادهای بعدی، رسانهٔ آهنگ‌بان رو دنبال کن. اسم آهنگ‌ها هم توی سایته؛ آهنگ‌بان دات آی آر.",
+    "voice": "voice-06",
+    "approvedExactReuse": false
+  }
+]

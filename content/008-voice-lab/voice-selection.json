@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "scope": "voice-only listening lab, not video production",
+  "female": {
+    "voice": "voice-06",
+    "auditionBattle": "06",
+    "index": 3,
+    "useCase": "conversational",
+    "language": "fa"
+  },
+  "male": {
+    "voice": "voice-07",
+    "auditionBattle": "07",
+    "index": 3,
+    "useCase": "conversational",
+    "language": "fa"
+  },
+  "selection": "user picked each audition candidate; generated dialogue/pronunciation sample still pending feedback",
+  "finalVoiceLockApproved": false,
+  "previous007Delivery": "user rejected artificial delivery and imperative opening",
+  "videoProductionPaused": true,
+  "humanRecordingUsed": false,
+  "personalCloning": "abandoned; do not restart",
+  "preciseEmotionAndStressControlAvailable": false
+}

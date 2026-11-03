@@ -1,0 +1,34 @@
+{
+  "version": "1.1",
+  "status": "user_requested_realism_revision_for_video",
+  "realismAdjustments": {
+    "seatedScale": 0.95,
+    "exposureMultiplier": 0.94,
+    "contrastMultiplier": 0.97,
+    "saturationMultiplier": 0.96,
+    "contactShadowOpacity": 0.12
+  },
+  "camera": "Same approved frontal master; no new camera angle",
+  "base": "master/MASTER-VIEW-001.png",
+  "baseSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
+  "seatingFromCamera": {
+    "left": "Sajad",
+    "right": "Ava"
+  },
+  "source": "working/HOSTS-VIEW-001-generated.png",
+  "sourceSha256": "f234631d32297cc6cb87f240687a61986eeef5fbf2e994b8f418a98fb7785cae",
+  "layer": "productions/HOSTS-VIEW-001-layer.png",
+  "layerSha256": "70f0ebc2e10d38bf62a48a0233419d54f6e8e7e87a636e3ad617707368eab0c5",
+  "composite": "productions/HOSTS-VIEW-001.png",
+  "compositeSha256": "4eaf464e00e5a87ddf2f069eba8610c84c6a29c93bf5737ccf380c95291a6b58",
+  "checks": [
+    "Empty master unchanged",
+    "Pixels outside presenter alpha exactly match approved master",
+    "Original equipment foreground restored"
+  ],
+  "limitations": [
+    "AI-generated presenter appearance requires user review; not an identity-exact 3D rig",
+    "Presenter source generated at 1365x768 and resampled to 4K; not native 4K human detail",
+    "Static image only; no voice, lip sync, neon animation or video integration"
+  ]
+}

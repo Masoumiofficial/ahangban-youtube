@@ -1,0 +1,93 @@
+{
+  "version": "1.2",
+  "status": "First episode rendered with actual user-recorded Sajad and black suit, same selected synthetic Ava. Reusable personal synthetic voice remains future research; no clone created.",
+  "sourceRevision": "c19912b34753fb31294fbf21a97f4fc122d29019",
+  "seatAssignment": {
+    "perspective": "viewer / camera",
+    "left": "Sajad",
+    "right": "Ava",
+    "approval": "User accepted proposed seating with «عالیه»"
+  },
+  "characters": [
+    {
+      "id": "AHANGBAN-AVA-001",
+      "displayNameFa": "آوا",
+      "displayNameEn": "Ava",
+      "role": "Main female radio presenter",
+      "primaryReference": "Presenters/Ava/Ava Ahangban Studio Portrait Board.png",
+      "voiceIdThisSession": "voice-00",
+      "appearanceNotes": [
+        "Use supplied multi-angle and expression sheets for the same face.",
+        "Preserve hairstyle, black scarf, outfit embroidery, jewelry and facial proportions from supplied references; do not invent redesigns."
+      ],
+      "references": [
+        {
+          "path": "Presenters/Ava/AVA’s Eight Expressions.png",
+          "sha256": "003826efe14394269923e30c488a0011e776b54e68730b61a6545284b3d9b566",
+          "bytes": 2313527
+        },
+        {
+          "path": "Presenters/Ava/Ava Ahangban Studio Portrait Board.png",
+          "sha256": "94790ae3f434142716b704a5c9186cdecba1b081e699b1c7cc74e92baa366f0c",
+          "bytes": 2127785
+        },
+        {
+          "path": "Presenters/Ava/Ava_ Glamorous Radio Host Portfolio.png",
+          "sha256": "8ce8508da169ad02d33fa1ebd86215f3b691ab8dc5203f68c54db5d844def58a",
+          "bytes": 2284282
+        }
+      ]
+    },
+    {
+      "id": "AHANGBAN-SAJAD-001",
+      "displayNameFa": "سجاد",
+      "displayNameEn": "Sajad",
+      "role": "AhangBan manager and male radio presenter, as stated by user",
+      "primaryReference": "Presenters/Sajad/Sajad.png",
+      "appearanceNotes": [
+        "Preserve supplied face, glasses, dark styled hair and beard across shots.",
+        "Black suit is now explicitly selected by user. Use the cinematic board for black suit/shirt only, not its gold logos or room. Keep clothing consistent within an episode."
+      ],
+      "references": [
+        {
+          "path": "Presenters/Sajad/Sajad.png",
+          "sha256": "d222cd419eb144e0e32dd33d7d611b72ca4790ca3fab504a04e5cef38fd72bf1",
+          "bytes": 2097055
+        },
+        {
+          "path": "Presenters/Sajad/Sajad_ Cinematic Radio Presenter Identity Board.png",
+          "sha256": "b7f8af8530a73556af35d768c243e530b151f3bbe9155aae608101e6c010e7de",
+          "bytes": 2308918
+        }
+      ],
+      "wardrobePolicy": "User explicitly requested black suit. Current default for new productions: black suit and black shirt matching supplied cinematic sheet. Preserve original brown-board face identity. Brown outfit stays historical only; do not switch wardrobe automatically.",
+      "previousSyntheticVoiceIdThisSession": "voice-02",
+      "voiceIdThisSession": null,
+      "voiceSourcePolicy": {
+        "requestedSource": "user_own_reusable_synthetic_voice",
+        "recommendedMethod": "local_converter_quality_trial",
+        "status": "real_recording_integrated_in_first_video; reusable clone not yet created",
+        "noAutomaticSyntheticFallback": true,
+        "thirdPartyCloneConsent": "Explicitly authorized by user; no third-party upload performed",
+        "rawRecordingStorage": "Private ignored rendered/user-voice/sajad/; never commit raw user recordings by default",
+        "referenceRecording": "studio/ahangban-signature/Presenters/Sajad/sajad.m4a",
+        "referenceRecordingSha256": "acbbb46ebe3202bebb8c3535a8feffb2b5defc5d480cb3c2304d507830a3d6c0",
+        "executionPreference": "no_subscription_local",
+        "cloneCreated": false,
+        "currentEpisodeMethod": "direct_user_recording",
+        "currentEpisodeVideo": "downloads/ahangban-first-video-final.mp4"
+      },
+      "wardrobeReference": "Presenters/Sajad/Sajad_ Cinematic Radio Presenter Identity Board.png"
+    }
+  ],
+  "rules": [
+    "Use only these two named presenter identities unless user explicitly changes them.",
+    "User-supplied character names and roles are authoritative; this is not face recognition or real-person verification.",
+    "Only the original blue-and-dark official logo is brand-authoritative. Gold musical-note marks, fictional logos, lettering, backdrops and rooms inside character boards are NOT studio/logo references.",
+    "Keep master studio empty; composite hosts as separate requested production layers.",
+    "Do not silently change facial geometry, glasses, hair, beard, scarf, makeup or established accessories. Expressions may follow supplied expression references.",
+    "Treat age/height/biography labels on generated boards as design notes, not verified facts about a real person.",
+    "Voice IDs are session-specific references, not permanent portable voice models.",
+    "Identity and spatial consistency must be reviewed on each generated shot; a reference lock is not a technical guarantee of zero generation drift."
+  ]
+}

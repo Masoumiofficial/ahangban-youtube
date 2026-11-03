@@ -1,0 +1,4 @@
+# Optional: only for rebuilding the graphics; not needed to use the ready PNGs.
+Pillow==12.2.0
+arabic-reshaper==3.0.0
+python-bidi==0.6.7
