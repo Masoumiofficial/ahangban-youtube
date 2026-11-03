@@ -1,0 +1,5 @@
+[
+  {"id":"female-hook","speaker":"female","voice":"voice-06","scene":"opening","text":"شده آخر شب، یه آهنگ رو هی از اول بذاری؟"},
+  {"id":"male-reply","speaker":"male","voice":"voice-07","scene":"opening","text":"یه جورایی آدمو می‌بره تو خاطره‌ها. مثلاً این یکی، از سیاوش قمیشی."},
+  {"id":"female-transition","speaker":"female","voice":"voice-06","scene":"dastaye-to","text":"این یکی تو رو یاد چی انداخت؟ حالا دستای تو رو بشنو، از داریوش."}
+]

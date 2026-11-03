@@ -1,0 +1,71 @@
+{
+  "status": "new_design_pending_user_review",
+  "outputs": {
+    "youtube": {
+      "file": "downloads/ahangban-night-v2-youtube-thumbnail.jpg",
+      "sha256": "92d9b927b0fac8e072fcae847968036812546b2c212b81a010a01cc35027f84b",
+      "size": [
+        1280,
+        720
+      ],
+      "titleBoundsAtNativeSize": [
+        [
+          1457,
+          245,
+          1790,
+          420
+        ],
+        [
+          1371,
+          427,
+          1790,
+          599
+        ],
+        [
+          1391,
+          680,
+          1780,
+          748
+        ],
+        [
+          1448,
+          785,
+          1780,
+          828
+        ]
+      ]
+    },
+    "reel": {
+      "file": "downloads/ahangban-night-v2-reel-cover.jpg",
+      "sha256": "a311e1f1f3c5693ed01bc5ca060fa9cd34030072174630186e0db6213ea05e61",
+      "size": [
+        1080,
+        1920
+      ],
+      "titleBoundsAtNativeSize": [
+        [
+          324,
+          355,
+          918,
+          473
+        ],
+        [
+          476,
+          515,
+          918,
+          591
+        ],
+        [
+          559,
+          1440,
+          918,
+          1486
+        ]
+      ]
+    }
+  },
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "originalArtworkUsed": true,
+  "artworkRegenerated": false,
+  "design": "Original supplied cover planes projected by a pinhole camera, edge thickness, soft cast shadow and vertically faded floor reflection; extruded Persian type; generated photographic background. 2.5D composite, not real footage."
+}

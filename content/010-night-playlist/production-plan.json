@@ -5,7 +5,7 @@
   "productionAuthorized": true,
   "publishAuthorized": false,
   "published": false,
-  "status": "technical_QA_passed_pending_final_user_listening",
+  "status": "first_delivery_voice_rejected_revision_02_previews_pending_user_review",
   "youtubeComplete": true,
   "verticalComplete": true,
   "approvedVoiceIdentities": {
@@ -55,5 +55,8 @@
   },
   "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
   "sourceManifest": "source-manifest.json",
-  "freshSpeechClips": 8
+  "freshSpeechClips": 8,
+  "previous010VoicePerformanceRejected": true,
+  "latestRevision": "revision-02",
+  "fullEpisodeRebuildPending": true
 }

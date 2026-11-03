@@ -5,7 +5,33 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## ACTIVE — 010 COMPLETE, awaiting final user listening; NOT published
+## CURRENT — 010 voice delivery REJECTED; revision-02 previews pending listening
+
+Latest user feedback: 010 speech unnatural again; work on words/tone, stronger
+video effects, more professional realistic dimensional thumbnail and Reel cover.
+Do NOT call 010 voice approved based on 008 voice selection or technical QA.
+Preserve voice-06 female/07 male identities; do not silently swap, clone or use 007.
+`content/010-night-playlist/revision-02/`: 3 fresh short conversational performances,
+dry voice sample 16.44s (female/male/female; no music/FX/EQ/speed/pitch edits), new
+independent YouTube thumbnail 1280x720 and Reel cover 1080x1920, and 39.56s native
+1920x1080/25 review preview. Full episode NOT rebuilt; wait for user listening
+feedback before generating remaining text and rebuilding full outputs. No direct
+word-stress/emotion engine controls exist; actual changes are rewrite + resynthesis.
+Projected original cover planes, thick edges, shadows, table reflections, independent
+foreground/card/background motion and actual FFT line give 2.5D depth, NOT a volumetric
+3D scene. Backgrounds AI-generated; original supplied artwork/faces and official
+logo not regenerated. Covers built by compositing, not random AI-written logos.
+Artifacts: downloads/ahangban-night-v2-{voice-preview.mp3,style-preview.mp4,
+youtube-thumbnail.jpg,reel-cover.jpg}. First delivery originals and their hashes
+remain intact. New metadata never claims naturalness, approval, rights or publication.
+New independent preview QA PASS: full decode, every audio correlation >.97, peak
+-1.9 dBFS, camera/FFT motion and cover hashes/sizes. 10 revision tests +17 original
+episode tests +44 Node tests PASS; none certifies naturalness.
+Source music remains pinned to 010 source manifest and 3x35s/3x12s full-version target
+unchanged; short style demo uses only 8+7+7s music. No publication/account purchases.
+Preserve 009 uploaded video receipt and UNKNOWN public status; never upload duplicate.
+
+## HISTORICAL — first 010 delivery; speech later rejected, NOT published
 
 User supplied Artist/2-video-2 on main plus three ahangban.ir URLs. Source commit
 pinned at d4cf777d859a0826c7dd4ccde9b7fccea4a8a503; 3 MP3 + 3 cover blobs verified.

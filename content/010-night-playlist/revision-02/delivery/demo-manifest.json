@@ -1,0 +1,28 @@
+{
+  "status": "review_preview_not_final_episode",
+  "video": "downloads/ahangban-night-v2-style-preview.mp4",
+  "sha256": "ab2493f7f89f5c8dbbbd7273ebe3bfcfa082ac1c84451b11e01323d979caeca2",
+  "bytes": 8716017,
+  "duration": 39.56,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "fullEpisodeRebuilt": false,
+  "previous010SpeechRejected": true,
+  "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "originalArtworkHashVerified": true,
+  "voiceIdentities": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "humanRecordingUsed": false,
+  "voiceSpeedOrPitchChanged": false,
+  "finalUserListeningPending": true,
+  "copyrightCleared": false,
+  "youtubePublished": false,
+  "instagramPublished": false,
+  "visualMethod": "2.5D pinhole-projected original cover planes + edge thickness, soft shadow, faded table reflection, independent foreground/background/card camera motion, real audio FFT line and short shutter reveal. Not a volumetric 3D scene."
+}

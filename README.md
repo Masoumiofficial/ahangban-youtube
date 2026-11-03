@@ -1,6 +1,16 @@
 # AhangBan — ابزارهای یوتیوب
 
-## قسمت جدید 010 — پلی‌لیست شبانه، آمادهٔ بازبینی
+## اصلاح جدید 010 — نمونهٔ صدا و ظاهر، نه ویدیوی کامل
+
+اجرای گفتار تحویل اول طبق بازخورد کاربر غیرطبیعی بود و تأیید نشد. اصلاح دوم شامل گفتار تازهٔ کوتاه، پیش‌نمایش تدوین عمق‌دار و تامبنیل/کاور واقع‌گرایانه‌تر است. قبل از بازسازی کل ویدیو، نمونهٔ خشک گفتار باید شنیده شود.
+
+- [نمونهٔ خشک صدا — ۱۶ ثانیه](https://github.com/Masoumiofficial/ahangban-youtube/raw/refs/heads/arena/d4ba4e0b-ahangban-youtube/downloads/ahangban-night-v2-voice-preview.mp3)
+- [پیش‌نمایش صدا و تدوین — حدود ۴۰ ثانیه](https://github.com/Masoumiofficial/ahangban-youtube/raw/refs/heads/arena/d4ba4e0b-ahangban-youtube/downloads/ahangban-night-v2-style-preview.mp4)
+- [تامبنیل تازه](downloads/ahangban-night-v2-youtube-thumbnail.jpg) · [کاور تازهٔ عمودی](downloads/ahangban-night-v2-reel-cover.jpg)
+- [شرح تغییرات و محدودیت‌ها](content/010-night-playlist/revision-02/README.fa.md)
+
+
+## تحویل اول 010 — تاریخچه؛ گفتار این نسخه بعداً تأیید نشد
 
 **«سه آهنگ برای وقتی که شب تموم نمی‌شه»**: تو بارون که رفتی / سیاوش قمیشی، دستای تو / داریوش، اگه یه روز / فرامرز اصلانی. نسخهٔ یوتیوب ۲:۴۳، نسخهٔ عمودی ۵۲٫۲۱ ثانیه؛ بررسی فنی پاس شده، تأیید شنیداری نهایی و مجوز انتشار هنوز داده نشده‌اند.
 
