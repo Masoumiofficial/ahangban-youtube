@@ -1,0 +1,444 @@
+{
+  "kind": "youtube",
+  "status": "RENDERED_COMPLETE_STATIC_AVA_QA_PASSED",
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "totalFrames": 3644,
+  "sourceVideo": "downloads/ahangban-night-final-youtube.mp4",
+  "sourceSha256": "34a5a405cd57c05525d871270b677dd2a0f754773bd5e3066a1846707e712e20",
+  "sourceDuration": 145.76,
+  "narrationVoice": "voice-06",
+  "maleNarrationUsed": false,
+  "musicSecondsEach": 35,
+  "actorSourceSha256": "68854d222a57969ff89567530f8b4c8202d4f8b8855acac96a23e7628e861adf",
+  "microphoneSourceSha256": "525390135a1e3acaa7cf34e10d7a1081888d7162275f683d8b56770325ea827a",
+  "fixedPanelSha256": "89e31a332a2dbd41d4748770e21dcdb920866f0da204173f62a56f63a721ea65",
+  "actorAnimated": false,
+  "headLipEyeListeningMotionGenerated": false,
+  "userExplicitlyApprovedNoMotion": false,
+  "staticFallbackDisclosedBeforeBuild": true,
+  "noExternalUserExecutionRequired": true,
+  "audioProcessing": "AAC stream copy, no re-encode/retime",
+  "audioGenerated": false,
+  "publishAuthorized": false,
+  "sourceSpeechCaptionCropGuard": true,
+  "intervals": [
+    {
+      "startFrame": 0,
+      "endFrame": 40,
+      "eventId": "hook",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "شده آخر شب، یه",
+      "overlay": "overlay-000.png"
+    },
+    {
+      "startFrame": 40,
+      "endFrame": 81,
+      "eventId": "hook",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "آهنگ رو هی از",
+      "overlay": "overlay-001.png"
+    },
+    {
+      "startFrame": 81,
+      "endFrame": 82,
+      "eventId": "hook",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "آهنگ رو هی از",
+      "overlay": "overlay-002.png"
+    },
+    {
+      "startFrame": 82,
+      "endFrame": 112,
+      "eventId": "hook",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "اول بذاری؟",
+      "overlay": "overlay-003.png"
+    },
+    {
+      "startFrame": 112,
+      "endFrame": 119,
+      "eventId": "hook",
+      "scene": "opening",
+      "type": "speech",
+      "caption": null,
+      "overlay": "overlay-004.png"
+    },
+    {
+      "startFrame": 119,
+      "endFrame": 153,
+      "eventId": "intro",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "این سه تا رو",
+      "overlay": "overlay-005.png"
+    },
+    {
+      "startFrame": 153,
+      "endFrame": 203,
+      "eventId": "intro",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "با هم بشنویم. اولی،",
+      "overlay": "overlay-006.png"
+    },
+    {
+      "startFrame": 203,
+      "endFrame": 254,
+      "eventId": "intro",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "تو بارون که رفتی،",
+      "overlay": "overlay-007.png"
+    },
+    {
+      "startFrame": 254,
+      "endFrame": 255,
+      "eventId": "intro",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "تو بارون که رفتی،",
+      "overlay": "overlay-008.png"
+    },
+    {
+      "startFrame": 255,
+      "endFrame": 297,
+      "eventId": "intro",
+      "scene": "opening",
+      "type": "speech",
+      "caption": "از سیاوش قمیشی.",
+      "overlay": "overlay-009.png"
+    },
+    {
+      "startFrame": 297,
+      "endFrame": 304,
+      "eventId": "intro",
+      "scene": "opening",
+      "type": "speech",
+      "caption": null,
+      "overlay": "overlay-010.png"
+    },
+    {
+      "startFrame": 304,
+      "endFrame": 1179,
+      "eventId": "to-baroon-keh-rafty",
+      "scene": "to-baroon-keh-rafty",
+      "type": "music",
+      "caption": null,
+      "overlay": "overlay-011.png"
+    },
+    {
+      "startFrame": 1179,
+      "endFrame": 1186,
+      "eventId": "to-baroon-keh-rafty",
+      "scene": "to-baroon-keh-rafty",
+      "type": "music",
+      "caption": null,
+      "overlay": "overlay-012.png"
+    },
+    {
+      "startFrame": 1186,
+      "endFrame": 1220,
+      "eventId": "transition",
+      "scene": "dastaye-to",
+      "type": "speech",
+      "caption": "این یکی تو رو",
+      "overlay": "overlay-013.png"
+    },
+    {
+      "startFrame": 1220,
+      "endFrame": 1221,
+      "eventId": "transition",
+      "scene": "dastaye-to",
+      "type": "speech",
+      "caption": "این یکی تو رو",
+      "overlay": "overlay-014.png"
+    },
+    {
+      "startFrame": 1221,
+      "endFrame": 1271,
+      "eventId": "transition",
+      "scene": "dastaye-to",
+      "type": "speech",
+      "caption": "یاد چی انداخت؟ حالا",
+      "overlay": "overlay-015.png"
+    },
+    {
+      "startFrame": 1271,
+      "endFrame": 1316,
+      "eventId": "transition",
+      "scene": "dastaye-to",
+      "type": "speech",
+      "caption": "دستای تو رو بشنو،",
+      "overlay": "overlay-016.png"
+    },
+    {
+      "startFrame": 1316,
+      "endFrame": 1343,
+      "eventId": "transition",
+      "scene": "dastaye-to",
+      "type": "speech",
+      "caption": "از داریوش.",
+      "overlay": "overlay-017.png"
+    },
+    {
+      "startFrame": 1343,
+      "endFrame": 1350,
+      "eventId": "transition",
+      "scene": "dastaye-to",
+      "type": "speech",
+      "caption": null,
+      "overlay": "overlay-018.png"
+    },
+    {
+      "startFrame": 1350,
+      "endFrame": 2225,
+      "eventId": "dastaye-to",
+      "scene": "dastaye-to",
+      "type": "music",
+      "caption": null,
+      "overlay": "overlay-019.png"
+    },
+    {
+      "startFrame": 2225,
+      "endFrame": 2232,
+      "eventId": "dastaye-to",
+      "scene": "dastaye-to",
+      "type": "music",
+      "caption": null,
+      "overlay": "overlay-020.png"
+    },
+    {
+      "startFrame": 2232,
+      "endFrame": 2274,
+      "eventId": "third",
+      "scene": "age-ye-rooz",
+      "type": "speech",
+      "caption": "برای آخرش هم اگه",
+      "overlay": "overlay-021.png"
+    },
+    {
+      "startFrame": 2274,
+      "endFrame": 2275,
+      "eventId": "third",
+      "scene": "age-ye-rooz",
+      "type": "speech",
+      "caption": "برای آخرش هم اگه",
+      "overlay": "overlay-022.png"
+    },
+    {
+      "startFrame": 2275,
+      "endFrame": 2320,
+      "eventId": "third",
+      "scene": "age-ye-rooz",
+      "type": "speech",
+      "caption": "یه روز رو گذاشتیم،",
+      "overlay": "overlay-023.png"
+    },
+    {
+      "startFrame": 2320,
+      "endFrame": 2368,
+      "eventId": "third",
+      "scene": "age-ye-rooz",
+      "type": "speech",
+      "caption": "از فرامرز اصلانی.",
+      "overlay": "overlay-024.png"
+    },
+    {
+      "startFrame": 2368,
+      "endFrame": 2375,
+      "eventId": "third",
+      "scene": "age-ye-rooz",
+      "type": "speech",
+      "caption": null,
+      "overlay": "overlay-025.png"
+    },
+    {
+      "startFrame": 2375,
+      "endFrame": 3250,
+      "eventId": "age-ye-rooz",
+      "scene": "age-ye-rooz",
+      "type": "music",
+      "caption": null,
+      "overlay": "overlay-026.png"
+    },
+    {
+      "startFrame": 3250,
+      "endFrame": 3257,
+      "eventId": "age-ye-rooz",
+      "scene": "age-ye-rooz",
+      "type": "music",
+      "caption": null,
+      "overlay": "overlay-027.png"
+    },
+    {
+      "startFrame": 3257,
+      "endFrame": 3292,
+      "eventId": "closing",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "تو برای آخر شب",
+      "overlay": "overlay-028.png"
+    },
+    {
+      "startFrame": 3292,
+      "endFrame": 3348,
+      "eventId": "closing",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "کدوم رو می‌ذاری؟ اسمشو",
+      "overlay": "overlay-029.png"
+    },
+    {
+      "startFrame": 3348,
+      "endFrame": 3398,
+      "eventId": "closing",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "برامون کامنت کن. اگه",
+      "overlay": "overlay-030.png"
+    },
+    {
+      "startFrame": 3398,
+      "endFrame": 3399,
+      "eventId": "closing",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "برامون کامنت کن. اگه",
+      "overlay": "overlay-031.png"
+    },
+    {
+      "startFrame": 3399,
+      "endFrame": 3444,
+      "eventId": "closing",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "آهنگ دیگه‌ای هم تو",
+      "overlay": "overlay-032.png"
+    },
+    {
+      "startFrame": 3444,
+      "endFrame": 3477,
+      "eventId": "closing",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "ذهنته، بنویس.",
+      "overlay": "overlay-033.png"
+    },
+    {
+      "startFrame": 3477,
+      "endFrame": 3484,
+      "eventId": "closing",
+      "scene": "recap",
+      "type": "speech",
+      "caption": null,
+      "overlay": "overlay-034.png"
+    },
+    {
+      "startFrame": 3484,
+      "endFrame": 3539,
+      "eventId": "brand",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "این هم پلی‌لیست امشب",
+      "overlay": "overlay-035.png"
+    },
+    {
+      "startFrame": 3539,
+      "endFrame": 3540,
+      "eventId": "brand",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "این هم پلی‌لیست امشب",
+      "overlay": "overlay-036.png"
+    },
+    {
+      "startFrame": 3540,
+      "endFrame": 3620,
+      "eventId": "brand",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "رسانهٔ آهنگ‌بان. آهنگ‌بان دات",
+      "overlay": "overlay-037.png"
+    },
+    {
+      "startFrame": 3620,
+      "endFrame": 3637,
+      "eventId": "brand",
+      "scene": "recap",
+      "type": "speech",
+      "caption": "آی آر.",
+      "overlay": "overlay-038.png"
+    },
+    {
+      "startFrame": 3637,
+      "endFrame": 3644,
+      "eventId": "brand",
+      "scene": "recap",
+      "type": "speech",
+      "caption": null,
+      "overlay": "overlay-039.png"
+    }
+  ],
+  "command": [
+    "/home/user/.cache/night-build-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2",
+    "-hide_banner",
+    "-y",
+    "-filter_complex_threads",
+    "1",
+    "-threads",
+    "1",
+    "-i",
+    "/home/user/ahangban-youtube/downloads/ahangban-night-final-youtube.mp4",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "/home/user/ahangban-youtube/rendered/ava-static-exports/youtube/overlays.ffconcat",
+    "-filter_complex",
+    "[0:v]crop=900:1080:0:0,pad=1920:1080:0:0:color=0x101820[bg];[1:v]format=rgba[ov];[bg][ov]overlay=x=0:y=0:shortest=1:eof_action=repeat:format=auto,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p,setsar=1[v]",
+    "-map",
+    "[v]",
+    "-map",
+    "0:a:0",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "21",
+    "-maxrate",
+    "2500k",
+    "-bufsize",
+    "5000k",
+    "-threads",
+    "2",
+    "-c:a",
+    "copy",
+    "-color_primaries",
+    "bt709",
+    "-color_trc",
+    "bt709",
+    "-colorspace",
+    "bt709",
+    "-color_range",
+    "tv",
+    "-movflags",
+    "+faststart",
+    "-map_metadata",
+    "-1",
+    "-metadata",
+    "title=سه آهنگ برای آخر شب | آوا با تصویر ثابت",
+    "-metadata",
+    "comment=STATIC Ava portrait: no lip sync, head motion, blinks or listening performance. Synthetic female voice06. Existing music-panel motion and exact source AAC preserved. No publication.",
+    "/home/user/ahangban-youtube/downloads/ahangban-ava-static-youtube.mp4"
+  ]
+}

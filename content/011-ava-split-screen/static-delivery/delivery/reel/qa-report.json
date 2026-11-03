@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "kind": "reel",
+  "file": "downloads/ahangban-ava-static-reel.mp4",
+  "bytes": 8091335,
+  "sha256": "0dff173cae4d383e521f7f577f02d2dd8fccf69b651adba510a323309918e6a6",
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "duration": 47.53,
+  "decodedFrames": 1426,
+  "fullVideoDecodePassed": true,
+  "aacPacketHash": "SHA256=448e0ba15193df0476d640d6b8263fc120d7306ce79d07c197a1094de841dc2c",
+  "exactSourceAACRetained": true,
+  "sourceSha256": "3dbba0dea8af173f1c73ca0e40b8d143f7467d51cbdfdff8664325884a324b29",
+  "fixedFaceRegionTemporalMeanDifference": 1.6778105371106269,
+  "meanDifferenceFromFixedPlate": 2.0688330555911634,
+  "musicPanelMeanDifference": 25.67075495538182,
+  "musicPanelMotionRetained": true,
+  "actorAnimated": false,
+  "lipHeadEyeListeningMotionGenerated": false,
+  "modelInferenceExecuted": false,
+  "allNarrationVoice": "voice-06",
+  "maleNarrationUsed": false,
+  "musicSecondsEach": 12,
+  "captionsNotOverMusic": true,
+  "publishAuthorized": false,
+  "limitation": "Actual full files with static Ava, NOT the originally requested naturally animated host."
+}

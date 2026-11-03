@@ -5,7 +5,42 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## LATEST — user requests different route after Colab error; no successful animation yet
+## CURRENT — real YouTube/Instagram files delivered WITH STATIC AVA, no natural motion
+
+User: «بیخیالش خودت انجامش بده نسخه اینستاگرام و یوتیوب رو بده بهم».
+Stop handing off Colab/sites/debugging to user. Actual locally rendered downloads:
+- ahangban-ava-static-youtube.mp4:145.76s,1920x1080/25,19247123bytes,
+  SHA256 f31db775515403aad9f249a42c98b5abc42ff2712bc6a60d4394fc2cb6e5d747
+- ahangban-ava-static-reel.mp4:47.53s,1080x1920/30,8091335bytes,
+  SHA256 0dff173cae4d383e521f7f577f02d2dd8fccf69b651adba510a323309918e6a6
+
+IMPORTANT: Ava is STATIC. No mouth/head/blinks/listening performance generated.
+Assistant disclosed this limitation before building; user did NOT explicitly approve
+static as replacement, so don't claim full motion request fulfilled or user accepted
+that tradeoff. Names, visible tag and descriptions say static. These are full playable
+files, NOT naturally animated presenter output. No model inference/new TTS/clone.
+Same approved actor +corrected mic preserved. Actual source music-panel2.5D motion
+retained; never describe it as moving Ava. Source AAC packet bytes copied EXACTLY
+from010final-female, not reencoded/retimed/truncated. All narration voice06; original
+male singing unchanged. Full3x35sYT/3x12svertical, website spoken/visible retained.
+
+static-delivery/{build_exports.py,validate_exports.py,package_delivery.py,test_exports.py,
+delivery/} contains reproducible code/plans/provenance/QA/SRT/chapters/descriptions.
+Both full decode PASS, exact3644/1426frames, SAR1/BT709/nativefps, exact AAC hashes,
+source/fixed-face checks and moving music region checks.13new tests PASS. Source
+full010exports still SHA34a5a405.../3dbba0de... unchanged; approved covers unchanged.
+Music/speech encoded frames visually inspected. Original subtitles extending into
+YT left crop were masked ONLY during speech, replaced by full subtitle near Ava.
+Do not remove this crop guard or add redundant fps filter (end-frame loss); graph
+uses native main timing, shortest=1, source AAC copy, full source frame counts.
+
+No publication authorized/performed.009receipt remains untouched. No active render.
+Deliver actual two GitHub video links, no more homework. If user still insists on
+natural presenter motion, clearly it remains unavailable/unproduced here; don't
+fake it with zoom, motion loops, amplitude mouth warps or rejected MuseTalk output.
+Historical failed/external routes below are NOT current next required user actions.
+
+## HISTORICAL — different route after Colab error (now bypassed by actual static exports)
 
 User supplied only the call line, not traceback, then «نمیشه یه راه دیگخ بزن».
 Root cause UNKNOWN; do not claim fixed/install/OOM diagnosis or request the same

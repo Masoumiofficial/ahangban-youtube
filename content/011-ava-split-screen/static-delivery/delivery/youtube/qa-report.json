@@ -1,0 +1,32 @@
+{
+  "sourceSpeechCaptionCropClean": true,
+  "status": "PASS",
+  "kind": "youtube",
+  "file": "downloads/ahangban-ava-static-youtube.mp4",
+  "bytes": 19247123,
+  "sha256": "f31db775515403aad9f249a42c98b5abc42ff2712bc6a60d4394fc2cb6e5d747",
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 25.0,
+  "duration": 145.76,
+  "decodedFrames": 3644,
+  "fullVideoDecodePassed": true,
+  "aacPacketHash": "SHA256=0d76526c6f575103a9ca5b0a1f80036e27e1775e63a7f67d58bc812628dfef6b",
+  "exactSourceAACRetained": true,
+  "sourceSha256": "34a5a405cd57c05525d871270b677dd2a0f754773bd5e3066a1846707e712e20",
+  "fixedFaceRegionTemporalMeanDifference": 1.0107335151388015,
+  "meanDifferenceFromFixedPlate": 1.9577651912453675,
+  "musicPanelMeanDifference": 1.2564453125,
+  "musicPanelMotionRetained": true,
+  "actorAnimated": false,
+  "lipHeadEyeListeningMotionGenerated": false,
+  "modelInferenceExecuted": false,
+  "allNarrationVoice": "voice-06",
+  "maleNarrationUsed": false,
+  "musicSecondsEach": 35,
+  "captionsNotOverMusic": true,
+  "publishAuthorized": false,
+  "limitation": "Actual full files with static Ava, NOT the originally requested naturally animated host."
+}
