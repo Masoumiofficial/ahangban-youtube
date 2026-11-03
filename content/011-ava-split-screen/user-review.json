@@ -1,0 +1,20 @@
+{
+  "userText": "آره خوبه فقط میکروفون رو یکم طبیعی تر بکنبعد بزن بریم سراغ حرکت لب و دهان و سر و گوش دادن آوا",
+  "faceApproved": true,
+  "layoutApproved": true,
+  "approvedActorSha256": "68854d222a57969ff89567530f8b4c8202d4f8b8855acac96a23e7628e861adf",
+  "microphoneNaturalnessRevisionRequested": true,
+  "motionPilotAuthorized": true,
+  "voice": "voice-06",
+  "maleNarrationAuthorized": false,
+  "publishAuthorized": false,
+  "runtimeDecision": {
+    "questionId": "ava_motion_runtime",
+    "selectedOptionId": "free_colab",
+    "source": "ask_user response",
+    "userStartedGoogleColabFreeAuthorized": true,
+    "processingOfSyntheticAvaAndVoiceInGoogleDisclosed": true,
+    "directGoogleAccountAccess": false,
+    "paidFallbackAuthorized": false
+  }
+}

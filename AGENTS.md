@@ -5,37 +5,52 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## CURRENT REQUEST — 011 Ava three-track split-screen; STATIC layout only, motion blocked
+## CURRENT — 011 Ava approved; mic revised; user chose FREE COLAB motion pilot
 
-User supplied Artist/musicyab.ir_14050812_154455730.mp4 on main and wants this with
-Ava. This supersedes faceless-only for THIS new request; do not refuse her presence
-based on old rejection. BUT no male, redesign of Ava/master, subscription or publication
-was authorized. Keep approved voice06 female, not historical voice00 from character lock.
-Exact reference blob9fdc2fe2877e361841574806e73b38e9342829ee,7148597bytes downloaded
-into ignored rendered/ava-reference-review/. Native720x1280/30,55.77s. Ten frames
-visually inspected +scene threshold .3: upper artist portrait -> moving performance
-at~10s ->portrait at~39s; lower female presenter speaking/listening/closing-like
-segments. Top~53%,bottom~47%. No aural listening, transcription, artist identification,
-phoneme-sync or reference-model inference performed. See content/011-ava-split-screen/.
-User's intent is split-screen music/presenter format with HER Ava identity, not copying
-the other presenter. Preserve original Ava face/hair/scarf/clothing/jewelry and all
-masters/portraits/logo. Identity-sheet gold logos/rooms are not brand-authoritative.
-Layout/editing available; NO ready/tested natural lip/head/listening animation engine
-in current environment. No animated Ava produced. Do not pass static zoom/reaction
-image-swaps off as natural talking-head animation, or promise reference-level quality.
-Prior MuseTalk pilot was rejected; don't reuse/repeat as approved. No paid route.
-ask_user ava_first_content resolved previous_playlist: keep the same three010tracks.
-Do NOT ask that question again. Generated ONE static chroma Ava actor asset from
-original sheets (face approval pending, NOT original face pixels); keyed/composited
-onto exact crop of empty studio right seat with original equipment foreground.
-Three native1080x1920 STATIC proof JPGs downloads/ahangban-ava-layout-01..03.jpg;
-self-labelled no-animation. Eight tests cover outputs, sources, unchanged Ava refs,
-protected010finals/master/logo and no animation/audio/publication claims. No new
-TTS/audio/video generated. Only layout/still production completed, NOT the requested
-natural-motion result; no motion engine/background job is ready or running.
-See layout-manifest.json and assets/provenance.json; don't present it as a finished
-video or retry rejected MuseTalk blindly. User still needs to review face/layout.
-010 final-female complete below; preserve its outputs and 009 upload receipt.
+User approved face/layout: «آره خوبه فقط میکروفون رو یکم طبیعی تر بکنبعد بزن بریم
+سراغ حرکت لب و دهان و سر و گوش دادن آوا». Keep exact approved actor PNG SHA256
+68854d222a57969ff89567530f8b4c8202d4f8b8855acac96a23e7628e861adf. Do not regenerate
+or audition her face/voice again. Preserve voice06, same three010tracks, official
+studio master/12portraits/logo and previous delivered files. No male, subscription,
+paid compute, cloning, publication or master redesign authorized.
+
+build_mic_revision.py produces downloads/ahangban-ava-layout-v2-01..03.jpg, not
+animated videos. Old boom no longer crosses neck; isolated realistic microphone
+prop keyed/despilled lower-left, original texture repair only within bounded old
+prop area below gallery. Face ROI lossless exactly equal to approved layout.
+Original three layout JPGs and010full exports/covers preserved. User review of
+mic appearance pending, not face approval. layout-v2-manifest +user-review current;
+original layout-manifest face-pending is historical. 18 local011tests validate
+composition/inputs/protected assets, not generated motion.
+
+ask_user ava_motion_runtime resolved free_colab; do NOT ask again. User informed
+Google processes synthetic Ava/voice and agent has NO account/runtime access.
+Experimental motion/AhangBan-Ava-Motion-Pilot.ipynb +runner prepared for USER-run
+free GPU, no metered fallback. New candidate official EchoMimicV3 Flash pinned
+7e89489ca51c0d008fc1963ec6c03fc5bd0b9397, NOT rejected MuseTalk. Upstream claims
+12GB VRAM/8steps/up-to768; not our benchmark or guarantee on free T4. Notebook
+installation/inference NOT tested in Colab; no model weights/inference executed
+by agent. Arena has no NVIDIA device/Torch; official weights also network-blocked.
+No proxy/mirror bypass. No active inference/render process. No animated video yet.
+
+Pilot inputs ZIP prepared +hashes: same actor, exact reviewed hookvoice06 complete
+4.48s +.36tail (121frames25fps), listening4.04s (101frames) with SILENT conditioning.
+Music ONLY on playback, never drives lips during listening. Exact copied original
+MP3 source hash87548f0636deaf4b5776ad24625b504dbe13679c134e5ed704ff3d645901a995.
+No TTS, pitch/speed edits or human recording. Models see actor only; mic/studio/
+covers/logo composited separately. Two actual generated clips required; don't call
+static zoom, pixel variation or source ZIP proof of natural lips/head/listening.
+User must run FREE GPU notebook and return ava-motion-pilot-results.zip or exact
+error; stop if no GPU/OOM/install/precision failure, never buy/upgrade. When results
+return, check provenance/decode +human identity/Persian phoneme/closed-mouth review
+before full film. Never reuse old rejected MuseTalk output or silently loop a short
+reaction across36s music. More details content/011-ava-split-screen/motion/README.fa.md.
+
+Reference exact blob9fdc2fe2877e361841574806e73b38e9342829ee,720x1280/30,55.77s;
+upper artist~53%,lower presenter~47%, cuts~10/39s, ten sampled frames inspected.
+No reference artist identification, listening/transcription or model inference.
+011 supersedes earlier faceless-only for Ava THIS request only.010finals below
+and009unknown public upload receipt remain untouched; NO publication authorization.
 
 ## COMPLETED — 010 FINAL COMPLETE: female-only route selected by user
 

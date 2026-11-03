@@ -1,0 +1,37 @@
+{
+  "status": "INPUTS_AND_EXPERIMENTAL_NOTEBOOK_PREPARED_NOT_INFERRED",
+  "engine": "EchoMimicV3 Flash",
+  "repository": "https://github.com/antgroup/echomimic_v3",
+  "revision": "7e89489ca51c0d008fc1963ec6c03fc5bd0b9397",
+  "upstreamReadme": "https://github.com/antgroup/echomimic_v3/blob/7e89489ca51c0d008fc1963ec6c03fc5bd0b9397/README.md",
+  "upstreamClaims": {
+    "nativeMaxResolution": [
+      768,
+      768
+    ],
+    "minimumVramGB": 12,
+    "inferenceSteps": 8,
+    "independentlyBenchmarked": false
+  },
+  "codeLicense": "Apache-2.0, upstream LICENSE.txt; model/dependency/music rights require separate review",
+  "method": "Audio/image-conditioned generated portrait; two genuinely inferred clips, not static still/camera movement",
+  "freeUserStartedColabAuthorized": true,
+  "cloudExecutionByAgent": false,
+  "inferenceExecuted": false,
+  "modelWeightsDownloadedByAgent": false,
+  "colabInstallationOrInferenceTested": false,
+  "persianLipSyncTested": false,
+  "listeningClosedMouthTested": false,
+  "identityPreservationTestedOnModelVideo": false,
+  "readyNotebookMeansValidatedStructureOnly": true,
+  "prohibited": [
+    "paid runtime or subscription",
+    "silent paid fallback",
+    "MuseTalk rejected pilot reused",
+    "mouth conditioning driven by song vocals",
+    "claiming a generated performance before inference",
+    "claiming temporal pixel changes certify Persian phoneme sync"
+  ],
+  "returnArtifact": "ava-motion-pilot-results.zip",
+  "nextRequiredHumanAction": "User starts a FREE Colab GPU and executes notebook; return results ZIP, or exact error. Do not pay if unavailable or out of memory."
+}

@@ -1,0 +1,10 @@
+{
+  "cpuCount": 2,
+  "memoryGiB": 3.85,
+  "nvidiaSmiPresent": false,
+  "nvidiaDevicesPresent": false,
+  "torchInstalled": false,
+  "localModelInferenceExecuted": false,
+  "modelWeightsDownloaded": false,
+  "reason": "No NVIDIA devices/CUDA runtime in Arena; official weights hosts unavailable under current network policy. GitHub release asset also redirects to an unavailable CDN. No proxy/mirror bypass attempted."
+}

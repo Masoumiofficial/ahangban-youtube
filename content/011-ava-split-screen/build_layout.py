@@ -35,13 +35,13 @@ def studio_panel():
  d.line([(747,409),(846,399)],fill=255,width=3)
  mask=mask.resize(master.size,Image.Resampling.LANCZOS).crop(box).resize(size,Image.Resampling.LANCZOS)
  return Image.composite(master.crop(box).resize(size,Image.Resampling.LANCZOS),bg,mask)
-def main():
+def main(panel_renderer=studio_panel,prefix="ahangban-ava-layout",manifest_name="layout-manifest.json"):
  manifest=json.loads((ROOT/'content/010-night-playlist/final-female/delivery/manifest.json').read_text())
  protected={str(p.relative_to(ROOT)):sha(p) for p in (STUDIO,LOGO,*[ROOT/v[k] for v in manifest['outputs'].values() for k in ('video','cover')])}
  assert protected[str(STUDIO.relative_to(ROOT))]=='3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc'
  assert protected[str(LOGO.relative_to(ROOT))]=='2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4'
  for v in manifest['outputs'].values():assert sha(ROOT/v['video'])==v['sha256'] and sha(ROOT/v['cover'])==v['coverSha256']
- panel=studio_panel();outputs=[]
+ panel=panel_renderer();outputs=[]
  for i,tr in enumerate(TRACKS):
   cover=SOURCE/tr['cover'];assert sha(cover)==tr['coverSha256']
   im=Image.new('RGBA',SIZE,'#101820');d=ImageDraw.Draw(im)
@@ -58,9 +58,9 @@ def main():
   d.rectangle((0,1840,1080,1920),fill='#0b1219')
   label(im,'نمونهٔ چیدمان ـ بدون انیمیشن',780,1858,29,'#d0d8df',center=True)
   d=ImageDraw.Draw(im);d.text((52,1865),'ahangban.ir',font=ImageFont.truetype(str(ROOT/'content/001-chavoshi-start/fonts/Vazirmatn-Regular.ttf'),28),fill='#e9ddc8')
-  path=ROOT/f'downloads/ahangban-ava-layout-{i+1:02d}.jpg';im.convert('RGB').save(path,quality=94,subsampling=0)
+  path=ROOT/f'downloads/{prefix}-{i+1:02d}.jpg';im.convert('RGB').save(path,quality=94,subsampling=0)
   outputs.append(dict(path=str(path.relative_to(ROOT)),sha256=sha(path),size=list(SIZE),track=tr['id'],coverSourceSha256=sha(cover)))
  assert all(sha(ROOT/p)==s for p,s in protected.items())
  result=dict(status='STATIC_LAYOUT_ONLY_NOT_ANIMATED_VIDEO',userContentChoice='previous_playlist',userFaceApprovalPending=True,actorAIgenerated=True,actorSourceSha256=sha(ACTOR),originalFacePixelsNotClaimed=True,newRoomGenerated=False,studioCrop=[1950,730,2910,1526],studioSourceSha256=sha(STUDIO),logoSourceSha256=sha(LOGO),splitY=SPLIT,outputs=outputs,protectedUnchanged=protected,audioGenerated=False,lipSyncGenerated=False,headEyeOrBodyAnimationGenerated=False,publishAuthorized=False)
- (HERE/'layout-manifest.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False,indent=2))
+ (HERE/manifest_name).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
