@@ -1,5 +1,5 @@
 {
-  "status": "reference_visually_reviewed_content_choice_and_motion_feasibility_pending",
+  "status": "three_track_static_layout_built_face_review_and_natural_motion_pending",
   "reference": {
     "userUrl": "https://github.com/Masoumiofficial/ahangban-youtube/blob/main/Artist/musicyab.ir_14050812_154455730.mp4",
     "gitBlob": "9fdc2fe2877e361841574806e73b38e9342829ee",
@@ -74,5 +74,15 @@
     "previousRejectedMuseTalkPilotNotApprovedForReuse": true,
     "noActualCharacterAnimationProduced": true
   },
-  "nextQuestion": "Use same song/source as reference, previous three-song playlist, or a new song?"
+  "userContentDecision": {
+    "questionId": "ava_first_content",
+    "selectedOptionId": "previous_playlist",
+    "source": "ask_user response",
+    "tracks": [
+      "تو بارون که رفتی — سیاوش قمیشی",
+      "دستای تو — داریوش",
+      "اگه یه روز — فرامرز اصلانی"
+    ]
+  },
+  "staticLayoutManifest": "content/011-ava-split-screen/layout-manifest.json"
 }

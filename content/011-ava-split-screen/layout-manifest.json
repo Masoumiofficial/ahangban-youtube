@@ -1,0 +1,62 @@
+{
+  "status": "STATIC_LAYOUT_ONLY_NOT_ANIMATED_VIDEO",
+  "userContentChoice": "previous_playlist",
+  "userFaceApprovalPending": true,
+  "actorAIgenerated": true,
+  "actorSourceSha256": "68854d222a57969ff89567530f8b4c8202d4f8b8855acac96a23e7628e861adf",
+  "originalFacePixelsNotClaimed": true,
+  "newRoomGenerated": false,
+  "studioCrop": [
+    1950,
+    730,
+    2910,
+    1526
+  ],
+  "studioSourceSha256": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
+  "logoSourceSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "splitY": 1024,
+  "outputs": [
+    {
+      "path": "downloads/ahangban-ava-layout-01.jpg",
+      "sha256": "8f8d2c9d1cb8cfb0eb793c04e373620c6a7373a530b5983e7215f422e273bc46",
+      "size": [
+        1080,
+        1920
+      ],
+      "track": "to-baroon-keh-rafty",
+      "coverSourceSha256": "4ac7f527795786b5ace855eba90a2fd2faa78852e16993e9b2d9822254086d59"
+    },
+    {
+      "path": "downloads/ahangban-ava-layout-02.jpg",
+      "sha256": "c733a1cbbc9756e8bebab37163f569b46bde6926fdbe902da8a6b651b211d77e",
+      "size": [
+        1080,
+        1920
+      ],
+      "track": "dastaye-to",
+      "coverSourceSha256": "17a9694f9e3f2e2cb2c8cc238085b90b83fbc8adc8bcb8a9b7ca48a4e830bf4b"
+    },
+    {
+      "path": "downloads/ahangban-ava-layout-03.jpg",
+      "sha256": "53011efa980555dbfc679af1750d162a9441c7ee3fa2abd5d662454546c74cb8",
+      "size": [
+        1080,
+        1920
+      ],
+      "track": "age-ye-rooz",
+      "coverSourceSha256": "bd9e6d8944d615d64897ea2fdde63f59851e464795f45b74f0eaf3653449742d"
+    }
+  ],
+  "protectedUnchanged": {
+    "studio/ahangban-signature/master/MASTER-VIEW-001.png": "3f1817173e1e82b6bd8aa0ab70d43ab9b50dab958ec53b559811ce70dac92ddc",
+    "studio/ahangban-signature/references/ahangban-logo-horizontal-color.png": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+    "downloads/ahangban-night-final-youtube.mp4": "34a5a405cd57c05525d871270b677dd2a0f754773bd5e3066a1846707e712e20",
+    "downloads/ahangban-night-final-youtube-thumbnail.jpg": "92d9b927b0fac8e072fcae847968036812546b2c212b81a010a01cc35027f84b",
+    "downloads/ahangban-night-final-reel.mp4": "3dbba0dea8af173f1c73ca0e40b8d143f7467d51cbdfdff8664325884a324b29",
+    "downloads/ahangban-night-final-reel-cover.jpg": "a311e1f1f3c5693ed01bc5ca060fa9cd34030072174630186e0db6213ea05e61"
+  },
+  "audioGenerated": false,
+  "lipSyncGenerated": false,
+  "headEyeOrBodyAnimationGenerated": false,
+  "publishAuthorized": false
+}

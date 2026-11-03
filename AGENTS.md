@@ -5,7 +5,7 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## CURRENT REQUEST — 011 Ava split-screen reference; motion feasibility/content pending
+## CURRENT REQUEST — 011 Ava three-track split-screen; STATIC layout only, motion blocked
 
 User supplied Artist/musicyab.ir_14050812_154455730.mp4 on main and wants this with
 Ava. This supersedes faceless-only for THIS new request; do not refuse her presence
@@ -24,7 +24,17 @@ Layout/editing available; NO ready/tested natural lip/head/listening animation e
 in current environment. No animated Ava produced. Do not pass static zoom/reaction
 image-swaps off as natural talking-head animation, or promise reference-level quality.
 Prior MuseTalk pilot was rejected; don't reuse/repeat as approved. No paid route.
-Ask one focused content choice: reference's song/source, prior three tracks or new song.
+ask_user ava_first_content resolved previous_playlist: keep the same three010tracks.
+Do NOT ask that question again. Generated ONE static chroma Ava actor asset from
+original sheets (face approval pending, NOT original face pixels); keyed/composited
+onto exact crop of empty studio right seat with original equipment foreground.
+Three native1080x1920 STATIC proof JPGs downloads/ahangban-ava-layout-01..03.jpg;
+self-labelled no-animation. Eight tests cover outputs, sources, unchanged Ava refs,
+protected010finals/master/logo and no animation/audio/publication claims. No new
+TTS/audio/video generated. Only layout/still production completed, NOT the requested
+natural-motion result; no motion engine/background job is ready or running.
+See layout-manifest.json and assets/provenance.json; don't present it as a finished
+video or retry rejected MuseTalk blindly. User still needs to review face/layout.
 010 final-female complete below; preserve its outputs and 009 upload receipt.
 
 ## COMPLETED — 010 FINAL COMPLETE: female-only route selected by user

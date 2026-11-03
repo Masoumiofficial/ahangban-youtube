@@ -1,0 +1,11 @@
+{
+  "file": "ava-actor-generated.png",
+  "origin": "AI-generated STATIC chroma actor asset via generate_image, not original character pixels and not animated",
+  "referenceImages": [
+    "studio/ahangban-signature/Presenters/Ava/Ava Ahangban Studio Portrait Board.png",
+    "studio/ahangban-signature/Presenters/Ava/Ava_ Glamorous Radio Host Portfolio.png"
+  ],
+  "promptSummary": "ONE near-frontal upper-body seated Ava only, same identity/black scarf/hair/embroidered outfit/jewelry from supplied references; subtle closed-mouth listening expression, unobstructed face, forearms resting, eye-level warm studio lighting, pure chroma green background, no props/room/logos/text",
+  "faceApprovalPending": true,
+  "originalCharacterSheetsUnchanged": true
+}
