@@ -5,7 +5,29 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## CURRENT — 010 FINAL COMPLETE: female-only route selected by user
+## CURRENT REQUEST — 011 Ava split-screen reference; motion feasibility/content pending
+
+User supplied Artist/musicyab.ir_14050812_154455730.mp4 on main and wants this with
+Ava. This supersedes faceless-only for THIS new request; do not refuse her presence
+based on old rejection. BUT no male, redesign of Ava/master, subscription or publication
+was authorized. Keep approved voice06 female, not historical voice00 from character lock.
+Exact reference blob9fdc2fe2877e361841574806e73b38e9342829ee,7148597bytes downloaded
+into ignored rendered/ava-reference-review/. Native720x1280/30,55.77s. Ten frames
+visually inspected +scene threshold .3: upper artist portrait -> moving performance
+at~10s ->portrait at~39s; lower female presenter speaking/listening/closing-like
+segments. Top~53%,bottom~47%. No aural listening, transcription, artist identification,
+phoneme-sync or reference-model inference performed. See content/011-ava-split-screen/.
+User's intent is split-screen music/presenter format with HER Ava identity, not copying
+the other presenter. Preserve original Ava face/hair/scarf/clothing/jewelry and all
+masters/portraits/logo. Identity-sheet gold logos/rooms are not brand-authoritative.
+Layout/editing available; NO ready/tested natural lip/head/listening animation engine
+in current environment. No animated Ava produced. Do not pass static zoom/reaction
+image-swaps off as natural talking-head animation, or promise reference-level quality.
+Prior MuseTalk pilot was rejected; don't reuse/repeat as approved. No paid route.
+Ask one focused content choice: reference's song/source, prior three tracks or new song.
+010 final-female complete below; preserve its outputs and 009 upload receipt.
+
+## COMPLETED — 010 FINAL COMPLETE: female-only route selected by user
 
 User chose ask_user option `female_only` after rejecting male07 and both audition
 pairs08/09. Do NOT ask for more male voices or use them. User had approved revision02

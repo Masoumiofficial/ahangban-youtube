@@ -1,0 +1,78 @@
+{
+  "status": "reference_visually_reviewed_content_choice_and_motion_feasibility_pending",
+  "reference": {
+    "userUrl": "https://github.com/Masoumiofficial/ahangban-youtube/blob/main/Artist/musicyab.ir_14050812_154455730.mp4",
+    "gitBlob": "9fdc2fe2877e361841574806e73b38e9342829ee",
+    "bytes": 7148597,
+    "sha256": "48369a374f626e17ec4396c0255617f3e5221cc0752c1387f9fe16cc397730e4",
+    "durationSeconds": 55.77,
+    "size": [
+      720,
+      1280
+    ],
+    "fps": 30.0,
+    "referenceCopiedIntoGit": false
+  },
+  "review": {
+    "method": "Downloaded exact Git blob, decoded metadata and sampled ten visual frames at .2/2/5/8/12/18/24/30/40/50 seconds; scene-change threshold .3",
+    "audioTranscribed": false,
+    "audioSubjectivelyListenedTo": false,
+    "visualFormat": "Vertical split-screen; music/artist visual upper panel, female presenter lower panel",
+    "splitYApprox": 682,
+    "upperPanelFractionApprox": 0.533,
+    "sceneChangeTimesSeconds": [
+      9.933333,
+      10.033333,
+      38.966667
+    ],
+    "structure": [
+      {
+        "secondsApprox": [
+          0,
+          10
+        ],
+        "visible": "Upper portrait image; lower presenter changes mouth/expression, introduction-like visual segment"
+      },
+      {
+        "secondsApprox": [
+          10,
+          39
+        ],
+        "visible": "Moving performance in upper panel; lower presenter looks down/listens"
+      },
+      {
+        "secondsApprox": [
+          39,
+          55.77
+        ],
+        "visible": "Return to upper portrait; lower presenter speaks/reacts, closing-like visual segment"
+      }
+    ],
+    "limitation": "Visual segmentation only: exact words, phoneme alignment, artist identity and origin/model of reference animation not inferred."
+  },
+  "ava": {
+    "character": "AHANGBAN-AVA-001",
+    "reference": "studio/ahangban-signature/Presenters/Ava/Ava Ahangban Studio Portrait Board.png",
+    "referenceSha256": "94790ae3f434142716b704a5c9186cdecba1b081e699b1c7cc74e92baa366f0c",
+    "voice": "voice-06",
+    "newCharacterOrOutfitAuthorized": false,
+    "otherReferencePresenterFaceReused": false
+  },
+  "scope": {
+    "avaVisibleRequested": true,
+    "previousFacelessRestrictionSupersededForThisNewRequestOnly": true,
+    "malePresenterAuthorized": false,
+    "studioMasterRedesignAuthorized": false,
+    "subscriptionPurchaseAuthorized": false,
+    "publicationAuthorized": false,
+    "rightsCleared": false
+  },
+  "feasibility": {
+    "layoutAndEditingAvailable": true,
+    "stillImageIsNotAnimatedAva": true,
+    "photorealLipHeadAndListeningMotionEngineReadyInCurrentEnvironment": false,
+    "previousRejectedMuseTalkPilotNotApprovedForReuse": true,
+    "noActualCharacterAnimationProduced": true
+  },
+  "nextQuestion": "Use same song/source as reference, previous three-song playlist, or a new song?"
+}
