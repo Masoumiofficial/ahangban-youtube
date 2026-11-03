@@ -1,0 +1,48 @@
+{
+  "edition": "010",
+  "title": "سه آهنگ برای وقتی که شب تموم نمی‌شه",
+  "topicApproved": true,
+  "productionAuthorized": true,
+  "publishAuthorized": false,
+  "published": false,
+  "status": "preproduction_waiting_for_music_sources",
+  "youtubeComplete": false,
+  "verticalComplete": false,
+  "approvedVoiceIdentities": {
+    "female": "voice-06",
+    "male": "voice-07"
+  },
+  "voiceIdentitiesAreHistoricalSessionReferences": true,
+  "newVoiceAudioGenerated": false,
+  "musicSecondsEach": {
+    "youtube": 35,
+    "vertical": 12
+  },
+  "nativeSizes": {
+    "youtube": [
+      1920,
+      1080
+    ],
+    "vertical": [
+      1080,
+      1920
+    ]
+  },
+  "youtubeTargetSeconds": [
+    155,
+    185
+  ],
+  "verticalTargetSeconds": [
+    50,
+    65
+  ],
+  "timingsAreEstimates": true,
+  "questionLedOpening": true,
+  "faceless": true,
+  "speechOverMusic": false,
+  "speechSpeedOrPitchChanges": false,
+  "officialLogoChanged": false,
+  "subscriptionPurchased": false,
+  "copyrightCleared": false,
+  "finalUserReviewPending": true
+}

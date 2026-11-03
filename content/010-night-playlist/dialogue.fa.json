@@ -1,0 +1,50 @@
+[
+  {
+    "id": "01",
+    "speaker": "female",
+    "scene": "opening",
+    "text": "تا حالا شده یه آهنگ، بیشتر از یه نفر حالتو بفهمه؟ امشب سه انتخاب برای وقتایی که خواب نمیاد. اولی، بارون؛ از سیاوش قمیشی.",
+    "voice": "voice-06",
+    "audioGenerated": false
+  },
+  {
+    "id": "02",
+    "speaker": "male",
+    "scene": "after-first",
+    "text": "این یکی تو رو یاد کسی می‌اندازه، یا بیشتر یه حال‌وهواست؟ جوابش برای همه یکی نیست. انتخاب بعدی، دستای تو؛ از داریوش.",
+    "voice": "voice-07",
+    "audioGenerated": false
+  },
+  {
+    "id": "03",
+    "speaker": "female",
+    "scene": "after-second",
+    "text": "گاهی اسم یه آهنگ کافیه تا یه خاطره برگرده. لازم نیست خاطره‌ت رو تعریف کنی؛ فقط ببین این بار کدوم حس پررنگ‌تره.",
+    "voice": "voice-06",
+    "audioGenerated": false
+  },
+  {
+    "id": "04",
+    "speaker": "male",
+    "scene": "before-third",
+    "text": "برای آخر شب، اگه یه روز؛ از فرامرز اصلانی. این یکی رو هم بشنو، بعد بین این سه تا انتخاب کن.",
+    "voice": "voice-07",
+    "audioGenerated": false
+  },
+  {
+    "id": "05",
+    "speaker": "female",
+    "scene": "closing",
+    "text": "کدوم آهنگ بیشتر به حال امشبت می‌خوره؟ اسمش رو کامنت کن؛ اگه انتخابت بیرون این فهرسته، اون رو هم بنویس.",
+    "voice": "voice-06",
+    "audioGenerated": false
+  },
+  {
+    "id": "06",
+    "speaker": "male",
+    "scene": "brand",
+    "text": "این هم پلی‌لیست امشب رسانهٔ آهنگ‌بان. برای پیشنهادهای بعدی، آهنگ‌بان دات آی آر رو ببین.",
+    "voice": "voice-07",
+    "audioGenerated": false
+  }
+]

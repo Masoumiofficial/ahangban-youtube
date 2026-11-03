@@ -1,0 +1,18 @@
+{
+  "repository": "Masoumiofficial/ahangban-youtube",
+  "checkedMainCommit": "802481583c520aeddc298043904d99c58e02c7b0",
+  "date": "2026-11-03",
+  "method": "GitHub recursive tree inspection; no credentials or local .env accessed",
+  "availableMusic": "Five Mohsen Chavoshi MP3s only under Artist/1-Mohsen-Chavoshi/",
+  "proposedTrackAudioFound": false,
+  "proposedTrackCoversFound": false,
+  "proposedTracksListenedTo": false,
+  "excerptOffsetsChosen": false,
+  "needed": "User-provided original audio and covers or accessible file links for the three proposed tracks; verify metadata and choose excerpts after listening.",
+  "background": {
+    "path": "assets/rainy-night.jpg",
+    "type": "AI-generated cinematic background, not a real location",
+    "sha256": "30a5e5f7dd29788b5cd8616a196ee20f2bc152cdd6895530f790f7f05bc68673"
+  },
+  "logo": "studio/ahangban-signature/references/ahangban-logo-horizontal-color.png"
+}

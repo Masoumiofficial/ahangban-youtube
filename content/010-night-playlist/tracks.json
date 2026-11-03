@@ -1,0 +1,35 @@
+[
+  {
+    "id": "baroon",
+    "title": "بارون",
+    "artist": "سیاوش قمیشی",
+    "selectionStatus": "editorial_proposal_pending_source_verification",
+    "audioPath": null,
+    "coverPath": null,
+    "sha256": null,
+    "excerptStartSeconds": null,
+    "rightsCleared": false
+  },
+  {
+    "id": "dastaye-to",
+    "title": "دستای تو",
+    "artist": "داریوش",
+    "selectionStatus": "editorial_proposal_pending_source_verification",
+    "audioPath": null,
+    "coverPath": null,
+    "sha256": null,
+    "excerptStartSeconds": null,
+    "rightsCleared": false
+  },
+  {
+    "id": "age-ye-rooz",
+    "title": "اگه یه روز",
+    "artist": "فرامرز اصلانی",
+    "selectionStatus": "editorial_proposal_pending_source_verification",
+    "audioPath": null,
+    "coverPath": null,
+    "sha256": null,
+    "excerptStartSeconds": null,
+    "rightsCleared": false
+  }
+]

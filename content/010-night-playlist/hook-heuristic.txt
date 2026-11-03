@@ -1,0 +1,58 @@
+
+  تا حالا شده یه آهنگ، بیشتر از یه نفر حالتو بفهمه؟
+  -------------------------------------------------
+    SPECIFICITY    0  
+    ADDRESS       26  #####
+    STAKES        22  ####
+    CURIOSITY     24  ####
+    BREVITY        0  
+    VERDICT        9  WEAK
+    formula      Unclassified  (no formula matched - that is usually a summary, not a hook)
+    weakest      SPECIFICITY - swap one adjective for a number, a name or a date
+
+  وقتی خواب نمیاد، کدوم آهنگ رو دوباره پخش می‌کنی؟
+  ------------------------------------------------
+    SPECIFICITY    0  
+    ADDRESS       26  #####
+    STAKES        22  ####
+    CURIOSITY     24  ####
+    BREVITY        0  
+    VERDICT        9  WEAK
+    formula      Unclassified  (no formula matched - that is usually a summary, not a hook)
+    weakest      SPECIFICITY - swap one adjective for a number, a name or a date
+
+  سه آهنگ، سه خواننده؛ کدومش به حال امشبت نزدیک‌تره؟
+  --------------------------------------------------
+    SPECIFICITY    0  
+    ADDRESS       26  #####
+    STAKES        22  ####
+    CURIOSITY     24  ####
+    BREVITY        0  
+    VERDICT        9  WEAK
+    formula      Unclassified  (no formula matched - that is usually a summary, not a hook)
+    weakest      SPECIFICITY - swap one adjective for a number, a name or a date
+
+  چرا بعضی آهنگا رو فقط آخر شب دلمون می‌خواد بشنویم؟
+  --------------------------------------------------
+    SPECIFICITY    0  
+    ADDRESS       26  #####
+    STAKES        22  ####
+    CURIOSITY     24  ####
+    BREVITY        0  
+    VERDICT        9  WEAK
+    formula      Unclassified  (no formula matched - that is usually a summary, not a hook)
+    weakest      SPECIFICITY - swap one adjective for a number, a name or a date
+
+  اگه برای امشب فقط یه آهنگ جا داشته باشی، انتخابت چیه؟
+  -----------------------------------------------------
+    SPECIFICITY    0  
+    ADDRESS       26  #####
+    STAKES        22  ####
+    CURIOSITY     24  ####
+    BREVITY        0  
+    VERDICT        9  WEAK
+    formula      Unclassified  (no formula matched - that is usually a summary, not a hook)
+    weakest      SPECIFICITY - swap one adjective for a number, a name or a date
+
+  winner: تا حالا شده یه آهنگ، بیشتر از یه نفر حالتو بفهمه؟  (9, WEAK)
+

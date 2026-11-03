@@ -5,6 +5,26 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
+## ACTIVE — 010 night playlist, production authorized; awaiting three music sources
+
+User approved the next topic «سه آهنگ برای وقتی که شب تموم نمی‌شه» and said
+«بزن بریم سراغش». This authorizes production, NOT publication of 010. New folder
+`content/010-night-playlist/` contains draft horizontal/vertical scripts, transparent
+pending production/source manifests, generated rainy-night background and a native
+1920x1080 opening CONCEPT still, not a rendered video. Three proposed selections:
+Baroon / Siavash Ghomayshi, Dastaye To / Dariush, Age Ye Rooz / Faramarz Aslani.
+GitHub main tree at 802481583c520aeddc298043904d99c58e02c7b0 contains only five
+Chavoshi music MP3s; none of the proposed audio/covers are available. Ask only for
+these three originals or accessible source links; do not claim listening, excerpt
+selection, new speech generation, rights clearance or a finished video. No audio
+paths/offsets/hashes have been fabricated. Retain approved historical voice-06/07
+identities; session IDs in JSON are references, not guaranteed current-tool access.
+Do not silently substitute rejected voices, human recording, clones or stock music.
+Targets: 3x35s music horizontal and 3x12s vertical; durations are estimates until real
+sources and speech. No speech over music; official logo unmodified on contrast card.
+Five standard-library preproduction tests pass, plus opening still size check. These
+are NOT video/audio QA. Preserve 009 upload receipt and unresolved public status.
+
 ## CURRENT PUBLICATION recovery — user uploaded video; public status UNKNOWN
 
 User ran the local tool successfully through @AhangBan channel verification and

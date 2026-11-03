@@ -1,0 +1,16 @@
+[
+  {
+    "id": "v01",
+    "speaker": "female",
+    "voice": "voice-06",
+    "text": "وقتی خواب نمیاد، کدوم آهنگ رو دوباره پخش می‌کنی؟ این سه تا رو بشنو.",
+    "audioGenerated": false
+  },
+  {
+    "id": "v02",
+    "speaker": "male",
+    "voice": "voice-07",
+    "text": "انتخاب امشبت کدومه؟ اسم آهنگ رو کامنت کن. رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات آی آر.",
+    "audioGenerated": false
+  }
+]
