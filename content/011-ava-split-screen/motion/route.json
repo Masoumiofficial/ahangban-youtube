@@ -1,5 +1,5 @@
 {
-  "status": "USER_REPORTED_COLAB_ERROR_REQUESTED_DIFFERENT_ROUTE",
+  "status": "COLAB_WRAPPER_TRACEBACK_RECEIVED_ROOT_CAUSE_UNKNOWN",
   "engine": "EchoMimicV3 Flash",
   "repository": "https://github.com/antgroup/echomimic_v3",
   "revision": "7e89489ca51c0d008fc1963ec6c03fc5bd0b9397",
@@ -33,12 +33,31 @@
     "claiming temporal pixel changes certify Persian phoneme sync"
   ],
   "returnArtifact": "ava-motion-pilot-results.zip",
-  "nextRequiredHumanAction": "User starts a FREE Colab GPU and executes notebook; return results ZIP, or exact error. Do not pay if unavailable or out of memory.",
+  "nextRequiredHumanAction": "Read-only diagnostics in the SAME failed runtime; no model retry/install/payment needed. Actual child exception is still absent.",
   "userAttemptReported": true,
   "successfulInferenceReturned": false,
-  "exactErrorSupplied": false,
+  "exactErrorSupplied": true,
   "failureStageKnown": false,
   "errorFixedClaimed": false,
   "colabRetryRequestedByUser": false,
-  "currentAlternative": "content/011-ava-split-screen/web-demo/README.fa.md"
+  "currentAlternative": "Completed STATIC Ava MP4s remain available; no animated output returned.",
+  "exactErrorIsWrapperOnly": true,
+  "childExceptionSupplied": false,
+  "latestWrapperError": {
+    "exception": "subprocess.CalledProcessError",
+    "returncode": 1,
+    "callerPythonStdlib": "/usr/lib/python3.13/subprocess.py",
+    "command": [
+      "/usr/bin/python3",
+      "/content/ahangban-youtube/content/011-ava-split-screen/motion/run_colab_pilot.py",
+      "--confirm-free-or-local"
+    ]
+  },
+  "upstreamTestedPythonVersions": [
+    "3.10",
+    "3.11"
+  ],
+  "python313IsProvenCause": false,
+  "diagnosticTool": "diagnose_runtime.py",
+  "loggingFixOnly": true
 }

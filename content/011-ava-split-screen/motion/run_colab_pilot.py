@@ -1,14 +1,25 @@
 """EXPERIMENTAL user-run free/local GPU pilot. NOT executed in Arena.
 Official EchoMimicV3 Flash, not rejected MuseTalk. No API, billing, clone or TTS.
 """
-import argparse,hashlib,json,os,subprocess,sys,zipfile,shutil,wave
+import argparse,hashlib,json,os,subprocess,sys,zipfile,shutil,wave,traceback,warnings,uuid
 from pathlib import Path
 PIN='7e89489ca51c0d008fc1963ec6c03fc5bd0b9397'
 UPSTREAM='https://github.com/antgroup/echomimic_v3.git'
 HERE=Path(__file__).resolve().parent;WORK=Path('/content/ava-motion-pilot')
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-def run(cmd,**kwargs):subprocess.run([str(x) for x in cmd],check=True,**kwargs)
+from process_tools import run_logged
+STAGE='startup';COMMAND_NUMBER=0;RUN_ID=uuid.uuid4().hex
+def stage(name):
+ global STAGE
+ STAGE=name;print('AVA_STAGE:',name,flush=True)
+def run(cmd,**kwargs):
+ global COMMAND_NUMBER
+ COMMAND_NUMBER+=1
+ return run_logged(cmd,WORK/'logs'/RUN_ID/f'command-{COMMAND_NUMBER:02d}.log',new_session=False,**kwargs)
+
 def preflight():
+ if sys.version_info[:2] not in ((3,10),(3,11)):
+  warnings.warn('This model recipe has not been validated with Python '+sys.version.split()[0]+'. Upstream lists Python3.10/3.11; this is a compatibility risk, not an identified root cause.',RuntimeWarning)
  import torch
  if not torch.cuda.is_available():raise RuntimeError('No free GPU assigned. STOP. Do not purchase compute or upgrade.')
  p=torch.cuda.get_device_properties(0)
@@ -88,26 +99,45 @@ def main():
  parser=argparse.ArgumentParser();parser.add_argument('--confirm-free-or-local',action='store_true');args=parser.parse_args()
  if not args.confirm_free_or_local:raise RuntimeError('Explicit free/local-runtime confirmation required; no metered compute.')
  os.environ.update(HF_HUB_DISABLE_TELEMETRY='1',HF_HUB_DISABLE_XET='1',TOKENIZERS_PARALLELISM='false')
- report=preflight();source,m=inputs();out=WORK/'outputs'
+ stage('preflight');report=preflight()
+ stage('input_validation');source,m=inputs();out=WORK/'outputs'
+ stage('stale_output_guard')
  if out.exists():raise RuntimeError('Outputs already exist; stop rather than silently reusing stale model videos. Use a fresh runtime for a fresh run.')
- path,script=engine();base,weights,encoder=download_models();results=[]
+ stage('engine_setup');path,script=engine()
+ stage('model_downloads');base,weights,encoder=download_models();results=[]
  os.environ.update(HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1')
  for job in m['jobs']:
+  stage('inference:'+job['id'])
   folder=out/job['id'];folder.mkdir(parents=True,exist_ok=False)
   run([sys.executable,script,'--config_path','config/config.yaml','--model_name',base,'--transformer_path',weights,'--wav2vec_model_dir',encoder,'--image_path',source/m['modelImage'],'--audio_path',source/job['conditioning'],'--prompt',job['prompt'],'--save_path',folder,'--num_inference_steps','8','--video_length',job['frames'],'--sample_size','768','768','--fps','25','--weight_dtype',report['dtype'],'--seed','43','--negative_prompt','Different face, changed identity, changed clothes, distorted mouth, extra teeth, warped face, green skin, camera movement, large head turn, singing during silence, extra fingers.'],cwd=path)
   video=folder/'ava_output.mp4'
   if not video.is_file():raise RuntimeError('No newly rendered video returned')
-  checked=validate_video(video,job)
+  stage('validate:'+job['id']);checked=validate_video(video,job)
   # Never play synthetic conditioning silence in the listening preview. Replace only
   # audio, retaining the actual generated video frames and original approved playback.
   import imageio_ffmpeg
+  stage('playback:'+job['id'])
   ff=imageio_ffmpeg.get_ffmpeg_exe();playback=folder/f"{job['id']}-playback.mp4"
   run([ff,'-v','error','-y','-i',video,'-i',source/job['playback'],'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-t',job['duration'],'-movflags','+faststart',playback])
   checked.update(playback=str(playback.relative_to(WORK)),playbackSha256=sha(playback));results.append(checked)
+ stage('package_results')
  report.update(status='TWO_MODEL_CLIPS_RENDERED_REVIEW_REQUIRED',inferenceActuallyExecuted=True,model='EchoMimicV3 Flash',sourceInputs=m,results=results,paidFallbackUsed=False,publishAuthorized=False,qualityApproved=False)
  (WORK/'pilot-results.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  bundle=WORK/'ava-motion-pilot-results.zip'
  with zipfile.ZipFile(bundle,'w',zipfile.ZIP_DEFLATED) as z:
   for file in [WORK/'pilot-results.json',WORK/'model-provenance.json',WORK/'engine-provenance.json',*(out.rglob('*.mp4'))]:z.write(file,str(file.relative_to(WORK)))
  print('Model inference returned two clips, NOT a final/approved film. Human identity, Persian sync and listening review required.\n'+str(bundle))
-if __name__=='__main__':main()
+def cli():
+ try:main()
+ except Exception as exc:
+  print('AVA_FAILURE_STAGE:',STAGE,file=sys.stderr,flush=True)
+  traceback.print_exc()
+  data=dict(stage=STAGE,exceptionType=type(exc).__name__,message=str(exc),python=sys.version.split()[0],pipelineCompleted=False,logFile=str(getattr(exc,'log_path','')),originalUserErrorNotDiagnosed=True)
+  try:
+   WORK.mkdir(parents=True,exist_ok=True)
+   (WORK/'failure-summary.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+  except OSError as log_error:
+   print('Could not save failure summary:',log_error,file=sys.stderr,flush=True)
+  return 1
+ return 0
+if __name__=='__main__':sys.exit(cli())

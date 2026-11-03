@@ -5,7 +5,22 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## CURRENT — real YouTube/Instagram files delivered WITH STATIC AVA, no natural motion
+## LATEST — user returned to Colab error diagnosis (static deliveries remain complete)
+
+User supplied wrapper CalledProcessError exit1 under Python3.13 for the motion runner.
+Actual child exception is still ABSENT; root cause UNKNOWN. Upstream pinned README
+lists tested Python3.10/3.11 (verified via gh API); 3.13 is a risk, NOT a proven cause.
+Do not claim fixed CUDA/install/model or successful inference. No blind model retry.
+motion/{process_tools.py,diagnose_runtime.py,quick_diagnostic_cell.py,test_diagnostics.py}
+adds persistent streamed child errors + read-only environment checks. Notebook updated
+on same branch via ff-only fetch/merge; no reset/delete, existing outputs still guarded.
+Quick cell can be pasted in the SAME failed runtime without code refresh, packages,
+weights, inference or upload. Old wrapper alone cannot recover missing historic stderr.
+13 CPU/stdlib diagnostic tests PASS; no Colab/hardware validation. User's latest request
+permits this narrow debugging, not payment/new provider uploads or a new full workflow.
+Natural motion remains unproduced; completed STATIC MP4s below unchanged.
+
+## DELIVERED — real YouTube/Instagram files delivered WITH STATIC AVA, no natural motion
 
 User: «بیخیالش خودت انجامش بده نسخه اینستاگرام و یوتیوب رو بده بهم».
 Stop handing off Colab/sites/debugging to user. Actual locally rendered downloads:
