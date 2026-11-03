@@ -1,7 +1,7 @@
 """EXPERIMENTAL user-run free/local GPU pilot. NOT executed in Arena.
 Official EchoMimicV3 Flash, not rejected MuseTalk. No API, billing, clone or TTS.
 """
-import argparse,hashlib,json,os,subprocess,sys,zipfile,shutil,wave,traceback,warnings,uuid
+import argparse,hashlib,json,os,subprocess,sys,zipfile,shutil,wave,traceback,warnings,uuid,tempfile
 from pathlib import Path
 PIN='7e89489ca51c0d008fc1963ec6c03fc5bd0b9397'
 UPSTREAM='https://github.com/antgroup/echomimic_v3.git'
@@ -26,9 +26,31 @@ def preflight():
  p=torch.cuda.get_device_properties(0)
  if p.total_memory<12*2**30:raise RuntimeError('Less than 12GiB VRAM; STOP, no paid fallback.')
  return dict(gpu=p.name,vramGiB=round(p.total_memory/2**30,2),torch=torch.__version__,dtype='bfloat16' if torch.cuda.is_bf16_supported() else 'float16',inferenceActuallyExecuted=False)
+def ensure_input_bundle(root,expected):
+ # sparse-checkout updates can remove a previously restored out-of-cone file.
+ # Recover only our tracked blob, hash-verified, without checkout/reset or overwrite.
+ root=Path(root);relative='downloads/ahangban-ava-motion-pilot-inputs.zip';z=root/relative
+ if z.exists():
+  if not z.is_file() or sha(z)!=expected['sha256']:raise RuntimeError('Existing input ZIP differs from approved hash. Stop without overwriting: '+str(z))
+  return z
+ z.parent.mkdir(parents=True,exist_ok=True);temporary=None
+ try:
+  with tempfile.NamedTemporaryFile(dir=z.parent,prefix='.ava-input-restore-',suffix='.tmp',delete=False) as f:
+   temporary=Path(f.name)
+   result=subprocess.run(['git','show','HEAD:'+relative],cwd=root,stdout=f,stderr=subprocess.PIPE)
+  if result.returncode:raise RuntimeError('Cannot restore approved input ZIP from Git HEAD: '+result.stderr.decode('utf-8',errors='replace')[-2000:])
+  if sha(temporary)!=expected['sha256']:raise RuntimeError('Git input ZIP does not match approved bundle hash. Nothing installed; stop.')
+  try:os.link(temporary,z) # atomic exclusive creation; never replace another file
+  except FileExistsError:
+   if not z.is_file() or sha(z)!=expected['sha256']:raise RuntimeError('Input ZIP appeared during recovery with wrong hash; not overwritten.')
+  print('INPUT_BUNDLE_RESTORED_HASH_VERIFIED:',z,flush=True)
+  return z
+ finally:
+  if temporary is not None:temporary.unlink(missing_ok=True)
+
 def inputs():
- WORK.mkdir(parents=True,exist_ok=True);z=HERE.parents[2]/'downloads/ahangban-ava-motion-pilot-inputs.zip'
- expected=json.loads((HERE/'bundle.json').read_text());assert sha(z)==expected['sha256']
+ WORK.mkdir(parents=True,exist_ok=True)
+ expected=json.loads((HERE/'bundle.json').read_text());z=ensure_input_bundle(HERE.parents[2],expected)
  dest=WORK/'inputs';dest.mkdir(exist_ok=True)
  with zipfile.ZipFile(z) as f:
   allowed={'ava.png','talk-playback.wav','talk-conditioning.wav','listen-conditioning.wav','listen-playback.wav','pilot-inputs.json'}

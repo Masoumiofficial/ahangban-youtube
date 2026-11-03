@@ -5,7 +5,23 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## LATEST — actual Colab cause received; flat base model download bug patched
+## NEWEST — missing input ZIP, NOT Python or base weights; Git recovery patched
+
+After successful model preparation, actual pilot stopped in input_validation BEFORE
+engine/inference: FileNotFoundError /content/ahangban-youtube/downloads/ahangban-ava-motion-pilot-inputs.zip.
+Preflight passed. Python3.13 warning is NOT this failure's cause. Suspected sparse
+update removed manually restored out-of-cone ZIP, but reason for absence not proven.
+runner.inputs() now calls ensure_input_bundle(): if absent, stream ONLY tracked ZIP
+from git show HEAD:downloads/... to unique temp; verify approved SHA; exclusive atomic
+link into downloads. No reset/checkout or replacement of existing file, no weight or
+output deletion. Wrong existing ZIP stops, not overwritten. Restores2,953,567B input
+asset bundle, NOT multi-GB model weights.7new recovery tests +28prior =35PASS.
+Recovery patch not yet exercised by USER in Colab. NEXT: SAME free runtime, samebranch
+ff-only pull then actual runner --confirm-free-or-local, logs streamed. No reinstall,
+Run all, or model-only preparation. After repair, this attempts actual two-clip model
+inference. Existing outputs remain guarded. Natural motion still not produced here.
+
+## PREVIOUS — actual Colab cause received; flat base model download bug patched
 
 User returned real child exception: RuntimeError Missing official model component:
 /content/ava-motion-pilot/models/base/transformer, in download_models(), BEFORE inference.

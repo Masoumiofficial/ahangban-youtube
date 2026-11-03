@@ -107,3 +107,24 @@ python3 -u /content/ahangban-youtube/content/011-ava-split-screen/motion/run_col
 ```
 
 این فرمان بدون `--prepare-models-only`، دو کلیپ کوتاه گفتار/گوش‌دادن را واقعاً امتحان می‌کند. اسکریپت دوباره کش/هش فایل‌ها را بررسی می‌کند؛ دریافت اجباری تازه تنظیم نشده است. سازگاری کامل Python3.13، بارگذاری مدل، حافظه و کیفیت حرکت هنوز تضمین/تأیید نشده‌اند. اگر خطا داد یا `Outputs already exist` گفت، توقف و گزارش؛ هیچ خروجی حذف و هیچ ارتقا/پرداخت انجام نشود. اگر موفق شد، `ava-motion-pilot-results.zip` از مسیر `/content/ava-motion-pilot/` برای بررسی برگردد؛ صرف موفقیت فنی، تأیید هویت/لب‌خوانی فارسی نیست.
+
+
+## شکست بعدی: ZIP ورودی در پوشهٔ کاری نیست؛ بازیابی از گیت
+
+بعد از موفقیت مرحلهٔ مدل‌ها، کاربر اجرای واقعی را امتحان کرد. `preflight` پاس شد اما `input_validation` با `FileNotFoundError` برای `downloads/ahangban-ava-motion-pilot-inputs.zip` متوقف شد؛ هنوز استنتاج شروع نشده بود. هشدار Python3.13 عامل این توقف نیست. احتمالاً به‌روزرسانی sparse-checkout فایلِ قبلاً بازیابی‌شدهٔ بیرون از cone را از پوشهٔ کاری خارج کرده است؛ دلیل دقیق نبودن فایل اثبات نشده است.
+
+runner اکنون اگر **فقط همین ZIP** موجود نباشد، آن را از `git show HEAD:downloads/ahangban-ava-motion-pilot-inputs.zip` در فایل موقت یکتا بازیابی می‌کند، هشِ ثابت `bundle.json` را کنترل و سپس به‌صورت atomic/exclusive نصب می‌کند. فایل موجود با هش غلط را دست نمی‌زند و توقف می‌کند. فایل موقت متعلق به همین بازیابی پاک می‌شود؛ وزن‌ها، ورودی‌های دیگر و ویدئوهای قبلی حذف نمی‌شوند. اندازهٔ بسته حدود۳MB است، نه وزن‌های چندگیگابایتی. دریافت blob گیت، اگر کش نشده باشد، ممکن است لازم شود. ساختن ZIP خالی یا پوشهٔ جعلی راه‌حل نیست.
+
+برای اعمال اصلاح و ادامهٔ پایلوت در **همان runtime رایگان**، بدون نصب/Restart/Run all:
+
+```bash
+%%bash
+set -euo pipefail
+cd /content/ahangban-youtube
+test "$(git branch --show-current)" = 'arena/d4ba4e0b-ahangban-youtube'
+git pull --ff-only origin arena/d4ba4e0b-ahangban-youtube
+python3 -u content/011-ava-split-screen/motion/run_colab_pilot.py \
+  --confirm-free-or-local 2>&1 | tee "/content/ava-motion-run-$(date +%s).log"
+```
+
+پیام ترمیم: `INPUT_BUNDLE_RESTORED_HASH_VERIFIED`. بعد از آن، همان فرمان **اجرای واقعی دو تست کوتاه مدل** را ادامه می‌دهد، نه فقط بررسی فایل‌ها. اگر Git یا خروجی قدیمی مانع شد، reset/حذف نکنید؛ همان خطا را برگردانید. این اصلاح با۷آزمون جدید بازیابی/حفظ فایل/هش/خطای Git/رقابت، همراه۲۸آزمون قبلی =۳۵آزمون CPU پاس شده؛ بازیابی در Colab و خود رندر هنوز تأیید نشده‌اند.

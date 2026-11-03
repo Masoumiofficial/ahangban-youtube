@@ -1,5 +1,5 @@
 {
-  "status": "USER_CONFIRMED_MODEL_FILES_READY_INFERENCE_NOT_YET_RUN",
+  "status": "INPUT_BUNDLE_MISSING_AFTER_CODE_UPDATE_GIT_RECOVERY_PATCHED",
   "engine": "EchoMimicV3 Flash",
   "repository": "https://github.com/antgroup/echomimic_v3",
   "revision": "7e89489ca51c0d008fc1963ec6c03fc5bd0b9397",
@@ -33,7 +33,7 @@
     "claiming temporal pixel changes certify Persian phoneme sync"
   ],
   "returnArtifact": "ava-motion-pilot-results.zip",
-  "nextRequiredHumanAction": "In the SAME existing FREE runtime, execute updated runner with --confirm-free-or-local, WITHOUT --prepare-models-only. No reinstall/Run all/cache deletion. Return results ZIP on success or full child error; never delete existing outputs to retry.",
+  "nextRequiredHumanAction": "Same FREE Colab runtime: ff-only update SAME branch, then runner --confirm-free-or-local. Missing input ZIP now recovered from Git HEAD only after pinned hash verification. No reinstall/reset/cache deletion. This attempts real inference after input repair.",
   "userAttemptReported": true,
   "successfulInferenceReturned": false,
   "exactErrorSupplied": true,
@@ -60,7 +60,7 @@
   "python313IsProvenCause": false,
   "diagnosticTool": "diagnose_runtime.py",
   "loggingFixOnly": false,
-  "failureStage": "model_downloads/base_validation",
+  "failureStage": "input_validation/input_bundle_missing",
   "reportedChildException": "RuntimeError: Missing official model component: /content/ava-motion-pilot/models/base/transformer",
   "reportedCauseKnown": true,
   "reportedCause": "Incorrect directory-based allow_patterns and directory guards. Pinned engine config uses root transformer config/checkpoint, named .pth files and google/umt5-xxl tokenizer.",
@@ -102,5 +102,18 @@
     "audioEncoder": "TencentGameMate/chinese-wav2vec2-base",
     "evidence": "User pasted successful Colab --prepare-models-only output. Agent did not execute or download model weights.",
     "modelInferenceExecutedByPreparation": false
-  }
+  },
+  "latestFailure": {
+    "exception": "FileNotFoundError",
+    "path": "/content/ahangban-youtube/downloads/ahangban-ava-motion-pilot-inputs.zip",
+    "stage": "input_validation",
+    "renderStarted": false,
+    "pythonWarningCausedFailure": false,
+    "missingFileCauseProven": false,
+    "suspectedMechanism": "out-of-cone input ZIP removed by sparse-checkout update",
+    "recoveryPatch": "Restore only absent input ZIP via git show HEAD, verify bundle SHA256, atomic exclusive creation. Existing different input file is never overwritten.",
+    "colabRecoveryVerified": false
+  },
+  "inputBundleExpectedSha256": "2049356ee5f3f7e462923ce189b6d286e823515aebcf5f6683d663a98ddd2243",
+  "inputBundleBytes": 2953567
 }
