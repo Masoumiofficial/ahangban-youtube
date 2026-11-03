@@ -5,7 +5,24 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
-## CURRENT — 010 voice delivery REJECTED; revision-02 previews pending listening
+## CURRENT — finalization PAUSED: male voice-07/delivery explicitly REJECTED
+
+User approved revision-02 VIDEO LOOK and both COVERS and asked final production,
+with name correction «سیاوش قُمیشی» (not ساوش قَمیشی). Then interrupted: «صدای و نحوه
+گویندگی مرد خیلی بد شده». This latest feedback rejects male voice and performance,
+not just the name. Do NOT finish with male07. Keep female voice06, reviewed female
+performances and approved visuals/covers unchanged. Audition fresh masculine fa
+conversational pair index4; no human cloning, celebrity imitation or subscription.
+Before interruption, six candidate MP3s generated in final-v2/audio (4 male07,
+2 female06); NO final renderer, video mux, final package or publication ran. Their
+existence is not approval. final-v2/status.json records hashes and truthful pause.
+Fresh voice selection is not approval of all new sentences: make a short dry
+contextual sample first; do not synthesize/rerender a whole episode blindly again.
+Name correction TTS attempt was «سیاوَش قُمیشی», not aurally verified. Engine has
+no direct word-stress/emotion control. Preserve all source assets, approved
+thumbnail/cover bytes and 009 upload receipt; no publishing authorized for 010.
+
+## PREVIOUS — revision-02 visual previews approved; male speech later rejected
 
 Latest user feedback: 010 speech unnatural again; work on words/tone, stronger
 video effects, more professional realistic dimensional thumbnail and Reel cover.

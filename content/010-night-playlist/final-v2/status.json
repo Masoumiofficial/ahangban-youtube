@@ -1,0 +1,51 @@
+{
+  "status": "PAUSED_male_voice_and_delivery_rejected",
+  "fullEpisodeRendered": false,
+  "fullEpisodePublished": false,
+  "visualStyleApproved": true,
+  "youtubeThumbnailApproved": true,
+  "reelCoverApproved": true,
+  "currentMaleVoice": "voice-07",
+  "currentMaleVoiceRejected": true,
+  "femaleVoiceChangeRequested": false,
+  "nextStep": "Audition a fresh masculine conversational Persian voice pair, index4. Do not render final episode with voice-07 or treat a voice choice as full-performance approval.",
+  "pronunciation": {
+    "display": "سیاوش قمیشی",
+    "userCorrection": "سیاوش قُمیشی",
+    "ttsAttempt": "سیاوَش قُمیشی",
+    "aurallyVerified": false
+  },
+  "candidateAudio": [
+    {
+      "file": "audio/female-closing.mp3",
+      "sha256": "8e74dc2f107204f7e481427cdaaeb9a366ca49b86bab45d6d753c6773d2766bd",
+      "approved": false
+    },
+    {
+      "file": "audio/female-vertical-hook.mp3",
+      "sha256": "e629f4d2cae6ba6797e673bd905ecb4607ee52b801f8c915d4d3636cb0b421ab",
+      "approved": false
+    },
+    {
+      "file": "audio/male-brand.mp3",
+      "sha256": "f08c9e47ef4b9965e1f4326d85cdce0c9f5316a5c0d0c6311f2789ecd4048d75",
+      "approved": false
+    },
+    {
+      "file": "audio/male-reply-corrected.mp3",
+      "sha256": "485147c2647db84f456238f12ea4acd407918d91879e17f65d1eb211607040ec",
+      "approved": false
+    },
+    {
+      "file": "audio/male-third.mp3",
+      "sha256": "35c6d30344536e37f6cfb0514a4e3a5fba46462804e61cb4cbf1e845bc96a230",
+      "approved": false
+    },
+    {
+      "file": "audio/male-vertical-closing.mp3",
+      "sha256": "f5ec5a317413cbc3a7200227ef4d616bca6c4c08443ab51dde3a969e46f249c2",
+      "approved": false
+    }
+  ],
+  "note": "These six clips were generated before the user interrupted finalization. No final builder, mux, render or publication ran. New female lines remain unreviewed; male-07 must not be used for the final episode."
+}

@@ -11,7 +11,16 @@
     "professional realistic dimensional vertical Reel cover"
   ],
   "revision": "revision-02",
-  "latestRevisionStatus": "dry_voice_and_short_style_preview_pending_user_review",
+  "latestRevisionStatus": "male_voice_reselection_pending",
   "fullEpisodeRebuildPending": true,
-  "publicationAuthorized": false
+  "publicationAuthorized": false,
+  "latestFeedback": [
+    "سیاوش قُمیشی نه ساوش قَمیشی؟ الان هم کاور هم ویدیو خوب شد یکم کلمات و لحن رو اصلاح کن و بزن بریم سراغ نهایی",
+    "صدای و نحوه گویندگی مرد خیلی بد شده"
+  ],
+  "visualStyleApproved": true,
+  "youtubeThumbnailApproved": true,
+  "reelCoverApproved": true,
+  "maleVoice07Rejected": true,
+  "finalizationPausedForMaleVoice": true
 }
