@@ -1,5 +1,5 @@
 {
-  "status": "BASE_FLAT_LAYOUT_DOWNLOAD_BUG_PATCHED_COLAB_REPAIR_NOT_YET_VERIFIED",
+  "status": "USER_CONFIRMED_MODEL_FILES_READY_INFERENCE_NOT_YET_RUN",
   "engine": "EchoMimicV3 Flash",
   "repository": "https://github.com/antgroup/echomimic_v3",
   "revision": "7e89489ca51c0d008fc1963ec6c03fc5bd0b9397",
@@ -33,12 +33,12 @@
     "claiming temporal pixel changes certify Persian phoneme sync"
   ],
   "returnArtifact": "ava-motion-pilot-results.zip",
-  "nextRequiredHumanAction": "Update code on the SAME branch using fast-forward only, then --confirm-free-or-local --prepare-models-only. Reuses caches; no inference. Return actual error or MODEL_FILES_READY_NO_INFERENCE.",
+  "nextRequiredHumanAction": "In the SAME existing FREE runtime, execute updated runner with --confirm-free-or-local, WITHOUT --prepare-models-only. No reinstall/Run all/cache deletion. Return results ZIP on success or full child error; never delete existing outputs to retry.",
   "userAttemptReported": true,
   "successfulInferenceReturned": false,
   "exactErrorSupplied": true,
   "failureStageKnown": true,
-  "errorFixedClaimed": false,
+  "errorFixedClaimed": true,
   "colabRetryRequestedByUser": false,
   "currentAlternative": "Completed STATIC Ava MP4s remain available; no animated output returned.",
   "exactErrorIsWrapperOnly": false,
@@ -65,7 +65,7 @@
   "reportedCauseKnown": true,
   "reportedCause": "Incorrect directory-based allow_patterns and directory guards. Pinned engine config uses root transformer config/checkpoint, named .pth files and google/umt5-xxl tokenizer.",
   "reportedLayoutBugPatched": true,
-  "colabRepairVerified": false,
+  "colabRepairVerified": true,
   "userEnvironment": {
     "python": "3.13.16",
     "torch": "2.11.0+cu130",
@@ -86,5 +86,21 @@
   "modelConfigSource": "https://github.com/antgroup/echomimic_v3/blob/7e89489ca51c0d008fc1963ec6c03fc5bd0b9397/config/config.yaml",
   "modelConfigSha256": "21fe4409b664385a1c1cc5c23d92506ffb05ef3c374a18de9df67b715dca07e9",
   "regressionTestScope": "Fake flat-layout files + mocked downloads, CPU only; no agent weight downloads or GPU/model validation",
-  "streamedWeightHashes": true
+  "streamedWeightHashes": true,
+  "errorFixScope": "Reported missing base/transformer download-layout error ONLY; no inference/compatibility/quality success claimed.",
+  "colabModelPreparationSucceeded": true,
+  "userReportedPreparation": {
+    "runnerCommit": "cf945bc",
+    "sourceUpdatedFrom": "e799661",
+    "marker": "MODEL_FILES_READY_NO_INFERENCE",
+    "baseRepository": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "baseRevision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "baseFetchCount": 9,
+    "flashRepository": "BadToBest/EchoMimicV3",
+    "flashRevision": "311e176905a8c4c24b240b530488fe636ce4d249",
+    "flashFetchCount": 2,
+    "audioEncoder": "TencentGameMate/chinese-wav2vec2-base",
+    "evidence": "User pasted successful Colab --prepare-models-only output. Agent did not execute or download model weights.",
+    "modelInferenceExecutedByPreparation": false
+  }
 }

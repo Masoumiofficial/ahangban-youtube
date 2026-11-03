@@ -20,12 +20,17 @@ large downloads, validates real flat files, rejects incomplete layouts/shards an
 silently overriding retained checkpoints. Hashes stream8MiB (not multi-GB read_bytes).
 runner --confirm-free-or-local --prepare-models-only repairs downloads/validation ONLY:
 no GPU/model/inference/outputs touched. Reuses caches; no force_download/deletion.
-Latest user trace is OLD runner (line113 if main, no AVA_STAGE); they MUST ff-only
-update SAME branch, then model-only preparation. See motion/README.fa.md for one cell.
-Missing base files may require MANY GB download; disclose, no paid fallback/token.
-15 new model regression tests +13 prior diagnostics =28 CPU/stdlib PASS. No actual
-weights downloaded by agent, Colab repair UNVERIFIED, natural motion still unproduced.
-Root cause now KNOWN, reported bug PATCHED IN CODE, NOT a successful model run.
+User NOW confirmed ff-only update e799661->cf945bc and successful Colab preparation:
+MODEL_FILES_READY_NO_INFERENCE; base fetched9files at fc913c34361f4ec879e2f9c78b4f11ae50a937d1,
+Flash fetched2files at311e176905a8c4c24b240b530488fe636ce4d249, ModelScope encoder returned.
+Reported base download-layout bug is VERIFIED FIXED for that step by USER evidence.
+No model inference yet! Don't ask for another install/pull/model-only repair.
+NEXT: same FREE runtime, runner --confirm-free-or-local (omit --prepare-models-only),
+stream/save output. It attempts TWO actual short clips; no full video/quality guarantee.
+On success user returns /content/ava-motion-pilot/ava-motion-pilot-results.zip for QA.
+On failure return child error; NEVER delete outputs to bypass guard or buy compute.
+15 new model regression tests +13 diagnostics =28 CPU/stdlib PASS. No real model
+weights/inference by agent. User-prepared files != compatibility/VRAM/quality success.
 Static MP4s already complete and unchanged below. Don't delete caches/outputs/reset
 user edits. Don't rerun installation or give more generic Python/version probes.
 
