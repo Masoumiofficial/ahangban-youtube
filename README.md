@@ -1,6 +1,18 @@
 # AhangBan — ابزارهای یوتیوب
 
-## اصلاح جدید 010 — نمونهٔ صدا و ظاهر، نه ویدیوی کامل
+## خروجی جاری 010 — نهایی با تک‌گویندهٔ زن
+
+طبق انتخاب کاربر، تمام گویندگی مرد حذف و نسخه‌های کامل با زن06 ساخته شدند؛ همان ظاهر و دو کاور تأییدشده حفظ شده‌اند. بررسی فنی پاس شده؛ انتشار انجام نشده و شنیدن نهایی جمله‌های تازه هنوز با کاربر است.
+
+- [دانلود یوتیوب — ۲:۲۶، 1920×1080](https://github.com/Masoumiofficial/ahangban-youtube/raw/refs/heads/arena/d4ba4e0b-ahangban-youtube/downloads/ahangban-night-final-youtube.mp4)
+- [دانلود عمودی — حدود ۴۸ ثانیه، 1080×1920](https://github.com/Masoumiofficial/ahangban-youtube/raw/refs/heads/arena/d4ba4e0b-ahangban-youtube/downloads/ahangban-night-final-reel.mp4)
+- [تامبنیل نهایی](downloads/ahangban-night-final-youtube-thumbnail.jpg) · [کاور نهایی ریل](downloads/ahangban-night-final-reel-cover.jpg)
+- [مشخصات، منابع و بازتولید](content/010-night-playlist/final-female/README.fa.md)
+
+نسخه‌های زیر تاریخچه‌اند؛ برای خروجی فعلی از نام فایل‌های `ahangban-night-final-*` استفاده کنید.
+
+
+## سابقهٔ اصلاح دوم 010 — ظاهر تأیید شد؛ گویندگی مرد بعداً حذف شد
 
 اجرای گفتار تحویل اول طبق بازخورد کاربر غیرطبیعی بود و تأیید نشد. اصلاح دوم شامل گفتار تازهٔ کوتاه، پیش‌نمایش تدوین عمق‌دار و تامبنیل/کاور واقع‌گرایانه‌تر است. قبل از بازسازی کل ویدیو، نمونهٔ خشک گفتار باید شنیده شود.
 

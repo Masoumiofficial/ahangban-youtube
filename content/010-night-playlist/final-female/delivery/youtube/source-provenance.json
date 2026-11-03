@@ -1,0 +1,178 @@
+{
+  "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
+  "assets": [
+    {
+      "path": "Artist/2-video-2/Dariush - Dastaye To [320].mp3",
+      "file": "Dariush - Dastaye To [320].mp3",
+      "gitBlob": "e6ab632ed68ea671cf5414db1fea9312079c3ae2",
+      "sha256": "c9472e51e648b9b77c087bea2b475fa894482ba88354ffedb112a69aabf49a0f",
+      "bytes": 5161620
+    },
+    {
+      "path": "Artist/2-video-2/Dariush-Dastaye-To.jpg",
+      "file": "Dariush-Dastaye-To.jpg",
+      "gitBlob": "ddd410f10e4d31abf6302ee46493ecf52a15a406",
+      "sha256": "17a9694f9e3f2e2cb2c8cc238085b90b83fbc8adc8bcb8a9b7ca48a4e830bf4b",
+      "bytes": 58512
+    },
+    {
+      "path": "Artist/2-video-2/Faramarz Aslani - Age Yerooz [320].mp3",
+      "file": "Faramarz Aslani - Age Yerooz [320].mp3",
+      "gitBlob": "35e31b561994354096437e1c5fd65b1ac4a77dee",
+      "sha256": "1a15444722e12c4679abc86a464b70f8176e5e6b085d683cd4daa622dacb6243",
+      "bytes": 4270299
+    },
+    {
+      "path": "Artist/2-video-2/Faramarz Aslani_ Age Yerooz.png",
+      "file": "Faramarz Aslani_ Age Yerooz.png",
+      "gitBlob": "a6ba8daee7641043d47ba83c5bdc1019c0e8d6ad",
+      "sha256": "bd9e6d8944d615d64897ea2fdde63f59851e464795f45b74f0eaf3653449742d",
+      "bytes": 2526661
+    },
+    {
+      "path": "Artist/2-video-2/Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "file": "Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "gitBlob": "6f260582eed814dc9fa4ed4542698483c17abd18",
+      "sha256": "2279059d4426ff042abcb053e633b5536c566bf11f27a3acd8ab85748f3db385",
+      "bytes": 9558006
+    },
+    {
+      "path": "Artist/2-video-2/Siavash-Ghomayshi-To-Baroon-Keh-Rafty.jpg",
+      "file": "Siavash-Ghomayshi-To-Baroon-Keh-Rafty.jpg",
+      "gitBlob": "b4fcf0a23dc7ecd1e3deaffcb3d55ba373863b53",
+      "sha256": "4ac7f527795786b5ace855eba90a2fd2faa78852e16993e9b2d9822254086d59",
+      "bytes": 88982
+    }
+  ],
+  "speech": [
+    {
+      "id": "hook",
+      "scene": "opening",
+      "text": "شده آخر شب، یه آهنگ رو هی از اول بذاری؟",
+      "ttsText": "شده آخر شب، یه آهنگ رو هی از اول بذاری؟",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "hook.mp3",
+      "sha256": "87548f0636deaf4b5776ad24625b504dbe13679c134e5ed704ff3d645901a995",
+      "exactReviewedPerformanceReuse": true,
+      "reviewedSource": "content/010-night-playlist/revision-02/audio/female-hook.mp3",
+      "finalUserListeningPending": true,
+      "sourceSha256": "87548f0636deaf4b5776ad24625b504dbe13679c134e5ed704ff3d645901a995",
+      "duration": 4.48,
+      "constantGain": 1.3228359630999198
+    },
+    {
+      "id": "intro",
+      "scene": "opening",
+      "text": "این سه تا رو با هم بشنویم. اولی، تو بارون که رفتی، از سیاوش قمیشی.",
+      "ttsText": "این سه تا رو با هم بشنویم. اولی، تو بارون که رفتی، از سیاوَش قُمیشی.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "intro.mp3",
+      "sha256": "cb34f750cb3aa349d89d92a6be3fea0a83eb8c0dc5446b1404ff7f8fb3db7deb",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "sourceSha256": "cb34f750cb3aa349d89d92a6be3fea0a83eb8c0dc5446b1404ff7f8fb3db7deb",
+      "duration": 7.12,
+      "constantGain": 1.4373622852540968
+    },
+    {
+      "id": "transition",
+      "scene": "dastaye-to",
+      "text": "این یکی تو رو یاد چی انداخت؟ حالا دستای تو رو بشنو، از داریوش.",
+      "ttsText": "این یکی تو رو یاد چی انداخت؟ حالا دستای تو رو بشنو، از داریوش.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "transition.mp3",
+      "sha256": "04563ed8d9df2ce41f14a4f33d93a68731d6f7424831554442308c0f86f8ae24",
+      "exactReviewedPerformanceReuse": true,
+      "reviewedSource": "content/010-night-playlist/revision-02/audio/female-transition.mp3",
+      "finalUserListeningPending": true,
+      "sourceSha256": "04563ed8d9df2ce41f14a4f33d93a68731d6f7424831554442308c0f86f8ae24",
+      "duration": 6.28,
+      "constantGain": 1.3049905308315308
+    },
+    {
+      "id": "third",
+      "scene": "age-ye-rooz",
+      "text": "برای آخرش هم اگه یه روز رو گذاشتیم، از فرامرز اصلانی.",
+      "ttsText": "برای آخرش هم اگه یه روز رو گذاشتیم، از فرامرز اصلانی.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "third.mp3",
+      "sha256": "d780bf17cb38ea6120c43f13e05633478dce8f7ec6dcba8ed192053679e3ba9f",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "sourceSha256": "d780bf17cb38ea6120c43f13e05633478dce8f7ec6dcba8ed192053679e3ba9f",
+      "duration": 5.44,
+      "constantGain": 1.3374677884234036
+    },
+    {
+      "id": "closing",
+      "scene": "recap",
+      "text": "تو برای آخر شب کدوم رو می‌ذاری؟ اسمشو برامون کامنت کن. اگه آهنگ دیگه‌ای هم تو ذهنته، بنویس.",
+      "ttsText": "تو برای آخر شب کدوم رو می‌ذاری؟ اسمشو برامون کامنت کن. اگه آهنگ دیگه‌ای هم تو ذهنته، بنویس.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "closing.mp3",
+      "sha256": "8e74dc2f107204f7e481427cdaaeb9a366ca49b86bab45d6d753c6773d2766bd",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "sourceSha256": "8e74dc2f107204f7e481427cdaaeb9a366ca49b86bab45d6d753c6773d2766bd",
+      "duration": 8.8,
+      "constantGain": 1.3617497085611494
+    },
+    {
+      "id": "brand",
+      "scene": "recap",
+      "text": "این هم پلی‌لیست امشب رسانهٔ آهنگ‌بان. آهنگ‌بان دات آی آر.",
+      "ttsText": "این هم پلی‌لیست امشب رسانهٔ آهنگ‌بان. آهنگ‌بان دات آی آر.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "brand.mp3",
+      "sha256": "b798fbe03ba17d5ef99591adbf71967703cdda67326577a2796231a20992ec43",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "sourceSha256": "b798fbe03ba17d5ef99591adbf71967703cdda67326577a2796231a20992ec43",
+      "duration": 6.12,
+      "constantGain": 1.2891432171880988
+    }
+  ],
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "femaleOnlyAuthorized": true,
+  "maleNarrationUsed": false,
+  "voicePitchOrSpeedChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "approvedCoverSource": "downloads/ahangban-night-v2-youtube-thumbnail.jpg",
+  "approvedCoverSha256": "92d9b927b0fac8e072fcae847968036812546b2c212b81a010a01cc35027f84b",
+  "visualSourceRevision": "revision-02",
+  "environmentPlates": [
+    {
+      "path": "content/010-night-playlist/revision-02/assets/depth-night-wide.jpg",
+      "sha256": "c2f487ee3abcbcdc376247b871e64b4b4daceabfa8a399f85e180f730548828c"
+    },
+    {
+      "path": "content/010-night-playlist/revision-02/assets/depth-night-vertical.jpg",
+      "sha256": "ffaba070200f3e8d7e9c653496f3ae230b41e4f45e18f92c1c1c7b0e4982a61c"
+    }
+  ],
+  "userSuppliedWebLinks": [
+    "https://ahangban.ir/siavash-ghomayshi-to-baroon-keh-rafty/",
+    "https://ahangban.ir/dariush-dastaye-to/",
+    "https://ahangban.ir/faramarz-aslani-age-yerooz/"
+  ],
+  "pronunciationCorrection": {
+    "expected": "سیاوش قُمیشی",
+    "ttsText": "سیاوَش قُمیشی",
+    "correctedClip": "intro",
+    "wholeUtteranceRegenerated": true,
+    "auralVerificationByAgent": false
+  },
+  "copyrightCleared": false,
+  "published": false
+}

@@ -11,8 +11,8 @@
     "professional realistic dimensional vertical Reel cover"
   ],
   "revision": "revision-02",
-  "latestRevisionStatus": "paused_before_more_auditions_need_voice_character",
-  "fullEpisodeRebuildPending": true,
+  "latestRevisionStatus": "full_female_only_files_complete_pending_final_listening",
+  "fullEpisodeRebuildPending": false,
   "publicationAuthorized": false,
   "latestFeedback": [
     "سیاوش قُمیشی نه ساوش قَمیشی؟ الان هم کاور هم ویدیو خوب شد یکم کلمات و لحن رو اصلاح کن و بزن بریم سراغ نهایی",
@@ -22,10 +22,14 @@
   "youtubeThumbnailApproved": true,
   "reelCoverApproved": true,
   "maleVoice07Rejected": true,
-  "finalizationPausedForMaleVoice": true,
+  "finalizationPausedForMaleVoice": false,
   "maleAudition08BothRejected": true,
   "maleAudition09BothRejected": true,
   "voice08Approved": false,
   "voice09Approved": false,
-  "lastFeedback": "هیچ کدوم اصلا جنس صدا خیلی شخمی شده"
+  "lastFeedback": "هیچ کدوم اصلا جنس صدا خیلی شخمی شده",
+  "userSelectedRoute": "female_only",
+  "finalNarrationVoice": "voice-06",
+  "maleNarrationRemoved": true,
+  "latestRevision": "final-female"
 }

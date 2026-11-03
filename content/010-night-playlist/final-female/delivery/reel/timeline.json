@@ -1,0 +1,134 @@
+{
+  "kind": "reel",
+  "status": "full_female_only_final_for_user_listening",
+  "duration": 47.519999999999996,
+  "events": [
+    {
+      "id": "vertical-hook",
+      "scene": "opening",
+      "text": "آخر شب، کدوم آهنگ رو دوباره پخش می‌کنی؟",
+      "ttsText": "آخر شب، کدوم آهنگ رو دوباره پخش می‌کنی؟",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "vertical-hook.mp3",
+      "sha256": "e629f4d2cae6ba6797e673bd905ecb4607ee52b801f8c915d4d3636cb0b421ab",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 0.0,
+      "end": 3.64,
+      "duration": 3.64,
+      "sceneDuration": 3.92
+    },
+    {
+      "type": "music",
+      "id": "to-baroon-keh-rafty",
+      "scene": "to-baroon-keh-rafty",
+      "title": "تو بارون که رفتی",
+      "artist": "سیاوش قمیشی",
+      "sourceFile": "Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "sourceStart": 65,
+      "cameraCutsLocal": [
+        0.0,
+        3.98,
+        8.06,
+        12.0
+      ],
+      "start": 3.92,
+      "end": 15.92,
+      "duration": 12.0,
+      "sceneDuration": 12.28
+    },
+    {
+      "type": "music",
+      "id": "dastaye-to",
+      "scene": "dastaye-to",
+      "title": "دستای تو",
+      "artist": "داریوش",
+      "sourceFile": "Dariush - Dastaye To [320].mp3",
+      "sourceStart": 120,
+      "cameraCutsLocal": [
+        0.0,
+        4.0200000000000005,
+        7.9,
+        12.0
+      ],
+      "start": 16.2,
+      "end": 28.2,
+      "duration": 12.0,
+      "sceneDuration": 12.28
+    },
+    {
+      "type": "music",
+      "id": "age-ye-rooz",
+      "scene": "age-ye-rooz",
+      "title": "اگه یه روز",
+      "artist": "فرامرز اصلانی",
+      "sourceFile": "Faramarz Aslani - Age Yerooz [320].mp3",
+      "sourceStart": 68,
+      "cameraCutsLocal": [
+        0.0,
+        4.0,
+        8.26,
+        12.0
+      ],
+      "start": 28.479999999999997,
+      "end": 40.48,
+      "duration": 12.0,
+      "sceneDuration": 12.28
+    },
+    {
+      "id": "vertical-closing",
+      "scene": "recap",
+      "text": "انتخابتو کامنت کن. رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات آی آر.",
+      "ttsText": "انتخابتو کامنت کن. رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات آی آر.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "vertical-closing.mp3",
+      "sha256": "f20f6b3aa1fc622cb3dd3b0fc23c2ecebc1ac178001471d58a6dea980a17ee78",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "type": "speech",
+      "start": 40.76,
+      "end": 47.239999999999995,
+      "duration": 6.48,
+      "sceneDuration": 6.760000000000001
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.616421052631579,
+      "text": "آخر شب، کدوم آهنگ"
+    },
+    {
+      "start": 1.628421052631579,
+      "end": 3.628,
+      "text": "رو دوباره پخش می‌کنی؟"
+    },
+    {
+      "start": 40.76,
+      "end": 43.897999999999996,
+      "text": "انتخابتو کامنت کن. رسانهٔ"
+    },
+    {
+      "start": 43.91,
+      "end": 47.018,
+      "text": "آهنگ‌بان؛ آهنگ‌بان دات آی"
+    },
+    {
+      "start": 47.03,
+      "end": 47.227999999999994,
+      "text": "آر."
+    }
+  ],
+  "ctas": [],
+  "narrationGender": "female_only",
+  "narrationVoice": "voice-06",
+  "maleNarrationUsed": false,
+  "musicSecondsEach": 12,
+  "captionTiming": "Proportional groups silence-nudged, not word-level forced alignment",
+  "cameraTiming": "Positive RMS onsets, not certified tempo/beat detection"
+}

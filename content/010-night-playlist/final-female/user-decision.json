@@ -1,0 +1,16 @@
+{
+  "userSelectedOption": "female_only",
+  "selectionQuestion": "male_voice_direction",
+  "femaleOnlyFinalizationAuthorized": true,
+  "femaleVoice": "voice-06",
+  "visualStyleApproved": true,
+  "youtubeThumbnailApproved": true,
+  "reelCoverApproved": true,
+  "pronunciationCorrection": "سیاوش قُمیشی",
+  "maleVoice07Rejected": true,
+  "maleAuditions08And09Rejected": true,
+  "newMaleAuditionsAuthorized": false,
+  "fullFemaleOnlyFilesComplete": true,
+  "finalUserListeningPending": true,
+  "publishAuthorized": false
+}

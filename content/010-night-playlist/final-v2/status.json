@@ -1,5 +1,5 @@
 {
-  "status": "PAUSED_male_auditions_08_and_09_both_rejected",
+  "status": "superseded_user_chose_female_only",
   "fullEpisodeRendered": false,
   "fullEpisodePublished": false,
   "visualStyleApproved": true,
@@ -8,7 +8,7 @@
   "currentMaleVoice": "voice-07",
   "currentMaleVoiceRejected": true,
   "femaleVoiceChangeRequested": false,
-  "nextStep": "Stop automatic random-pair auditions. Ask preferred male voice character or permission for female-only episode. Do not use voices07/08/09. Keep approved female and visuals/covers unchanged.",
+  "nextStep": "Superseded: user chose female_only; complete deliverables are in final-female/. No male auditions or male narration.",
   "pronunciation": {
     "display": "سیاوش قمیشی",
     "userCorrection": "سیاوش قُمیشی",
@@ -47,9 +47,11 @@
       "approved": false
     }
   ],
-  "note": "These six clips were generated before the user interrupted finalization. No final builder, mux, render or publication ran. New female lines remain unreviewed; male-07 must not be used for the final episode.",
+  "note": "All six abandoned candidate MP3s preserved in ignored rendered storage. Female closing and vertical hook copied before moving; final-female contains no male audio.",
   "auditionBattle08UserFeedback": "هیچ کدوم",
   "registeredVoice08Approved": false,
   "auditionBattle09UserFeedback": "هیچ کدوم اصلا جنس صدا خیلی شخمی شده",
-  "registeredVoice09Approved": false
+  "registeredVoice09Approved": false,
+  "finalRoute": "final-female",
+  "candidateStorage": "rendered/video-010-abandoned-final-v2/audio"
 }

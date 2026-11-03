@@ -5,6 +5,35 @@ Default conversation language: Persian, unless the user requests otherwise.
 Do not assume the channel's niche, audience, metrics, or spoken language from its name.
 
 
+## CURRENT — 010 FINAL COMPLETE: female-only route selected by user
+
+User chose ask_user option `female_only` after rejecting male07 and both audition
+pairs08/09. Do NOT ask for more male voices or use them. User had approved revision02
+visual/video look and both covers; preserve those designs. Current final package:
+`content/010-night-playlist/final-female/`, downloads/ahangban-night-final-{youtube,reel}.mp4
+plus final thumbnail/cover and an optional isolated full name-introduction MP3.
+YouTube 145.76s native 1920x1080/25, 3x35s songs; vertical47.53s native1080x1920/30,
+3x12s. All NARRATION voice06 female; original male singing in songs unchanged.
+Reviewed female-hook and female-transition MP3s reused byte-identically; no re-synthesis.
+Intro newly generated as «سیاوَش قُمیشی» per user «سیاوش قُمیشی» correction; no claim
+of agent aural verification. Four new female clips +two prior female candidate clips
+and two reviewed clips total8 sources. No time/pitch edits or EQ/reverb on speech.
+Exact approved revision02 cover bytes copied; 2.5D card/shadow/reflection/parallax/FFT
+style retained. Both final exports independently decode/QA PASS, all audio sections
+source correlation>.97, native frame motion checked. 14 final tests +10 revision02
++17 original episode +44 Node tests PASS. Final listening to new utterances is pending,
+not a reason to claim absolute naturalness or automatic pronunciation certification.
+Old first-delivery and review-preview hashes preserved. Abandoned six final-v2
+candidate MP3s moved to ignored rendered/video-010-abandoned-final-v2/audio; status.json
+records this, none of the rejected male performances enters the final.
+Use final-female/build_final.py +validate_final.py +package_final.py for reproducible
+current files, not historical preview/first builder. Source music remains pinned to
+commit d4cf777d859a0826c7dd4ccde9b7fccea4a8a503 and user URLs in descriptions.
+NO publication authorized/performed for010; uploader job remains009. Preserve009
+uploaded video receipt and UNKNOWN public visibility; no duplicates or secrets.
+
+## HISTORICAL — preceding male-casting pause (superseded by female-only decision)
+
 ## Latest decision — STOP random male auditions; 08 and 09 BOTH rejected
 
 User explicitly rejected both candidates from battle08 and battle09 despite tool
@@ -14,7 +43,7 @@ pair. Ask one focused question about desired voice character / optional female-o
 route. Male casting and final render remain paused. Female06 and approved revision02
 video style and thumbnail/cover remain unchanged. No publication authorized.
 
-## CURRENT — finalization PAUSED: male voice-07/delivery explicitly REJECTED
+## HISTORICAL — finalization was PAUSED: male voice-07/delivery explicitly REJECTED
 
 User approved revision-02 VIDEO LOOK and both COVERS and asked final production,
 with name correction «سیاوش قُمیشی» (not ساوش قَمیشی). Then interrupted: «صدای و نحوه

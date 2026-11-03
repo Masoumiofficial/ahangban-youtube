@@ -1,0 +1,114 @@
+{
+  "sourceCommit": "d4cf777d859a0826c7dd4ccde9b7fccea4a8a503",
+  "assets": [
+    {
+      "path": "Artist/2-video-2/Dariush - Dastaye To [320].mp3",
+      "file": "Dariush - Dastaye To [320].mp3",
+      "gitBlob": "e6ab632ed68ea671cf5414db1fea9312079c3ae2",
+      "sha256": "c9472e51e648b9b77c087bea2b475fa894482ba88354ffedb112a69aabf49a0f",
+      "bytes": 5161620
+    },
+    {
+      "path": "Artist/2-video-2/Dariush-Dastaye-To.jpg",
+      "file": "Dariush-Dastaye-To.jpg",
+      "gitBlob": "ddd410f10e4d31abf6302ee46493ecf52a15a406",
+      "sha256": "17a9694f9e3f2e2cb2c8cc238085b90b83fbc8adc8bcb8a9b7ca48a4e830bf4b",
+      "bytes": 58512
+    },
+    {
+      "path": "Artist/2-video-2/Faramarz Aslani - Age Yerooz [320].mp3",
+      "file": "Faramarz Aslani - Age Yerooz [320].mp3",
+      "gitBlob": "35e31b561994354096437e1c5fd65b1ac4a77dee",
+      "sha256": "1a15444722e12c4679abc86a464b70f8176e5e6b085d683cd4daa622dacb6243",
+      "bytes": 4270299
+    },
+    {
+      "path": "Artist/2-video-2/Faramarz Aslani_ Age Yerooz.png",
+      "file": "Faramarz Aslani_ Age Yerooz.png",
+      "gitBlob": "a6ba8daee7641043d47ba83c5bdc1019c0e8d6ad",
+      "sha256": "bd9e6d8944d615d64897ea2fdde63f59851e464795f45b74f0eaf3653449742d",
+      "bytes": 2526661
+    },
+    {
+      "path": "Artist/2-video-2/Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "file": "Siavash Ghomayshi - To Baroon Keh Rafty [320].mp3",
+      "gitBlob": "6f260582eed814dc9fa4ed4542698483c17abd18",
+      "sha256": "2279059d4426ff042abcb053e633b5536c566bf11f27a3acd8ab85748f3db385",
+      "bytes": 9558006
+    },
+    {
+      "path": "Artist/2-video-2/Siavash-Ghomayshi-To-Baroon-Keh-Rafty.jpg",
+      "file": "Siavash-Ghomayshi-To-Baroon-Keh-Rafty.jpg",
+      "gitBlob": "b4fcf0a23dc7ecd1e3deaffcb3d55ba373863b53",
+      "sha256": "4ac7f527795786b5ace855eba90a2fd2faa78852e16993e9b2d9822254086d59",
+      "bytes": 88982
+    }
+  ],
+  "speech": [
+    {
+      "id": "vertical-hook",
+      "scene": "opening",
+      "text": "آخر شب، کدوم آهنگ رو دوباره پخش می‌کنی؟",
+      "ttsText": "آخر شب، کدوم آهنگ رو دوباره پخش می‌کنی؟",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "vertical-hook.mp3",
+      "sha256": "e629f4d2cae6ba6797e673bd905ecb4607ee52b801f8c915d4d3636cb0b421ab",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "sourceSha256": "e629f4d2cae6ba6797e673bd905ecb4607ee52b801f8c915d4d3636cb0b421ab",
+      "duration": 3.64,
+      "constantGain": 1.3525810630205415
+    },
+    {
+      "id": "vertical-closing",
+      "scene": "recap",
+      "text": "انتخابتو کامنت کن. رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات آی آر.",
+      "ttsText": "انتخابتو کامنت کن. رسانهٔ آهنگ‌بان؛ آهنگ‌بان دات آی آر.",
+      "speaker": "female",
+      "voice": "voice-06",
+      "file": "vertical-closing.mp3",
+      "sha256": "f20f6b3aa1fc622cb3dd3b0fc23c2ecebc1ac178001471d58a6dea980a17ee78",
+      "exactReviewedPerformanceReuse": false,
+      "reviewedSource": null,
+      "finalUserListeningPending": true,
+      "sourceSha256": "f20f6b3aa1fc622cb3dd3b0fc23c2ecebc1ac178001471d58a6dea980a17ee78",
+      "duration": 6.48,
+      "constantGain": 1.356902110320779
+    }
+  ],
+  "logoSha256": "2fa45d7af6cdf386adf32cf0ed174cfe81db6066c1b3f442c9da12967ecd66b4",
+  "femaleOnlyAuthorized": true,
+  "maleNarrationUsed": false,
+  "voicePitchOrSpeedChanged": false,
+  "humanRecordingUsed": false,
+  "personalCloneUsed": false,
+  "approvedCoverSource": "downloads/ahangban-night-v2-reel-cover.jpg",
+  "approvedCoverSha256": "a311e1f1f3c5693ed01bc5ca060fa9cd34030072174630186e0db6213ea05e61",
+  "visualSourceRevision": "revision-02",
+  "environmentPlates": [
+    {
+      "path": "content/010-night-playlist/revision-02/assets/depth-night-wide.jpg",
+      "sha256": "c2f487ee3abcbcdc376247b871e64b4b4daceabfa8a399f85e180f730548828c"
+    },
+    {
+      "path": "content/010-night-playlist/revision-02/assets/depth-night-vertical.jpg",
+      "sha256": "ffaba070200f3e8d7e9c653496f3ae230b41e4f45e18f92c1c1c7b0e4982a61c"
+    }
+  ],
+  "userSuppliedWebLinks": [
+    "https://ahangban.ir/siavash-ghomayshi-to-baroon-keh-rafty/",
+    "https://ahangban.ir/dariush-dastaye-to/",
+    "https://ahangban.ir/faramarz-aslani-age-yerooz/"
+  ],
+  "pronunciationCorrection": {
+    "expected": "سیاوش قُمیشی",
+    "ttsText": "سیاوَش قُمیشی",
+    "correctedClip": "intro",
+    "wholeUtteranceRegenerated": true,
+    "auralVerificationByAgent": false
+  },
+  "copyrightCleared": false,
+  "published": false
+}
